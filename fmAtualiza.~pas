@@ -1,0 +1,297 @@
+unit fmAtualiza;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, acImage, IdTCPConnection, IdTCPClient,
+  IdHTTP, IdBaseComponent, IdComponent,
+  IdIOHandler, IdIOHandlerSocket, IdSSLOpenSSL, StdCtrls, sLabel,
+  sGauge, sPanel, IdIOHandlerStack, IdSSL, LMDCustomComponent, LMDStarter,
+  Grids, ValEdit, DFUnRar, OleCtrls, SHDocVw, acWebBrowser;
+
+type
+  TfAtualiza = class(TForm)
+    sImage1: TsImage;
+    IdHttp: TIdHTTP;
+    sStatus: TsLabel;
+    pbProgresso: TsGauge;
+    sTitulo: TsLabel;
+    sDragBar1: TsPanel;
+    IdSSLIOHandlerSocketOpenSSL1: TIdSSLIOHandlerSocketOpenSSL;
+    lmdEXEC: TLMDStarter;
+    param: TValueListEditor;
+    tmrDescompacta: TTimer;
+    Memo1: TMemo;
+    DFUnRar1: TDFUnRar;
+    procedure atualiza();
+    procedure IdHttpWork(Sender: TObject; AWorkMode: TWorkMode;
+      const AWorkCount: Integer);
+    procedure IdHttpWorkBegin(Sender: TObject; AWorkMode: TWorkMode;
+      const AWorkCountMax: Integer);
+    procedure IdHttpWorkEnd(Sender: TObject; AWorkMode: TWorkMode);
+    function RetornaPorcentagem(ValorMaximo, ValorAtual: real): string;
+    function RetornaKiloBytes(ValorAtual: real): string;
+    procedure FormActivate(Sender: TObject);
+    procedure geraListaBat(dir:string = '');
+    procedure descompacta();
+    procedure tmrDescompactaTimer(Sender: TObject);
+    procedure copia();
+    procedure DFUnRar1Progress(Sender: TObject; FilesProcessed, FileCount,
+      SizeProcessed, SizeCount: Cardinal);
+    procedure criaDiretorioOculto(Pasta: TFileName);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    url: string;
+    arq: string;
+    filename: string;
+    FileSize: Int64;
+    acao: string;
+    IncioDownload: TDateTime;
+    IsExtracting: Boolean;
+  end;
+
+var
+  fAtualiza: TfAtualiza;
+
+implementation
+
+uses fmMenu, DateUtils;
+
+{$R *.dfm}
+
+procedure TfAtualiza.atualiza;
+const
+  RECV_BUFFER_SIZE = 32768;
+var
+  Buffer: TMemoryStream;
+begin
+  url := StringReplace(url,'&amp;','&', [rfReplaceAll, rfIgnoreCase]);
+
+  try
+    url := StringReplace(url,'&amp;','&', [rfReplaceAll, rfIgnoreCase]);
+
+    IdSSLIOHandlerSocketOpenSSL1.SSLOptions.Method := sslvSSLv3;
+    IdSSLIOHandlerSocketOpenSSL1.SSLOptions.Mode :=  sslmUnassigned;
+    IdSSLIOHandlerSocketOpenSSL1.SSLOptions.VerifyMode := [];
+    IdSSLIOHandlerSocketOpenSSL1.SSLOptions.VerifyDepth := 2;
+
+    idHttp.ConnectTimeout := 10000;
+    idHttp.ReadTimeout := 10000;
+    idHttp.HandleRedirects := true;
+    idHttp.AllowCookies := true;
+
+    IdHttp.ReadTimeout := 0;
+    IdHTTP.Head(url);
+    FileSize := IdHTTP.Response.ContentLength;
+    if (FileSize <= 0) then
+    begin
+      Application.MessageBox('Não foi possível localizar o arquivo remoto.',fmIndex.TITULO,mb_ok+mb_iconerror);
+      IdHTTP.Free;
+      Buffer.Free;
+      close;
+      Exit;
+    end;
+
+    Buffer := TMemoryStream.Create;
+    try
+      while Buffer.Size < FileSize do
+      begin
+        IdHTTP.Request.ContentRangeStart := Buffer.Size;
+        if Buffer.Size + RECV_BUFFER_SIZE < FileSize then
+          IdHTTP.Request.ContentRangeEnd := Buffer.Size + RECV_BUFFER_SIZE - 1
+        else
+          IdHTTP.Request.ContentRangeEnd := FileSize;
+
+        IdHTTP.Get(IdHTTP.URL.URI, Buffer); // wait until it is done
+        while not DirectoryExists(ExtractFilePath(filename)) do
+          criaDiretorioOculto(ExtractFilePath(filename));
+        Buffer.SaveToFile(filename);
+      end;
+    finally
+      Buffer.Free;
+    end;
+  finally
+//    Application.MessageBox('Não foi possível localizar o arquivo remoto.',fmIndex.TITULO,mb_ok+mb_iconerror);
+    IdHTTP.Free;
+//    Buffer.Free;
+    close;
+  end;       
+end;
+
+procedure TfAtualiza.IdHttpWork(Sender: TObject; AWorkMode: TWorkMode;
+  const AWorkCount: Integer);
+Var 
+   ElapsedTime: Integer;
+begin
+  pbprogresso.Progress := AWorkCount;
+  ElapsedTime := SecondsBetween(Now(),IncioDownload);
+  if (ElapsedTime > 0)
+    then sStatus.Caption := 'Baixando ... ' + RetornaKiloBytes(AWorkCount) + ' de ' + RetornaKiloBytes(FileSize) +
+                            ' (' + Format('%s Kb/s', [FormatFloat('0.00',(AWorkCount/1024)/ElapsedTime)]) + ')'
+    else sStatus.Caption := 'Baixando ... ' + RetornaKiloBytes(AWorkCount) + ' de ' + RetornaKiloBytes(FileSize);
+  Application.ProcessMessages;
+end;
+
+procedure TfAtualiza.IdHttpWorkBegin(Sender: TObject; AWorkMode: TWorkMode;
+  const AWorkCountMax: Integer);
+begin
+  pbprogresso.MaxValue := AWorkCountMax;
+  IncioDownload := Now();
+end;
+
+procedure TfAtualiza.IdHttpWorkEnd(Sender: TObject; AWorkMode: TWorkMode);
+begin
+  sStatus.Caption := 'Download Finalizado ... ';
+  Application.ProcessMessages;
+  fmIndex.Espere(1000);
+  tmrDescompacta.enabled := True;
+end;
+
+function TfAtualiza.RetornaKiloBytes(ValorAtual: real): string;
+var
+  resultado : real;
+begin
+  resultado := ((ValorAtual / 1024) / 1024);
+  Result := FormatFloat('0.000 KBs', resultado);
+end;
+
+function TfAtualiza.RetornaPorcentagem(ValorMaximo,
+  ValorAtual: real): string;
+var
+  resultado: Real;
+begin
+  resultado := ((ValorAtual * 100) / ValorMaximo);
+  Result := FormatFloat('0%', resultado);
+end;
+
+procedure TfAtualiza.FormActivate(Sender: TObject);
+begin
+  criaDiretorioOculto(ExtractFilePath(filename));
+
+  pbprogresso.Progress := 0;
+  pbprogresso.MaxValue := 1;
+  FileSize := 0;
+
+  fmIndex.Espere(2000);
+  sStatus.Caption := 'Conectando ao servidor...';
+  Application.ProcessMessages;
+
+  if (acao = 'baixa') then atualiza;
+end;
+
+procedure TfAtualiza.descompacta;
+begin
+  CreateDir(filename+'_dir');
+
+  pbProgresso.MinValue := 0;
+  pbProgresso.MaxValue := 100;
+  pbProgresso.Progress := 0;
+  DFUnRar1.FileName := filename;
+  isExtracting:=True;
+  DFUnRar1.Directory := filename+'_dir';
+  DFUnRar1.Extract;
+  isExtracting:=False;
+
+  copia();
+end;
+
+procedure TfAtualiza.tmrDescompactaTimer(Sender: TObject);
+begin
+  if (FileExists(filename)) then
+  begin
+    tmrDescompacta.Enabled := false;
+    sStatus.Caption := 'Reiniciando coletânea...';
+    Application.ProcessMessages;
+    descompacta;
+  end;
+end;
+
+procedure TfAtualiza.copia;
+begin
+  param.Strings.Values['acao'] := 'atu';
+  param.Strings.Values['arquivo'] := arq;
+  param.Strings.Values['url'] := filename;
+  param.Strings.Values['caption'] := caption;
+  param.Strings.Values['label'] := sTitulo.Caption;
+  param.Strings.Values['menu'] := Application.ExeName;
+  param.Strings.Values['aba'] := IntToStr(fmIndex.PageControl1.ActivePageIndex);
+  param.Strings.Values['arq_bat'] := filename+'.bat';
+
+  Memo1.Lines.Clear;
+  Memo1.Lines.Add('cd "'+extractfilepath(Application.exename)+'"');
+  Memo1.Lines.Add('cls');
+  Memo1.Lines.Add('taskkill /im "'+ExtractFileName(Application.exename)+'"');
+  Memo1.Lines.Add('cls');
+  Memo1.Lines.Add('timeout 1');
+  Memo1.Lines.Add('cls');
+  geraListaBat();
+  Memo1.Lines.Add('cls');
+  Memo1.Lines.Add('"'+Application.ExeName+'" 0 '+fmIndex.EncodeBase64(param.Strings.Text)+' 1');
+  Memo1.Lines.Add('cls');
+  Memo1.Lines.Add('del /F "'+filename+'.bat"');
+  Memo1.Lines.SaveToFile(filename+'.bat');
+
+  WinExec(PChar(filename+'.bat'),SW_HIDE);
+  Application.Terminate;
+end;
+
+procedure TfAtualiza.geraListaBat(dir: string);
+var
+  SearchRec: TSearchRec;
+  Result : Integer;
+  old_dir,new_dir: string;
+begin
+  if (dir = '') then
+    dir := filename+'_dir\';
+
+  result := FindFirst(dir+'*.*', faAnyFile, SearchRec);
+  While Result = 0 do
+  begin
+    if (SearchRec.Name <> '.') and (SearchRec.Name <> '..') and (DirectoryExists(dir+SearchRec.Name)) then
+      geraListaBat(dir+SearchRec.Name+'\')
+    else
+    begin
+      if (SearchRec.Name <> '.') and (SearchRec.Name <> '..') then
+      begin
+        old_dir := dir+SearchRec.Name;
+        new_dir := StringReplace(old_dir,'\~temp\'+extractfilename(filename)+'_dir\','\',[rfIgnoreCase, rfReplaceAll]);
+
+        if not (DirectoryExists(ExtractFilePath(new_dir)))
+          then CreateDir(ExtractFilePath(new_dir));
+
+        if (FileExists(new_dir))
+          then Memo1.Lines.Add('del /F "'+new_dir+'"');
+
+        Memo1.Lines.Add('move /Y "'+old_dir+'" "'+new_dir+'"');
+        Memo1.Lines.Add('cls');
+      end;
+    end;
+    Result := FindNext(SearchRec);
+  end;
+end;
+
+procedure TfAtualiza.DFUnRar1Progress(Sender: TObject; FilesProcessed,
+  FileCount, SizeProcessed, SizeCount: Cardinal);
+begin
+  if (FileCount > 0) and (isExtracting) then
+  begin
+    pbProgresso.Progress := FilesProcessed * 100 div FileCount;
+    Application.ProcessMessages;
+  end;
+end;
+
+procedure TfAtualiza.criaDiretorioOculto(Pasta: TFileName);
+var
+  Attributes : Integer;
+begin
+  if not DirectoryExists(Pasta) then 
+    CreateDir(Pasta); 
+
+  Attributes := faDirectory + faHidden;
+  FileSetAttr(Pasta,Attributes);
+end;
+
+end.

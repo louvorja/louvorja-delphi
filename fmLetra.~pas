@@ -1,0 +1,159 @@
+unit fmLetra;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, Buttons, ComCtrls, sEdit,
+  sRichEdit, sLabel, acImage, sPanel, sButton, sSplitter, DBCtrls, DB,
+  ADODB;
+
+type
+  TfLetra = class(TForm)
+    sPanel2: TsPanel;
+    sDragBar2: TsPanel;
+    txtLocaliz: TsEdit;
+    Panel1: TsPanel;
+    imLogo: TsImage;
+    Panel2: TsPanel;
+    lblTitulo: TsLabel;
+    sPanel1: TsPanel;
+    tbCantada: TsButton;
+    tbInstrumental: TsButton;
+    reLetra: TsRichEdit;
+    sPanel3: TsPanel;
+    sSplitter1: TsSplitter;
+    qrBUSCA: TADOQuery;
+    dsBUSCA: TDataSource;
+    dbLista: TDBLookupListBox;
+    lblAlbum: TsLabel;
+    procedure FormActivate(Sender: TObject);
+    procedure tbCantadaClick(Sender: TObject);
+    procedure tbInstrumentalClick(Sender: TObject);
+    procedure txtLocalizChange(Sender: TObject);
+    procedure imLogoClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure ajusta();
+    procedure sSplitter1CanResize(Sender: TObject; var NewSize: Integer;
+      var Accept: Boolean);
+    procedure abreLetra();
+    procedure dbListaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    mMusica_C,mMusica_I,mMusica_A: string;
+    id_mus: Integer;
+  end;
+
+var
+  fLetra: TfLetra;
+
+implementation
+
+uses fmMenu;
+
+{$R *.dfm}
+
+procedure TfLetra.FormActivate(Sender: TObject);
+begin
+  lblTitulo.Caption := '';
+  lblAlbum.Caption := '';
+  reLetra.Text := '';
+  tbCantada.Enabled := false;
+  tbInstrumental.Enabled := false;
+  imLogo.Picture.Bitmap.Assign(Nil);
+  imLogo.Parent.Repaint;
+
+  qrBUSCA.Close;
+  qrBUSCA.Open;
+
+  qrBUSCA.Locate('ID',id_mus, []);
+
+  abreLetra();
+  txtLocaliz.SetFocus;
+  fmIndex.StatusMSG;
+  ajusta;
+end;
+
+procedure TfLetra.tbCantadaClick(Sender: TObject);
+begin
+  fmIndex.abreMusica(mMusica_C);
+end;
+
+procedure TfLetra.tbInstrumentalClick(Sender: TObject);
+begin
+  fmIndex.abreMusica(mMusica_I);
+end;
+
+procedure TfLetra.txtLocalizChange(Sender: TObject);
+begin
+  fmIndex.Localizar(txtLocaliz.text,reLetra,True);
+end;
+
+procedure TfLetra.imLogoClick(Sender: TObject);
+begin
+  fmIndex.abreMusica(mMusica_A,'album');
+end;
+
+procedure TfLetra.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  txtLocaliz.Text := '';
+end;
+
+procedure TfLetra.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  if (Key = VK_ESCAPE) then close;
+end;
+
+procedure TfLetra.ajusta;
+begin
+  txtLocaliz.Width := sDragBar2.Width - 100;
+end;
+
+procedure TfLetra.sSplitter1CanResize(Sender: TObject;
+  var NewSize: Integer; var Accept: Boolean);
+begin
+  ajusta;
+end;
+
+procedure TfLetra.abreLetra;
+begin
+  imLogo.Picture.Bitmap.Assign(Nil);
+  imLogo.Parent.Repaint;
+  if (fileexists(ExtractFilePath(Application.ExeName)+'config/'+qrBusca.fieldbyname('IMAGEM').AsString))
+    then imLogo.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'config/'+qrBusca.fieldbyname('IMAGEM').AsString);
+  imLogo.Width := 137;
+  imLogo.Height := 137;
+  imLogo.Parent.Repaint;
+  reLetra.Text := qrBusca.fieldbyname('LETRA').AsString;
+  lblTitulo.Caption := qrBusca.fieldbyname('NOME').AsString;
+  lblAlbum.Caption := qrBusca.fieldbyname('NOME_ALBUM').AsString;
+
+  mMusica_C := ExtractFilePath(Application.ExeName)+qrBusca.fieldbyname('CANTADA').AsString;
+  tbCantada.Enabled := (trim(qrBusca.fieldbyname('CANTADA').AsString) <> '');
+
+  mMusica_I := ExtractFilePath(Application.ExeName)+qrBusca.fieldbyname('INSTRUMENTAL').AsString;
+  tbInstrumental.Enabled := (trim(qrBusca.fieldbyname('INSTRUMENTAL').AsString) <> '');
+
+  if (qrBUSCA.fieldbyname('TIPO').AsString = 'HASD') then
+    mMusica_A := ChangeFileExt(ExtractFilePath(application.ExeName)+'config\'+qrBUSCA.fieldbyname('ALBUM').AsString,'.'+fmIndex.lerParam('Hinario','Formato','pps'))
+  else if trim(qrBusca.fieldbyname('ALBUM').AsString) <> '' then
+    mMusica_A := ExtractFilePath(Application.ExeName)+qrBusca.fieldbyname('ALBUM').AsString
+  else
+    mMusica_A := '';
+
+  fmIndex.formataTexto(reLetra);
+  txtLocalizChange(nil);
+  Application.ProcessMessages;
+end;
+
+procedure TfLetra.dbListaClick(Sender: TObject);
+begin
+  abreLetra();
+end;
+
+end.

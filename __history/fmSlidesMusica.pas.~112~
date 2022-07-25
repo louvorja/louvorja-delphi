@@ -1,0 +1,221 @@
+unit fmSlidesMusica;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  bsSkinCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  bsSkinGrids, bsDBGrids, Vcl.StdCtrls;
+
+type
+  TfSlidesMusica = class(TForm)
+    Panel2: TPanel;
+    DBGrid1: TbsSkinDBGrid;
+    bsSkinScrollBar7: TbsSkinScrollBar;
+    Panel: TPanel;
+    pnlLetra: TPanel;
+    imgFundo: TImage;
+    imgFundoTexto: TImage;
+    lblLetra: TbsSkinStdLabel;
+    lblLetra_aux: TbsSkinStdLabel;
+    pnlProgress: TGridPanel;
+    gSlide: TbsSkinGauge;
+    Panel3: TPanel;
+    gSlideTotal: TbsSkinGauge;
+    lblTempo: TbsSkinLabel;
+    GridPanel2: TGridPanel;
+    bsSkinSpeedButton1: TbsSkinSpeedButton;
+    btPausePlay: TbsSkinSpeedButton;
+    bsSkinSpeedButton3: TbsSkinSpeedButton;
+    bsSkinSpeedButton4: TbsSkinSpeedButton;
+    bsSkinSpeedButton5: TbsSkinSpeedButton;
+    Panel1: TPanel;
+    lblSlides: TbsSkinLabel;
+    pnlInfo: TPanel;
+    Timer1: TTimer;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormActivate(Sender: TObject);
+    procedure DBGrid1KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure DBGrid1KeyPress(Sender: TObject; var Key: Char);
+    procedure DBGrid1DrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TbsColumn; State: TGridDrawState);
+    procedure DBGrid1CellClick(Column: TbsColumn);
+    procedure bsSkinSpeedButton5Click(Sender: TObject);
+    procedure bsSkinSpeedButton1Click(Sender: TObject);
+    procedure btPausePlayClick(Sender: TObject);
+    procedure bsSkinSpeedButton3Click(Sender: TObject);
+    procedure bsSkinSpeedButton4Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+  private
+    { Private declarations }
+    procedure CreateParams(var Params: TCreateParams); override;
+  public
+    { Public declarations }
+    inicio: Boolean;
+    recno: Integer;
+  end;
+
+var
+  fSlidesMusica: TfSlidesMusica;
+
+implementation
+
+{$R *.dfm}
+
+uses fmMusica, fmMenu, dmComponentes;
+
+{ TfSlidesMusica }
+
+procedure TfSlidesMusica.bsSkinSpeedButton1Click(Sender: TObject);
+begin
+  fMusica.acaoSlide('ant');
+end;
+
+procedure TfSlidesMusica.btPausePlayClick(Sender: TObject);
+begin
+  fMusica.pauseplay;
+end;
+
+procedure TfSlidesMusica.bsSkinSpeedButton3Click(Sender: TObject);
+begin
+  fMusica.acaoSlide('prox');
+end;
+
+procedure TfSlidesMusica.bsSkinSpeedButton4Click(Sender: TObject);
+begin
+  fMusica.acaoSlide('ult');
+end;
+
+procedure TfSlidesMusica.bsSkinSpeedButton5Click(Sender: TObject);
+begin
+  fMusica.acaoSlide('pri');
+end;
+
+procedure TfSlidesMusica.CreateParams(var Params: TCreateParams);
+begin
+  inherited;
+  if (fmIndex.lerParam('Musicas', 'ModoOperador', '1') = '1')
+    then Params.WndParent := 0;
+end;
+
+procedure TfSlidesMusica.DBGrid1CellClick(Column: TbsColumn);
+begin
+  fMusica.irSlide(DM.cdsSLIDE_MUSICA.RecNo);
+end;
+
+procedure TfSlidesMusica.DBGrid1DrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TbsColumn;
+  State: TGridDrawState);
+var
+  R : TRect;
+begin
+   if DM.cdsSLIDE_MUSICA.RecNo = 1 then
+     DBGrid1.Canvas.Font.Color := $02AC3F6;
+  DBGrid1.Canvas.Brush.Color := $00353535;
+
+  if DM.cdsSLIDE_MUSICA.RecNo = fMusica.nslide then
+  begin
+    DBGrid1.Canvas.Brush.Color := $00FFFFFF;
+    DBGrid1.Canvas.Font.Color := $00353535;
+  end;
+//  if gdSelected in State then
+
+
+  R := Rect;
+  Dec(R.Bottom,0);
+  R.Top := R.Top + 10;
+  R.Left := R.Left + 10;
+
+  if Column.Index = 0 then
+  begin
+    DBGrid1.Canvas.FillRect(Rect);
+    DrawText(DBGrid1.Canvas.Handle,
+      IntToStr(DM.cdsSLIDE_MUSICA.RecNo),
+      Length(IntToStr(DM.cdsSLIDE_MUSICA.RecNo)),
+      R,
+      DT_WORDBREAK);
+  end
+  else If Column.Field = DM.cdsSLIDE_MUSICA.FieldByName('LETRA_UCASE') Then
+  Begin
+    DBGrid1.Canvas.FillRect(Rect);
+    DrawText(DBGrid1.Canvas.Handle,
+      PChar(DM.cdsSLIDE_MUSICA.FieldByName('LETRA_UCASE').AsString),
+      Length(DM.cdsSLIDE_MUSICA.FieldByName('LETRA_UCASE').AsString),
+      R,
+      DT_WORDBREAK);
+  End;
+
+end;
+
+procedure TfSlidesMusica.DBGrid1KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  Key := 0;
+end;
+
+procedure TfSlidesMusica.DBGrid1KeyPress(Sender: TObject; var Key: Char);
+begin
+  Key := #0;
+end;
+
+procedure TfSlidesMusica.FormActivate(Sender: TObject);
+begin
+  if (fmIndex.lerParam('Musicas', 'ModoOperador', '1') <> '1') then
+  begin
+    fSlidesMusica.AlphaBlend := True;
+    fSlidesMusica.AlphaBlendValue := 0;
+  end;
+
+  if (inicio <> true) then
+  begin
+    inicio := True;
+    recno := 0;
+    fSlidesMusica.Tag := 1;
+  end;
+end;
+
+procedure TfSlidesMusica.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  if (fmIndex.lerParam('Musicas', 'ModoOperador', '1') <> '1') then
+  begin
+    fSlidesMusica.Tag := 0;
+    fMusica.fecharSlides := True;
+    fMusica.Close;
+  end
+  else
+  begin
+    if fSlidesMusica.Tag = 1 then
+    begin
+      if (application.MessageBox('Ao fechar esta tela, os slides também serão fechados! Deseja fechar os slides?', fmIndex.titulo, mb_yesno + mb_iconquestion) <> 6) then
+      begin
+        Abort;
+        Exit;
+      end;
+      fSlidesMusica.Tag := 0;
+    end;
+    fMusica.fecharSlides := True;
+    fMusica.Close;
+  end;
+end;
+
+procedure TfSlidesMusica.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+procedure TfSlidesMusica.Timer1Timer(Sender: TObject);
+begin
+  if (DM.cdsSLIDE_MUSICA.Active) then
+  begin
+    fMusica.nslideOrdem := DM.cdsSLIDE_MUSICA.FieldByName('ORDEM').AsInteger;
+    lblLetra.Caption := IntToStr(fMusica.nslideOrdem);
+
+    DBGrid1.Refresh;
+  end;
+end;
+
+end.

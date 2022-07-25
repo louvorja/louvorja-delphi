@@ -1,0 +1,54 @@
+unit fmMusicaRetorno;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, bsSkinCtrls, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TfMusicaRetorno = class(TForm)
+    Panel: TPanel;
+    pnlProgress: TGridPanel;
+    gSlide: TbsSkinGauge;
+    gSlideTotal: TbsSkinGauge;
+    lblTempo: TbsSkinLabel;
+    Panel2: TPanel;
+    lblSlides: TbsSkinLabel;
+    lblLetra_prox: TbsSkinStdLabel;
+    pnlLetra: TPanel;
+    lblLetra: TbsSkinStdLabel;
+    lblLetra_aux: TbsSkinStdLabel;
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+  private
+    { Private declarations }
+    procedure CreateParams(var Params: TCreateParams); override;
+  public
+    { Public declarations }
+  end;
+
+var
+  fMusicaRetorno: TfMusicaRetorno;
+
+implementation
+
+{$R *.dfm}
+
+uses fmMenu;
+
+procedure TfMusicaRetorno.CreateParams(var Params: TCreateParams);
+begin
+  inherited;
+  if (fmIndex.ckMesmaJanela.checked = true) then Exit;
+  if (fmIndex.lerParam('Musicas', 'ModoRetorno', '1') = '1') then
+    Params.WndParent := 0;
+end;
+
+procedure TfMusicaRetorno.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+end.

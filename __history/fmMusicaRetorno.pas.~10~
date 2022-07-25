@@ -1,0 +1,47 @@
+unit fmMusicaRetorno;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, bsSkinCtrls, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TfMusicaRetorno = class(TForm)
+    Panel: TPanel;
+    pnlLetra: TPanel;
+    lblLetra: TbsSkinStdLabel;
+    lblLetra_aux: TbsSkinStdLabel;
+    pnlProgress: TGridPanel;
+    gSlide: TbsSkinGauge;
+    gSlideTotal: TbsSkinGauge;
+    lblTempo: TbsSkinLabel;
+    Panel2: TPanel;
+    lblSlides: TbsSkinLabel;
+    pnlLetra_prox: TPanel;
+    lblLetra_prox: TbsSkinStdLabel;
+    Panel1: TPanel;
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fMusicaRetorno: TfMusicaRetorno;
+
+implementation
+
+{$R *.dfm}
+
+uses fmMenu;
+
+procedure TfMusicaRetorno.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+end.

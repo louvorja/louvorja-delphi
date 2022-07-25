@@ -1,0 +1,158 @@
+object fAtualiza: TfAtualiza
+  Left = 379
+  Top = 277
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'Atualizando'
+  ClientHeight = 161
+  ClientWidth = 582
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sImage1: TsImage
+    Left = 3
+    Top = 2
+    Width = 128
+    Height = 128
+    AutoSize = True
+    Picture.Data = {07544269746D617000000000}
+    ImageIndex = 0
+    Images = fmIndex.ico_128x128
+    SkinData.SkinSection = 'CHECKBOX'
+  end
+  object sStatus: TsLabel
+    Left = 141
+    Top = 34
+    Width = 43
+    Height = 13
+    Caption = 'STATUS'
+  end
+  object pbProgresso: TsGauge
+    Left = 139
+    Top = 62
+    Width = 435
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    ForeColor = clBlack
+    MaxValue = 100
+    Suffix = '%'
+  end
+  object sTitulo: TsLabel
+    Left = 141
+    Top = 8
+    Width = 37
+    Height = 13
+    Caption = 'MENU'
+    ParentFont = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+  end
+  object sDragBar1: TsPanel
+    Left = 0
+    Top = 128
+    Width = 582
+    Height = 33
+    Align = alBottom
+    Caption = ' '
+    ParentBackground = False
+    TabOrder = 2
+    SkinData.SkinSection = 'DRAGBAR'
+  end
+  object param: TValueListEditor
+    Left = 2
+    Top = 10
+    Width = 129
+    Height = 76
+    Strings.Strings = (
+      '=')
+    TabOrder = 1
+    Visible = False
+    ColWidths = (
+      150
+      -27)
+  end
+  object Memo1: TMemo
+    Left = 386
+    Top = 4
+    Width = 191
+    Height = 48
+    Lines.Strings = (
+      'Memo1')
+    ScrollBars = ssBoth
+    TabOrder = 0
+    Visible = False
+  end
+  object IdHttp: TIdHTTP
+    IOHandler = IdSSLIOHandlerSocketOpenSSL1
+    OnWork = IdHttpWork
+    OnWorkBegin = IdHttpWorkBegin
+    OnWorkEnd = IdHttpWorkEnd
+    AuthRetries = 0
+    AuthProxyRetries = 0
+    AllowCookies = True
+    HandleRedirects = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = 0
+    Request.ContentRangeStart = 0
+    Request.ContentRangeInstanceLength = 0
+    Request.ContentType = 'text/html'
+    Request.Accept = 'text/html, */*'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 76
+    Top = 23
+  end
+  object IdSSLIOHandlerSocketOpenSSL1: TIdSSLIOHandlerSocketOpenSSL
+    MaxLineAction = maException
+    Port = 0
+    DefaultPort = 0
+    SSLOptions.Method = sslvSSLv2
+    SSLOptions.Mode = sslmUnassigned
+    SSLOptions.VerifyMode = []
+    SSLOptions.VerifyDepth = 0
+    Left = 456
+    Top = 13
+  end
+  object lmdEXEC: TLMDStarter
+    Left = 275
+    Top = 16
+  end
+  object tmrDescompacta: TTimer
+    Enabled = False
+    OnTimer = tmrDescompactaTimer
+    Left = 285
+    Top = 85
+  end
+  object DFUnRar1: TDFUnRar
+    CanProgress = False
+    Mode = DFRAR_EXTRACT
+    OverrideEvent = OR_ALWAYS
+    PromptForPass = False
+    PromptForVolumn = False
+    StopProcessing = False
+    OnProgress = DFUnRar1Progress
+    Left = 368
+    Top = 82
+  end
+end

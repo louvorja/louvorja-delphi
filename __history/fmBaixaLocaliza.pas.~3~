@@ -1,0 +1,48 @@
+unit fmBaixaLocaliza;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, ValEdit, OleCtrls, ShellApi, bsSkinCtrls,
+  bsSkinShellCtrls, bsribbon, BusinessSkinForm,
+  bsPngImageList;
+
+type
+  TfBaixaLocaliza = class(TForm)
+    spnlVersao: TPanel;
+    OpenDialog1: TbsSkinOpenDialog;
+    GridPanel4: TGridPanel;
+    Image1: TbsPngImageView;
+    lbl1: TbsSkinStdLabel;
+    lbl2: TbsSkinStdLabel;
+    lblVAtu: TbsSkinStdLabel;
+    lbl3: TbsSkinStdLabel;
+    lblVNova: TbsSkinStdLabel;
+    lblMsg: TbsSkinStdLabel;
+    bsBusinessSkinForm1: TbsBusinessSkinForm;
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fBaixaLocaliza: TfBaixaLocaliza;
+
+implementation
+
+uses
+  fmMenu;
+
+
+{$R *.dfm}
+
+procedure TfBaixaLocaliza.FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+end.
+

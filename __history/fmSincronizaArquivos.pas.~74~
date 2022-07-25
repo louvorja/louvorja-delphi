@@ -1,0 +1,240 @@
+unit fmSincronizaArquivos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, BusinessSkinForm, bsSkinCtrls,
+  bsSkinBoxCtrls, Vcl.StdCtrls, Vcl.ComCtrls, Data.DB, Data.Win.ADODB,
+  Vcl.ExtCtrls, WinInet;
+
+type
+  TfSincronizaArquivos = class(TForm)
+    bsBusinessSkinForm1: TbsBusinessSkinForm;
+    bsSkinPanel1: TbsSkinPanel;
+    bsSkinButton2: TbsSkinButton;
+    btBaixa: TbsSkinButton;
+    bsSkinPanel2: TbsSkinPanel;
+    lvArquivos: TbsSkinListView;
+    lbl1: TbsSkinStdLabel;
+    gProgresso: TbsSkinGauge;
+    qrVERIFICA: TADOQuery;
+    bsSkinScrollBar8: TbsSkinScrollBar;
+    lblStatus: TbsSkinStdLabel;
+    tmrFecha: TTimer;
+    GridPanel75: TGridPanel;
+    bsSkinSpeedButton53: TbsSkinSpeedButton;
+    bsSkinSpeedButton54: TbsSkinSpeedButton;
+    bsSkinSpeedButton55: TbsSkinSpeedButton;
+    btVerifica: TbsSkinButton;
+    procedure FormActivate(Sender: TObject);
+    procedure verificaArquivos();
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure btBaixaClick(Sender: TObject);
+    procedure bsSkinButton2Click(Sender: TObject);
+    procedure tmrFechaTimer(Sender: TObject);
+    procedure bsSkinSpeedButton53Click(Sender: TObject);
+    procedure bsSkinSpeedButton54Click(Sender: TObject);
+    procedure bsSkinSpeedButton55Click(Sender: TObject);
+    procedure btVerificaClick(Sender: TObject);
+  private
+    { Private declarations }
+    alerta: Boolean;
+  public
+    { Public declarations }
+  end;
+
+var
+  fSincronizaArquivos: TfSincronizaArquivos;
+
+implementation
+
+uses
+  fmMenu, fmAtualiza;
+
+{$R *.dfm}
+
+procedure TfSincronizaArquivos.btVerificaClick(Sender: TObject);
+begin
+  verificaArquivos();
+end;
+
+procedure TfSincronizaArquivos.bsSkinButton2Click(Sender: TObject);
+begin
+  tmrFecha.Enabled := False;
+  alerta := False;
+  qrVERIFICA.Last;
+  tmrFecha.Enabled := True;
+end;
+
+procedure TfSincronizaArquivos.bsSkinSpeedButton53Click(Sender: TObject);
+var
+  i: integer;
+begin
+  for i := 0 to lvArquivos.Items.Count - 1
+    do lvArquivos.Items.Item[i].Checked := True;
+end;
+
+procedure TfSincronizaArquivos.bsSkinSpeedButton54Click(Sender: TObject);
+var
+  i: integer;
+begin
+  for i := 0 to lvArquivos.Items.Count - 1
+    do lvArquivos.Items.Item[i].Checked := False;
+end;
+
+procedure TfSincronizaArquivos.bsSkinSpeedButton55Click(Sender: TObject);
+var
+  i: integer;
+begin
+  for i := 0 to lvArquivos.Items.Count - 1
+    do lvArquivos.Items.Item[i].Checked := not lvArquivos.Items.Item[i].Checked;
+end;
+
+procedure TfSincronizaArquivos.btBaixaClick(Sender: TObject);
+var
+  lista: TStringList;
+  i: integer;
+  Flags: Cardinal;
+  Item: TListItem;
+begin
+  lista := TStringList.Create;
+  for i := 0 to lvArquivos.Items.Count - 1 do
+  begin
+    if (lvArquivos.Items.Item[i].Checked) then
+      lista.Add(lvArquivos.Items.Item[i].SubItems[0]);
+  end;
+
+  if (lista.Count <= 0) then
+  begin
+    application.MessageBox(PChar('Nenhum arquivo selecionado!'), fmIndex.titulo, mb_ok + MB_ICONEXCLAMATION);
+    Exit;
+  end;
+
+  if not (InternetGetConnectedState(@Flags, 0)) then
+  begin
+    application.messagebox(PChar('Não foi possível conectar à internet! Verifique sua conexão e tente novamente.'), fmIndex.TITULO, MB_OK + mb_iconerror);
+    Exit;
+  end;
+
+  Application.CreateForm(TfAtualiza, fAtualiza);
+  fAtualiza.arquivos := lista;
+  fAtualiza.ShowModal;
+
+  lvArquivos.Items.Clear;
+  if (fAtualiza.arquivos_falha.Count > 0) then
+  begin
+    gProgresso.Value := 0;
+    lblStatus.Caption := '';
+
+    gProgresso.MaxValue := fAtualiza.arquivos_falha.Count;
+    btBaixa.Enabled := False;
+    btVerifica.Enabled := False;
+    for i := 0 to fAtualiza.arquivos_falha.Count-1 do
+    begin
+      lblStatus.Caption := 'Verificando falhas... '+inttostr(qrVERIFICA.RecNo)+' / '+inttostr(qrVERIFICA.RecordCount);
+
+      Item := lvArquivos.Items.Add;
+      Item.Checked := True;
+      Item.Caption := ExtractFileName(fAtualiza.arquivos_falha[i]);
+      Item.SubItems.Add(fAtualiza.arquivos_falha[i]);
+      Item.SubItems.Add('Falha no Download');
+
+      gProgresso.Value := qrVERIFICA.RecNo;
+      Application.ProcessMessages;
+    end;
+
+    btBaixa.Enabled := True;
+    btVerifica.Enabled := True;
+    lblStatus.Caption := 'Falha no Download: '+inttostr(fAtualiza.arquivos_falha.Count);
+
+    if (application.MessageBox(PChar('Alguns arquivos não puderam ser baixados! Deseja tentar baixá-los novamente?'), fmIndex.titulo, mb_yesno + mb_iconquestion) = 6) then
+    begin
+      btBaixaClick(Sender);
+      Exit;
+    end;
+  end
+  else
+  begin
+    application.MessageBox(PChar('Arquivos atualizadoscom sucesso!'), fmIndex.titulo, mb_ok + mb_iconinformation);
+    tmrFecha.Enabled := False;
+    alerta := False;
+    qrVERIFICA.Last;
+    tmrFecha.Enabled := True;
+  end;
+end;
+
+procedure TfSincronizaArquivos.FormActivate(Sender: TObject);
+begin
+  verificaArquivos();
+end;
+
+procedure TfSincronizaArquivos.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  alerta := true;
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+procedure TfSincronizaArquivos.tmrFechaTimer(Sender: TObject);
+begin
+  lblStatus.Caption := '';
+  Close;
+end;
+
+procedure TfSincronizaArquivos.verificaArquivos;
+var
+  Item: TListItem;
+  existe: Boolean;
+  a_sim,a_nao: Integer;
+begin
+  alerta := true;
+  gProgresso.Value := 0;
+  lvArquivos.Items.Clear;
+  lblStatus.Caption := '';
+  a_sim := 0;
+  a_nao := 0;
+
+  qrVERIFICA.Close;
+  qrVERIFICA.Open;
+  gProgresso.MaxValue := qrVERIFICA.RecordCount;
+  btBaixa.Enabled := False;
+  btVerifica.Enabled := False;
+  while not qrVERIFICA.eof do
+  begin
+    lblStatus.Caption := 'Verificando... '+inttostr(qrVERIFICA.RecNo)+' / '+inttostr(qrVERIFICA.RecordCount);
+    existe := (FileExists(ExtractFilePath(application.ExeName)+'/'+qrVERIFICA.FieldByName('URL').AsString));
+
+    if not existe then
+    begin
+      Item := lvArquivos.Items.Add;
+      Item.Checked := not existe;
+      Item.Caption := qrVERIFICA.FieldByName('ARQUIVO').AsString;
+      Item.SubItems.Add(qrVERIFICA.FieldByName('URL').AsString);
+      a_nao := a_nao + 1;
+      Item.SubItems.Add('Não encontrado');
+    end
+    else a_sim := a_sim + 1;
+
+    gProgresso.Value := qrVERIFICA.RecNo;
+    Application.ProcessMessages;
+    qrVERIFICA.Next;
+  end;
+
+  btBaixa.Enabled := True;
+  btVerifica.Enabled := True;
+  lblStatus.Caption := 'Encontrados: '+inttostr(a_sim)+' / Em falta: '+inttostr(a_nao);
+
+  if (alerta) and (a_nao <= 0) then
+  begin
+    application.MessageBox('Sua coletânea está completa! Nenhum arquivo está faltando.', fmIndex.titulo, mb_ok + MB_ICONINFORMATION);
+  end
+  else if (alerta) then
+  begin
+    if (application.MessageBox(PChar('Sua coletânea possui '+inttostr(a_nao) + ' arquivo(s) faltando!' + #13#10 + 'Deseja baixar estes arquivos agora? (necessário conexão com a internet)'), fmIndex.titulo, mb_yesno + mb_iconquestion) = 6) then
+      btBaixaClick(nil)
+  end;
+
+end;
+
+end.

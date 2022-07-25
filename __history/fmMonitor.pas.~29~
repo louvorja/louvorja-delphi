@@ -1,0 +1,200 @@
+unit fmMonitor;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, Buttons, ExtCtrls, OleCtrls, StdCtrls, bsSkinCtrls,
+  bsSkinExCtrls, bsPngImageList, bsdbctrls, Vcl.DBCGrids;
+
+type
+  TfMonitor = class(TForm)
+    Notebook1: TbsSkinNotebook;
+    bsSkinPanel1: TbsSkinPanel;
+    bsSkinPanel2: TbsSkinPanel;
+    bsSkinPanel3: TbsSkinPanel;
+    bsSkinPanel4: TbsSkinPanel;
+    bsSkinPanel5: TbsSkinPanel;
+    bsSkinPanel6: TbsSkinPanel;
+    bsSkinPanel7: TbsSkinPanel;
+    bsSkinPanel8: TbsSkinPanel;
+    bsSkinPanel9: TbsSkinPanel;
+    bsSkinPanel10: TbsSkinPanel;
+    bsSkinPanel11: TbsSkinPanel;
+    bsSkinPanel12: TbsSkinPanel;
+    gEscSbR: TbsSkinGauge;
+    pnlEscSB: TPanel;
+    bsSkinPanel13: TbsSkinPanel;
+    bsSkinPanel14: TbsSkinPanel;
+    bsSkinPanel15: TbsSkinPanel;
+    bsSkinPanel16: TbsSkinPanel;
+    bsSkinPanel17: TbsSkinPanel;
+    bsSkinPanel18: TbsSkinPanel;
+    bsSkinPanel19: TbsSkinPanel;
+    bsSkinPanel20: TbsSkinPanel;
+    imgEscSB: TImage;
+    lmdEscSbR: TLabel;
+    lmdEscSb: TLabel;
+    bsSkinPanel21: TbsSkinPanel;
+    bsSkinPanel22: TbsSkinPanel;
+    Panel1: TPanel;
+    DBCtrlGrid: TDBCtrlGrid;
+    Panel2: TPanel;
+    GridPanel2: TGridPanel;
+    bsSkinDBText1: TbsSkinDBText;
+    ico: TbsPngImageView;
+    bsSkinDBText2: TbsSkinDBText;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    imgCapa: TImage;
+    GridPanel1: TGridPanel;
+    lblTitulo: TbsSkinStdLabel;
+    lblSubtitulo: TbsSkinStdLabel;
+    pnlBiblia: TPanel;
+    imgBiblia: TImage;
+    lmdBibliaTxt: TLabel;
+    lmdBibliaInfo: TLabel;
+    pnlBibliaBusca: TPanel;
+    imgBibliaBusca: TImage;
+    lmdBibliaBuscaTxt: TLabel;
+    lmdBibliaBuscaInfo: TLabel;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormActivate(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure lbSorteioItemCheckClick(Sender: TObject);
+    procedure pnlSorteioEClose(Sender: TObject);
+    procedure pnlSorteioDClose(Sender: TObject);
+    procedure pnlSorteioNMEClose(Sender: TObject);
+    procedure pnlSorteioNMDClose(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+  private
+    { Private declarations }
+    procedure CreateParams(var Params: TCreateParams); override;
+  public
+    { Public declarations }
+    tag: integer;
+  end;
+
+var
+  fMonitor: TfMonitor;
+
+implementation
+
+uses
+  fmMenu;
+
+{$R *.dfm}
+
+procedure TfMonitor.FormClose(Sender: TObject; var Action: TCloseAction);
+var
+  i: integer;
+begin
+  if (fMonitor.AlphaBlendValue > 0) then
+  begin
+    if fmIndex.ckFadeForm.Checked then
+    begin
+      for i := fMonitor.AlphaBlendValue downto 0 do
+      begin
+        fMonitor.AlphaBlendValue := i;
+        sleep(1);
+      end;
+    end
+    else fMonitor.AlphaBlendValue := 0;
+  end;
+
+  fmIndex.expandirArea(nil);
+  fMonitor := nil;
+end;
+
+procedure TfMonitor.FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+procedure TfMonitor.FormResize(Sender: TObject);
+begin
+  if Notebook1.PageIndex = 3 then
+  begin
+    lmdEscSb.Top := 0;
+    lmdEscSb.Left := 0;
+    lmdEscSb.Width := pnlEscSB.Width;
+    lmdEscSb.Height := round(pnlEscSB.Height / 2);
+    lmdEscSbR.Top := round(pnlEscSB.Height / 2);
+    lmdEscSbR.Left := 0;
+    lmdEscSbR.Width := pnlEscSB.Width;
+    lmdEscSbR.Height := round(pnlEscSB.Height / 2);
+  end;
+end;
+
+procedure TfMonitor.lbSorteioItemCheckClick(Sender: TObject);
+begin
+  fmIndex.lbSorteio.ItemIndex := lbSorteio.ItemIndex;
+  fmIndex.lbSorteio.Items[lbSorteio.ItemIndex].Checked := lbSorteio.Items[lbSorteio.ItemIndex].Checked;
+  fmIndex.lbSorteioItemCheckClick(Sender);
+end;
+
+procedure TfMonitor.pnlSorteioDClose(Sender: TObject);
+begin
+  fmIndex.gravaParam('Sorteio', 'Numeros Sorteados (Extendido)', '0');
+  fmIndex.copiaDadosTelaExtendida();
+  fmIndex.ckSorteioExp.ItemChecked[1] := false;
+end;
+
+procedure TfMonitor.pnlSorteioEClose(Sender: TObject);
+begin
+  fmIndex.gravaParam('Sorteio', 'Numeros Sorteio (Extendido)', '0');
+  fmIndex.copiaDadosTelaExtendida();
+  fmIndex.ckSorteioExp.ItemChecked[0] := false;
+end;
+
+procedure TfMonitor.pnlSorteioNMDClose(Sender: TObject);
+begin
+  fmIndex.gravaParam('Sorteio Nomes', 'Numeros Sorteados (Extendido)', '0');
+  fmIndex.copiaDadosTelaExtendida();
+  fmIndex.ckSorteioExpNM.ItemChecked[1] := false;
+end;
+
+procedure TfMonitor.pnlSorteioNMEClose(Sender: TObject);
+begin
+  fmIndex.gravaParam('Sorteio Nomes', 'Numeros Sorteio (Extendido)', '0');
+  fmIndex.copiaDadosTelaExtendida();
+  fmIndex.ckSorteioExpNM.ItemChecked[0] := false;
+end;
+
+procedure TfMonitor.FormActivate(Sender: TObject);
+begin
+  case tag of
+    1:
+      caption := fmIndex.TITULO + ' - Bíblia';
+    2:
+      caption := fmIndex.TITULO + ' - Busca Bíblica';
+    3:
+      caption := fmIndex.TITULO + ' - Escola Sabatina';
+    4:
+      caption := fmIndex.TITULO + ' - Sorteio';
+    5:
+      caption := fmIndex.TITULO + ' - Cronômetro';
+    6:
+      caption := fmIndex.TITULO + ' - Sorteio de Nomes';
+    7:
+      caption := fmIndex.TITULO + ' - Painel Dinâmico';
+    8:
+      caption := fmIndex.TITULO + ' - Texto Interativo';
+    9:
+      caption := fmIndex.TITULO + ' - Relógio';
+  else
+    caption := fmIndex.TITULO + ' - ##' + IntToStr(tag);
+  end;
+
+  Notebook1.PageIndex := tag;
+end;
+
+procedure TfMonitor.CreateParams(var Params: TCreateParams);
+begin
+  inherited CreateParams(Params);
+  if (fmIndex.ckMesmaJanela.checked = true) then Exit;
+  Params.WndParent := 0;
+end;
+
+end.
+

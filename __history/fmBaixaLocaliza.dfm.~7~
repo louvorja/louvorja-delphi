@@ -1,0 +1,530 @@
+object fBaixaLocaliza: TfBaixaLocaliza
+  Left = 379
+  Top = 277
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'Atualizar Colet'#226'nea...'
+  ClientHeight = 191
+  ClientWidth = 582
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnKeyUp = FormKeyUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object spnlVersao: TPanel
+    Left = 0
+    Top = 0
+    Width = 582
+    Height = 138
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'spnl1'
+    ShowCaption = False
+    TabOrder = 0
+    object GridPanel4: TGridPanel
+      Left = 0
+      Top = 0
+      Width = 582
+      Height = 138
+      Align = alClient
+      BevelOuter = bvNone
+      ColumnCollection = <
+        item
+          SizeStyle = ssAbsolute
+          Value = 110.000000000000000000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 100.000000000000000000
+        end
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Image1
+          Row = 0
+          RowSpan = 6
+        end
+        item
+          Column = 1
+          ColumnSpan = 2
+          Control = lbl1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = lbl2
+          Row = 2
+        end
+        item
+          Column = 2
+          Control = lblVAtu
+          Row = 2
+        end
+        item
+          Column = 1
+          Control = lbl3
+          Row = 3
+        end
+        item
+          Column = 2
+          Control = lblVNova
+          Row = 3
+        end
+        item
+          Column = 1
+          ColumnSpan = 2
+          Control = lblMsg
+          Row = 5
+        end>
+      RowCollection = <
+        item
+          Value = 16.666666666666650000
+        end
+        item
+          Value = 16.666666666666650000
+        end
+        item
+          Value = 16.666666666666650000
+        end
+        item
+          Value = 16.666666666666670000
+        end
+        item
+          Value = 16.666666666666680000
+        end
+        item
+          Value = 16.666666666666690000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 10.000000000000000000
+        end>
+      ShowCaption = False
+      TabOrder = 0
+      ExplicitLeft = 24
+      ExplicitTop = -1
+      object Image1: TbsPngImageView
+        Left = 0
+        Top = 0
+        Width = 110
+        Height = 126
+        DoubleBuffered = False
+        ReflectionEffect = False
+        PngImageList = fmIndex.ico_64x64
+        ImageIndex = 4
+        Align = alClient
+        Center = True
+        ExplicitWidth = 64
+        ExplicitHeight = 64
+      end
+      object lbl1: TbsSkinStdLabel
+        Left = 110
+        Top = 0
+        Width = 472
+        Height = 21
+        EllipsType = bsetNone
+        UseSkinFont = True
+        UseSkinColor = True
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = fmIndex.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Align = alClient
+        Caption = 'H'#225' uma nova vers'#227'o dispon'#237'vel de sua colet'#226'nea.'
+        Layout = tlCenter
+        ExplicitLeft = 80
+        ExplicitWidth = 238
+        ExplicitHeight = 13
+      end
+      object lbl2: TbsSkinStdLabel
+        Left = 110
+        Top = 42
+        Width = 100
+        Height = 21
+        EllipsType = bsetNone
+        UseSkinFont = True
+        UseSkinColor = True
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = fmIndex.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        Align = alClient
+        Caption = 'Vers'#227'o atual:'
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitLeft = 80
+        ExplicitWidth = 64
+        ExplicitHeight = 13
+      end
+      object lblVAtu: TbsSkinStdLabel
+        Left = 210
+        Top = 42
+        Width = 372
+        Height = 21
+        EllipsType = bsetNone
+        UseSkinFont = True
+        UseSkinColor = True
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = fmIndex.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        Align = alClient
+        AutoSize = False
+        Caption = '00.00.00.00'
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitLeft = 284
+        ExplicitTop = 23
+        ExplicitWidth = 3
+        ExplicitHeight = 13
+      end
+      object lbl3: TbsSkinStdLabel
+        Left = 110
+        Top = 63
+        Width = 100
+        Height = 21
+        EllipsType = bsetNone
+        UseSkinFont = True
+        UseSkinColor = True
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = fmIndex.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        Align = alClient
+        Caption = 'Nova vers'#227'o:'
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitLeft = 80
+        ExplicitWidth = 65
+        ExplicitHeight = 13
+      end
+      object lblVNova: TbsSkinStdLabel
+        Left = 210
+        Top = 63
+        Width = 372
+        Height = 21
+        EllipsType = bsetNone
+        UseSkinFont = True
+        UseSkinColor = True
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = fmIndex.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        Align = alClient
+        AutoSize = False
+        Caption = '00.00.00.00'
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitLeft = 284
+        ExplicitTop = 43
+        ExplicitWidth = 3
+        ExplicitHeight = 13
+      end
+      object lblMsg: TbsSkinStdLabel
+        Left = 110
+        Top = 105
+        Width = 472
+        Height = 21
+        EllipsType = bsetNone
+        UseSkinFont = True
+        UseSkinColor = True
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = fmIndex.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Align = alClient
+        Caption = 'Deseja atualizar sua colet'#226'nea?'
+        Layout = tlCenter
+        WordWrap = True
+        ExplicitLeft = 80
+        ExplicitWidth = 152
+        ExplicitHeight = 13
+      end
+    end
+  end
+  object GridPanel2: TGridPanel
+    Left = 0
+    Top = 138
+    Width = 582
+    Height = 42
+    Align = alTop
+    BevelOuter = bvNone
+    ColumnCollection = <
+      item
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = ssAbsolute
+        Value = 110.000000000000000000
+      end
+      item
+        SizeStyle = ssAbsolute
+        Value = 5.000000000000000000
+      end
+      item
+        SizeStyle = ssAbsolute
+        Value = 110.000000000000000000
+      end
+      item
+        SizeStyle = ssAbsolute
+        Value = 5.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = -1
+        Row = -1
+      end
+      item
+        Column = -1
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = bsSkinButton1
+        Row = 1
+      end
+      item
+        Column = 3
+        Control = btErro
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        SizeStyle = ssAbsolute
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = ssAbsolute
+        Value = 5.000000000000000000
+      end>
+    ShowCaption = False
+    TabOrder = 1
+    ExplicitTop = 149
+    ExplicitWidth = 469
+    object bsSkinButton1: TbsSkinButton
+      Left = 352
+      Top = 5
+      Width = 110
+      Height = 32
+      HintImageIndex = 0
+      TabOrder = 0
+      SkinData = fmIndex.bsSkinData1
+      SkinDataName = 'button'
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 13
+      DefaultFont.Name = 'Tahoma'
+      DefaultFont.Style = []
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinFont = True
+      Transparent = False
+      CheckedMode = False
+      ImageList = fmIndex.ico_24x24
+      ImageIndex = 0
+      AlwaysShowLayeredFrame = False
+      UseSkinSize = True
+      UseSkinFontColor = True
+      RepeatMode = False
+      RepeatInterval = 100
+      AllowAllUp = False
+      TabStop = True
+      CanFocused = True
+      Down = False
+      GroupIndex = 0
+      Caption = ' Sim'
+      NumGlyphs = 1
+      Spacing = 1
+      Align = alClient
+      ExplicitLeft = 27
+      ExplicitTop = 6
+    end
+    object btErro: TbsSkinButton
+      Left = 467
+      Top = 5
+      Width = 110
+      Height = 32
+      HintImageIndex = 0
+      TabOrder = 1
+      SkinData = fmIndex.bsSkinData1
+      SkinDataName = 'button'
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 13
+      DefaultFont.Name = 'Tahoma'
+      DefaultFont.Style = []
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinFont = True
+      Transparent = False
+      CheckedMode = False
+      ImageList = fmIndex.ico_24x24
+      ImageIndex = 1
+      AlwaysShowLayeredFrame = False
+      UseSkinSize = True
+      UseSkinFontColor = True
+      RepeatMode = False
+      RepeatInterval = 100
+      AllowAllUp = False
+      TabStop = True
+      CanFocused = True
+      Down = False
+      GroupIndex = 0
+      Caption = ' N'#227'o'
+      NumGlyphs = 1
+      Spacing = 1
+      Align = alClient
+      ExplicitLeft = 468
+      ExplicitTop = 6
+    end
+  end
+  object OpenDialog1: TbsSkinOpenDialog
+    ShowThumbnails = True
+    ShowHiddenFiles = False
+    ToolButtonsTransparent = False
+    OverwritePromt = False
+    DialogWidth = 0
+    DialogHeight = 0
+    DialogMinWidth = 0
+    DialogMinHeight = 0
+    CheckFileExists = True
+    MultiSelection = False
+    AlphaBlend = False
+    AlphaBlendValue = 225
+    AlphaBlendAnimation = False
+    CtrlAlphaBlend = False
+    CtrlAlphaBlendValue = 225
+    CtrlAlphaBlendAnimation = False
+    LVHeaderSkinDataName = 'header'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 13
+    DefaultFont.Name = 'Tahoma'
+    DefaultFont.Style = []
+    Title = 'Open file'
+    Filter = 'All files|*.*'
+    FilterIndex = 1
+    Left = 496
+    Top = 16
+  end
+  object bsBusinessSkinForm1: TbsBusinessSkinForm
+    UseRibbon = False
+    ShowMDIScrollBars = True
+    WindowState = wsNormal
+    QuickButtons = <
+      item
+        ImageIndex = 15
+        Enabled = True
+        Visible = False
+        Caption = 'Atualizar Colet'#226'nea'
+      end>
+    QuickButtonsShowHint = False
+    QuickButtonsShowDivider = True
+    ClientInActiveEffect = False
+    ClientInActiveEffectType = bsieSemiTransparent
+    DisableSystemMenu = False
+    AlwaysResize = False
+    PositionInMonitor = bspScreenCenter
+    UseFormCursorInNCArea = False
+    MaxMenuItemsInWindow = 0
+    ClientWidth = 0
+    ClientHeight = 0
+    HideCaptionButtons = False
+    AlwaysShowInTray = False
+    LogoBitMapTransparent = False
+    AlwaysMinimizeToTray = False
+    UseSkinFontInMenu = True
+    UseSkinFontInCaption = True
+    UseSkinSizeInMenu = True
+    ShowIcon = False
+    MaximizeOnFullScreen = False
+    AlphaBlend = False
+    AlphaBlendAnimation = False
+    AlphaBlendValue = 200
+    ShowObjectHint = False
+    MenusAlphaBlend = False
+    MenusAlphaBlendAnimation = False
+    MenusAlphaBlendValue = 200
+    DefCaptionFont.Charset = DEFAULT_CHARSET
+    DefCaptionFont.Color = clBtnText
+    DefCaptionFont.Height = 13
+    DefCaptionFont.Name = 'Tahoma'
+    DefCaptionFont.Style = [fsBold]
+    DefInActiveCaptionFont.Charset = DEFAULT_CHARSET
+    DefInActiveCaptionFont.Color = clBtnShadow
+    DefInActiveCaptionFont.Height = 13
+    DefInActiveCaptionFont.Name = 'Tahoma'
+    DefInActiveCaptionFont.Style = [fsBold]
+    DefMenuItemHeight = 20
+    DefMenuItemFont.Charset = DEFAULT_CHARSET
+    DefMenuItemFont.Color = clWindowText
+    DefMenuItemFont.Height = 13
+    DefMenuItemFont.Name = 'Tahoma'
+    DefMenuItemFont.Style = []
+    UseDefaultSysMenu = True
+    MinHeight = 0
+    MinWidth = 0
+    MaxHeight = 0
+    MaxWidth = 0
+    MinClientHeight = 0
+    MinClientWidth = 0
+    MaxClientHeight = 0
+    MaxClientWidth = 0
+    Magnetic = False
+    MagneticSize = 5
+    BorderIcons = []
+    Left = 327
+    Top = 44
+  end
+end

@@ -1,0 +1,136 @@
+unit fmFavoritos;
+
+interface
+
+uses
+  Winapi.Windows, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Controls, Vcl.Forms, BusinessSkinForm, Vcl.ExtCtrls,
+  bsdbctrls, Vcl.DBCGrids,
+  bsPngImageList, Vcl.StdCtrls, bsSkinCtrls;
+
+type
+  TfFavoritos = class(TForm)
+    bsBusinessSkinForm1: TbsBusinessSkinForm;
+    dbcFavoritos: TDBCtrlGrid;
+    grpnlFavoritos: TGridPanel;
+    skLitItem: TbsSkinDBText;
+    imFavIcon: TbsPngImageView;
+    imgFavBtUp: TbsPngImageView;
+    imgFavBtDown: TbsPngImageView;
+    Panel1: TPanel;
+    Image1: TbsPngImageView;
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure dbcFavoritosPaintPanel(DBCtrlGrid: TDBCtrlGrid; Index: Integer);
+    procedure Image1Click(Sender: TObject);
+    procedure imgFavBtUpClick(Sender: TObject);
+    procedure imgFavBtDownClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fFavoritos: TfFavoritos;
+
+implementation
+
+{$R *.dfm}
+
+uses fmMenu;
+
+procedure TfFavoritos.dbcFavoritosPaintPanel(DBCtrlGrid: TDBCtrlGrid;
+  Index: Integer);
+var
+  icon: Integer;
+begin
+  icon := fmIndex.cdsFavoritos.FieldByName('IMAGEM').AsInteger;
+
+  imgFavBtUp.Visible := (fmIndex.cdsFavoritos.RecNo > 1);
+  imgFavBtDown.Visible := (fmIndex.cdsFavoritos.RecNo < fmIndex.cdsFavoritos.RecordCount);
+
+  imFavIcon.ImageIndex := icon;
+
+  grpnlFavoritos.Visible := (fmIndex.cdsFavoritos.RecordCount > 0);
+end;
+
+procedure TfFavoritos.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  fmIndex.FormKeyUp(Sender, Key, Shift);
+end;
+
+procedure TfFavoritos.Image1Click(Sender: TObject);
+var
+  nome: string;
+begin
+  if fmIndex.cdsFavoritos.RecordCount <= 0 then
+    Exit;
+
+  nome := fmIndex.cdsFavoritos.FieldByName('NOME').AsString;
+
+  fmIndex.cdsFavoritos.Delete;
+
+  fmIndex.carregaFavoritos();
+  application.messagebox(PChar('Página '''+nome+''' removida com sucesso dos favoritos!'), fmIndex.TITULO, MB_OK + MB_ICONINFORMATION);
+end;
+
+procedure TfFavoritos.imgFavBtDownClick(Sender: TObject);
+var
+  id, nid: string;
+  ordem, nordem: integer;
+begin
+  if fmIndex.cdsFavoritos.RecordCount <= 0 then
+    Exit;
+  if fmIndex.cdsFavoritos.RecNo >= fmIndex.cdsFavoritos.RecordCount then
+    Exit;
+
+  id := fmIndex.cdsFavoritos.FieldByName('ID').AsString;
+  ordem := fmIndex.cdsFavoritos.fieldbyname('ORDEM').AsInteger;
+
+  fmIndex.cdsFavoritos.Next;
+  nid := fmIndex.cdsFavoritos.fieldbyname('ID').AsString;
+  nordem := fmIndex.cdsFavoritos.fieldbyname('ORDEM').AsInteger;
+
+  fmIndex.cdsFavoritos.Edit;
+  fmIndex.cdsFavoritos.FieldByName('ORDEM').Value := ordem;
+  fmIndex.cdsFavoritos.Post;
+
+  fmIndex.cdsFavoritos.Locate('ID', id, []);
+  fmIndex.cdsFavoritos.Edit;
+  fmIndex.cdsFavoritos.FieldByName('ORDEM').Value := nordem;
+  fmIndex.cdsFavoritos.Post;
+
+  fmIndex.carregaFavoritos();
+end;
+
+procedure TfFavoritos.imgFavBtUpClick(Sender: TObject);
+var
+  id, nid: string;
+  ordem, nordem: integer;
+begin
+  if fmIndex.cdsFavoritos.RecordCount <= 0 then
+    Exit;
+  if fmIndex.cdsFavoritos.RecNo <= 1 then
+    Exit;
+
+  id := fmIndex.cdsFavoritos.FieldByName('ID').AsString;
+  ordem := fmIndex.cdsFavoritos.fieldbyname('ORDEM').AsInteger;
+
+  fmIndex.cdsFavoritos.Prior;
+  nid := fmIndex.cdsFavoritos.fieldbyname('ID').AsString;
+  nordem := fmIndex.cdsFavoritos.fieldbyname('ORDEM').AsInteger;
+
+  fmIndex.cdsFavoritos.Edit;
+  fmIndex.cdsFavoritos.FieldByName('ORDEM').Value := ordem;
+  fmIndex.cdsFavoritos.Post;
+
+  fmIndex.cdsFavoritos.Locate('ID', id, []);
+  fmIndex.cdsFavoritos.Edit;
+  fmIndex.cdsFavoritos.FieldByName('ORDEM').Value := nordem;
+  fmIndex.cdsFavoritos.Post;
+
+  fmIndex.carregaFavoritos();
+end;
+
+end.

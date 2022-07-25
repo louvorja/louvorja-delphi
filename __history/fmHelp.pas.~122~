@@ -1,0 +1,70 @@
+unit fmHelp;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Vcl.Controls, Vcl.Forms, BusinessSkinForm,
+  Vcl.StdCtrls, Data.DB, Data.Win.ADODB, Vcl.ComCtrls, bsSkinCtrls, strUtils,
+  SHDocVw, Vcl.OleCtrls, Vcl.ExtCtrls, Vcl.DBCtrls,
+  windows, bsSkinTabs;
+
+type
+  TfHelp = class(TForm)
+    bsBusinessSkinForm1: TbsBusinessSkinForm;
+    bsSkinPanel2: TbsSkinPanel;
+    bsSkinPageControl1: TbsSkinPageControl;
+    bsSkinTabSheet1: TbsSkinTabSheet;
+    Ajuda: TbsSkinTabSheet;
+    wbHelp: TWebBrowser;
+    wbNew: TWebBrowser;
+    bsSkinPanel1: TbsSkinPanel;
+    lblStatus: TbsSkinStdLabel;
+    bsSkinButton2: TbsSkinButton;
+    procedure bsSkinButton2Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    tabPage: string;
+  end;
+
+var
+  fHelp: TfHelp;
+
+implementation
+
+uses
+  fmMenu, dmComponentes;
+
+{$R *.dfm}
+
+procedure TfHelp.bsSkinButton2Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfHelp.FormActivate(Sender: TObject);
+var
+  LinkPag,txt: string;
+begin
+
+  if (fmIndex.param.Strings.Values['help'] = '') or
+     (fmIndex.param.Strings.Values['logs_versao'] = '') then
+  begin
+    try
+      LinkPag := DM.IdHTTP1.Get(fmIndex.url_params);
+    except
+      Sleep(2000);
+      LinkPag := DM.IdHTTP1.Get(fmIndex.url_params);
+    end;
+    txt := fmIndex.ExtraiTexto(LinkPag, '<params>', '</params>');
+    txt := IfThen(trim(txt) = '', '=', txt);
+    fmIndex.Param.Strings.Text := txt;
+    fmIndex.Param.Strings.SaveToFile(fmIndex.dir_dados + 'configweb.ja');
+  end;
+
+end;
+
+end.
+

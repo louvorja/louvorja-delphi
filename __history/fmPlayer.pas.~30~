@@ -1,0 +1,52 @@
+unit fmPlayer;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.MPlayer;
+
+type
+  TfPlayer = class(TForm)
+    Panel1: TPanel;
+    procedure FormResize(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+    procedure CreateParams(var Params: TCreateParams); override;
+  public
+    { Public declarations }
+  end;
+
+var
+  fPlayer: TfPlayer;
+
+implementation
+
+{$R *.dfm}
+
+uses fmMenu, dmComponentes;
+
+procedure TfPlayer.CreateParams(var Params: TCreateParams);
+begin
+  inherited CreateParams(Params);
+  Params.WndParent := 0;
+end;
+
+procedure TfPlayer.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  fmIndex.MediaPlayer1.Stop;
+  fmIndex.MediaPlayer1.Close;
+  fmIndex.MediaPlayer1.FileName := '';
+  fmIndex.pnlPlayer.Visible := False;
+  fmIndex.lblPlayer.Caption := '';
+  DM.tmrPlayer.Enabled := False;
+  fmIndex.pbPlayer.Value := 0;
+end;
+
+procedure TfPlayer.FormResize(Sender: TObject);
+begin
+  fmIndex.MediaPlayer1.DisplayRect := Panel1.ClientRect;
+end;
+
+end.

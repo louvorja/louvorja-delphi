@@ -1,0 +1,281 @@
+object fFavoritos: TfFavoritos
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'Alterar Ordem dos Favoritos'
+  ClientHeight = 371
+  ClientWidth = 394
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnKeyUp = FormKeyUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object dbcFavoritos: TDBCtrlGrid
+    Left = 0
+    Top = 0
+    Width = 394
+    Height = 371
+    Align = alClient
+    Color = clWhite
+    DataSource = DM.dsFavoritos
+    PanelBorder = gbNone
+    PanelHeight = 26
+    PanelWidth = 377
+    ParentColor = False
+    TabOrder = 0
+    RowCount = 14
+    SelectedColor = clSkyBlue
+    OnPaintPanel = dbcFavoritosPaintPanel
+    object grpnlFavoritos: TGridPanel
+      Left = 0
+      Top = 0
+      Width = 377
+      Height = 25
+      Align = alClient
+      BevelOuter = bvNone
+      Caption = 'grpnlFavoritos'
+      Color = clWhite
+      ColumnCollection = <
+        item
+          SizeStyle = ssAbsolute
+          Value = 10.000000000000000000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 30.000000000000000000
+        end
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 32.000000000000000000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 32.000000000000000000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 32.000000000000000000
+        end
+        item
+          SizeStyle = ssAbsolute
+          Value = 10.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 2
+          Control = skLitItem
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = imFavIcon
+          Row = 0
+        end
+        item
+          Column = 3
+          Control = imgFavBtUp
+          Row = 0
+        end
+        item
+          Column = 4
+          Control = imgFavBtDown
+          Row = 0
+        end
+        item
+          Column = 5
+          Control = Image1
+          Row = 0
+        end>
+      ParentBackground = False
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ShowCaption = False
+      TabOrder = 0
+      object skLitItem: TbsSkinDBText
+        Left = 40
+        Top = 0
+        Width = 231
+        Height = 25
+        EllipsType = bsetNone
+        UseSkinFont = False
+        UseSkinColor = False
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = -11
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'stdlabel'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Align = alClient
+        Caption = 'skLitItem'
+        ParentFont = False
+        ShowAccelChar = False
+        Layout = tlCenter
+        DataField = 'NOME'
+        DataSource = DM.dsFavoritos
+        Transparent = True
+        ExplicitLeft = 34
+        ExplicitTop = 1
+        ExplicitWidth = 250
+      end
+      object imFavIcon: TbsPngImageView
+        Left = 10
+        Top = 0
+        Width = 30
+        Height = 25
+        DoubleBuffered = False
+        ReflectionEffect = False
+        PngImageList = fmIndex.ico_16x16
+        ImageIndex = -1
+        Align = alClient
+        Center = True
+        ExplicitWidth = 16
+        ExplicitHeight = 16
+      end
+      object imgFavBtUp: TbsPngImageView
+        Left = 271
+        Top = 0
+        Width = 32
+        Height = 25
+        DoubleBuffered = False
+        ReflectionEffect = False
+        PngImageList = fmIndex.ico_16x16
+        ImageIndex = 17
+        Align = alClient
+        Center = True
+        OnClick = imgFavBtUpClick
+        ExplicitWidth = 16
+        ExplicitHeight = 16
+      end
+      object imgFavBtDown: TbsPngImageView
+        Left = 303
+        Top = 0
+        Width = 32
+        Height = 25
+        DoubleBuffered = False
+        ReflectionEffect = False
+        PngImageList = fmIndex.ico_16x16
+        ImageIndex = 18
+        Align = alClient
+        Center = True
+        OnClick = imgFavBtDownClick
+        ExplicitWidth = 16
+        ExplicitHeight = 16
+      end
+      object Image1: TbsPngImageView
+        Left = 335
+        Top = 0
+        Width = 32
+        Height = 25
+        DoubleBuffered = False
+        ReflectionEffect = False
+        PngImageList = fmIndex.ico_16x16
+        ImageIndex = 14
+        Align = alClient
+        Center = True
+        OnClick = Image1Click
+        ExplicitWidth = 16
+        ExplicitHeight = 16
+      end
+    end
+    object Panel1: TPanel
+      Left = 0
+      Top = 25
+      Width = 377
+      Height = 1
+      Align = alBottom
+      BevelOuter = bvNone
+      Caption = 'Panel1'
+      Color = 15263976
+      ParentBackground = False
+      ShowCaption = False
+      TabOrder = 1
+    end
+  end
+  object bsBusinessSkinForm1: TbsBusinessSkinForm
+    UseRibbon = False
+    ShowMDIScrollBars = True
+    WindowState = wsNormal
+    QuickButtons = <
+      item
+        ImageIndex = 15
+        Enabled = True
+        Visible = False
+        Caption = 'Atualizar Colet'#226'nea'
+      end>
+    QuickButtonsShowHint = False
+    QuickButtonsShowDivider = True
+    ClientInActiveEffect = False
+    ClientInActiveEffectType = bsieSemiTransparent
+    DisableSystemMenu = False
+    AlwaysResize = False
+    PositionInMonitor = bspScreenCenter
+    UseFormCursorInNCArea = False
+    MaxMenuItemsInWindow = 0
+    ClientWidth = 0
+    ClientHeight = 0
+    HideCaptionButtons = False
+    AlwaysShowInTray = False
+    LogoBitMapTransparent = False
+    AlwaysMinimizeToTray = False
+    UseSkinFontInMenu = True
+    UseSkinFontInCaption = True
+    UseSkinSizeInMenu = True
+    ShowIcon = False
+    MaximizeOnFullScreen = False
+    AlphaBlend = False
+    AlphaBlendAnimation = False
+    AlphaBlendValue = 200
+    ShowObjectHint = False
+    MenusAlphaBlend = False
+    MenusAlphaBlendAnimation = False
+    MenusAlphaBlendValue = 200
+    DefCaptionFont.Charset = DEFAULT_CHARSET
+    DefCaptionFont.Color = clBtnText
+    DefCaptionFont.Height = 13
+    DefCaptionFont.Name = 'Tahoma'
+    DefCaptionFont.Style = [fsBold]
+    DefInActiveCaptionFont.Charset = DEFAULT_CHARSET
+    DefInActiveCaptionFont.Color = clBtnShadow
+    DefInActiveCaptionFont.Height = 13
+    DefInActiveCaptionFont.Name = 'Tahoma'
+    DefInActiveCaptionFont.Style = [fsBold]
+    DefMenuItemHeight = 20
+    DefMenuItemFont.Charset = DEFAULT_CHARSET
+    DefMenuItemFont.Color = clWindowText
+    DefMenuItemFont.Height = 13
+    DefMenuItemFont.Name = 'Tahoma'
+    DefMenuItemFont.Style = []
+    UseDefaultSysMenu = True
+    MinHeight = 0
+    MinWidth = 0
+    MaxHeight = 0
+    MaxWidth = 0
+    MinClientHeight = 0
+    MinClientWidth = 0
+    MaxClientHeight = 0
+    MaxClientWidth = 0
+    Magnetic = False
+    MagneticSize = 5
+    BorderIcons = []
+    Left = 111
+    Top = 87
+  end
+end
