@@ -167,6 +167,7 @@ type
     qrHINOSN: TADOQuery;
     dsHINOSN: TDataSource;
     qrMUSICA_ATUALIZAR: TADOQuery;
+    qrALBUM_IGNORAR: TADOQuery;
     procedure tmrSortearTimer(Sender: TObject);
     procedure tmrSortearNMTimer(Sender: TObject);
     procedure tmrSorteioTimer(Sender: TObject);

@@ -1623,8 +1623,6 @@ type
     bsSkinStdLabel80: TbsSkinStdLabel;
     rbHinoTipoN: TbsSkinRadioGroup;
     DBGrid1N: TbsSkinDBGrid;
-    Panel39: TPanel;
-    Label12: TLabel;
     pnlreHinoN: TbsSkinPanel;
     bsSkinScrollBar26: TbsSkinScrollBar;
     reHinoN: TbsSkinRichEdit;
@@ -1658,8 +1656,13 @@ type
     bsSkinPanel194: TbsSkinPanel;
     bsSkinButton44: TbsSkinButton;
     Memo1: TMemo;
-    Panel40: TPanel;
-    Label13: TLabel;
+    bsSkinButton45: TbsSkinButton;
+    pnlHinario1996Ativo: TPanel;
+    pnlHinario1996Inativo: TbsSkinPanel;
+    bsSkinStdLabel175: TbsSkinStdLabel;
+    bsSkinStdLabel176: TbsSkinStdLabel;
+    bsSkinButton46: TbsSkinButton;
+    bsSkinStdLabel177: TbsSkinStdLabel;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2169,6 +2172,8 @@ type
     procedure btHinoSlideMusicaNClick(Sender: TObject);
     procedure bsSkinSpeedButton12NClick(Sender: TObject);
     procedure bsSkinButton44Click(Sender: TObject);
+    procedure bsSkinButton45Click(Sender: TObject);
+    procedure bsSkinButton46Click(Sender: TObject);
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -2670,10 +2675,26 @@ procedure TfmIndex.tsHinarioNShow(Sender: TObject);
 begin
   PaginaMenuAtiva(bsHinarioN,tsHinarioN);
   marcaAbaAberta(tsHinarioN);
-  dbGrid1N.Columns[1].Width := dbGrid1N.Width - dbGrid1N.Columns[0].Width;
 
-  txtHinoNChange(Sender);
-  txtHinoN.SetFocus;
+  DM.qrALBUM_IGNORAR.Close;
+  DM.qrALBUM_IGNORAR.Parameters.ParamByName('ID').Value := 629;
+  DM.qrALBUM_IGNORAR.Open;
+  if (DM.qrALBUM_IGNORAR.RecordCount > 0) then
+  begin
+    pnlHinario1996Ativo.Visible := False;
+    pnlHinario1996Inativo.Visible := True;
+    pnlHinario1996Inativo.Align := alClient;
+  end
+  else
+  begin
+    pnlHinario1996Ativo.Visible := True;
+    pnlHinario1996Inativo.Visible := False;
+
+    dbGrid1N.Columns[1].Width := dbGrid1N.Width - dbGrid1N.Columns[0].Width;
+
+    txtHinoNChange(Sender);
+    txtHinoN.SetFocus;
+  end;
 end;
 
 procedure TfmIndex.tsHinarioShow(Sender: TObject);
@@ -2932,7 +2953,7 @@ begin
 
   DM.qrHINOSN.Close;
   DM.qrHINOSN.SQL.Clear;
-  DM.qrHINOSN.SQL.Add('SELECT * FROM HINARIO_ADVENTISTA_NOVO');
+  DM.qrHINOSN.SQL.Add('SELECT * FROM HINARIO_ADVENTISTA_1996');
   DM.qrHINOSN.SQL.Add(' WHERE 1=1 ');
   DM.qrHINOSN.SQL.Add(filtro);
   DM.qrHINOSN.Open;
@@ -3651,13 +3672,32 @@ begin
 end;
 
 procedure TfmIndex.atualizaIgnoreAlbum;
+var
+  ids: string;
 begin
+  if lerParam('Config','IgnorarAlbumHASD1996','1') = '1' then
+  begin
+    ids := lerParam('Config','IgnorarAlbuns','');
+    if ids <> '' then ids := ids+',';
+    ids := ids+'629';
+    gravaParam('Config','IgnorarAlbuns',ids);
+  end;
+
   DM.qrDEL_ALBUM_IGNORAR.ExecSQL;
   if lerParam('Config','IgnorarAlbuns','0') <> '0' then
   begin
     DM.qrADD_ALBUM_IGNORAR.SQL.Clear;
     DM.qrADD_ALBUM_IGNORAR.SQL.Add('INSERT INTO _ALBUM_IGNORAR (ID) SELECT ID FROM ALBUM WHERE ID IN (0'+lerParam('Config','IgnorarAlbuns','0')+')');
     DM.qrADD_ALBUM_IGNORAR.ExecSQL;
+  end;
+
+  if lerParam('Config','IgnorarAlbumHASD1996','1') = '1' then
+  begin
+    gravaParam('Config','IgnorarAlbumHASD1996','0');
+    DM.qrALBUM_ATIV.Close;
+    DM.qrALBUM_ATIV.Open;
+    DM.qrALBUM_INATIV.Close;
+    DM.qrALBUM_INATIV.Open;
   end;
 end;
 
@@ -8924,6 +8964,36 @@ begin
   DM.qrMUSICA_ATUALIZAR.Close;
 
   Memo1.Lines.Add('****FIM****');
+end;
+
+procedure TfmIndex.bsSkinButton45Click(Sender: TObject);
+begin
+  atualizaIgnoreAlbum;
+  sTabSheet13Show(Sender);
+end;
+
+procedure TfmIndex.bsSkinButton46Click(Sender: TObject);
+var
+  ids: string;
+begin
+  ids := lerParam('Config','IgnorarAlbuns','');
+  ids := StringReplace(','+ids+',', ',629,', ',', [rfIgnoreCase, rfReplaceAll]);
+  ids := StringReplace(ids,',,', ',', [rfIgnoreCase, rfReplaceAll]);
+  if (copy(ids,1,1) = ',') then
+    ids := copy(ids,2,length(ids));
+  if (copy(ids,length(ids),1) = ',') then
+    ids := copy(ids,1,length(ids)-1);
+
+  gravaParam('Config','IgnorarAlbuns',ids);
+
+  atualizaIgnoreAlbum;
+
+  DM.qrALBUM_ATIV.Close;
+  DM.qrALBUM_ATIV.Open;
+  DM.qrALBUM_INATIV.Close;
+  DM.qrALBUM_INATIV.Open;
+
+  tsHinarioNShow(Sender);
 end;
 
 procedure TfmIndex.bsSkinButton4Click(Sender: TObject);
