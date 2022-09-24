@@ -1662,6 +1662,7 @@ type
     bsSkinStdLabel175: TbsSkinStdLabel;
     bsSkinStdLabel176: TbsSkinStdLabel;
     bsSkinButton46: TbsSkinButton;
+    bsSkinStdLabel177: TbsSkinStdLabel;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2682,6 +2683,7 @@ begin
   begin
     pnlHinario1996Ativo.Visible := False;
     pnlHinario1996Inativo.Visible := True;
+    pnlHinario1996Inativo.Align := alClient;
   end
   else
   begin
@@ -8975,9 +8977,23 @@ var
   ids: string;
 begin
   ids := lerParam('Config','IgnorarAlbuns','');
-  ids := StringReplace(ids, '629', '', [rfIgnoreCase, rfReplaceAll]);
-  showmessage(ids);
-//  gravaParam('Config','IgnorarAlbuns',ids);
+  ids := StringReplace(','+ids+',', ',629,', ',', [rfIgnoreCase, rfReplaceAll]);
+  ids := StringReplace(ids,',,', ',', [rfIgnoreCase, rfReplaceAll]);
+  if (copy(ids,1,1) = ',') then
+    ids := copy(ids,2,length(ids));
+  if (copy(ids,length(ids),1) = ',') then
+    ids := copy(ids,1,length(ids)-1);
+
+  gravaParam('Config','IgnorarAlbuns',ids);
+
+  atualizaIgnoreAlbum;
+
+  DM.qrALBUM_ATIV.Close;
+  DM.qrALBUM_ATIV.Open;
+  DM.qrALBUM_INATIV.Close;
+  DM.qrALBUM_INATIV.Open;
+
+  tsHinarioNShow(Sender);
 end;
 
 procedure TfmIndex.bsSkinButton4Click(Sender: TObject);

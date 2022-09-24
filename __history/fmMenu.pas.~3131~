@@ -1662,6 +1662,7 @@ type
     bsSkinStdLabel175: TbsSkinStdLabel;
     bsSkinStdLabel176: TbsSkinStdLabel;
     bsSkinButton46: TbsSkinButton;
+    bsSkinStdLabel177: TbsSkinStdLabel;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2172,6 +2173,7 @@ type
     procedure bsSkinSpeedButton12NClick(Sender: TObject);
     procedure bsSkinButton44Click(Sender: TObject);
     procedure bsSkinButton45Click(Sender: TObject);
+    procedure bsSkinButton46Click(Sender: TObject);
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -2681,6 +2683,7 @@ begin
   begin
     pnlHinario1996Ativo.Visible := False;
     pnlHinario1996Inativo.Visible := True;
+    pnlHinario1996Inativo.Align := alClient;
   end
   else
   begin
@@ -8969,6 +8972,30 @@ begin
   sTabSheet13Show(Sender);
 end;
 
+procedure TfmIndex.bsSkinButton46Click(Sender: TObject);
+var
+  ids: string;
+begin
+  ids := lerParam('Config','IgnorarAlbuns','');
+  ids := StringReplace(','+ids+',', ',629,', ',', [rfIgnoreCase, rfReplaceAll]);
+  ids := StringReplace(ids,',,', ',', [rfIgnoreCase, rfReplaceAll]);
+  if (copy(ids,1,1) = ',') then
+    ids := copy(ids,2,length(ids));
+  if (copy(ids,length(ids),1) = ',') then
+    ids := copy(ids,1,length(ids)-1);
+
+  gravaParam('Config','IgnorarAlbuns',ids);
+
+  atualizaIgnoreAlbum;
+
+  DM.qrALBUM_ATIV.Close;
+  DM.qrALBUM_ATIV.Open;
+  DM.qrALBUM_INATIV.Close;
+  DM.qrALBUM_INATIV.Open;
+
+  tsHinarioNShow(Sender);
+end;
+
 procedure TfmIndex.bsSkinButton4Click(Sender: TObject);
 var
   i: integer;
@@ -11184,12 +11211,12 @@ end;
 
 procedure TfmIndex.bsSkinSpeedButton6Click(Sender: TObject);
 begin
-  abreLetraMusicaAlbum(629,DM.qrHINOS.FieldByName('ID').AsInteger);
+  abreLetraMusicaAlbum(712,DM.qrHINOS.FieldByName('ID').AsInteger);
 end;
 
 procedure TfmIndex.bsSkinSpeedButton6NClick(Sender: TObject);
 begin
-  abreLetraMusicaAlbum(712,DM.qrHINOSN.FieldByName('ID').AsInteger);
+  abreLetraMusicaAlbum(629,DM.qrHINOSN.FieldByName('ID').AsInteger);
 end;
 
 procedure TfmIndex.btPersoClipBoardClick(Sender: TObject);

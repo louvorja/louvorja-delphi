@@ -10165,12 +10165,19 @@ begin
 end;
 
 procedure TfmIndex.btErroClick(Sender: TObject);
+var
+url:string;
 begin
-  fIniciando.AppCreateForm(TfEnviaMensagem, fEnviaMensagem);
+  url := fmIndex.param.Strings.Values['form'+fIniciando.LANG];
+  if (url = '') then
+    Application.MessageBox(PChar('Não foi possível acessar o formulário de contato! Acesse o formulário em https://louovorja.com.br!'), fmIndex.TITULO, mb_ok + mb_iconinformation)
+  else
+    ShellExecute(handle, nil, PChar(url), nil, nil, SW_MAXIMIZE);
+(*  fIniciando.AppCreateForm(TfEnviaMensagem, fEnviaMensagem);
   fEnviaMensagem.edAssunto.Text := 'Sugestão de Música para a Categoria "' + lblDoxologiaCate.Caption + '"';
   fEnviaMensagem.param := 'DOXOLOGIA=' + lblDoxologiaCate.Caption;
   fEnviaMensagem.mmMensagem.Lines.Add('Música a ser sugerida para esta categoria: [Especifique]');
-  fEnviaMensagem.ShowModal;
+  fEnviaMensagem.ShowModal;    *)
 end;
 
 procedure TfmIndex.btExecSQLClick(Sender: TObject);
@@ -11211,12 +11218,12 @@ end;
 
 procedure TfmIndex.bsSkinSpeedButton6Click(Sender: TObject);
 begin
-  abreLetraMusicaAlbum(629,DM.qrHINOS.FieldByName('ID').AsInteger);
+  abreLetraMusicaAlbum(712,DM.qrHINOS.FieldByName('ID').AsInteger);
 end;
 
 procedure TfmIndex.bsSkinSpeedButton6NClick(Sender: TObject);
 begin
-  abreLetraMusicaAlbum(712,DM.qrHINOSN.FieldByName('ID').AsInteger);
+  abreLetraMusicaAlbum(629,DM.qrHINOSN.FieldByName('ID').AsInteger);
 end;
 
 procedure TfmIndex.btPersoClipBoardClick(Sender: TObject);

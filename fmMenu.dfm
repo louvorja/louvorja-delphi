@@ -190,8 +190,8 @@ object fmIndex: TfmIndex
         Page = bsItensAgendados
         Visible = True
       end>
-    TabIndex = 0
-    ActivePage = bsColetaneas
+    TabIndex = 5
+    ActivePage = bsHinario
     UseSkinFont = True
     AppButtonSpacing = -1
     AppButtonMargin = -1
@@ -7427,120 +7427,6 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsBiblia: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'B'#237'blia'
-      ExplicitWidth = 776
-      object bsRibbonGroup2: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 178
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Geral'
-        ShowDialogButton = False
-        object bsSkinSpeedButton10: TbsSkinSpeedButton
-          Left = 89
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 7
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Busca B'#237'blica'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton10Click
-          ExplicitLeft = 95
-          ExplicitHeight = 63
-        end
-        object bsSkinSpeedButton9: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 6
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'B'#237'blia Sagrada'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton9Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 63
-        end
-      end
-    end
     object bsConfBiblia: TbsRibbonPage
       Tag = -1
       Left = 1
@@ -10058,7 +9944,8 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsFavoritos: TbsRibbonPage
+    object bsHinarioN: TbsRibbonPage
+      Tag = -1
       Left = 1
       Top = 26
       Width = 1368
@@ -10067,63 +9954,11 @@ object fmIndex: TfmIndex
       ScrollOffset = 0
       ScrollTimerInterval = 50
       CanScroll = True
-      Caption = 'Favoritos'
-      ExplicitWidth = 844
-      object bsRibbonGroup68: TbsRibbonGroup
-        Left = 273
-        Top = 0
-        Width = 569
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Favoritos'
-        ShowDialogButton = True
-        OnDialogButtonClick = btOrdFavClick
-        object ogFavoritos: TbsSkinOfficeGallery
-          Left = 2
-          Top = 2
-          Width = 565
-          Height = 65
-          HintImageIndex = 0
-          TabOrder = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'listbox'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          PopupMaxRowCount = 8
-          ItemLayout = blGlyphLeft
-          ItemMargin = 5
-          ItemSpacing = 10
-          Items = <>
-          Images = DM.ico_16x16
-          ItemWidth = 180
-          ItemHeight = 25
-          ItemIndex = -1
-          Align = alClient
-          OnItemClick = ogFavoritosItemClick
-        end
-      end
-      object bsRibbonGroup69: TbsRibbonGroup
+      Caption = 'Configurar Hinos'
+      object bsRibbonGroup32: TbsRibbonGroup
         Left = 0
         Top = 0
-        Width = 273
+        Width = 220
         Height = 86
         HintImageIndex = 0
         TabOrder = 0
@@ -10138,12 +9973,25 @@ object fmIndex: TfmIndex
         DefaultHeight = 0
         UseSkinFont = True
         Align = alLeft
-        Caption = 'A'#231#245'es'
+        Caption = 'Informa'#231#245'es'
         ShowDialogButton = False
-        object btAddFav: TbsSkinSpeedButton
-          Left = 2
+        object bsRibbonDivider83: TbsRibbonDivider
+          Left = 152
           Top = 2
-          Width = 118
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alLeft
+          ExplicitLeft = 548
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton12N: TbsSkinSpeedButton
+          Left = 167
+          Top = 2
+          Width = 51
           Height = 65
           HintImageIndex = 0
           SkinData = DM.bsSkinData1
@@ -10162,7 +10010,7 @@ object fmIndex: TfmIndex
           UseSkinFontColor = True
           WidthWithCaption = 0
           WidthWithoutCaption = 0
-          ImageIndex = 40
+          ImageIndex = 3
           RepeatMode = False
           RepeatInterval = 100
           Transparent = True
@@ -10170,19 +10018,225 @@ object fmIndex: TfmIndex
           AllowAllUp = False
           Down = False
           GroupIndex = 0
-          Caption = 'Adicionar aos Favoritos'
+          Caption = 'Letra'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton12NClick
+          ExplicitLeft = 569
+          ExplicitTop = -6
+          ExplicitWidth = 82
+        end
+        object bsSkinPanel193: TbsSkinPanel
+          Left = 2
+          Top = 2
+          Width = 150
+          Height = 65
+          HintImageIndex = 0
+          TabOrder = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'panel'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          EmptyDrawing = False
+          RibbonStyle = False
+          ImagePosition = bsipDefault
+          TransparentMode = False
+          CaptionImageIndex = -1
+          RealHeight = -1
+          AutoEnabledControls = True
+          CheckedMode = False
+          Checked = False
+          DefaultAlignment = taLeftJustify
+          DefaultCaptionHeight = 20
+          BorderStyle = bvNone
+          CaptionMode = False
+          RollUpMode = False
+          RollUpState = False
+          NumGlyphs = 1
+          Spacing = 2
+          Caption = 'bsSkinPanel1'
+          Align = alLeft
+          object bsSkinStdLabel174: TbsSkinStdLabel
+            AlignWithMargins = True
+            Left = 10
+            Top = 3
+            Width = 140
+            Height = 13
+            Margins.Left = 10
+            Margins.Right = 0
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alTop
+            Caption = 'Hino:'
+            Layout = tlBottom
+            ExplicitWidth = 25
+          end
+          object bsSkinDBText1N: TbsSkinDBText
+            AlignWithMargins = True
+            Left = 10
+            Top = 22
+            Width = 140
+            Height = 40
+            Margins.Left = 10
+            Margins.Right = 0
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alClient
+            Caption = 'bsSkinDBText1N'
+            ShowAccelChar = False
+            Layout = tlCenter
+            WordWrap = True
+            DataField = 'NOME_COM'
+            DataSource = DM.dsHINOSN
+            Transparent = True
+            ExplicitLeft = 4
+            ExplicitTop = 28
+            ExplicitWidth = 150
+            ExplicitHeight = 37
+          end
+        end
+      end
+      object bsRibbonGroup86: TbsRibbonGroup
+        Left = 220
+        Top = 0
+        Width = 235
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Slide'
+        ShowDialogButton = False
+        object btHinoSlideMusicaN: TbsSkinSpeedButton
+          Tag = 1
+          Left = 2
+          Top = 2
+          Width = 55
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 45
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Cantado'
           ShowCaption = True
           NumGlyphs = 1
           Align = alLeft
           Spacing = 1
           Layout = blGlyphTop
-          Enabled = False
-          OnClick = btAddFavClick
+          OnClick = btHinoSlideMusicaNClick
         end
-        object GridPanel85: TGridPanel
-          Left = 120
+        object bsSkinSpeedButton6N: TbsSkinSpeedButton
+          Tag = 1
+          Left = 160
           Top = 2
-          Width = 151
+          Width = 73
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 50
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Em Sequ'#234'ncia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton6NClick
+          ExplicitLeft = 167
+        end
+        object bsRibbonDivider84: TbsRibbonDivider
+          Left = 145
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alRight
+          ExplicitLeft = 153
+          ExplicitTop = 0
+        end
+        object GridPanel37: TGridPanel
+          Left = 57
+          Top = 2
+          Width = 88
           Height = 65
           Align = alClient
           BevelOuter = bvNone
@@ -10193,12 +10247,12 @@ object fmIndex: TfmIndex
           ControlCollection = <
             item
               Column = 0
-              Control = btDelFav
+              Control = btHinoSlideMusicaPBN
               Row = 0
             end
             item
               Column = 0
-              Control = btOrdFav
+              Control = btHinoSlideMusicaSAN
               Row = 1
             end>
           RowCollection = <
@@ -10210,10 +10264,11 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
-          object btDelFav: TbsSkinSpeedButton
+          object btHinoSlideMusicaPBN: TbsSkinSpeedButton
+            Tag = 2
             Left = 0
             Top = 0
-            Width = 151
+            Width = 88
             Height = 32
             HintImageIndex = 0
             SkinData = DM.bsSkinData1
@@ -10232,7 +10287,7 @@ object fmIndex: TfmIndex
             UseSkinFontColor = True
             WidthWithCaption = 0
             WidthWithoutCaption = 0
-            ImageIndex = 11
+            ImageIndex = 82
             RepeatMode = False
             RepeatInterval = 100
             Transparent = True
@@ -10240,22 +10295,21 @@ object fmIndex: TfmIndex
             AllowAllUp = False
             Down = False
             GroupIndex = 0
-            Caption = 'Remover dos Favoritos'
+            Caption = 'Playback'
             ShowCaption = True
             NumGlyphs = 1
             Align = alClient
             Margin = 5
             Spacing = 1
-            Enabled = False
-            OnClick = btDelFavClick
+            OnClick = btHinoSlideMusicaNClick
             ExplicitLeft = 6
             ExplicitTop = -6
-            ExplicitWidth = 149
           end
-          object btOrdFav: TbsSkinSpeedButton
+          object btHinoSlideMusicaSAN: TbsSkinSpeedButton
+            Tag = 3
             Left = 0
             Top = 32
-            Width = 151
+            Width = 88
             Height = 33
             HintImageIndex = 0
             SkinData = DM.bsSkinData1
@@ -10274,7 +10328,7 @@ object fmIndex: TfmIndex
             UseSkinFontColor = True
             WidthWithCaption = 0
             WidthWithoutCaption = 0
-            ImageIndex = 73
+            ImageIndex = 77
             RepeatMode = False
             RepeatInterval = 100
             Transparent = True
@@ -10282,18 +10336,1371 @@ object fmIndex: TfmIndex
             AllowAllUp = False
             Down = False
             GroupIndex = 0
-            Caption = 'Alterar Ordem'
+            Caption = 'Sem '#193'udio'
             ShowCaption = True
             NumGlyphs = 1
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btOrdFavClick
+            OnClick = btHinoSlideMusicaNClick
             ExplicitLeft = 2
             ExplicitTop = 9
             ExplicitWidth = 25
             ExplicitHeight = 18
           end
+        end
+      end
+      object bsRibbonGroup87: TbsRibbonGroup
+        Left = 455
+        Top = 0
+        Width = 98
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Arquivo de '#193'udio'
+        ShowDialogButton = False
+        object GridPanel39: TGridPanel
+          Left = 2
+          Top = 2
+          Width = 94
+          Height = 65
+          Align = alClient
+          BevelOuter = bvNone
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = bsSkinSpeedButton13N
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = bsSkinSpeedButton3N
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 50.003923162062800000
+            end
+            item
+              Value = 49.996076837937200000
+            end>
+          ShowCaption = False
+          TabOrder = 0
+          object bsSkinSpeedButton13N: TbsSkinSpeedButton
+            Tag = 2
+            Left = 0
+            Top = 32
+            Width = 94
+            Height = 33
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_24x24
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 35
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Playback'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            OnClick = bsSkinSpeedButton13NClick
+            ExplicitTop = 16
+            ExplicitWidth = 129
+            ExplicitHeight = 32
+          end
+          object bsSkinSpeedButton3N: TbsSkinSpeedButton
+            Tag = 1
+            Left = 0
+            Top = 0
+            Width = 94
+            Height = 32
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_24x24
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 60
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Cantado'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            OnClick = bsSkinSpeedButton3NClick
+            ExplicitTop = 16
+            ExplicitWidth = 200
+          end
+        end
+      end
+      object bsRibbonGroup88: TbsRibbonGroup
+        Left = 553
+        Top = 0
+        Width = 100
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Exportar'
+        ShowDialogButton = False
+        object btExportarHinoN: TbsSkinMenuSpeedButton
+          Tag = 1
+          Left = 2
+          Top = 2
+          Width = 96
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 43
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Exportar M'#250'sica'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = ExportarMusicaClick
+          NewStyle = True
+          TrackPosition = bstpRight
+          UseImagesMenuImage = False
+          UseImagesMenuCaption = False
+          SkinPopupMenu = bsExportarMusica
+          TrackButtonMode = True
+          OnShowTrackMenu = ShowTrackMenu
+          ExplicitLeft = 4
+          ExplicitWidth = 101
+        end
+      end
+      object bsRibbonGroup89: TbsRibbonGroup
+        Left = 653
+        Top = 0
+        Width = 80
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 4
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Erro'
+        ShowDialogButton = False
+        object bsSkinSpeedButton23N: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 76
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 33
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Reportar Erro'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton23Click
+          ExplicitLeft = 4
+          ExplicitTop = 10
+          ExplicitWidth = 116
+        end
+      end
+    end
+    object bsColetaneas: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Colet'#226'neas'
+      ExplicitWidth = 983
+      object bsRibbonGroup7: TbsRibbonGroup
+        Left = 201
+        Top = 0
+        Width = 197
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = #193'lbuns'
+        ShowDialogButton = False
+        object btAbreColJA: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 88
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 1
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'JA/Min. M'#250'sica'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAbreColJAClick
+          ExplicitLeft = 33
+          ExplicitWidth = 87
+          ExplicitHeight = 59
+        end
+        object bsSkinSpeedButton4: TbsSkinSpeedButton
+          Left = 90
+          Top = 2
+          Width = 105
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 2
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Colet'#226'neas Diversas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton4Click
+          ExplicitLeft = 88
+        end
+      end
+      object bsRibbonGroup8: TbsRibbonGroup
+        Left = 767
+        Top = 0
+        Width = 91
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 4
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Busca'
+        ShowDialogButton = False
+        object bsSkinSpeedButton14: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 5
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Localizar M'#250'sicas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton14Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 59
+        end
+      end
+      object bsRibbonGroup20: TbsRibbonGroup
+        Left = 582
+        Top = 0
+        Width = 185
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Usu'#225'rio'
+        ShowDialogButton = False
+        object bsSkinSpeedButton20: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 115
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 13
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Colet. Personalizadas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton20Click
+          ExplicitLeft = 3
+          ExplicitWidth = 111
+        end
+        object bsSkinSpeedButton18: TbsSkinSpeedButton
+          Left = 117
+          Top = 2
+          Width = 66
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 18
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Liturgia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton26Click
+          ExplicitLeft = 2
+        end
+      end
+      object bsRibbonGroup21: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 201
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Hin'#225'rio Adventista'
+        ShowDialogButton = False
+        object btAbreHinos: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 94
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 51
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Hin'#225'rio Adventista'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAbreHinosClick
+          ExplicitLeft = 103
+        end
+        object btAbreHinosN: TbsSkinSpeedButton
+          Left = 96
+          Top = 2
+          Width = 103
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 52
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Hin'#225'rio Adv. 1996'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAbreHinosNClick
+          ExplicitLeft = 95
+          ExplicitTop = 3
+        end
+      end
+      object bsRibbonGroup9: TbsRibbonGroup
+        Left = 398
+        Top = 0
+        Width = 184
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'M'#250'sicas por Categorias'
+        ShowDialogButton = False
+        object bsSkinSpeedButton2: TbsSkinSpeedButton
+          Left = 95
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 46
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'M'#250'sicas Infantis'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton2Click
+          ExplicitLeft = 300
+          ExplicitTop = 0
+          ExplicitWidth = 84
+        end
+        object bsRibbonDivider25: TbsRibbonDivider
+          Left = 80
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alLeft
+          ExplicitLeft = 79
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton16: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 78
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 42
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Doxologia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton16Click
+          ExplicitLeft = -32
+          ExplicitTop = -4
+        end
+      end
+    end
+    object bsColetaneasOnline: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Colet'#226'neas On-line'
+      ExplicitWidth = 982
+      object bsRibbonGroup60: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 115
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Geral'
+        ShowDialogButton = False
+        object bsSkinSpeedButton58: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 111
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 37
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'V'#237'deos On-line'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton58Click
+          ExplicitLeft = 4
+          ExplicitTop = 0
+        end
+      end
+      object bsRibbonGroup64: TbsRibbonGroup
+        Left = 750
+        Top = 0
+        Width = 91
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Busca'
+        ShowDialogButton = False
+        object bsSkinSpeedButton59: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 5
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Localizar M'#250'sicas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton59Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 59
+        end
+      end
+      object bsRibbonGroup65: TbsRibbonGroup
+        Left = 115
+        Top = 0
+        Width = 115
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Usu'#225'rio'
+        ShowDialogButton = False
+        object btColetaneasOnlinePerso: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 111
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 39
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'V'#237'deos Personalizados'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btColetaneasOnlinePersoClick
+          ExplicitLeft = 4
+          ExplicitTop = 0
+        end
+      end
+      object bsRibbonGroup66: TbsRibbonGroup
+        Left = 230
+        Top = 0
+        Width = 520
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Link do Youtube'
+        ShowDialogButton = False
+        object btUrlVideoOn2: TbsSkinSpeedButton
+          Left = 242
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 20
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Executar'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btUrlVideoOn2Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+        end
+        object bsSkinSpeedButton66: TbsSkinSpeedButton
+          Left = 329
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 15
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Salvar Link'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton66Click
+          ExplicitLeft = 174
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton64: TbsSkinSpeedButton
+          Tag = 9
+          Left = 431
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 38
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Fechar V'#237'deo'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton62Click
+          ExplicitLeft = 342
+        end
+        object bsRibbonDivider45: TbsRibbonDivider
+          Left = 416
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alRight
+          ExplicitLeft = 359
+          ExplicitTop = 0
+        end
+        object GridPanel83: TGridPanel
+          Left = 2
+          Top = 2
+          Width = 240
+          Height = 65
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'GridPanel8'
+          ColumnCollection = <
+            item
+              SizeStyle = ssAbsolute
+              Value = 30.000000000000000000
+            end
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              ColumnSpan = 2
+              Control = bsSkinStdLabel99
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = txtUrlVideoOn2
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Image23
+              Row = 2
+              RowSpan = 3
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 19.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 5.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 19.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 5.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ShowCaption = False
+          TabOrder = 0
+          object bsSkinStdLabel99: TbsSkinStdLabel
+            Left = 0
+            Top = 8
+            Width = 240
+            Height = 19
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alClient
+            Caption = 'Executar URL do Youtube:'
+            Layout = tlCenter
+            WordWrap = True
+            ExplicitWidth = 127
+            ExplicitHeight = 13
+          end
+          object txtUrlVideoOn2: TbsSkinEdit
+            Left = 30
+            Top = 32
+            Width = 210
+            Height = 19
+            Text = ''
+            DefaultColor = clWindow
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clBlack
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            UseSkinFont = True
+            DefaultWidth = 0
+            DefaultHeight = 0
+            ButtonMode = False
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'edit'
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = 13
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            MaxLength = -1
+            ParentFont = False
+            TabOrder = 0
+            ButtonImageIndex = -1
+            LeftImageIndex = -1
+            LeftImageHotIndex = -1
+            LeftImageDownIndex = -1
+            RightImageIndex = -1
+            RightImageHotIndex = -1
+            RightImageDownIndex = -1
+            OnKeyUp = txtUrlVideoOn2KeyUp
+          end
+          object Image23: TbsPngImageView
+            Left = 0
+            Top = 27
+            Width = 30
+            Height = 29
+            DoubleBuffered = False
+            ReflectionEffect = False
+            PngImageList = DM.ico_16x16
+            ImageIndex = 82
+            Align = alClient
+            Center = True
+            ExplicitWidth = 16
+            ExplicitHeight = 16
+          end
+        end
+      end
+    end
+    object bsBiblia: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'B'#237'blia'
+      ExplicitWidth = 776
+      object bsRibbonGroup2: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 178
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Geral'
+        ShowDialogButton = False
+        object bsSkinSpeedButton10: TbsSkinSpeedButton
+          Left = 89
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 7
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Busca B'#237'blica'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton10Click
+          ExplicitLeft = 95
+          ExplicitHeight = 63
+        end
+        object bsSkinSpeedButton9: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 6
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'B'#237'blia Sagrada'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton9Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 63
         end
       end
     end
@@ -10783,6 +12190,245 @@ object fmIndex: TfmIndex
           Spacing = 1
           Layout = blGlyphTop
           OnClick = bsSkinSpeedButton50Click
+        end
+      end
+    end
+    object bsFavoritos: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Favoritos'
+      ExplicitWidth = 844
+      object bsRibbonGroup68: TbsRibbonGroup
+        Left = 273
+        Top = 0
+        Width = 569
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Favoritos'
+        ShowDialogButton = True
+        OnDialogButtonClick = btOrdFavClick
+        object ogFavoritos: TbsSkinOfficeGallery
+          Left = 2
+          Top = 2
+          Width = 565
+          Height = 65
+          HintImageIndex = 0
+          TabOrder = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'listbox'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          PopupMaxRowCount = 8
+          ItemLayout = blGlyphLeft
+          ItemMargin = 5
+          ItemSpacing = 10
+          Items = <>
+          Images = DM.ico_16x16
+          ItemWidth = 180
+          ItemHeight = 25
+          ItemIndex = -1
+          Align = alClient
+          OnItemClick = ogFavoritosItemClick
+        end
+      end
+      object bsRibbonGroup69: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 273
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'A'#231#245'es'
+        ShowDialogButton = False
+        object btAddFav: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 118
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 40
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Adicionar aos Favoritos'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          Enabled = False
+          OnClick = btAddFavClick
+        end
+        object GridPanel85: TGridPanel
+          Left = 120
+          Top = 2
+          Width = 151
+          Height = 65
+          Align = alClient
+          BevelOuter = bvNone
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = btDelFav
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = btOrdFav
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 50.003923162062800000
+            end
+            item
+              Value = 49.996076837937200000
+            end>
+          ShowCaption = False
+          TabOrder = 0
+          object btDelFav: TbsSkinSpeedButton
+            Left = 0
+            Top = 0
+            Width = 151
+            Height = 32
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_24x24
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 11
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Remover dos Favoritos'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            Enabled = False
+            OnClick = btDelFavClick
+            ExplicitLeft = 6
+            ExplicitTop = -6
+            ExplicitWidth = 149
+          end
+          object btOrdFav: TbsSkinSpeedButton
+            Left = 0
+            Top = 32
+            Width = 151
+            Height = 33
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_24x24
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 73
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Alterar Ordem'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            OnClick = btOrdFavClick
+            ExplicitLeft = 2
+            ExplicitTop = 9
+            ExplicitWidth = 25
+            ExplicitHeight = 18
+          end
         end
       end
     end
@@ -11459,1659 +13105,13 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsHinarioN: TbsRibbonPage
-      Tag = -1
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Configurar Hinos'
-      object bsRibbonGroup32: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 220
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Informa'#231#245'es'
-        ShowDialogButton = False
-        object bsRibbonDivider83: TbsRibbonDivider
-          Left = 152
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alLeft
-          ExplicitLeft = 548
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton12N: TbsSkinSpeedButton
-          Left = 167
-          Top = 2
-          Width = 51
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 3
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Letra'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton12NClick
-          ExplicitLeft = 569
-          ExplicitTop = -6
-          ExplicitWidth = 82
-        end
-        object bsSkinPanel193: TbsSkinPanel
-          Left = 2
-          Top = 2
-          Width = 150
-          Height = 65
-          HintImageIndex = 0
-          TabOrder = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'panel'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          EmptyDrawing = False
-          RibbonStyle = False
-          ImagePosition = bsipDefault
-          TransparentMode = False
-          CaptionImageIndex = -1
-          RealHeight = -1
-          AutoEnabledControls = True
-          CheckedMode = False
-          Checked = False
-          DefaultAlignment = taLeftJustify
-          DefaultCaptionHeight = 20
-          BorderStyle = bvNone
-          CaptionMode = False
-          RollUpMode = False
-          RollUpState = False
-          NumGlyphs = 1
-          Spacing = 2
-          Caption = 'bsSkinPanel1'
-          Align = alLeft
-          object bsSkinStdLabel174: TbsSkinStdLabel
-            AlignWithMargins = True
-            Left = 10
-            Top = 3
-            Width = 140
-            Height = 13
-            Margins.Left = 10
-            Margins.Right = 0
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alTop
-            Caption = 'Hino:'
-            Layout = tlBottom
-            ExplicitWidth = 25
-          end
-          object bsSkinDBText1N: TbsSkinDBText
-            AlignWithMargins = True
-            Left = 10
-            Top = 22
-            Width = 140
-            Height = 40
-            Margins.Left = 10
-            Margins.Right = 0
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alClient
-            Caption = 'bsSkinDBText1N'
-            ShowAccelChar = False
-            Layout = tlCenter
-            WordWrap = True
-            DataField = 'NOME_COM'
-            DataSource = DM.dsHINOSN
-            Transparent = True
-            ExplicitLeft = 4
-            ExplicitTop = 28
-            ExplicitWidth = 150
-            ExplicitHeight = 37
-          end
-        end
-      end
-      object bsRibbonGroup86: TbsRibbonGroup
-        Left = 220
-        Top = 0
-        Width = 235
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Slide'
-        ShowDialogButton = False
-        object btHinoSlideMusicaN: TbsSkinSpeedButton
-          Tag = 1
-          Left = 2
-          Top = 2
-          Width = 55
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 45
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Cantado'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btHinoSlideMusicaNClick
-        end
-        object bsSkinSpeedButton6N: TbsSkinSpeedButton
-          Tag = 1
-          Left = 160
-          Top = 2
-          Width = 73
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 50
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Em Sequ'#234'ncia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton6NClick
-          ExplicitLeft = 167
-        end
-        object bsRibbonDivider84: TbsRibbonDivider
-          Left = 145
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alRight
-          ExplicitLeft = 153
-          ExplicitTop = 0
-        end
-        object GridPanel37: TGridPanel
-          Left = 57
-          Top = 2
-          Width = 88
-          Height = 65
-          Align = alClient
-          BevelOuter = bvNone
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = btHinoSlideMusicaPBN
-              Row = 0
-            end
-            item
-              Column = 0
-              Control = btHinoSlideMusicaSAN
-              Row = 1
-            end>
-          RowCollection = <
-            item
-              Value = 50.003923162062800000
-            end
-            item
-              Value = 49.996076837937200000
-            end>
-          ShowCaption = False
-          TabOrder = 0
-          object btHinoSlideMusicaPBN: TbsSkinSpeedButton
-            Tag = 2
-            Left = 0
-            Top = 0
-            Width = 88
-            Height = 32
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_24x24
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 82
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Playback'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = btHinoSlideMusicaNClick
-            ExplicitLeft = 6
-            ExplicitTop = -6
-          end
-          object btHinoSlideMusicaSAN: TbsSkinSpeedButton
-            Tag = 3
-            Left = 0
-            Top = 32
-            Width = 88
-            Height = 33
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_24x24
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 77
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Sem '#193'udio'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = btHinoSlideMusicaNClick
-            ExplicitLeft = 2
-            ExplicitTop = 9
-            ExplicitWidth = 25
-            ExplicitHeight = 18
-          end
-        end
-      end
-      object bsRibbonGroup87: TbsRibbonGroup
-        Left = 455
-        Top = 0
-        Width = 98
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Arquivo de '#193'udio'
-        ShowDialogButton = False
-        object GridPanel39: TGridPanel
-          Left = 2
-          Top = 2
-          Width = 94
-          Height = 65
-          Align = alClient
-          BevelOuter = bvNone
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = bsSkinSpeedButton13N
-              Row = 1
-            end
-            item
-              Column = 0
-              Control = bsSkinSpeedButton3N
-              Row = 0
-            end>
-          RowCollection = <
-            item
-              Value = 50.003923162062800000
-            end
-            item
-              Value = 49.996076837937200000
-            end>
-          ShowCaption = False
-          TabOrder = 0
-          object bsSkinSpeedButton13N: TbsSkinSpeedButton
-            Tag = 2
-            Left = 0
-            Top = 32
-            Width = 94
-            Height = 33
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_24x24
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 35
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Playback'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = bsSkinSpeedButton13NClick
-            ExplicitTop = 16
-            ExplicitWidth = 129
-            ExplicitHeight = 32
-          end
-          object bsSkinSpeedButton3N: TbsSkinSpeedButton
-            Tag = 1
-            Left = 0
-            Top = 0
-            Width = 94
-            Height = 32
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_24x24
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 60
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Cantado'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = bsSkinSpeedButton3NClick
-            ExplicitTop = 16
-            ExplicitWidth = 200
-          end
-        end
-      end
-      object bsRibbonGroup88: TbsRibbonGroup
-        Left = 553
-        Top = 0
-        Width = 100
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Exportar'
-        ShowDialogButton = False
-        object btExportarHinoN: TbsSkinMenuSpeedButton
-          Tag = 1
-          Left = 2
-          Top = 2
-          Width = 96
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 43
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Exportar M'#250'sica'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = ExportarMusicaClick
-          NewStyle = True
-          TrackPosition = bstpRight
-          UseImagesMenuImage = False
-          UseImagesMenuCaption = False
-          SkinPopupMenu = bsExportarMusica
-          TrackButtonMode = True
-          OnShowTrackMenu = ShowTrackMenu
-          ExplicitLeft = 4
-          ExplicitWidth = 101
-        end
-      end
-      object bsRibbonGroup89: TbsRibbonGroup
-        Left = 653
-        Top = 0
-        Width = 80
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 4
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Erro'
-        ShowDialogButton = False
-        object bsSkinSpeedButton23N: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 76
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 33
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Reportar Erro'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton23Click
-          ExplicitLeft = 4
-          ExplicitTop = 10
-          ExplicitWidth = 116
-        end
-      end
-    end
-    object bsColetaneasOnline: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Colet'#226'neas On-line'
-      ExplicitWidth = 982
-      object bsRibbonGroup60: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 115
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Geral'
-        ShowDialogButton = False
-        object bsSkinSpeedButton58: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 111
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 37
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'V'#237'deos On-line'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton58Click
-          ExplicitLeft = 4
-          ExplicitTop = 0
-        end
-      end
-      object bsRibbonGroup64: TbsRibbonGroup
-        Left = 750
-        Top = 0
-        Width = 91
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Busca'
-        ShowDialogButton = False
-        object bsSkinSpeedButton59: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 5
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Localizar M'#250'sicas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton59Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 59
-        end
-      end
-      object bsRibbonGroup65: TbsRibbonGroup
-        Left = 115
-        Top = 0
-        Width = 115
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Usu'#225'rio'
-        ShowDialogButton = False
-        object btColetaneasOnlinePerso: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 111
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 39
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'V'#237'deos Personalizados'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btColetaneasOnlinePersoClick
-          ExplicitLeft = 4
-          ExplicitTop = 0
-        end
-      end
-      object bsRibbonGroup66: TbsRibbonGroup
-        Left = 230
-        Top = 0
-        Width = 520
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Link do Youtube'
-        ShowDialogButton = False
-        object btUrlVideoOn2: TbsSkinSpeedButton
-          Left = 242
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 20
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Executar'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btUrlVideoOn2Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-        end
-        object bsSkinSpeedButton66: TbsSkinSpeedButton
-          Left = 329
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 15
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Salvar Link'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton66Click
-          ExplicitLeft = 174
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton64: TbsSkinSpeedButton
-          Tag = 9
-          Left = 431
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 38
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Fechar V'#237'deo'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton62Click
-          ExplicitLeft = 342
-        end
-        object bsRibbonDivider45: TbsRibbonDivider
-          Left = 416
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alRight
-          ExplicitLeft = 359
-          ExplicitTop = 0
-        end
-        object GridPanel83: TGridPanel
-          Left = 2
-          Top = 2
-          Width = 240
-          Height = 65
-          Align = alClient
-          BevelOuter = bvNone
-          Caption = 'GridPanel8'
-          ColumnCollection = <
-            item
-              SizeStyle = ssAbsolute
-              Value = 30.000000000000000000
-            end
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              ColumnSpan = 2
-              Control = bsSkinStdLabel99
-              Row = 1
-            end
-            item
-              Column = 1
-              Control = txtUrlVideoOn2
-              Row = 3
-            end
-            item
-              Column = 0
-              Control = Image23
-              Row = 2
-              RowSpan = 3
-            end>
-          RowCollection = <
-            item
-              Value = 50.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 19.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 5.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 19.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 5.000000000000000000
-            end
-            item
-              Value = 50.000000000000000000
-            end>
-          ShowCaption = False
-          TabOrder = 0
-          object bsSkinStdLabel99: TbsSkinStdLabel
-            Left = 0
-            Top = 8
-            Width = 240
-            Height = 19
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alClient
-            Caption = 'Executar URL do Youtube:'
-            Layout = tlCenter
-            WordWrap = True
-            ExplicitWidth = 127
-            ExplicitHeight = 13
-          end
-          object txtUrlVideoOn2: TbsSkinEdit
-            Left = 30
-            Top = 32
-            Width = 210
-            Height = 19
-            Text = ''
-            DefaultColor = clWindow
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clBlack
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            UseSkinFont = True
-            DefaultWidth = 0
-            DefaultHeight = 0
-            ButtonMode = False
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'edit'
-            Align = alClient
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = 13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            MaxLength = -1
-            ParentFont = False
-            TabOrder = 0
-            ButtonImageIndex = -1
-            LeftImageIndex = -1
-            LeftImageHotIndex = -1
-            LeftImageDownIndex = -1
-            RightImageIndex = -1
-            RightImageHotIndex = -1
-            RightImageDownIndex = -1
-            OnKeyUp = txtUrlVideoOn2KeyUp
-          end
-          object Image23: TbsPngImageView
-            Left = 0
-            Top = 27
-            Width = 30
-            Height = 29
-            DoubleBuffered = False
-            ReflectionEffect = False
-            PngImageList = DM.ico_16x16
-            ImageIndex = 82
-            Align = alClient
-            Center = True
-            ExplicitWidth = 16
-            ExplicitHeight = 16
-          end
-        end
-      end
-    end
-    object bsColetaneas: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Colet'#226'neas'
-      ExplicitWidth = 983
-      object bsRibbonGroup7: TbsRibbonGroup
-        Left = 201
-        Top = 0
-        Width = 197
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = #193'lbuns'
-        ShowDialogButton = False
-        object btAbreColJA: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 88
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 1
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'JA/Min. M'#250'sica'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAbreColJAClick
-          ExplicitLeft = 33
-          ExplicitWidth = 87
-          ExplicitHeight = 59
-        end
-        object bsSkinSpeedButton4: TbsSkinSpeedButton
-          Left = 90
-          Top = 2
-          Width = 105
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 2
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Colet'#226'neas Diversas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton4Click
-          ExplicitLeft = 88
-        end
-      end
-      object bsRibbonGroup8: TbsRibbonGroup
-        Left = 767
-        Top = 0
-        Width = 91
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 4
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Busca'
-        ShowDialogButton = False
-        object bsSkinSpeedButton14: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 5
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Localizar M'#250'sicas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton14Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 59
-        end
-      end
-      object bsRibbonGroup20: TbsRibbonGroup
-        Left = 582
-        Top = 0
-        Width = 185
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Usu'#225'rio'
-        ShowDialogButton = False
-        object bsSkinSpeedButton20: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 115
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 13
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Colet. Personalizadas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton20Click
-          ExplicitLeft = 3
-          ExplicitWidth = 111
-        end
-        object bsSkinSpeedButton18: TbsSkinSpeedButton
-          Left = 117
-          Top = 2
-          Width = 66
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 18
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Liturgia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton26Click
-          ExplicitLeft = 2
-        end
-      end
-      object bsRibbonGroup21: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 201
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Hin'#225'rio Adventista'
-        ShowDialogButton = False
-        object btAbreHinos: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 94
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 51
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Hin'#225'rio Adventista'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAbreHinosClick
-          ExplicitLeft = 103
-        end
-        object btAbreHinosN: TbsSkinSpeedButton
-          Left = 96
-          Top = 2
-          Width = 103
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 52
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Hin'#225'rio Adv. 1996'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAbreHinosNClick
-          ExplicitLeft = 95
-          ExplicitTop = 3
-        end
-      end
-      object bsRibbonGroup9: TbsRibbonGroup
-        Left = 398
-        Top = 0
-        Width = 184
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'M'#250'sicas por Categorias'
-        ShowDialogButton = False
-        object bsSkinSpeedButton2: TbsSkinSpeedButton
-          Left = 95
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 46
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'M'#250'sicas Infantis'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton2Click
-          ExplicitLeft = 300
-          ExplicitTop = 0
-          ExplicitWidth = 84
-        end
-        object bsRibbonDivider25: TbsRibbonDivider
-          Left = 80
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alLeft
-          ExplicitLeft = 79
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton16: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 78
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 42
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Doxologia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton16Click
-          ExplicitLeft = -32
-          ExplicitTop = -4
-        end
-      end
-    end
   end
   object PageControl1: TbsSkinPageControl
     Left = 0
     Top = 146
     Width = 1370
     Height = 494
-    ActivePage = tsHinarioN
+    ActivePage = tsDoxologia
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -14285,8 +14285,6 @@ object fmIndex: TfmIndex
         Caption = 'pnlHinario1996Ativo'
         ShowCaption = False
         TabOrder = 0
-        ExplicitTop = 113
-        ExplicitHeight = 313
         object bsSkinScrollBar7N: TbsSkinScrollBar
           Left = 1349
           Top = 81
@@ -14317,7 +14315,6 @@ object fmIndex: TfmIndex
           Position = 0
           SmallChange = 1
           LargeChange = 1
-          ExplicitHeight = 152
         end
         object DBGrid1N: TbsSkinDBGrid
           Left = 0
@@ -14583,7 +14580,6 @@ object fmIndex: TfmIndex
           Spacing = 2
           Caption = 'pnlreBusca'
           Align = alBottom
-          ExplicitTop = 233
           object bsSkinScrollBar26: TbsSkinScrollBar
             Left = 1349
             Top = 0
@@ -14682,7 +14678,6 @@ object fmIndex: TfmIndex
           Caption = 'stHinos'
           Align = alBottom
           SizeGrip = False
-          ExplicitTop = 292
           object stHinos0N: TbsSkinStatusPanel
             Left = 0
             Top = 0
@@ -14817,8 +14812,6 @@ object fmIndex: TfmIndex
           Caption = #193'lbum Desativado!'
           ParentFont = False
           Layout = tlCenter
-          ExplicitLeft = 15
-          ExplicitTop = 15
           ExplicitWidth = 156
         end
         object bsSkinStdLabel176: TbsSkinStdLabel
@@ -14929,7 +14922,6 @@ object fmIndex: TfmIndex
           Spacing = 1
           Align = alTop
           OnClick = bsSkinButton46Click
-          ExplicitTop = 82
         end
       end
     end
@@ -27062,13 +27054,14 @@ object fmIndex: TfmIndex
         1368
         426)
       object bsAppMenu1: TbsAppMenu
-        Left = 0
+        Left = -110
         Top = 0
-        Width = 1345
-        Height = 425
+        Width = 100
+        Height = 100
         HintImageIndex = 0
         Anchors = []
         TabOrder = 0
+        Visible = False
         SkinData = DM.bsSkinData1
         SkinDataName = 'appmenu'
         UseSkinFont = True
@@ -46466,8 +46459,8 @@ object fmIndex: TfmIndex
         object ampAtivDesAlbum: TbsAppMenuPage
           Left = 150
           Top = 25
-          Width = 1170
-          Height = 375
+          Width = 100
+          Height = 100
           HotScroll = False
           ScrollOffset = 0
           ScrollTimerInterval = 50
@@ -46476,7 +46469,7 @@ object fmIndex: TfmIndex
           object bsSkinPanel84: TbsSkinPanel
             Left = 0
             Top = 0
-            Width = 1170
+            Width = 100
             Height = 113
             HintImageIndex = 0
             TabOrder = 0
@@ -46509,7 +46502,6 @@ object fmIndex: TfmIndex
             Spacing = 2
             Caption = 'bsSkinPanel9'
             Align = alTop
-            ExplicitWidth = 100
             object bsSkinStdLabel154: TbsSkinStdLabel
               AlignWithMargins = True
               Left = 15
@@ -46545,7 +46537,7 @@ object fmIndex: TfmIndex
           object bsSkinPanel63: TbsSkinPanel
             Left = 0
             Top = 113
-            Width = 1170
+            Width = 100
             Height = 262
             HintImageIndex = 0
             TabOrder = 1
@@ -46578,12 +46570,10 @@ object fmIndex: TfmIndex
             Spacing = 2
             Caption = 'bsSkinPanel63'
             Align = alClient
-            ExplicitWidth = 100
-            ExplicitHeight = 102
             object bsSkinPanel85: TbsSkinPanel
               Left = 0
               Top = 0
-              Width = 1170
+              Width = 100
               Height = 80
               HintImageIndex = 0
               TabOrder = 0
@@ -46616,13 +46606,12 @@ object fmIndex: TfmIndex
               Spacing = 2
               Caption = 'bsSkinPanel10'
               Align = alTop
-              ExplicitWidth = 100
               object bsSkinStdLabel91: TbsSkinStdLabel
                 AlignWithMargins = True
                 Left = 36
-                Top = 36
-                Width = 1134
-                Height = 44
+                Top = 179
+                Width = 64
+                Height = 143
                 Margins.Left = 36
                 Margins.Top = 10
                 Margins.Right = 0
@@ -46649,15 +46638,13 @@ object fmIndex: TfmIndex
                 ParentFont = False
                 WordWrap = True
                 ExplicitTop = 23
-                ExplicitWidth = 542
-                ExplicitHeight = 26
               end
               object bsSkinStdLabel162: TbsSkinStdLabel
                 AlignWithMargins = True
                 Left = 36
                 Top = 0
-                Width = 1134
-                Height = 26
+                Width = 64
+                Height = 169
                 Margins.Left = 36
                 Margins.Top = 0
                 Margins.Right = 0
@@ -46684,14 +46671,13 @@ object fmIndex: TfmIndex
                   'arquivos.'
                 ParentFont = False
                 WordWrap = True
-                ExplicitWidth = 549
               end
             end
             object GridPanel7: TGridPanel
               AlignWithMargins = True
               Left = 10
               Top = 80
-              Width = 1150
+              Width = 80
               Height = 179
               Margins.Left = 10
               Margins.Top = 0
@@ -46762,12 +46748,10 @@ object fmIndex: TfmIndex
                 end>
               ShowCaption = False
               TabOrder = 1
-              ExplicitWidth = 80
-              ExplicitHeight = 19
               object Panel65: TPanel
                 Left = 0
                 Top = 0
-                Width = 545
+                Width = 10
                 Height = 30
                 Align = alClient
                 BevelOuter = bvNone
@@ -46783,12 +46767,11 @@ object fmIndex: TfmIndex
                 ParentCtl3D = False
                 ParentFont = False
                 TabOrder = 0
-                ExplicitWidth = 10
               end
               object Panel66: TPanel
-                Left = 605
+                Left = 70
                 Top = 0
-                Width = 545
+                Width = 10
                 Height = 30
                 Align = alClient
                 BevelOuter = bvNone
@@ -46804,12 +46787,10 @@ object fmIndex: TfmIndex
                 ParentCtl3D = False
                 ParentFont = False
                 TabOrder = 1
-                ExplicitLeft = 70
-                ExplicitWidth = 10
               end
               object bsSkinSpeedButton17: TbsSkinSpeedButton
                 AlignWithMargins = True
-                Left = 548
+                Left = 13
                 Top = 47
                 Width = 54
                 Height = 53
@@ -46850,7 +46831,7 @@ object fmIndex: TfmIndex
               end
               object bsSkinSpeedButton21: TbsSkinSpeedButton
                 AlignWithMargins = True
-                Left = 548
+                Left = 13
                 Top = 106
                 Width = 54
                 Height = 53
@@ -46892,14 +46873,13 @@ object fmIndex: TfmIndex
               object Panel67: TPanel
                 Left = 0
                 Top = 30
-                Width = 545
+                Width = 10
                 Height = 149
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'Panel67'
                 ShowCaption = False
                 TabOrder = 2
-                ExplicitWidth = 10
                 object gridAlbAt: TbsSkinDBGrid
                   Left = 0
                   Top = 0
@@ -46943,7 +46923,7 @@ object fmIndex: TfmIndex
                     end>
                 end
                 object bsSkinScrollBar18: TbsSkinScrollBar
-                  Left = 526
+                  Left = -9
                   Top = 0
                   Width = 19
                   Height = 149
@@ -46972,21 +46952,18 @@ object fmIndex: TfmIndex
                   Position = 0
                   SmallChange = 1
                   LargeChange = 1
-                  ExplicitLeft = -9
                 end
               end
               object Panel68: TPanel
-                Left = 605
+                Left = 70
                 Top = 30
-                Width = 545
+                Width = 10
                 Height = 149
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'Panel67'
                 ShowCaption = False
                 TabOrder = 3
-                ExplicitLeft = 70
-                ExplicitWidth = 10
                 object gridAlbInat: TbsSkinDBGrid
                   Left = 0
                   Top = 0
@@ -47030,7 +47007,7 @@ object fmIndex: TfmIndex
                     end>
                 end
                 object bsSkinScrollBar19: TbsSkinScrollBar
-                  Left = 526
+                  Left = -9
                   Top = 0
                   Width = 19
                   Height = 149
@@ -47059,7 +47036,6 @@ object fmIndex: TfmIndex
                   Position = 0
                   SmallChange = 1
                   LargeChange = 1
-                  ExplicitLeft = -9
                 end
               end
             end
@@ -52977,7 +52953,7 @@ object fmIndex: TfmIndex
             Width = 225
             Height = 366
             Align = alClient
-            Date = 43344.835208472220000000
+            Date = 43344.858142650460000000
             DoubleBuffered = False
             ParentDoubleBuffered = False
             TabOrder = 0
