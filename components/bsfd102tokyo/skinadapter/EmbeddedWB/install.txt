@@ -1,5 +1,0 @@
-Install TbsaEmbeddedWB component
-(inherited from TEmbeddedWB (EmbeddedWB Component Pack must installed in IDE)):
-
-* add bsaembeddedwb.pas to main BSF package;
-* recompile main BSF package.
