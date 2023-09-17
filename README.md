@@ -26,14 +26,14 @@ Você vai precisar de:
 
 ### CnWizards
 
-Instação opcional. Serve para deixar o código com uma aparência mais organizada. Descompacte o arquivo "CnWizards.zip" em uma pasta, e execute o arquivo ".exe" dentro dela.
+Instação opcional. Serve para deixar o código com uma aparência mais organizada. Navegue até a pasta `/components`, descompacte o arquivo `CnWizards.zip` em uma pasta, e execute o arquivo ".exe" dentro dela.
 
 ### BusinessSkinForm
 
 Você vai precisar instalar o BusinessSkinForm. Para isso, siga as instruções abaixo, ou [clique aqui](https://delphidabbler.com/install-to-ide) para acessar uma documentação mais detalhada sobre a instalação de componentes no Delphi.
 
 1. Abra o RAD Studio e no menu File, selecione Open.
-2. Navegue até a pasta `components/bsfd102tokyo` deste repositório e selecione o arquivo `bsfd102Tokyo.dpk`.
+2. Navegue até a pasta `/components/bsfd102tokyo` deste repositório e selecione o arquivo `bsfd102Tokyo.dpk`.
 3. O pacote será exibido em seu Project Manager (normalmente a porção direita da tela) sob o nome `bsfd102Tokyo.bpl`. Clique com o botão direito nesse projeto e clique em "Install".
 4. Após instalado, pode fecharo projeto.
 
