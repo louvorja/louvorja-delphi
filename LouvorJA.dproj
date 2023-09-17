@@ -155,7 +155,7 @@
         <DCCReference Include="fmMusica.pas">
             <Form>fMusica</Form>
         </DCCReference>
-        <DCCReference Include="..\..\..\Downloads\Delphi\Componentes\bass24\delphi\bass.pas"/>
+        <DCCReference Include="components\bass24\delphi\bass.pas"/>
         <DCCReference Include="fmListaMusica.pas">
             <Form>fListaMusica</Form>
         </DCCReference>

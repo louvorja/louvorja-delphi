@@ -1,0 +1,59 @@
+package sed7;
+
+{$R *.res}
+{$R 'se_reg.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'SmartEffects VCL'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  vclactnband,
+  vclx,
+  vcljpg;
+
+contains
+  se_winapi in 'se_winapi.pas',
+  se_ani in 'se_ani.pas',
+  se_anidesignerform in 'se_anidesignerform.pas',
+  se_anilistdesigner in 'se_anilistdesigner.pas',
+  se_bitmap in 'se_bitmap.pas',
+  se_effect in 'se_effect.pas',
+  se_form in 'se_form.pas',
+  se_freeze in 'se_freeze.pas',
+  se_grab in 'se_grab.pas',
+  se_grabclass in 'se_grabclass.pas',
+  se_image in 'se_image.pas',
+  se_imagelist in 'se_imagelist.pas',
+  se_reg in 'se_reg.pas',
+  se_utils in 'se_utils.pas',
+  se_controls in 'se_controls.pas',
+  se_zlib in 'se_zlib.pas',
+  se_NBPagesEditor in 'se_NBPagesEditor.pas' {seNBPagesForm},
+  se_pngimage in 'se_pngimage.pas',
+  se_PngImageEditor in 'se_PngImageEditor.pas' {sePNGEditorForm},
+  se_pngimagelist in 'se_pngimagelist.pas';
+
+end.

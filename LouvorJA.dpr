@@ -15,7 +15,7 @@ uses
   Vcl.Styles,
   fmFavoritos in 'fmFavoritos.pas' {fFavoritos},
   fmMusica in 'fmMusica.pas' {fMusica},
-  bass in '..\..\..\Downloads\Delphi\Componentes\bass24\delphi\bass.pas',
+  bass in 'components\bass24\delphi\bass.pas',
   fmListaMusica in 'fmListaMusica.pas' {fListaMusica},
   fmMusicaOperador in 'fmMusicaOperador.pas' {fMusicaOperador},
   fmLiturgia in 'fmLiturgia.pas' {fLiturgia},

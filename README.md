@@ -14,7 +14,7 @@ Alguns dos recursos são:
 - Editor de slides
 - Utilitários gerais (sorteador, relógio, painel de recados)
 
-# Como compilar
+## Requisitos
 
 Você vai precisar de:
 
@@ -22,25 +22,20 @@ Você vai precisar de:
 - Uma versão instalada (e preferencialmente sincronizada) do LouvorJA ([baixe aqui](https://louvorja.com.br/download/))
 - Um computador com Windows
 
-### Posicionando a biblioteca BASS
+## Instalação dos componentes
 
-Este projeto utiliza a biblioteca [BASS](https://www.un4seen.com/) para manipular e executar arquivos de áudio.
+### CnWizards
 
-1. Extraia (ou clone) esse repositório na pasta recomendada: `%HOMEDRIVE%%HOMEPATH\Documents\GitHub\louvorja-delphi`. Lembre-se que `%HOMEDRIVE%` indica a letra do disco que você utiliza (normalmente `C:`) e `%HOMEPATH%` indica a pasta de seu usuário (normalmente `\Users\seu_usuario`). Logo, essa pasta normalmente seria `C:\Users\seu_usuario\Documents\GitHub\louvorja-delphi`.
+Instação opcional. Serve para deixar o código com uma aparência mais organizada. Descompacte o arquivo "CnWizards.zip" em uma pasta, e execute o arquivo ".exe" dentro dela.
 
-2. Em sua pasta Downloads (normalmente `C:\Users\seu_usuario\Downloads`) crie uma pasta chamada "Delphi". Dentro desta, crie outra pasta, chamada "Componentes". Dentro dessa última, cole a pasta "bass24", disponível na pasta "components" deste repositório.
-
-### Instale os componentes necessários
+### BusinessSkinForm
 
 Você vai precisar instalar o BusinessSkinForm. Para isso, siga as instruções abaixo, ou [clique aqui](https://delphidabbler.com/install-to-ide) para acessar uma documentação mais detalhada sobre a instalação de componentes no Delphi.
 
 1. Abra o RAD Studio e no menu File, selecione Open.
 2. Navegue até a pasta `components/bsfd102tokyo` deste repositório e selecione o arquivo `bsfd102Tokyo.dpk`.
-3. O pacote será exibido em seu Project Manager (normalmente a porção direita da tela) sob o nome `bsfd102Tokyo.bpl`. Clique com o botão direito nesse projeto e clique em Install.
-4. Novamente, clique com o botão direito em `bsfd102Tokyo.bpl` no Project Manager e selecione "Add".
-5. Selecione todos os arquivos com extensão `.pas` da pasta `components/bsfd102tokyo` e confirme. Todos os itens selecionados deverão aparecer na seção "Contains" do projeto no Project Manager.
-6. Mais uma vez, clique com o botão direito em `bsfd102Tokyo.bpl` e clique em "Compile".
-7. Por último, repita o passo 3 para reinstalar o pacote e feche o projeto (File > Close).
+3. O pacote será exibido em seu Project Manager (normalmente a porção direita da tela) sob o nome `bsfd102Tokyo.bpl`. Clique com o botão direito nesse projeto e clique em "Install".
+4. Após instalado, pode fecharo projeto.
 
 ### Altere a pasta de build do projeto
 
