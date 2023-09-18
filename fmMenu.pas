@@ -13,10 +13,17 @@ uses
   bsSkinGrids, bsDBGrids, bsdbctrls, bsColorCtrls, bsSkinShellCtrls,
   bsDialogs, Vcl.DBCGrids, ClipBrd, urlmon, RichEdit, bsButtonGroup,
   bsPngImageList, IdAntiFreezeBase, System.Zip, System.UITypes,
-  MidasLib, IdStack, System.Types, Bass;
+  MidasLib, IdStack, System.Types, Bass, Generics.Collections,
+  Generics.Defaults;
   (*"MidasLib" NECESSÁRIA PARA EVITAR ERRO DE ACCESS VIOLATION NO DM.cds*)
 
 type
+  TMonitorInfo = record
+    Left: Integer;
+    Top: Integer;
+    Width: Integer;
+    Height: Integer;
+  end;
   TfmIndex = class(TForm)
     IdAntiFreeze1: TIdAntiFreeze;
     bsRibbon1: TbsRibbon;
@@ -2174,6 +2181,7 @@ type
     procedure bsSkinButton44Click(Sender: TObject);
     procedure bsSkinButton45Click(Sender: TObject);
     procedure bsSkinButton46Click(Sender: TObject);
+    function monitorInfo(index: integer): TMonitorInfo;
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -3102,10 +3110,10 @@ begin
     fMusicaOperador.btPausePlay.Visible := audio;
     fMusicaOperador.Show;
 
-    fMusicaOperador.Left := Screen.Monitors[monitor_ope].Left;
-    fMusicaOperador.Top := Screen.Monitors[monitor_ope].Top;
-    fMusicaOperador.Width := Screen.Monitors[monitor_ope].Width;
-    fMusicaOperador.Height := Screen.Monitors[monitor_ope].Height;
+    fMusicaOperador.Left := monitorInfo(monitor_ope).Left;
+    fMusicaOperador.Top := monitorInfo(monitor_ope).Top;
+    fMusicaOperador.Width := monitorInfo(monitor_ope).Width;
+    fMusicaOperador.Height := monitorInfo(monitor_ope).Height;
   end;
 
   if (lerParam('Musicas', 'ModoRetorno', '1') = '1') then
@@ -3117,10 +3125,10 @@ begin
     fMusicaRetorno.pnlProgress.Visible := audio;
     fMusicaRetorno.Show;
 
-    fMusicaRetorno.Left := Screen.Monitors[monitor_ret].Left;
-    fMusicaRetorno.Top := Screen.Monitors[monitor_ret].Top;
-    fMusicaRetorno.Width := Screen.Monitors[monitor_ret].Width;
-    fMusicaRetorno.Height := Screen.Monitors[monitor_ret].Height;
+    fMusicaRetorno.Left := monitorInfo(monitor_ret).Left;
+    fMusicaRetorno.Top := monitorInfo(monitor_ret).Top;
+    fMusicaRetorno.Width := monitorInfo(monitor_ret).Width;
+    fMusicaRetorno.Height := monitorInfo(monitor_ret).Height;
   end;
 
   fIniciando.AppCreateForm(TfMusica, fMusica);
@@ -3145,24 +3153,24 @@ begin
 
   if (pnlModDes.Visible) then
   begin
-    fMusica.Left := StrToInt(lerParam('Desenvolvedor', 'SlideLeft', IntToStr(Screen.Monitors[monitor].Left)));
-    fMusica.Top := StrToInt(lerParam('Desenvolvedor', 'SlideTop', IntToStr(Screen.Monitors[monitor].Top)));
-    fMusica.Width := StrToInt(lerParam('Desenvolvedor', 'SlideWidth', IntToStr(Screen.Monitors[monitor].Width)));
-    fMusica.Height := StrToInt(lerParam('Desenvolvedor', 'SlideHeight', IntToStr(Screen.Monitors[monitor].Height)));
+    fMusica.Left := StrToInt(lerParam('Desenvolvedor', 'SlideLeft', IntToStr(monitorInfo(monitor).Left)));
+    fMusica.Top := StrToInt(lerParam('Desenvolvedor', 'SlideTop', IntToStr(monitorInfo(monitor).Top)));
+    fMusica.Width := StrToInt(lerParam('Desenvolvedor', 'SlideWidth', IntToStr(monitorInfo(monitor).Width)));
+    fMusica.Height := StrToInt(lerParam('Desenvolvedor', 'SlideHeight', IntToStr(monitorInfo(monitor).Height)));
   end
   else
   begin
     if (fMusica.BorderStyle = bsNone) then
     begin
-      fMusica.Left := Screen.Monitors[monitor].Left;
-      fMusica.Top := Screen.Monitors[monitor].Top;
-      fMusica.Width := Screen.Monitors[monitor].Width;
-      fMusica.Height := Screen.Monitors[monitor].Height;
+      fMusica.Left := monitorInfo(monitor).Left;
+      fMusica.Top := monitorInfo(monitor).Top;
+      fMusica.Width := monitorInfo(monitor).Width;
+      fMusica.Height := monitorInfo(monitor).Height;
     end
     else
     begin
-      fMusica.Left := Screen.Monitors[monitor].Left;
-      fMusica.Top := Screen.Monitors[monitor].Top;
+      fMusica.Left := monitorInfo(monitor).Left;
+      fMusica.Top := monitorInfo(monitor).Top;
       fMusica.Width := 800;
       fMusica.Height := 600;
     end;
@@ -3233,17 +3241,17 @@ begin
 
   if pnlModDes.Visible then
   begin
-    fMusica.Left := StrToInt(lerParam('Desenvolvedor', 'SlideLeft', IntToStr(Screen.Monitors[monitor].Left)));
-    fMusica.Top := StrToInt(lerParam('Desenvolvedor', 'SlideTop', IntToStr(Screen.Monitors[monitor].Top)));
-    fMusica.Width := StrToInt(lerParam('Desenvolvedor', 'SlideWidth', IntToStr(Screen.Monitors[monitor].Width)));
-    fMusica.Height := StrToInt(lerParam('Desenvolvedor', 'SlideHeight', IntToStr(Screen.Monitors[monitor].Height)));
+    fMusica.Left := StrToInt(lerParam('Desenvolvedor', 'SlideLeft', IntToStr(monitorInfo(monitor).Left)));
+    fMusica.Top := StrToInt(lerParam('Desenvolvedor', 'SlideTop', IntToStr(monitorInfo(monitor).Top)));
+    fMusica.Width := StrToInt(lerParam('Desenvolvedor', 'SlideWidth', IntToStr(monitorInfo(monitor).Width)));
+    fMusica.Height := StrToInt(lerParam('Desenvolvedor', 'SlideHeight', IntToStr(monitorInfo(monitor).Height)));
   end
   else
   begin
-    fMusica.Left := Screen.Monitors[monitor].Left;
-    fMusica.Top := Screen.Monitors[monitor].Top;
-    fMusica.Width := Screen.Monitors[monitor].Width;
-    fMusica.Height := Screen.Monitors[monitor].Height;
+    fMusica.Left := monitorInfo(monitor).Left;
+    fMusica.Top := monitorInfo(monitor).Top;
+    fMusica.Width := monitorInfo(monitor).Width;
+    fMusica.Height := monitorInfo(monitor).Height;
   end;
 
 
@@ -3326,10 +3334,10 @@ begin
   fVideoOn.AlphaBlendValue := 0;
   fVideoOn.show;
 
-  fVideoOn.Left := Screen.Monitors[monitor].Left;
-  fVideoOn.Top := Screen.Monitors[monitor].Top;
-  fVideoOn.Width := Screen.Monitors[monitor].Width;
-  fVideoOn.Height := Screen.Monitors[monitor].Height;
+  fVideoOn.Left := monitorInfo(monitor).Left;
+  fVideoOn.Top := monitorInfo(monitor).Top;
+  fVideoOn.Width := monitorInfo(monitor).Width;
+  fVideoOn.Height := monitorInfo(monitor).Height;
 
 
   if ckFadeForm.Checked then
@@ -7469,7 +7477,7 @@ begin
       fListaMusica.imgCapa.Picture.Bitmap
     );
     fListaMusica.showmodal;
-  end  
+  end
   else
   begin
     pnlAltColPerso.Visible := False;
@@ -7675,10 +7683,10 @@ begin
     fPlayer.AlphaBlendValue := 0;
     fPlayer.Show;
 
-    fPlayer.Left := Screen.Monitors[monitor].Left;
-    fPlayer.Top := Screen.Monitors[monitor].Top;
-    fPlayer.Width := Screen.Monitors[monitor].Width;
-    fPlayer.Height := Screen.Monitors[monitor].Height;
+    fPlayer.Left := monitorInfo(monitor).Left;
+    fPlayer.Top := monitorInfo(monitor).Top;
+    fPlayer.Width := monitorInfo(monitor).Width;
+    fPlayer.Height := monitorInfo(monitor).Height;
 
     if ckFadeForm.Checked then
     begin
@@ -12234,11 +12242,11 @@ begin
 
     item := lvMonitores.Items.Add;
     item.Caption := 'Dimensões';
-    item.SubItems.Add(inttostr(Screen.Monitors[i].Width) + ' x ' + inttostr(Screen.Monitors[i].Height));
+    item.SubItems.Add(inttostr(monitorInfo(i).Width) + ' x ' + inttostr(monitorInfo(i).Height));
 
     item := lvMonitores.Items.Add;
     item.Caption := 'Posição';
-    item.SubItems.Add(inttostr(Screen.Monitors[i].Top) + ' (Vertical) x ' + inttostr(Screen.Monitors[i].Left) + ' (Horizontal)');
+    item.SubItems.Add(inttostr(monitorInfo(i).Top) + ' (Vertical) x ' + inttostr(monitorInfo(i).Left) + ' (Horizontal)');
 
     item := lvMonitores.Items.Add;
     item.Caption := '';
@@ -12560,10 +12568,10 @@ begin
         fMonitorMenuMusicas.BorderStyle := bsSizeable;
 
       fMonitorMenuMusicas.show;
-      fMonitorMenuMusicas.Left := Screen.Monitors[monitor].Left;
-      fMonitorMenuMusicas.Top := Screen.Monitors[monitor].Top;
-      fMonitorMenuMusicas.Width := Screen.Monitors[monitor].Width;
-      fMonitorMenuMusicas.Height := Screen.Monitors[monitor].Height;
+      fMonitorMenuMusicas.Left := monitorInfo(monitor).Left;
+      fMonitorMenuMusicas.Top := monitorInfo(monitor).Top;
+      fMonitorMenuMusicas.Width := monitorInfo(monitor).Width;
+      fMonitorMenuMusicas.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12594,10 +12602,10 @@ begin
         fMonitorBiblia.BorderStyle := bsSizeable;
 
       fMonitorBiblia.show;
-      fMonitorBiblia.Left := Screen.Monitors[monitor].Left;
-      fMonitorBiblia.Top := Screen.Monitors[monitor].Top;
-      fMonitorBiblia.Width := Screen.Monitors[monitor].Width;
-      fMonitorBiblia.Height := Screen.Monitors[monitor].Height;
+      fMonitorBiblia.Left := monitorInfo(monitor).Left;
+      fMonitorBiblia.Top := monitorInfo(monitor).Top;
+      fMonitorBiblia.Width := monitorInfo(monitor).Width;
+      fMonitorBiblia.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12628,10 +12636,10 @@ begin
         fMonitorBibliaBusca.BorderStyle := bsSizeable;
 
       fMonitorBibliaBusca.show;
-      fMonitorBibliaBusca.Left := Screen.Monitors[monitor].Left;
-      fMonitorBibliaBusca.Top := Screen.Monitors[monitor].Top;
-      fMonitorBibliaBusca.Width := Screen.Monitors[monitor].Width;
-      fMonitorBibliaBusca.Height := Screen.Monitors[monitor].Height;
+      fMonitorBibliaBusca.Left := monitorInfo(monitor).Left;
+      fMonitorBibliaBusca.Top := monitorInfo(monitor).Top;
+      fMonitorBibliaBusca.Width := monitorInfo(monitor).Width;
+      fMonitorBibliaBusca.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12662,10 +12670,10 @@ begin
         fMonitorCronometroCulto.BorderStyle := bsSizeable;
 
       fMonitorCronometroCulto.show;
-      fMonitorCronometroCulto.Left := Screen.Monitors[monitor].Left;
-      fMonitorCronometroCulto.Top := Screen.Monitors[monitor].Top;
-      fMonitorCronometroCulto.Width := Screen.Monitors[monitor].Width;
-      fMonitorCronometroCulto.Height := Screen.Monitors[monitor].Height;
+      fMonitorCronometroCulto.Left := monitorInfo(monitor).Left;
+      fMonitorCronometroCulto.Top := monitorInfo(monitor).Top;
+      fMonitorCronometroCulto.Width := monitorInfo(monitor).Width;
+      fMonitorCronometroCulto.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12696,10 +12704,10 @@ begin
         fMonitorSorteio.BorderStyle := bsSizeable;
 
       fMonitorSorteio.show;
-      fMonitorSorteio.Left := Screen.Monitors[monitor].Left;
-      fMonitorSorteio.Top := Screen.Monitors[monitor].Top;
-      fMonitorSorteio.Width := Screen.Monitors[monitor].Width;
-      fMonitorSorteio.Height := Screen.Monitors[monitor].Height;
+      fMonitorSorteio.Left := monitorInfo(monitor).Left;
+      fMonitorSorteio.Top := monitorInfo(monitor).Top;
+      fMonitorSorteio.Width := monitorInfo(monitor).Width;
+      fMonitorSorteio.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12730,10 +12738,10 @@ begin
         fMonitorSorteioNomes.BorderStyle := bsSizeable;
 
       fMonitorSorteioNomes.show;
-      fMonitorSorteioNomes.Left := Screen.Monitors[monitor].Left;
-      fMonitorSorteioNomes.Top := Screen.Monitors[monitor].Top;
-      fMonitorSorteioNomes.Width := Screen.Monitors[monitor].Width;
-      fMonitorSorteioNomes.Height := Screen.Monitors[monitor].Height;
+      fMonitorSorteioNomes.Left := monitorInfo(monitor).Left;
+      fMonitorSorteioNomes.Top := monitorInfo(monitor).Top;
+      fMonitorSorteioNomes.Width := monitorInfo(monitor).Width;
+      fMonitorSorteioNomes.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12764,10 +12772,10 @@ begin
         fMonitorCronometro.BorderStyle := bsSizeable;
 
       fMonitorCronometro.show;
-      fMonitorCronometro.Left := Screen.Monitors[monitor].Left;
-      fMonitorCronometro.Top := Screen.Monitors[monitor].Top;
-      fMonitorCronometro.Width := Screen.Monitors[monitor].Width;
-      fMonitorCronometro.Height := Screen.Monitors[monitor].Height;
+      fMonitorCronometro.Left := monitorInfo(monitor).Left;
+      fMonitorCronometro.Top := monitorInfo(monitor).Top;
+      fMonitorCronometro.Width := monitorInfo(monitor).Width;
+      fMonitorCronometro.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12798,10 +12806,10 @@ begin
         fMonitorPainelDinamico.BorderStyle := bsSizeable;
 
       fMonitorPainelDinamico.show;
-      fMonitorPainelDinamico.Left := Screen.Monitors[monitor].Left;
-      fMonitorPainelDinamico.Top := Screen.Monitors[monitor].Top;
-      fMonitorPainelDinamico.Width := Screen.Monitors[monitor].Width;
-      fMonitorPainelDinamico.Height := Screen.Monitors[monitor].Height;
+      fMonitorPainelDinamico.Left := monitorInfo(monitor).Left;
+      fMonitorPainelDinamico.Top := monitorInfo(monitor).Top;
+      fMonitorPainelDinamico.Width := monitorInfo(monitor).Width;
+      fMonitorPainelDinamico.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12830,10 +12838,10 @@ begin
         fMonitorTextoInterativo.BorderStyle := bsSizeable;
 
       fMonitorTextoInterativo.show;
-      fMonitorTextoInterativo.Left := Screen.Monitors[monitor].Left;
-      fMonitorTextoInterativo.Top := Screen.Monitors[monitor].Top;
-      fMonitorTextoInterativo.Width := Screen.Monitors[monitor].Width;
-      fMonitorTextoInterativo.Height := Screen.Monitors[monitor].Height;
+      fMonitorTextoInterativo.Left := monitorInfo(monitor).Left;
+      fMonitorTextoInterativo.Top := monitorInfo(monitor).Top;
+      fMonitorTextoInterativo.Width := monitorInfo(monitor).Width;
+      fMonitorTextoInterativo.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -12863,10 +12871,10 @@ begin
         fMonitorRelogio.BorderStyle := bsSizeable;
 
       fMonitorRelogio.show;
-      fMonitorRelogio.Left := Screen.Monitors[monitor].Left;
-      fMonitorRelogio.Top := Screen.Monitors[monitor].Top;
-      fMonitorRelogio.Width := Screen.Monitors[monitor].Width;
-      fMonitorRelogio.Height := Screen.Monitors[monitor].Height;
+      fMonitorRelogio.Left := monitorInfo(monitor).Left;
+      fMonitorRelogio.Top := monitorInfo(monitor).Top;
+      fMonitorRelogio.Width := monitorInfo(monitor).Width;
+      fMonitorRelogio.Height := monitorInfo(monitor).Height;
 
       copiaDadosTelaExtendida();
 
@@ -13124,7 +13132,7 @@ begin
   begin
     musica := musica + ' - PB';
     param := 'PB';
-  end;    
+  end;
 
   ExportarMusica(id,(tag <= 2),musica,param);
 end;
@@ -13767,6 +13775,37 @@ begin
   TWinControl(AParent).InsertControl(TControl(Result));
 end;
 
+function TfmIndex.monitorInfo(index: integer): TMonitorInfo;
+var
+  qtd_monitores: integer;
+  i: Integer;
+  MonitorsArray: array of TMonitorInfo;
+begin
+  qtd_monitores := Screen.MonitorCount;
+  SetLength(MonitorsArray, qtd_monitores);
+
+  for i := 0 to qtd_monitores-1 do
+  begin
+    MonitorsArray[i].Left := Screen.Monitors[i].Left;
+    MonitorsArray[i].Top := Screen.Monitors[i].Top;
+    MonitorsArray[i].Width := Screen.Monitors[i].Width;
+    MonitorsArray[i].Height := Screen.Monitors[i].Height;
+  end;
+
+  TArray.Sort<TMonitorInfo>(MonitorsArray,
+    TComparer<TMonitorInfo>.Construct(
+      function(const A, B: TMonitorInfo): Integer
+      begin
+        Result := A.Top - B.Top;
+        if Result = 0 then
+          Result := A.Left - B.Left;
+      end
+    )
+  );
+
+  result := MonitorsArray[index];
+end;
+
 procedure TfmIndex.monitores(padrao: integer);
 var
   qtd_monitores: integer;
@@ -13791,7 +13830,7 @@ begin
   for i := 0 to qtd_monitores-1 do
   begin
     item := TMenuItem.Create(bsPopupExpand);
-    item.Caption := 'Monitor '+IntToStr(i+1)+' ('+IntToStr(Screen.Monitors[i].Width)+'x'+IntToStr(Screen.Monitors[i].Height)+')';
+    item.Caption := 'Monitor '+IntToStr(i+1)+' ('+IntToStr(monitorInfo(i).Width)+'x'+IntToStr(monitorInfo(i).Height)+')';
     item.OnClick := mmPopMonitorClick;
     item.Tag := i;
     item.Checked := (padrao = i);
@@ -15101,8 +15140,8 @@ begin
 
     form := TfIdentificaMonitores.Create(Self);
     form.Show;
-    form.Top := Screen.Monitors[i].Top;
-    form.Left := Screen.Monitors[i].Left;
+    form.Top := monitorInfo(i).Top;
+    form.Left := monitorInfo(i).Left;
     form.rotulo.Caption := IntToStr(i+1);
     form.FormStyle := fsStayOnTop;
   end;
