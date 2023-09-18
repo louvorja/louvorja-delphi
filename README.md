@@ -19,10 +19,12 @@ Alguns dos recursos são:
 Você vai precisar de:
 
 - Delphi RAD Studio 10.2 ([baixe aqui](https://altd.embarcadero.com/download/radstudio/10.2/delphicbuilder10_2.iso))
-- Uma versão instalada (e preferencialmente sincronizada) do LouvorJA ([baixe aqui](https://louvorja.com.br/download/))
+- Uma versão instalada (e preferencialmente sincronizada) do LouvorJA ([baixe aqui](https://louvorja.com.br/download/)) em uma pasta de desenvolvimento.
 - Um computador com Windows
 
 ## Instalação dos componentes
+
+Você vai precisar instalar alguns componentes. Para isso, siga as instruções abaixo, ou [clique aqui](https://delphidabbler.com/install-to-ide) para acessar uma documentação mais detalhada sobre a instalação de componentes no Delphi.
 
 ### CnWizards
 
@@ -30,24 +32,38 @@ Instação opcional. Serve para deixar o código com uma aparência mais organiz
 
 ### BusinessSkinForm
 
-Você vai precisar instalar o BusinessSkinForm. Para isso, siga as instruções abaixo, ou [clique aqui](https://delphidabbler.com/install-to-ide) para acessar uma documentação mais detalhada sobre a instalação de componentes no Delphi.
+#### Instalação
 
-1. Abra o RAD Studio e no menu File, selecione Open.
+1. Abra o RAD Studio e no menu "File", selecione "Open".
 2. Navegue até a pasta `/components/bsfd102tokyo` deste repositório e selecione o arquivo `bsfd102Tokyo.dpk`.
 3. O pacote será exibido em seu Project Manager (normalmente a porção direita da tela) sob o nome `bsfd102Tokyo.bpl`. Clique com o botão direito nesse projeto e clique em "Install".
-4. Após instalado, pode fecharo projeto.
+4. Após instalado, pode fechar o projeto.
+
+#### Adicionando o Caminho
+
+1. Vá para o menu "Tools" na parte superior da janela da IDE.
+2. Selecione "Options" no menu suspenso.
+3. Na janela de opções, no painel esquerdo, expanda a seção "Environment Options".
+4. Clique em "Delphi Options" para expandir ainda mais as opções.
+5. Selecione a opção "Library".
+6. No lado direito da janela, você verá a seção "Library path". Clique no botão "..." à direita da caixa de edição.
+7. Na janela de edição de diretório, clique no ícone da pastinha, navegue até o diretório do componente `/components/bsfd102tokyo`, e clique em "Selecionar Pasta".
+8. Clique em "Add", e em seguida, em "Ok".
+
+## PNGComponents
+
+1. Abra o RAD Studio e no menu "File", selecione "Open".
+2. Navegue até a pasta `/components/PNGComponents/Packages/Tokyo/Delphi` deste repositório e selecione o arquivo `PngComponentsDDesign.dpk`.
+3. O pacote será exibido em seu Project Manager (normalmente a porção direita da tela) sob o nome `PngComponentsDDesign250.bpl`. Clique com o botão direito nesse projeto e clique em "Install".
+4. Após instalado, pode fechar o projeto.
+
+## Execução do Programa
 
 ### Altere a pasta de build do projeto
 
-1. Crie uma pasta que será seu ambiente de testes do LouvorJA (exemplo: `C:\Users\seu_usuario\Documents\louvorja_test`)
-2. No RAD Studio, selecione o menu File > Open e abra o arquivo "LouvorJA.dproj" deste repositório.
-3. No menu superior Project, selecione "Options..."
-4. Na aba "Delphi Compiler", selecione a opção "Output directory" (não é necessário expandir a opção) e selecione a pasta criada no passo 1.
-
-### Copie os dados sincronizados de sua instalação do LouvorJA
-
-1. Abra a pasta de instalação do LouvorJA (normalmente `C:\Program files (x86)\Louvor JA`)
-2. Selecione todos os arquivos ".dll" e a pasta "config", exceto os arquivos "LouvorJA.exe", "unins000.dat" e "unins000.exe" e copie-os para a pasta de testes criada nas etapas da seção anterior (exemplo: `C:\Users\seu_usuario\Documents\louvorja_test`).
+1. No RAD Studio, selecione o menu File > Open e abra o arquivo "LouvorJA.dproj" deste repositório.
+2. No menu superior Project, selecione "Options..."
+3. Na aba "Delphi Compiler", selecione a opção "Output directory" (não é necessário expandir a opção) e selecione a pasta onde está o executável do programa, copiado para o diretório de desenvolvimento, conforme seção "Requisitos".
 
 ---
 

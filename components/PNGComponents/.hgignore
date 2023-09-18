@@ -1,0 +1,21 @@
+syntax: glob
+*.local
+*.identcache
+*.~*
+PngComponents.zip
+*.dsk
+*.tvsconfig
+D2007
+*.stat
+*.zip
+*.dcu
+*.dcp
+*.bpl
+*.exe
+*.d
+*.o
+*.obj
+*.bpi
+*.a
+*.pch
+*.lib
