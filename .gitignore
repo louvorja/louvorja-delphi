@@ -1,5 +1,7 @@
 # Delphi compiler-generated binaries (safe to delete)
 *.exe
+!components/MonitorInfoView/*.exe
+!components/CnWizards/*.exe
 *.dll
 *.bpl
 *.bpi

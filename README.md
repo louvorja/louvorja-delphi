@@ -28,7 +28,7 @@ Você vai precisar instalar alguns componentes. Para isso, siga as instruções 
 
 ### CnWizards
 
-Instação opcional. Serve para deixar o código com uma aparência mais organizada. Navegue até a pasta `/components`, descompacte o arquivo `CnWizards.zip` em uma pasta, e execute o arquivo ".exe" dentro dela.
+Instação opcional. Serve para deixar o código com uma aparência mais organizada. Navegue até a pasta `/components/CnWizards`, e execute o arquivo ".exe" dentro dela.
 
 ### BusinessSkinForm
 

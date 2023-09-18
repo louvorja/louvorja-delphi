@@ -13791,7 +13791,7 @@ begin
   for i := 0 to qtd_monitores-1 do
   begin
     item := TMenuItem.Create(bsPopupExpand);
-    item.Caption := 'Monitor '+IntToStr(i+1);
+    item.Caption := 'Monitor '+IntToStr(i+1)+' ('+IntToStr(Screen.Monitors[i].Width)+'x'+IntToStr(Screen.Monitors[i].Height)+')';
     item.OnClick := mmPopMonitorClick;
     item.Tag := i;
     item.Checked := (padrao = i);
