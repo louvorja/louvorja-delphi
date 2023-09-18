@@ -50,7 +50,7 @@ Instação opcional. Serve para deixar o código com uma aparência mais organiz
 7. Na janela de edição de diretório, clique no ícone da pastinha, navegue até o diretório do componente `/components/bsfd102tokyo`, e clique em "Selecionar Pasta".
 8. Clique em "Add", e em seguida, em "Ok".
 
-## PNGComponents
+### PNGComponents
 
 1. Abra o RAD Studio e no menu "File", selecione "Open".
 2. Navegue até a pasta `/components/PNGComponents/Packages/Tokyo/Delphi` deste repositório e selecione o arquivo `PngComponentsDDesign.dpk`.
