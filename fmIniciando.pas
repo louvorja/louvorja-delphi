@@ -346,6 +346,10 @@ begin
     DM.qrALBUM_INATIV.Open;
 
 
+    //**ATUALIZA COLETANEAS PERSONALIZADAS**************************************
+    fmIndex.importColetaneasPerso;
+
+
     //**MOSTRA FORM*************************************************************
     fmIndex.Show;
     if fmIndex.ckFadeForm.Checked then

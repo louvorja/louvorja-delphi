@@ -168,6 +168,15 @@ type
     dsHINOSN: TDataSource;
     qrMUSICA_ATUALIZAR: TADOQuery;
     qrALBUM_IGNORAR: TADOQuery;
+    cdsCOLETANEAS_PERSO_IMP: TClientDataSet;
+    StringField1: TStringField;
+    StringField2: TStringField;
+    StringField4: TStringField;
+    StringField8: TStringField;
+    StringField9: TStringField;
+    StringField10: TStringField;
+    qrDEL_COLETANEAS_PERSO: TADOQuery;
+    qrADD_COLETANEAS_PERSO: TADOQuery;
     procedure tmrSortearTimer(Sender: TObject);
     procedure tmrSortearNMTimer(Sender: TObject);
     procedure tmrSorteioTimer(Sender: TObject);
@@ -230,8 +239,8 @@ begin
   TClientDataSet(FindComponent(nome)).MergeChangeLog;
   TClientDataSet(FindComponent(nome)).SaveToFile(arquivo);
 
-  if nome = 'cdsItensAgendados' then
-    cdsItensAgendadosClone.LoadFromFile(arquivo);
+  if nome = 'cdsItensAgendados'
+    then cdsItensAgendadosClone.LoadFromFile(arquivo);
 end;
 
 procedure TDM.IdHTTP1Work(ASender: TObject; AWorkMode: TWorkMode;

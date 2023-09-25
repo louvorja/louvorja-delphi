@@ -544,7 +544,6 @@ type
     bsSkinStdLabel98: TbsSkinStdLabel;
     sbVideoOnAbreLiturgia: TbsSkinComboBox;
     bsRibbonGroup63: TbsRibbonGroup;
-    ckgColetaneas: TbsSkinRadioGroup;
     bsRibbonGroup64: TbsRibbonGroup;
     bsSkinSpeedButton59: TbsSkinSpeedButton;
     bsSkinSpeedButton61: TbsSkinSpeedButton;
@@ -1670,6 +1669,7 @@ type
     bsSkinStdLabel176: TbsSkinStdLabel;
     bsSkinButton46: TbsSkinButton;
     bsSkinStdLabel177: TbsSkinStdLabel;
+    ckgColetaneas: TbsSkinCheckGroup;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2182,6 +2182,8 @@ type
     procedure bsSkinButton45Click(Sender: TObject);
     procedure bsSkinButton46Click(Sender: TObject);
     function monitorInfo(index: integer): TMonitorInfo;
+    procedure importColetaneasPerso();
+    procedure ckgColetaneasClick(Sender: TObject);
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -3945,23 +3947,35 @@ begin
   loadCol.Strings.Values['BUSCA:CARREGADO'] := 'N';
   if (loadCol.Strings.Values['BUSCA'] <> 'okf') then
   begin
-    loadCol.Strings.Values['BUSCA'] := 'okf';
+//    loadCol.Strings.Values['BUSCA'] := 'okf';
     txtBusca.Text := '';
     DM.tmrBusca.Enabled := False;
 
     ckgFiltros.ItemChecked[0] := (lerParam('Busca', 'Filtro 1', '1') = '1');
     ckgFiltros.ItemChecked[1] := (lerParam('Busca', 'Filtro 2', '0') = '1');
     ckgFiltros.ItemChecked[2] := (lerParam('Busca', 'Filtro 3', '0') = '1');
+
+    ckgColetaneas.ItemChecked[0] := (lerParam('Busca', 'Baixadas', '1') = '1');
+    ckgColetaneas.ItemChecked[1] := (lerParam('Busca', 'Web', '0') = '1');
+    ckgColetaneas.ItemChecked[2] := (lerParam('Busca', 'Personalizadas', '0') = '1');
+
 //    ckgIdiomas.ItemChecked[0] := True;
 //    ckgIdiomas.ItemChecked[1] := True;
 //    ckgIdiomas.ItemChecked[2] := True;
     DM.tmrBusca.Enabled := False;
-    buscaMusicas;
+
+//    buscaMusicas;
   end;
   loadCol.Strings.Values['BUSCA:CARREGADO'] := 'S';
   txtBusca.SetFocus;
   carrega_opc := false;
   DM.tmrBusca.Enabled := False;
+
+  if (loadCol.Strings.Values['BUSCA'] <> 'okf') then
+  begin
+    loadCol.Strings.Values['BUSCA'] := 'okf';
+    buscaMusicas;
+  end;
 end;
 
 procedure TfmIndex.txtAbrirColet2Enter(Sender: TObject);
@@ -4012,13 +4026,13 @@ begin
   if (DM.qrBUSCA.Active = false) then Exit;
   if (DM.qrBUSCA.RecordCount <= 0) then Exit;
 
-  btExportarMusica.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S');
+  btExportarMusica.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S') and not(DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S');
 
   btMusicaSlideMusicaPB.Enabled := (DM.qrBUSCA.fieldbyname('URL_INSTRUMENTAL').AsString <> '');
   btMusicaAudioMusicaPB.Enabled := (DM.qrBUSCA.fieldbyname('URL_INSTRUMENTAL').AsString <> '');
-  btMusicaSlideMusicaSA.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S');
-  btMusicaAudioMusica.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S');
-  btMusicaLetra.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S');
+  btMusicaSlideMusicaSA.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S') and not(DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S');
+  btMusicaAudioMusica.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S') and not(DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S');
+  btMusicaLetra.Enabled := not(DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S') and not(DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S');
 end;
 
 procedure TfmIndex.DBGrid2DblClick(Sender: TObject);
@@ -4037,6 +4051,22 @@ begin
     icon := TPngImage.Create;
     try
       icon := DM.ico_16x16.PngImages[82].PngImage;
+      fixRect := Rect;
+      fixRect.Top := Rect.Top + 1;
+      fixRect.Bottom := Rect.Top + 17;
+      fixRect.Left := Rect.Left + 1;
+      fixRect.Right := Rect.Left + 17;
+      //TDBGrid(Sender).Canvas.CopyMode := cmMergeCopy;
+      TDBGrid(Sender).Canvas.StretchDraw(fixRect, icon);
+    except
+      FreeAndNil(icon);
+    end;
+  end;
+  if (DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S') and (Column.FieldName = 'ICONE1') then
+  begin
+    icon := TPngImage.Create;
+    try
+      icon := DM.ico_16x16.PngImages[37].PngImage;
       fixRect := Rect;
       fixRect.Top := Rect.Top + 1;
       fixRect.Bottom := Rect.Top + 17;
@@ -6607,6 +6637,39 @@ begin
       then application.MessageBox('Não é possível abrir slide sem música de coletâneas na web!', TITULO, mb_ok + MB_ICONEXCLAMATION)
     else abreVideoOn(DM.qrBUSCA.fieldbyname('ID').AsString, DM.qrBUSCA.fieldbyname('NOME').AsString);
   end
+  else if (DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S') then
+  begin
+    if (TComponent(Sender).Tag) = 2
+      then application.MessageBox('Não é possível abrir side playback de coletâneas personalizadas!', TITULO, mb_ok + MB_ICONEXCLAMATION)
+    else if (TComponent(Sender).Tag) = 3
+      then application.MessageBox('Não é possível abrir slide sem música de coletâneas personalizadas!', TITULO, mb_ok + MB_ICONEXCLAMATION)
+    else
+    begin
+      if FileExists(DM.qrBUSCA.fieldbyname('URL').AsString) then
+      begin
+        abrirArquivo(DM.qrBUSCA.fieldbyname('URL').AsString);
+        Exit;
+      end
+      else
+      if DirectoryExists(DM.qrBUSCA.fieldbyname('URL').AsString) then
+      begin
+        fIniciando.AppCreateForm(TfListaMusica, fListaMusica);
+        fListaMusica.id_album := 0;
+        fListaMusica.inicio := false;
+        fListaMusica.Caption := DM.qrBUSCA.fieldbyname('NOME').AsString;
+        fListaMusica.lblTitulo.Caption := DM.qrBUSCA.fieldbyname('NOME').AsString;
+        fListaMusica.lblSubtitulo.Caption := '';
+        fListaMusica.dir := DM.qrBUSCA.fieldbyname('URL').AsString;
+        fListaMusica.DBCtrlGrid.DataSource := DM.dsArquivos;
+        fListaMusica.pnlBotoes.Visible := False;
+        fListaMusica.showmodal;
+      end
+      else
+      begin
+        application.MessageBox(PChar('Arquivo "'+DM.qrBUSCA.fieldbyname('URL').AsString+' não localizado"!'), fmIndex.titulo, mb_ok + mb_iconerror)
+      end;
+    end;
+  end
   else
     abreLetraMusica('BD',txt,DM.qrBUSCA.FieldByName('ID').AsInteger,(TComponent(Sender).Tag) < 3);
 end;
@@ -7838,22 +7901,54 @@ end;
 
 procedure TfmIndex.btImpSorteioNMClick(Sender: TObject);
 var
-  i: integer;
+  i: Integer;
   arq: string;
+  fileStream: TFileStream;
+  utf8Stream: TStringStream;
 begin
   arq := openDialog('texto', '', '');
+  paramtemp.Lines.Clear;
 
   if Trim(arq) <> '' then
   begin
-    paramtemp.lines.Clear;
-    paramtemp.Lines.LoadFromFile(arq);
-    for i := 0 to paramtemp.Lines.Count - 1 do
-    begin
-      opSort_Nm.Text := paramtemp.Lines[i];
-      btAddSorteioNMClick(nil);
+    try
+      fileStream := TFileStream.Create(arq, fmOpenRead);
+      try
+        utf8Stream := TStringStream.Create('', TEncoding.UTF8);
+        try
+          try
+            utf8Stream.CopyFrom(fileStream, 0);
+            paramtemp.Lines.Text := utf8Stream.DataString;
+          except
+            // Se ocorrer uma exceção durante a conversão para UTF-8, carregue o arquivo sem a conversão
+            fileStream.Position := 0; // Volte ao início do arquivo
+            paramtemp.Lines.LoadFromStream(fileStream);
+          end;
+
+          for i := 0 to paramtemp.Lines.Count - 1 do
+          begin
+            try
+              opSort_Nm.Text := paramtemp.Lines[i];
+              btAddSorteioNMClick(nil);
+            except
+              // Lidar com exceções que podem ocorrer dentro do loop
+              // Por exemplo, você pode registrar a exceção ou tomar outra ação apropriada
+            end;
+          end;
+        finally
+          utf8Stream.Free;
+        end;
+      finally
+        fileStream.Free;
+      end;
+    except
+      // Lidar com exceções que podem ocorrer ao abrir o arquivo
+      ShowMessage('Ocorreu um erro ao abrir o arquivo.');
     end;
   end;
 end;
+
+
 
 procedure TfmIndex.btIniciarCronoClick(Sender: TObject);
 begin
@@ -7945,21 +8040,32 @@ begin
   bsSkinScrollBar8.Visible := true;
   valor := trim(txtBusca.Text);
 
-  TCustomRadioGroup(ckgFiltros.Components[1]).Enabled := (ckgColetaneas.ItemIndex = 0);
+  TCustomRadioGroup(ckgFiltros.Components[1]).Enabled := (ckgColetaneas.ItemChecked[0] = True);
 //  if TCustomRadioGroup(ckgFiltros.Components[1]).Enabled = False
 //    then ckgFiltros.ItemChecked[1] := False;
 
   if (ckgFiltros.ItemChecked[0] = False) and (ckgFiltros.ItemChecked[1] = False) and (ckgFiltros.ItemChecked[2] = False)
     then ckgFiltros.ItemChecked[0] := True;
 
-  if ckgColetaneas.ItemIndex < 0 then ckgColetaneas.ItemIndex := 2;
+  if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = False)
+    then ckgColetaneas.ItemChecked[0] := True;
 
-  if ckgColetaneas.ItemIndex = 1 then
-    tabela := 'LISTA_MUSICAS_ONL M'
-  else if ckgColetaneas.ItemIndex = 2 then
-    tabela := 'LISTA_MUSICAS_TODAS M'
+  if (ckgColetaneas.ItemChecked[0] = True) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = False)
+    then tabela := 'LISTA_MUSICAS M'
+  else if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = True) and (ckgColetaneas.ItemChecked[2] = False)
+    then tabela := 'LISTA_MUSICAS_ONL M'
+  else if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = True)
+    then tabela := 'LISTA_MUSICAS_PERSO M'
+
+  else if (ckgColetaneas.ItemChecked[0] = True) and (ckgColetaneas.ItemChecked[1] = True) and (ckgColetaneas.ItemChecked[2] = False)
+    then tabela := 'LISTA_MUSICAS_M_ONL M'
+  else if (ckgColetaneas.ItemChecked[0] = True) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = True)
+    then tabela := 'LISTA_MUSICAS_M_PERSO M'
+  else if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = True) and (ckgColetaneas.ItemChecked[2] = True)
+    then tabela := 'LISTA_MUSICAS_ONL_PERSO M'
+
   else
-    tabela := 'LISTA_MUSICAS M';
+    tabela := 'LISTA_MUSICAS_TODAS M';
 
 
   if (trim(valor) = '')
@@ -8021,7 +8127,12 @@ begin
   DM.qrBUSCA.SQL.Clear;
   DM.qrBUSCA.SQL.Add('SELECT DISTINCT '''' AS ICONE1,'''' AS ICONE2,'''' AS ICONE3,M.* FROM ' + tabela);
   if (ckgFiltros.ItemChecked[1] and TCustomRadioGroup(ckgFiltros.Components[1]).Enabled) then
-    DM.qrBUSCA.SQL.Add('LEFT JOIN MUSICAS_LETRA ML ON (ML.MUSICA = M.ID) ');
+  begin
+  if (tabela = 'LISTA_MUSICAS M') then
+    DM.qrBUSCA.SQL.Add('LEFT JOIN MUSICAS_LETRA ML ON (ML.MUSICA = M.ID) ')
+  else
+    DM.qrBUSCA.SQL.Add('LEFT JOIN MUSICAS_LETRA ML ON (CStr(ML.MUSICA) = M.ID) ');
+  end;
   DM.qrBUSCA.SQL.Add('WHERE');
   DM.qrBUSCA.SQL.Add(filtro);
   DM.qrBUSCA.SQL.Add('ORDER BY M.NOME');
@@ -8031,7 +8142,7 @@ begin
 
   if (DM.qrBUSCA.RecordCount = 1) then
   begin
-    if (ckgColetaneas.ItemIndex = 0) or ((ckgColetaneas.ItemIndex = 2) and (DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString <> 'S')) then
+    if (ckgColetaneas.ItemIndex = 0) or ((ckgColetaneas.ItemIndex = 2) and (DM.qrBUSCA.fieldbyname('TIPO_WEB').AsString <> 'S') and (DM.qrBUSCA.fieldbyname('TIPO_PERSO').AsString <> 'S')) then
     begin
       reBusca.Lines.Clear;
       DM.qrLETRA.Close;
@@ -8455,6 +8566,8 @@ begin
   txtImgInfoColet2.text := '';
   txtCapaColet2.text := '';
   cbColetaneasPersoChange(Sender);
+
+  importColetaneasPerso();
 end;
 
 procedure TfmIndex.bsSkinButton20Click(Sender: TObject);
@@ -8640,6 +8753,8 @@ begin
   txtAbrirColet.text := '';
   txtImgInfoColet.text := '';
   txtCapaColet.text := '';
+
+  importColetaneasPerso();
 end;
 
 procedure TfmIndex.bsSkinButton34Click(Sender: TObject);
@@ -9875,7 +9990,7 @@ end;
 procedure TfmIndex.bsSkinSpeedButton14Click(Sender: TObject);
 begin
   abrePagina(tsBuscaMusica);
-  ckgColetaneas.ItemIndex := 0;
+//  ckgColetaneas.ItemIndex := 0;
 end;
 
 procedure TfmIndex.bsSkinSpeedButton16Click(Sender: TObject);
@@ -10931,7 +11046,7 @@ end;
 procedure TfmIndex.bsSkinSpeedButton59Click(Sender: TObject);
 begin
   abrePagina(tsBuscaMusica);
-  ckgColetaneas.ItemIndex := 1;
+//  ckgColetaneas.ItemIndex := 1;
 end;
 
 procedure TfmIndex.bsSkinSpeedButton5Click(Sender: TObject);
@@ -12040,6 +12155,8 @@ begin
 
   loadCol.Strings.Values['PERSO'] := '';
   tsPersonalizadasShow(Sender);
+
+  importColetaneasPerso();
 end;
 
 procedure TfmIndex.Excluir3Click(Sender: TObject);
@@ -12080,6 +12197,8 @@ begin
 
   loadCol.Strings.Values['PERSO'] := '';
   tsPersonalizadasShow(Sender);
+
+  importColetaneasPerso();
 end;
 
 function TfmIndex.GetComputerNameFunc: string;
@@ -14918,6 +15037,27 @@ begin
   bsFormatSlideImgPerso2.Visible := (not ckFundoTransparente.Checked);
 end;
 
+procedure TfmIndex.ckgColetaneasClick(Sender: TObject);
+begin
+  if carrega_opc then exit;
+  txtBuscaChange(Sender);
+
+  if ckgColetaneas.ItemChecked[0] then
+    gravaParam('Busca', 'Baixadas', '1')
+  else
+    gravaParam('Busca', 'Baixadas', '0');
+
+  if ckgColetaneas.ItemChecked[1] then
+    gravaParam('Busca', 'Web', '1')
+  else
+    gravaParam('Busca', 'Web', '0');
+
+  if ckgColetaneas.ItemChecked[2] then
+    gravaParam('Busca', 'Personalizadas', '1')
+  else
+    gravaParam('Busca', 'Personalizadas', '0');
+end;
+
 procedure TfmIndex.ckgFiltrosClick(Sender: TObject);
 begin
   if carrega_opc then exit;
@@ -15219,6 +15359,43 @@ begin
         application.MessageBox(PChar('Arquivo '''+arquivo+''' exportado com sucesso!'),TITULO,mb_ok+mb_iconinformation);
       end;
     end;
+  end;
+end;
+
+procedure TfmIndex.importColetaneasPerso;
+var
+  url: string;
+begin
+  DM.cdsCOLETANEAS_PERSO_IMP.Close;
+  if not DM.cdsCOLETANEAS_PERSO_IMP.Active then
+  begin
+    DM.cdsCOLETANEAS_PERSO_IMP.CreateDataSet;
+    DM.cdsCOLETANEAS_PERSO_IMP.IndexName := '';
+    DM.cdsCOLETANEAS_PERSO_IMP.IndexFieldNames := 'NOME';
+    DM.cdsCOLETANEAS_PERSO_IMP.LogChanges := False;
+  end;
+
+  if (FileExists(dir_dados + 'coletaneasUsuario.xml')) then
+    DM.cdsCOLETANEAS_PERSO_IMP.LoadFromFile(dir_dados + 'coletaneasUsuario.xml');
+  DM.cdsCOLETANEAS_PERSO_IMP.Open;
+
+  DM.qrDEL_COLETANEAS_PERSO.ExecSQL;
+
+  DM.cdsCOLETANEAS_PERSO_IMP.First;
+  while not DM.cdsCOLETANEAS_PERSO_IMP.Eof do
+  begin
+    url := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('URL').AsString;
+    if (DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('URL_INFO').AsString = 'I')
+      then url := ExtractFilePath(Application.ExeName) + url;
+
+    DM.qrADD_COLETANEAS_PERSO.Close;
+    DM.qrADD_COLETANEAS_PERSO.Parameters.ParamByName('ID').Value := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('ID').AsString;
+    DM.qrADD_COLETANEAS_PERSO.Parameters.ParamByName('NOME').Value := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('NOME').AsString;
+    DM.qrADD_COLETANEAS_PERSO.Parameters.ParamByName('URL').Value := url;
+    DM.qrADD_COLETANEAS_PERSO.ExecSQL;
+
+
+    DM.cdsCOLETANEAS_PERSO_IMP.Next;
   end;
 end;
 

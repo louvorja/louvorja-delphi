@@ -441,6 +441,8 @@ end;
 procedure TfEditorSlides.brImportarClick(Sender: TObject);
 var
   arquivo: string;
+  fileStream: TFileStream;
+  utf8Stream: TStringStream;
 begin
   try
     fmIndex.Visible := False;
@@ -450,7 +452,30 @@ begin
     if arquivo <> '' then
     begin
       btNovoSlideClick(btNovoSlide);
-      textoLetra.Lines.LoadFromFile(arquivo);
+
+      try
+        fileStream := TFileStream.Create(arquivo, fmOpenRead);
+        try
+          utf8Stream := TStringStream.Create('', TEncoding.UTF8);
+          try
+            try
+              utf8Stream.CopyFrom(fileStream, 0);
+              textoLetra.Lines.Text := utf8Stream.DataString;
+            except
+              fileStream.Position := 0;
+              textoLetra.Lines.LoadFromFile(arquivo);
+            end;
+
+          finally
+            utf8Stream.Free;
+          end;
+        finally
+          fileStream.Free;
+        end;
+      except
+        textoLetra.Lines.LoadFromFile(arquivo);
+      end;
+
 
       DM.cdsSLIDE_MUSICA2.RecNo := StrToInt('0'+param.Values['slide']);
       DM.cdsSLIDE_MUSICA2.Edit;
