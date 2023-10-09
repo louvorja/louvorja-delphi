@@ -667,12 +667,8 @@ type
     bsSkinPanel33: TbsSkinPanel;
     bsSkinStdLabel6: TbsSkinStdLabel;
     ScrollBox6: TScrollBox;
-    bsSkinPanel55: TbsSkinPanel;
     bsSkinPanel61: TbsSkinPanel;
     bsSkinStdLabel83: TbsSkinStdLabel;
-    Image24: TImage;
-    Image26: TImage;
-    bsRibbonDivider50: TbsRibbonDivider;
     tsDoxologia: TbsSkinTabSheet;
     bsSkinExPanel1: TbsSkinExPanel;
     bgDoxologiaCate: TbsSkinButtonGroup;
@@ -1670,6 +1666,9 @@ type
     bsSkinButton46: TbsSkinButton;
     bsSkinStdLabel177: TbsSkinStdLabel;
     ckgColetaneas: TbsSkinCheckGroup;
+    bsSkinPanel195: TbsSkinPanel;
+    GridPanel54: TGridPanel;
+    bsknbtn1: TbsSkinButton;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -1978,8 +1977,6 @@ type
     function FonteExiste(Fonte:STring):Boolean;
     procedure FormDestroy(Sender: TObject);
     procedure ImpExpClick(Sender: TObject);
-    procedure Image24Click(Sender: TObject);
-    procedure Image26Click(Sender: TObject);
     procedure bsSkinSpeedButton16Click(Sender: TObject);
     procedure tsDoxologiaShow(Sender: TObject);
     procedure bgDoxologiaCateButtonClicked(Sender: TObject; Index: Integer);
@@ -2184,6 +2181,8 @@ type
     function monitorInfo(index: integer): TMonitorInfo;
     procedure importColetaneasPerso();
     procedure ckgColetaneasClick(Sender: TObject);
+    function arquivoCodificado(arq: string): TStringList;
+    procedure bsknbtn1Click(Sender: TObject);
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -3656,6 +3655,40 @@ end;
 procedure TfmIndex.ApplicationDeactivate(Sender: TObject);
 begin
   focoAplicacao(false);
+end;
+
+function TfmIndex.arquivoCodificado(arq: string): TStringList;
+var
+  fileStream: TFileStream;
+  utf8Stream: TStringStream;
+  lista: TStringList;
+begin
+  lista := TStringList.Create;
+
+  try
+    fileStream := TFileStream.Create(arq, fmOpenRead);
+    try
+      utf8Stream := TStringStream.Create('', TEncoding.UTF8);
+      try
+        try
+          utf8Stream.CopyFrom(fileStream, 0);
+          lista.Text := utf8Stream.DataString;
+        except
+          // Se ocorrer uma exceção durante a conversão para UTF-8, carregue o arquivo sem a conversão
+          fileStream.Position := 0; // Volte ao início do arquivo
+          lista.LoadFromStream(fileStream);
+        end;
+      finally
+        utf8Stream.Free;
+      end;
+    finally
+      fileStream.Free;
+    end;
+  except
+    lista.LoadFromStream(fileStream);
+  end;
+
+  Result := lista;
 end;
 
 procedure TfmIndex.aSort(var Vetor: array of Integer);
@@ -7903,47 +7936,21 @@ procedure TfmIndex.btImpSorteioNMClick(Sender: TObject);
 var
   i: Integer;
   arq: string;
-  fileStream: TFileStream;
-  utf8Stream: TStringStream;
 begin
   arq := openDialog('texto', '', '');
   paramtemp.Lines.Clear;
 
   if Trim(arq) <> '' then
   begin
-    try
-      fileStream := TFileStream.Create(arq, fmOpenRead);
-      try
-        utf8Stream := TStringStream.Create('', TEncoding.UTF8);
-        try
-          try
-            utf8Stream.CopyFrom(fileStream, 0);
-            paramtemp.Lines.Text := utf8Stream.DataString;
-          except
-            // Se ocorrer uma exceção durante a conversão para UTF-8, carregue o arquivo sem a conversão
-            fileStream.Position := 0; // Volte ao início do arquivo
-            paramtemp.Lines.LoadFromStream(fileStream);
-          end;
+    paramtemp.Lines := arquivoCodificado(arq);
 
-          for i := 0 to paramtemp.Lines.Count - 1 do
-          begin
-            try
-              opSort_Nm.Text := paramtemp.Lines[i];
-              btAddSorteioNMClick(nil);
-            except
-              // Lidar com exceções que podem ocorrer dentro do loop
-              // Por exemplo, você pode registrar a exceção ou tomar outra ação apropriada
-            end;
-          end;
-        finally
-          utf8Stream.Free;
-        end;
-      finally
-        fileStream.Free;
+    for i := 0 to paramtemp.Lines.Count - 1 do
+    begin
+      try
+        opSort_Nm.Text := paramtemp.Lines[i];
+        btAddSorteioNMClick(nil);
+      except
       end;
-    except
-      // Lidar com exceções que podem ocorrer ao abrir o arquivo
-      ShowMessage('Ocorreu um erro ao abrir o arquivo.');
     end;
   end;
 end;
@@ -8328,6 +8335,11 @@ begin
   DM.progressDialog.Close;
 
 
+end;
+
+procedure TfmIndex.bsknbtn1Click(Sender: TObject);
+begin
+  ShellExecute(0, 'open', PChar('https://louvorja.com.br/doacao/'), nil, nil, SW_SHOWNORMAL);
 end;
 
 procedure TfmIndex.bsPngImageView11Click(Sender: TObject);
@@ -15285,16 +15297,6 @@ begin
     form.rotulo.Caption := IntToStr(i+1);
     form.FormStyle := fsStayOnTop;
   end;
-end;
-
-procedure TfmIndex.Image24Click(Sender: TObject);
-begin
-  HlinkNavigateString(nil, PChar('https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=197ce39ca8d8889f3deda2d9821f934b&e=true'));
-end;
-
-procedure TfmIndex.Image26Click(Sender: TObject);
-begin
-  HlinkNavigateString(nil, PChar('https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=UA3MMHHS898G2&lc=BR&item_name=LouvorJA&item_number=louvorja&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted'));
 end;
 
 procedure TfmIndex.ImpExpClick(Sender: TObject);

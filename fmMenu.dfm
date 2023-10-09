@@ -6,7 +6,7 @@ object fmIndex: TfmIndex
   AlphaBlendValue = 0
   BorderIcons = []
   Caption = ' '
-  ClientHeight = 749
+  ClientHeight = 757
   ClientWidth = 1370
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -734,17 +734,18 @@ object fmIndex: TfmIndex
     Left = 0
     Top = 146
     Width = 1370
-    Height = 494
+    Height = 502
     Align = alClient
     BevelOuter = bvNone
     Color = 6438155
     ParentBackground = False
     TabOrder = 3
+    ExplicitHeight = 494
     object imgImagemCapa: TImage
       Left = 0
       Top = 0
       Width = 1370
-      Height = 494
+      Height = 502
       Align = alClient
       Center = True
       Transparent = True
@@ -13772,8 +13773,8 @@ object fmIndex: TfmIndex
     Left = 0
     Top = 146
     Width = 1370
-    Height = 494
-    ActivePage = tsBuscaMusica
+    Height = 502
+    ActivePage = bsSkinTabSheet3
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -13808,11 +13809,13 @@ object fmIndex: TfmIndex
     SkinData = DM.bsSkinData1
     SkinDataName = 'tab'
     OnClose = PageControl1Close
+    ExplicitHeight = 494
     object TabSheet14: TbsSkinTabSheet
       Caption = 'MODELOS COMPONENTES'
       ImageIndex = 14
       ParentShowHint = False
       ShowHint = False
+      ExplicitHeight = 426
       object bsButtonModel: TbsSkinButtonEx
         Left = 74
         Top = 19
@@ -14471,11 +14474,12 @@ object fmIndex: TfmIndex
       ParentShowHint = False
       ShowHint = False
       OnShow = tsHinarioShow
+      ExplicitHeight = 426
       object DBGrid1: TbsSkinDBGrid
         Left = 0
         Top = 81
         Width = 1349
-        Height = 265
+        Height = 273
         HintImageIndex = 0
         TabOrder = 1
         SkinData = DM.bsSkinData1
@@ -14542,7 +14546,7 @@ object fmIndex: TfmIndex
         Left = 1349
         Top = 81
         Width = 19
-        Height = 265
+        Height = 273
         HintImageIndex = 0
         TabOrder = 2
         Visible = False
@@ -14568,10 +14572,11 @@ object fmIndex: TfmIndex
         Position = 0
         SmallChange = 1
         LargeChange = 1
+        ExplicitHeight = 265
       end
       object pnlreHino: TbsSkinPanel
         Left = 0
-        Top = 367
+        Top = 375
         Width = 1368
         Height = 59
         HintImageIndex = 0
@@ -14606,6 +14611,7 @@ object fmIndex: TfmIndex
         Spacing = 2
         Caption = 'pnlreBusca'
         Align = alBottom
+        ExplicitTop = 367
         object bsSkinScrollBar11: TbsSkinScrollBar
           Left = 1349
           Top = 0
@@ -14829,7 +14835,7 @@ object fmIndex: TfmIndex
       end
       object stHinos: TbsSkinStatusBar
         Left = 0
-        Top = 346
+        Top = 354
         Width = 1368
         Height = 21
         HintImageIndex = 0
@@ -14864,6 +14870,7 @@ object fmIndex: TfmIndex
         Caption = 'stHinos'
         Align = alBottom
         SizeGrip = False
+        ExplicitTop = 346
         object stHinos0: TbsSkinStatusPanel
           Left = 0
           Top = 0
@@ -14937,21 +14944,23 @@ object fmIndex: TfmIndex
       Caption = 'Hin'#225'rio Adventista 1996'
       ImageIndex = 105
       OnShow = tsHinarioNShow
+      ExplicitHeight = 426
       object pnlHinario1996Ativo: TPanel
         Left = 0
         Top = 161
         Width = 1368
-        Height = 265
+        Height = 273
         Align = alClient
         BevelOuter = bvNone
         Caption = 'pnlHinario1996Ativo'
         ShowCaption = False
         TabOrder = 0
+        ExplicitHeight = 265
         object bsSkinScrollBar7N: TbsSkinScrollBar
           Left = 1349
           Top = 81
           Width = 19
-          Height = 104
+          Height = 112
           HintImageIndex = 0
           TabOrder = 0
           Visible = False
@@ -14977,12 +14986,13 @@ object fmIndex: TfmIndex
           Position = 0
           SmallChange = 1
           LargeChange = 1
+          ExplicitHeight = 104
         end
         object DBGrid1N: TbsSkinDBGrid
           Left = 0
           Top = 81
           Width = 1349
-          Height = 104
+          Height = 112
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -15207,7 +15217,7 @@ object fmIndex: TfmIndex
         end
         object pnlreHinoN: TbsSkinPanel
           Left = 0
-          Top = 185
+          Top = 193
           Width = 1368
           Height = 59
           HintImageIndex = 0
@@ -15242,6 +15252,7 @@ object fmIndex: TfmIndex
           Spacing = 2
           Caption = 'pnlreBusca'
           Align = alBottom
+          ExplicitTop = 185
           object bsSkinScrollBar26: TbsSkinScrollBar
             Left = 1349
             Top = 0
@@ -15305,7 +15316,7 @@ object fmIndex: TfmIndex
         end
         object stHinosN: TbsSkinStatusBar
           Left = 0
-          Top = 244
+          Top = 252
           Width = 1368
           Height = 21
           HintImageIndex = 0
@@ -15340,6 +15351,7 @@ object fmIndex: TfmIndex
           Caption = 'stHinos'
           Align = alBottom
           SizeGrip = False
+          ExplicitTop = 244
           object stHinos0N: TbsSkinStatusPanel
             Left = 0
             Top = 0
@@ -15597,11 +15609,12 @@ object fmIndex: TfmIndex
       ImageIndex = 21
       ParentFont = False
       OnShow = tsJAShow
+      ExplicitHeight = 426
       object sbColJA: TbsSkinScrollBox
         Left = 0
         Top = 0
         Width = 1349
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         SkinData = DM.bsSkinData1
@@ -15628,7 +15641,7 @@ object fmIndex: TfmIndex
         Left = 1349
         Top = 0
         Width = 19
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 1
         Visible = False
@@ -15654,17 +15667,19 @@ object fmIndex: TfmIndex
         Position = 0
         SmallChange = 1
         LargeChange = 1
+        ExplicitHeight = 426
       end
     end
     object tsDiversas: TbsSkinTabSheet
       Caption = 'Colet'#226'neas Diversas'
       ImageIndex = 22
       OnShow = tsDiversasShow
+      ExplicitHeight = 426
       object sbColDIV: TbsSkinScrollBox
         Left = 0
         Top = 0
         Width = 1349
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         SkinData = DM.bsSkinData1
@@ -15689,7 +15704,7 @@ object fmIndex: TfmIndex
         Left = 1349
         Top = 0
         Width = 19
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 1
         Visible = False
@@ -15715,17 +15730,19 @@ object fmIndex: TfmIndex
         Position = 0
         SmallChange = 1
         LargeChange = 1
+        ExplicitHeight = 426
       end
     end
     object tsPersonalizadas: TbsSkinTabSheet
       Caption = 'Colet'#226'neas Personalizadas'
       ImageIndex = 37
       OnShow = tsPersonalizadasShow
+      ExplicitHeight = 426
       object pnlAltColPerso: TbsSkinExPanel
         Left = 273
         Top = 0
         Width = 273
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 1
         Visible = False
@@ -15755,11 +15772,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Alterar Colet'#226'nea'
         OnClose = pnlAltColPersoClose
+        ExplicitHeight = 426
         object GridPanel22: TGridPanel
           Left = 1
           Top = 21
           Width = 271
-          Height = 374
+          Height = 382
           Align = alClient
           BevelOuter = bvNone
           Caption = 'GridPanel13'
@@ -15868,9 +15886,10 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
+          ExplicitHeight = 374
           DesignSize = (
             271
-            374)
+            382)
           object bsSkinStdLabel28: TbsSkinStdLabel
             Left = 5
             Top = 40
@@ -16179,7 +16198,7 @@ object fmIndex: TfmIndex
         end
         object GridPanel17: TGridPanel
           Left = 1
-          Top = 395
+          Top = 403
           Width = 271
           Height = 30
           Align = alBottom
@@ -16217,6 +16236,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 395
           object bsSkinButton1: TbsSkinButton
             Left = 166
             Top = 2
@@ -16259,7 +16279,7 @@ object fmIndex: TfmIndex
         Left = 0
         Top = 0
         Width = 273
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -16289,11 +16309,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Adicionar Colet'#226'nea'
         OnClose = pnlAddColPersoClose
+        ExplicitHeight = 426
         object GridPanel18: TGridPanel
           Left = 1
           Top = 21
           Width = 271
-          Height = 374
+          Height = 382
           Align = alClient
           BevelOuter = bvNone
           Caption = 'GridPanel13'
@@ -16384,6 +16405,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
+          ExplicitHeight = 374
           object bsSkinStdLabel24: TbsSkinStdLabel
             Left = 5
             Top = 2
@@ -16643,7 +16665,7 @@ object fmIndex: TfmIndex
         end
         object GridPanel19: TGridPanel
           Left = 1
-          Top = 395
+          Top = 403
           Width = 271
           Height = 30
           Align = alBottom
@@ -16681,6 +16703,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 395
           object btAddColetPerso: TbsSkinButton
             Left = 166
             Top = 2
@@ -16723,7 +16746,7 @@ object fmIndex: TfmIndex
         Left = 546
         Top = 0
         Width = 822
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 2
         SkinData = DM.bsSkinData1
@@ -16755,11 +16778,12 @@ object fmIndex: TfmIndex
         Spacing = 2
         Caption = 'bsSkinPanel16'
         Align = alClient
+        ExplicitHeight = 426
         object bsSkinScrollBar9: TbsSkinScrollBar
           Left = 803
           Top = 57
           Width = 19
-          Height = 350
+          Height = 358
           HintImageIndex = 0
           TabOrder = 2
           Visible = False
@@ -16785,12 +16809,13 @@ object fmIndex: TfmIndex
           Position = 0
           SmallChange = 1
           LargeChange = 1
+          ExplicitHeight = 350
         end
         object sbColPERSO: TbsSkinScrollBox
           Left = 0
           Top = 57
           Width = 803
-          Height = 350
+          Height = 358
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -16918,7 +16943,7 @@ object fmIndex: TfmIndex
         end
         object stColetPerso: TbsSkinStatusBar
           Left = 0
-          Top = 407
+          Top = 415
           Width = 822
           Height = 19
           HintImageIndex = 0
@@ -16952,6 +16977,7 @@ object fmIndex: TfmIndex
           Spacing = 2
           Align = alBottom
           SizeGrip = False
+          ExplicitTop = 407
           object stColetPerso_0: TbsSkinStatusPanel
             Left = 0
             Top = 0
@@ -17025,12 +17051,13 @@ object fmIndex: TfmIndex
       Caption = 'B'#237'blia'
       ImageIndex = 28
       OnShow = tsBibliaShow
+      ExplicitHeight = 426
       object pnlFormatBiblia: TbsSkinExPanel
         Tag = 1
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -17060,11 +17087,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel1: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 404
+          Height = 412
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -18125,7 +18153,7 @@ object fmIndex: TfmIndex
         Left = 233
         Top = 0
         Width = 902
-        Height = 426
+        Height = 434
         Align = alClient
         BevelOuter = bvNone
         Caption = 'GridPanel74'
@@ -18173,12 +18201,13 @@ object fmIndex: TfmIndex
           end>
         ShowCaption = False
         TabOrder = 1
+        ExplicitHeight = 426
         object bsSkinExPanel7: TbsSkinExPanel
           AlignWithMargins = True
           Left = 3
           Top = 0
           Width = 296
-          Height = 426
+          Height = 434
           Margins.Top = 0
           Margins.Bottom = 0
           HintImageIndex = 0
@@ -18208,6 +18237,7 @@ object fmIndex: TfmIndex
           Sizeable = False
           Align = alClient
           Caption = 'Livros'
+          ExplicitHeight = 426
           object bsSkinStdLabel137: TbsSkinStdLabel
             AlignWithMargins = True
             Left = 4
@@ -18234,31 +18264,33 @@ object fmIndex: TfmIndex
             Left = 1
             Top = 63
             Width = 294
-            Height = 362
+            Height = 370
             Cursor = crHandPoint
             Align = alClient
             Color = clBtnFace
             DataSource = DM.dsBIBLIA_LIVROS
             SkinData = DM.bsSkinData1
-            PanelHeight = 120
+            PanelHeight = 123
             PanelWidth = 275
             ParentColor = False
             TabOrder = 1
             OnClick = DBCtrlGridBibliaLivroClick
             OnPaintPanel = DBCtrlGridBibliaLivroPaintPanel
+            ExplicitHeight = 362
             object DBCtrlGridBibliaLivro_pnl: TPanel
               Left = 1
               Top = 1
               Width = 273
-              Height = 118
+              Height = 121
               Align = alClient
               BevelOuter = bvNone
               ParentBackground = False
               TabOrder = 0
               OnClick = DBCtrlGridBibliaLivroClick
+              ExplicitHeight = 118
               object txtdbBibliaLivro: TbsSkinDBText
                 Left = 0
-                Top = 87
+                Top = 90
                 Width = 273
                 Height = 31
                 Cursor = crHandPoint
@@ -18292,7 +18324,7 @@ object fmIndex: TfmIndex
                 Left = 0
                 Top = 0
                 Width = 257
-                Height = 87
+                Height = 90
                 Cursor = crHandPoint
                 Margins.Left = 0
                 Margins.Top = 0
@@ -18335,7 +18367,7 @@ object fmIndex: TfmIndex
                 Left = 257
                 Top = 5
                 Width = 11
-                Height = 82
+                Height = 85
                 Cursor = crHandPoint
                 Margins.Left = 0
                 Margins.Top = 5
@@ -18503,7 +18535,7 @@ object fmIndex: TfmIndex
           Left = 305
           Top = 0
           Width = 294
-          Height = 213
+          Height = 217
           Margins.Top = 0
           Margins.Bottom = 0
           HintImageIndex = 0
@@ -18533,6 +18565,7 @@ object fmIndex: TfmIndex
           Sizeable = False
           Align = alClient
           Caption = 'Cap'#237'tulos'
+          ExplicitHeight = 213
           object bsSkinStdLabel136: TbsSkinStdLabel
             AlignWithMargins = True
             Left = 4
@@ -18559,33 +18592,35 @@ object fmIndex: TfmIndex
             Left = 1
             Top = 63
             Width = 292
-            Height = 149
+            Height = 153
             Cursor = crHandPoint
             Align = alClient
             Color = clBtnFace
             DataSource = DM.dsBIBLIA_CAPITULOS
             SkinData = DM.bsSkinData1
-            PanelHeight = 49
+            PanelHeight = 51
             PanelWidth = 273
             ParentColor = False
             TabOrder = 1
             OnClick = DBCtrlGridBibliaCapituloClick
             OnPaintPanel = DBCtrlGridBibliaCapituloPaintPanel
+            ExplicitHeight = 149
             object DBCtrlGridBibliaCapitulo_pnl: TPanel
               Left = 1
               Top = 1
               Width = 271
-              Height = 47
+              Height = 49
               Align = alClient
               BevelOuter = bvNone
               ParentBackground = False
               TabOrder = 0
               OnClick = DBCtrlGridBibliaCapituloClick
+              ExplicitHeight = 47
               object txtdbBibliaCapitulo: TbsSkinDBText
                 Left = 0
                 Top = 0
                 Width = 271
-                Height = 47
+                Height = 49
                 Cursor = crHandPoint
                 EllipsType = bsetNone
                 UseSkinFont = False
@@ -18748,7 +18783,7 @@ object fmIndex: TfmIndex
           Left = 605
           Top = 0
           Width = 294
-          Height = 213
+          Height = 217
           Margins.Top = 0
           Margins.Bottom = 0
           HintImageIndex = 0
@@ -18778,6 +18813,7 @@ object fmIndex: TfmIndex
           Sizeable = False
           Align = alClient
           Caption = 'Vers'#237'culos'
+          ExplicitHeight = 213
           object bsSkinStdLabel138: TbsSkinStdLabel
             AlignWithMargins = True
             Left = 4
@@ -18804,34 +18840,36 @@ object fmIndex: TfmIndex
             Left = 1
             Top = 62
             Width = 292
-            Height = 150
+            Height = 154
             Cursor = crHandPoint
             Align = alClient
             Color = clBtnFace
             DataSource = DM.dsBIBLIA_VERSICULOS
             SkinData = DM.bsSkinData1
-            PanelHeight = 50
+            PanelHeight = 51
             PanelWidth = 273
             ParentColor = False
             TabOrder = 1
             OnClick = DBCtrlGridBibliaVersiculoClick
             OnPaintPanel = DBCtrlGridBibliaVersiculoPaintPanel
+            ExplicitHeight = 150
             object DBCtrlGridBibliaVersiculo_pnl: TPanel
               Left = 1
               Top = 1
               Width = 271
-              Height = 48
+              Height = 49
               Align = alClient
               BevelOuter = bvNone
               ParentBackground = False
               TabOrder = 0
               OnClick = DBCtrlGridBibliaVersiculoClick
+              ExplicitHeight = 48
               object txtdbBibliaVersiculoTxt: TbsSkinDBText
                 AlignWithMargins = True
                 Left = 50
                 Top = 0
                 Width = 216
-                Height = 48
+                Height = 49
                 Cursor = crHandPoint
                 Margins.Left = 0
                 Margins.Top = 0
@@ -18870,7 +18908,7 @@ object fmIndex: TfmIndex
                 Left = 0
                 Top = 0
                 Width = 50
-                Height = 48
+                Height = 49
                 Cursor = crHandPoint
                 Margins.Left = 0
                 Margins.Top = 0
@@ -18948,9 +18986,9 @@ object fmIndex: TfmIndex
         end
         object bsSkinPanel4: TbsSkinPanel
           Left = 302
-          Top = 213
+          Top = 217
           Width = 600
-          Height = 213
+          Height = 217
           HintImageIndex = 0
           TabOrder = 3
           SkinData = DM.bsSkinData1
@@ -18982,17 +19020,20 @@ object fmIndex: TfmIndex
           Spacing = 2
           Caption = 'bsSkinPanel4'
           Align = alClient
+          ExplicitTop = 213
+          ExplicitHeight = 213
           object pnlBiblia: TPanel
             Left = 0
             Top = 0
             Width = 600
-            Height = 213
+            Height = 217
             Align = alClient
             BevelOuter = bvNone
             Color = clWhite
             ParentBackground = False
             ShowCaption = False
             TabOrder = 0
+            ExplicitHeight = 213
             object imgBiblia: TImage
               Left = 2
               Top = 176
@@ -19031,7 +19072,7 @@ object fmIndex: TfmIndex
         Left = 1135
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 2
         SkinData = DM.bsSkinData1
@@ -19060,36 +19101,39 @@ object fmIndex: TfmIndex
         Align = alRight
         Caption = 'Hist'#243'rico'
         OnClose = pnlBibliaHistoricoClose
+        ExplicitHeight = 426
         object DBCtrlGridBibliaHistorico: TbsSkinDBCtrlGrid
           Left = 1
           Top = 21
           Width = 231
-          Height = 367
+          Height = 375
           Cursor = crHandPoint
           Align = alClient
           Color = clBtnFace
           DataSource = DM.dsBIBLIA_HISTORICO
           SkinData = DM.bsSkinData1
-          PanelHeight = 122
+          PanelHeight = 125
           PanelWidth = 212
           ParentColor = False
           TabOrder = 0
           OnClick = DBCtrlGridBibliaHistoricoClick
           OnPaintPanel = DBCtrlGridBibliaHistoricoPaintPanel
+          ExplicitHeight = 367
           object DBCtrlGridBibliaHistorico_pnl: TPanel
             Left = 1
             Top = 1
             Width = 210
-            Height = 120
+            Height = 123
             Align = alClient
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 0
             OnClick = DBCtrlGridBibliaCapituloClick
+            ExplicitHeight = 120
             object txtBibliaHistoricoPassagem: TbsSkinDBText
               AlignWithMargins = True
               Left = 0
-              Top = 104
+              Top = 107
               Width = 205
               Height = 16
               Cursor = crHandPoint
@@ -19131,7 +19175,7 @@ object fmIndex: TfmIndex
               Left = 5
               Top = 0
               Width = 200
-              Height = 104
+              Height = 107
               Cursor = crHandPoint
               Margins.Left = 5
               Margins.Top = 0
@@ -19171,7 +19215,7 @@ object fmIndex: TfmIndex
         end
         object GridPanel70: TGridPanel
           Left = 1
-          Top = 388
+          Top = 396
           Width = 231
           Height = 37
           Align = alBottom
@@ -19209,6 +19253,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 388
           object bsSkinButton20: TbsSkinButton
             Left = 5
             Top = 5
@@ -19252,11 +19297,12 @@ object fmIndex: TfmIndex
       Caption = 'Busca B'#237'blica'
       ImageIndex = 29
       OnShow = tsBuscaBiblicaShow
+      ExplicitHeight = 426
       object pnLivros: TbsSkinExPanel
         Left = 1135
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 3
         Visible = False
@@ -19286,6 +19332,7 @@ object fmIndex: TfmIndex
         Align = alRight
         Caption = 'Filtros de Busca'
         OnClose = pnLivrosClose
+        ExplicitHeight = 426
         object GridPanel15: TGridPanel
           Left = 1
           Top = 21
@@ -19591,7 +19638,7 @@ object fmIndex: TfmIndex
           Left = 1
           Top = 88
           Width = 231
-          Height = 337
+          Height = 345
           Align = alClient
           BevelOuter = bvNone
           Caption = 'GridPanel13'
@@ -19627,11 +19674,12 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 2
+          ExplicitHeight = 337
           object ckLivros2: TbsSkinCheckListBox
             Left = 5
             Top = 5
             Width = 221
-            Height = 327
+            Height = 335
             HintImageIndex = 0
             TabOrder = 0
             SkinData = DM.bsSkinData1
@@ -19682,6 +19730,7 @@ object fmIndex: TfmIndex
             Spacing = 2
             RowCount = 0
             OnClickCheck = ckLivros2ClickCheck
+            ExplicitHeight = 327
           end
         end
       end
@@ -19690,7 +19739,7 @@ object fmIndex: TfmIndex
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -19720,11 +19769,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel2: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 404
+          Height = 412
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -20785,7 +20835,7 @@ object fmIndex: TfmIndex
         Left = 548
         Top = 0
         Width = 587
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 2
         SkinData = DM.bsSkinData1
@@ -20817,17 +20867,19 @@ object fmIndex: TfmIndex
         Spacing = 2
         Caption = 'bsSkinPanel5'
         Align = alClient
+        ExplicitHeight = 426
         object pnlBibliaBusca: TPanel
           Left = 0
           Top = 0
           Width = 587
-          Height = 426
+          Height = 434
           Align = alClient
           BevelOuter = bvNone
           Color = clWhite
           ParentBackground = False
           ShowCaption = False
           TabOrder = 0
+          ExplicitHeight = 426
           object imgBibliaBusca: TImage
             Left = 2
             Top = 176
@@ -20866,7 +20918,7 @@ object fmIndex: TfmIndex
         Left = 236
         Top = 0
         Width = 309
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -20896,6 +20948,7 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alLeft
         Caption = 'Livros'
+        ExplicitHeight = 426
         object GridPanel12: TGridPanel
           Left = 1
           Top = 21
@@ -21058,33 +21111,35 @@ object fmIndex: TfmIndex
           Left = 1
           Top = 59
           Width = 307
-          Height = 366
+          Height = 374
           Align = alClient
           Color = clBtnFace
           DataSource = DM.dsBIBLIA_BUSCA
           SkinData = DM.bsSkinData1
-          PanelHeight = 122
+          PanelHeight = 124
           PanelWidth = 288
           ParentColor = False
           TabOrder = 1
           OnClick = DBCtrlGridBibliaBuscaClick
           OnPaintPanel = DBCtrlGridBibliaBuscaPaintPanel
+          ExplicitHeight = 366
           object DBCtrlGridBibliaBusca_pnl: TPanel
             Left = 1
             Top = 1
             Width = 286
-            Height = 120
+            Height = 122
             Align = alClient
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 0
             OnClick = DBCtrlGridBibliaBuscaClick
+            ExplicitHeight = 120
             object txtBibliaBusca: TbsSkinDBText
               AlignWithMargins = True
               Left = 5
               Top = 16
               Width = 276
-              Height = 104
+              Height = 106
               Margins.Left = 5
               Margins.Top = 0
               Margins.Right = 5
@@ -21166,9 +21221,10 @@ object fmIndex: TfmIndex
       Caption = 'Cron'#244'metro de Culto'
       ImageIndex = 44
       OnShow = tsCronoCultoShow
+      ExplicitHeight = 426
       object mpMusica: TMediaPlayer
         Left = 0
-        Top = 401
+        Top = 409
         Width = 1367
         Height = 25
         Align = alBottom
@@ -21177,13 +21233,14 @@ object fmIndex: TfmIndex
         Visible = False
         ParentDoubleBuffered = False
         TabOrder = 2
+        ExplicitTop = 401
       end
       object pnlFormatEscSB: TbsSkinExPanel
         Tag = 3
         Left = 0
         Top = 0
         Width = 233
-        Height = 401
+        Height = 409
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -21213,11 +21270,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 401
         object bsSkinScrollPanel3: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 379
+          Height = 387
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -22390,7 +22448,7 @@ object fmIndex: TfmIndex
         Left = 233
         Top = 0
         Width = 1135
-        Height = 401
+        Height = 409
         HintImageIndex = 0
         TabOrder = 1
         SkinData = DM.bsSkinData1
@@ -22422,9 +22480,10 @@ object fmIndex: TfmIndex
         Spacing = 2
         Caption = 'bsSkinPanel6'
         Align = alClient
+        ExplicitHeight = 401
         object gEscSbR: TbsSkinGauge
           Left = 0
-          Top = 395
+          Top = 403
           Width = 1135
           Height = 6
           HintImageIndex = 0
@@ -22448,18 +22507,20 @@ object fmIndex: TfmIndex
           Vertical = False
           ProgressAnimationPause = 3000
           Align = alBottom
+          ExplicitTop = 395
         end
         object pnlEscSB: TPanel
           Left = 0
           Top = 0
           Width = 1135
-          Height = 395
+          Height = 403
           Align = alClient
           BevelOuter = bvNone
           Color = clWhite
           ParentBackground = False
           ShowCaption = False
           TabOrder = 0
+          ExplicitHeight = 395
           object imgEscSB: TImage
             Left = 2
             Top = 109
@@ -22495,15 +22556,17 @@ object fmIndex: TfmIndex
       Caption = 'Sorteio Num'#233'rico'
       ImageIndex = 42
       OnShow = tsSorteioShow
+      ExplicitHeight = 426
       object pnlSorteio: TPanel
         Left = 362
         Top = 0
         Width = 877
-        Height = 426
+        Height = 434
         Align = alClient
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 2
+        ExplicitHeight = 426
         object imgSorteio: TImage
           Left = 0
           Top = 6
@@ -22517,7 +22580,7 @@ object fmIndex: TfmIndex
           Left = 0
           Top = 0
           Width = 877
-          Height = 420
+          Height = 428
           Align = alClient
           Alignment = taCenter
           AutoSize = False
@@ -22539,7 +22602,7 @@ object fmIndex: TfmIndex
         end
         object gSorteio: TbsSkinGauge
           Left = 0
-          Top = 420
+          Top = 428
           Width = 877
           Height = 6
           HintImageIndex = 0
@@ -22563,6 +22626,7 @@ object fmIndex: TfmIndex
           Vertical = False
           ProgressAnimationPause = 3000
           Align = alBottom
+          ExplicitTop = 420
         end
         object opNumSorteado: TbsSkinEdit
           Left = 34
@@ -22641,7 +22705,7 @@ object fmIndex: TfmIndex
         Left = 233
         Top = 0
         Width = 129
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 1
         SkinData = DM.bsSkinData1
@@ -22669,11 +22733,12 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alLeft
         Caption = 'N'#250'meros do Sorteio'
+        ExplicitHeight = 426
         object lbSorteio: TbsSkinOfficeListBox
           Left = 1
           Top = 21
           Width = 127
-          Height = 335
+          Height = 343
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -22700,10 +22765,11 @@ object fmIndex: TfmIndex
           MouseMoveChangeIndex = False
           Align = alClient
           OnItemCheckClick = lbSorteioItemCheckClick
+          ExplicitHeight = 335
         end
         object GridPanel47: TGridPanel
           Left = 1
-          Top = 356
+          Top = 364
           Width = 127
           Height = 69
           Align = alBottom
@@ -22778,6 +22844,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 356
           object bsSkinButton3: TbsSkinButton
             Left = 5
             Top = 5
@@ -22937,7 +23004,7 @@ object fmIndex: TfmIndex
         Left = 1239
         Top = 0
         Width = 129
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 3
         SkinData = DM.bsSkinData1
@@ -22965,11 +23032,12 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alRight
         Caption = #218'ltimos Sorteados'
+        ExplicitHeight = 426
         object lbSorteado: TbsSkinOfficeListBox
           Left = 1
           Top = 21
           Width = 127
-          Height = 367
+          Height = 375
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -22996,10 +23064,11 @@ object fmIndex: TfmIndex
           MouseMoveChangeIndex = False
           Align = alClient
           OnItemCheckClick = lbSorteioItemCheckClick
+          ExplicitHeight = 367
         end
         object GridPanel48: TGridPanel
           Left = 1
-          Top = 388
+          Top = 396
           Width = 127
           Height = 37
           Align = alBottom
@@ -23037,6 +23106,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 388
           object bsSkinButton9: TbsSkinButton
             Left = 5
             Top = 5
@@ -23080,7 +23150,7 @@ object fmIndex: TfmIndex
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -23110,11 +23180,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel4: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 404
+          Height = 412
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -24000,12 +24071,13 @@ object fmIndex: TfmIndex
       Caption = 'Sorteio de Nomes'
       ImageIndex = 43
       OnShow = tsSorteioNMShow
+      ExplicitHeight = 426
       object pnlFormatSorteioNM: TbsSkinExPanel
         Tag = 6
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -24035,11 +24107,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel5: TbsSkinScrollPanel
           Left = 1
           Top = 176
           Width = 231
-          Height = 249
+          Height = 257
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -24919,7 +24992,7 @@ object fmIndex: TfmIndex
         Left = 233
         Top = 0
         Width = 150
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 1
         SkinData = DM.bsSkinData1
@@ -24947,11 +25020,12 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alLeft
         Caption = 'Nomes do Sorteio'
+        ExplicitHeight = 426
         object lbSorteioNM: TbsSkinOfficeListBox
           Left = 1
           Top = 21
           Width = 148
-          Height = 335
+          Height = 343
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -24978,10 +25052,11 @@ object fmIndex: TfmIndex
           MouseMoveChangeIndex = False
           Align = alClient
           OnItemCheckClick = lbSorteioNMItemCheckClick
+          ExplicitHeight = 335
         end
         object GridPanel50: TGridPanel
           Left = 1
-          Top = 356
+          Top = 364
           Width = 148
           Height = 69
           Align = alBottom
@@ -25056,6 +25131,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 356
           object bsSkinButton8: TbsSkinButton
             Left = 5
             Top = 5
@@ -25215,7 +25291,7 @@ object fmIndex: TfmIndex
         Left = 1218
         Top = 0
         Width = 150
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 3
         SkinData = DM.bsSkinData1
@@ -25243,11 +25319,12 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alRight
         Caption = #218'ltimos Sorteados'
+        ExplicitHeight = 426
         object lbSorteadoNM: TbsSkinOfficeListBox
           Left = 1
           Top = 21
           Width = 148
-          Height = 367
+          Height = 375
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -25274,10 +25351,11 @@ object fmIndex: TfmIndex
           MouseMoveChangeIndex = False
           Align = alClient
           OnItemCheckClick = lbSorteioItemCheckClick
+          ExplicitHeight = 367
         end
         object GridPanel49: TGridPanel
           Left = 1
-          Top = 388
+          Top = 396
           Width = 148
           Height = 37
           Align = alBottom
@@ -25315,6 +25393,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 388
           object bsSkinButton7: TbsSkinButton
             Left = 5
             Top = 5
@@ -25357,11 +25436,12 @@ object fmIndex: TfmIndex
         Left = 383
         Top = 0
         Width = 835
-        Height = 426
+        Height = 434
         Align = alClient
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 2
+        ExplicitHeight = 426
         object imgSorteioNM: TImage
           Left = 0
           Top = 6
@@ -25375,7 +25455,7 @@ object fmIndex: TfmIndex
           Left = 0
           Top = 0
           Width = 835
-          Height = 420
+          Height = 428
           Align = alClient
           Alignment = taCenter
           AutoSize = False
@@ -25398,7 +25478,7 @@ object fmIndex: TfmIndex
         end
         object gSorteioNM: TbsSkinGauge
           Left = 0
-          Top = 420
+          Top = 428
           Width = 835
           Height = 6
           HintImageIndex = 0
@@ -25422,6 +25502,7 @@ object fmIndex: TfmIndex
           Vertical = False
           ProgressAnimationPause = 3000
           Align = alBottom
+          ExplicitTop = 420
         end
         object opNumSorteadoNM: TbsSkinEdit
           Left = 34
@@ -25501,16 +25582,18 @@ object fmIndex: TfmIndex
       Caption = 'Cron'#244'metro'
       ImageIndex = 44
       OnShow = tsCronometroShow
+      ExplicitHeight = 426
       object pnlCrono: TPanel
         Left = 233
         Top = 0
         Width = 985
-        Height = 426
+        Height = 434
         Align = alClient
         BevelOuter = bvNone
         Color = clWhite
         ParentBackground = False
         TabOrder = 1
+        ExplicitHeight = 426
         object imgCrono: TImage
           Left = 6
           Top = 1
@@ -25524,7 +25607,7 @@ object fmIndex: TfmIndex
           Left = 0
           Top = 0
           Width = 985
-          Height = 420
+          Height = 428
           Align = alClient
           Alignment = taCenter
           AutoSize = False
@@ -25547,7 +25630,7 @@ object fmIndex: TfmIndex
         end
         object gCrono: TbsSkinGauge
           Left = 0
-          Top = 420
+          Top = 428
           Width = 985
           Height = 6
           HintImageIndex = 0
@@ -25571,6 +25654,7 @@ object fmIndex: TfmIndex
           Vertical = False
           ProgressAnimationPause = 3000
           Align = alBottom
+          ExplicitTop = 420
         end
       end
       object pnlFormatCrono: TbsSkinExPanel
@@ -25578,7 +25662,7 @@ object fmIndex: TfmIndex
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -25608,11 +25692,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel6: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 404
+          Height = 412
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -26494,7 +26579,7 @@ object fmIndex: TfmIndex
         Left = 1218
         Top = 0
         Width = 150
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 2
         SkinData = DM.bsSkinData1
@@ -26522,9 +26607,10 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alRight
         Caption = 'Tempos gravados:'
+        ExplicitHeight = 426
         object GridPanel56: TGridPanel
           Left = 1
-          Top = 388
+          Top = 396
           Width = 148
           Height = 37
           Align = alBottom
@@ -26562,6 +26648,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 1
+          ExplicitTop = 388
           object bsSkinButton13: TbsSkinButton
             Left = 5
             Top = 5
@@ -26603,7 +26690,7 @@ object fmIndex: TfmIndex
           Left = 1
           Top = 21
           Width = 148
-          Height = 367
+          Height = 375
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -26630,6 +26717,7 @@ object fmIndex: TfmIndex
           MouseMoveChangeIndex = False
           Align = alClient
           OnItemCheckClick = lbSorteioItemCheckClick
+          ExplicitHeight = 367
         end
       end
     end
@@ -26637,12 +26725,13 @@ object fmIndex: TfmIndex
       Caption = 'Texto Din'#226'mico'
       ImageIndex = 45
       OnShow = tsPainelDShow
+      ExplicitHeight = 426
       object pnlFormatPainelD: TbsSkinExPanel
         Tag = 7
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -26672,11 +26761,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel7: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 404
+          Height = 412
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -27560,12 +27650,13 @@ object fmIndex: TfmIndex
         Left = 233
         Top = 0
         Width = 1135
-        Height = 426
+        Height = 434
         Align = alClient
         BevelOuter = bvNone
         Color = clWhite
         ParentBackground = False
         TabOrder = 1
+        ExplicitHeight = 426
         object imgTxtPainelD: TImage
           Left = 2
           Top = 2
@@ -27579,7 +27670,7 @@ object fmIndex: TfmIndex
           Left = 0
           Top = 0
           Width = 1135
-          Height = 426
+          Height = 434
           Align = alClient
           Alignment = taCenter
           AutoSize = False
@@ -27607,11 +27698,12 @@ object fmIndex: TfmIndex
       Caption = 'Texto Interativo'
       ImageIndex = 46
       OnShow = tsTextoInterativoShow
+      ExplicitHeight = 426
       object RichEdit0: TbsSkinRichEdit
         Left = 0
         Top = 0
         Width = 1349
-        Height = 407
+        Height = 415
         ScrollBars = ssBoth
         Align = alClient
         Color = clWhite
@@ -27640,12 +27732,13 @@ object fmIndex: TfmIndex
         OnKeyDown = RichEditKeyDown
         OnKeyUp = edtKeyUp
         OnMouseDown = RichEditMouseDown
+        ExplicitHeight = 407
       end
       object bsSkinScrollBar12: TbsSkinScrollBar
         Left = 1349
         Top = 0
         Width = 19
-        Height = 407
+        Height = 415
         HintImageIndex = 0
         TabOrder = 1
         SkinData = DM.bsSkinData1
@@ -27671,11 +27764,12 @@ object fmIndex: TfmIndex
         Position = 0
         SmallChange = 1
         LargeChange = 1
+        ExplicitHeight = 407
       end
       object bsSkinScrollBar13: TbsSkinScrollBar
         AlignWithMargins = True
         Left = 0
-        Top = 407
+        Top = 415
         Width = 1353
         Height = 19
         Margins.Left = 0
@@ -27707,23 +27801,24 @@ object fmIndex: TfmIndex
         Position = 0
         SmallChange = 1
         LargeChange = 1
+        ExplicitTop = 407
       end
     end
     object bsSkinTabSheet3: TbsSkinTabSheet
       Caption = 'MENU DO PROGRAMA'
       ImageIndex = 62
+      ExplicitHeight = 426
       DesignSize = (
         1368
-        426)
+        434)
       object bsAppMenu1: TbsAppMenu
-        Left = -110
-        Top = 0
-        Width = 100
-        Height = 100
+        Left = 0
+        Top = 4
+        Width = 761
+        Height = 429
         HintImageIndex = 0
         Anchors = []
         TabOrder = 0
-        Visible = False
         SkinData = DM.bsSkinData1
         SkinDataName = 'appmenu'
         UseSkinFont = True
@@ -27807,1864 +27902,11 @@ object fmIndex: TfmIndex
             Caption = 'Sair'
             OnClick = bsAppMenu1Items10Click
           end>
-        ActivePage = ampOpcoes
+        ActivePage = ampDoe
         BackButtonImageIndex = -1
         BackButtonHotImageIndex = -1
         OnChangePage = bsAppMenu1ChangePage
         OnClick = bsAppMenu1Click
-        object ampDoe: TbsAppMenuPage
-          Left = 150
-          Top = 25
-          Width = 598
-          Height = 332
-          HotScroll = False
-          ScrollOffset = 0
-          ScrollTimerInterval = 50
-          CanScroll = False
-          DefaultWidth = 0
-          object bsSkinPanel33: TbsSkinPanel
-            Left = 0
-            Top = 0
-            Width = 598
-            Height = 113
-            HintImageIndex = 0
-            TabOrder = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'panel'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            EmptyDrawing = False
-            RibbonStyle = False
-            ImagePosition = bsipDefault
-            TransparentMode = False
-            CaptionImageIndex = -1
-            RealHeight = -1
-            AutoEnabledControls = True
-            CheckedMode = False
-            Checked = False
-            DefaultAlignment = taLeftJustify
-            DefaultCaptionHeight = 20
-            BorderStyle = bvNone
-            CaptionMode = False
-            RollUpMode = False
-            RollUpState = False
-            NumGlyphs = 1
-            Spacing = 2
-            Caption = 'bsSkinPanel9'
-            Align = alTop
-            object bsSkinStdLabel6: TbsSkinStdLabel
-              AlignWithMargins = True
-              Left = 15
-              Top = 0
-              Width = 299
-              Height = 113
-              Margins.Left = 15
-              Margins.Top = 0
-              Margins.Right = 0
-              Margins.Bottom = 0
-              EllipsType = bsetNone
-              UseSkinFont = False
-              UseSkinColor = True
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clWindowText
-              DefaultFont.Height = -11
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'stdlabel'
-              Font.Charset = ANSI_CHARSET
-              Font.Color = 2894892
-              Font.Height = -40
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              Align = alLeft
-              Caption = 'Fa'#231'a sua Doa'#231#227'o'
-              ParentFont = False
-              Layout = tlCenter
-              ExplicitHeight = 48
-            end
-          end
-          object ScrollBox6: TScrollBox
-            Left = 0
-            Top = 113
-            Width = 598
-            Height = 219
-            Align = alClient
-            BorderStyle = bsNone
-            TabOrder = 1
-            object bsSkinPanel55: TbsSkinPanel
-              Left = 0
-              Top = 80
-              Width = 598
-              Height = 65
-              HintImageIndex = 0
-              TabOrder = 1
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'panel'
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clWindowText
-              DefaultFont.Height = 13
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              DefaultWidth = 0
-              DefaultHeight = 0
-              UseSkinFont = True
-              EmptyDrawing = False
-              RibbonStyle = False
-              ImagePosition = bsipDefault
-              TransparentMode = False
-              CaptionImageIndex = 0
-              RealHeight = -1
-              AutoEnabledControls = True
-              CheckedMode = False
-              Checked = False
-              DefaultAlignment = taLeftJustify
-              DefaultCaptionHeight = 20
-              BorderStyle = bvNone
-              CaptionMode = False
-              RollUpMode = False
-              RollUpState = False
-              NumGlyphs = 1
-              Spacing = 2
-              Caption = 'bsSkinPanel10'
-              Align = alTop
-              object Image24: TImage
-                AlignWithMargins = True
-                Left = 30
-                Top = 0
-                Width = 200
-                Height = 65
-                Cursor = crHandPoint
-                Margins.Left = 30
-                Margins.Top = 0
-                Margins.Right = 0
-                Margins.Bottom = 0
-                Align = alLeft
-                AutoSize = True
-                Picture.Data = {
-                  0954506E67496D61676589504E470D0A1A0A0000000D49484452000000C80000
-                  00290806000000704066B9000000097048597300000B1300000B1301009A9C18
-                  000039ED69545874584D4C3A636F6D2E61646F62652E786D7000000000003C3F
-                  787061636B657420626567696E3D22EFBBBF222069643D2257354D304D704365
-                  6869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D6574612078
-                  6D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D
-                  2241646F626520584D5020436F726520352E362D633133382037392E31353938
-                  32342C20323031362F30392F31342D30313A30393A3031202020202020202022
-                  3E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F
-                  7777772E77332E6F72672F313939392F30322F32322D7264662D73796E746178
-                  2D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264
-                  663A61626F75743D22220A202020202020202020202020786D6C6E733A786D70
-                  3D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F220A
-                  202020202020202020202020786D6C6E733A64633D22687474703A2F2F707572
-                  6C2E6F72672F64632F656C656D656E74732F312E312F220A2020202020202020
-                  20202020786D6C6E733A70686F746F73686F703D22687474703A2F2F6E732E61
-                  646F62652E636F6D2F70686F746F73686F702F312E302F220A20202020202020
-                  2020202020786D6C6E733A786D704D4D3D22687474703A2F2F6E732E61646F62
-                  652E636F6D2F7861702F312E302F6D6D2F220A20202020202020202020202078
-                  6D6C6E733A73744576743D22687474703A2F2F6E732E61646F62652E636F6D2F
-                  7861702F312E302F73547970652F5265736F757263654576656E7423220A2020
-                  20202020202020202020786D6C6E733A746966663D22687474703A2F2F6E732E
-                  61646F62652E636F6D2F746966662F312E302F220A2020202020202020202020
-                  20786D6C6E733A657869663D22687474703A2F2F6E732E61646F62652E636F6D
-                  2F657869662F312E302F223E0A2020202020202020203C786D703A4372656174
-                  6F72546F6F6C3E41646F62652050686F746F73686F7020434320323031372028
-                  57696E646F7773293C2F786D703A43726561746F72546F6F6C3E0A2020202020
-                  202020203C786D703A437265617465446174653E323031382D30322D30375430
-                  393A34383A30322D30323A30303C2F786D703A437265617465446174653E0A20
-                  20202020202020203C786D703A4D6F64696679446174653E323031382D30322D
-                  30375430393A35343A34372D30323A30303C2F786D703A4D6F64696679446174
-                  653E0A2020202020202020203C786D703A4D65746164617461446174653E3230
-                  31382D30322D30375430393A35343A34372D30323A30303C2F786D703A4D6574
-                  6164617461446174653E0A2020202020202020203C64633A666F726D61743E69
-                  6D6167652F706E673C2F64633A666F726D61743E0A2020202020202020203C70
-                  686F746F73686F703A436F6C6F724D6F64653E333C2F70686F746F73686F703A
-                  436F6C6F724D6F64653E0A2020202020202020203C786D704D4D3A496E737461
-                  6E636549443E786D702E6969643A65353764646135302D383961342D33313433
-                  2D386231632D6464323862646435393561633C2F786D704D4D3A496E7374616E
-                  636549443E0A2020202020202020203C786D704D4D3A446F63756D656E744944
-                  3E61646F62653A646F6369643A70686F746F73686F703A61636332366663312D
-                  306266642D313165382D626639372D6565383531343663393561633C2F786D70
-                  4D4D3A446F63756D656E7449443E0A2020202020202020203C786D704D4D3A4F
-                  726967696E616C446F63756D656E7449443E786D702E6469643A646139363930
-                  39352D633236662D633534622D623930322D6532656633393962346432353C2F
-                  786D704D4D3A4F726967696E616C446F63756D656E7449443E0A202020202020
-                  2020203C786D704D4D3A486973746F72793E0A2020202020202020202020203C
-                  7264663A5365713E0A2020202020202020202020202020203C7264663A6C6920
-                  7264663A7061727365547970653D225265736F75726365223E0A202020202020
-                  2020202020202020202020203C73744576743A616374696F6E3E637265617465
-                  643C2F73744576743A616374696F6E3E0A202020202020202020202020202020
-                  2020203C73744576743A696E7374616E636549443E786D702E6969643A646139
-                  36393039352D633236662D633534622D623930322D6532656633393962346432
-                  353C2F73744576743A696E7374616E636549443E0A2020202020202020202020
-                  202020202020203C73744576743A7768656E3E323031382D30322D3037543039
-                  3A34383A30322D30323A30303C2F73744576743A7768656E3E0A202020202020
-                  2020202020202020202020203C73744576743A736F6674776172654167656E74
-                  3E41646F62652050686F746F73686F702043432032303137202857696E646F77
-                  73293C2F73744576743A736F6674776172654167656E743E0A20202020202020
-                  20202020202020203C2F7264663A6C693E0A2020202020202020202020202020
-                  203C7264663A6C69207264663A7061727365547970653D225265736F75726365
-                  223E0A2020202020202020202020202020202020203C73744576743A61637469
-                  6F6E3E73617665643C2F73744576743A616374696F6E3E0A2020202020202020
-                  202020202020202020203C73744576743A696E7374616E636549443E786D702E
-                  6969643A65353764646135302D383961342D333134332D386231632D64643238
-                  62646435393561633C2F73744576743A696E7374616E636549443E0A20202020
-                  20202020202020202020202020203C73744576743A7768656E3E323031382D30
-                  322D30375430393A35343A34372D30323A30303C2F73744576743A7768656E3E
-                  0A2020202020202020202020202020202020203C73744576743A736F66747761
-                  72654167656E743E41646F62652050686F746F73686F70204343203230313720
-                  2857696E646F7773293C2F73744576743A736F6674776172654167656E743E0A
-                  2020202020202020202020202020202020203C73744576743A6368616E676564
-                  3E2F3C2F73744576743A6368616E6765643E0A20202020202020202020202020
-                  20203C2F7264663A6C693E0A2020202020202020202020203C2F7264663A5365
-                  713E0A2020202020202020203C2F786D704D4D3A486973746F72793E0A202020
-                  2020202020203C746966663A4F7269656E746174696F6E3E313C2F746966663A
-                  4F7269656E746174696F6E3E0A2020202020202020203C746966663A58526573
-                  6F6C7574696F6E3E3732303030302F31303030303C2F746966663A585265736F
-                  6C7574696F6E3E0A2020202020202020203C746966663A595265736F6C757469
-                  6F6E3E3732303030302F31303030303C2F746966663A595265736F6C7574696F
-                  6E3E0A2020202020202020203C746966663A5265736F6C7574696F6E556E6974
-                  3E323C2F746966663A5265736F6C7574696F6E556E69743E0A20202020202020
-                  20203C657869663A436F6C6F7253706163653E36353533353C2F657869663A43
-                  6F6C6F7253706163653E0A2020202020202020203C657869663A506978656C58
-                  44696D656E73696F6E3E3230303C2F657869663A506978656C5844696D656E73
-                  696F6E3E0A2020202020202020203C657869663A506978656C5944696D656E73
-                  696F6E3E34313C2F657869663A506978656C5944696D656E73696F6E3E0A2020
-                  202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A
-                  5244463E0A3C2F783A786D706D6574613E0A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020200A20202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020200A2020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020200A202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020200A20202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020202020200A2020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20200A2020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020200A202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020200A20202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020200A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020200A20202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020200A2020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020200A202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020200A20202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020202020200A2020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20200A2020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020200A202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020200A20202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020200A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020200A20202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020200A2020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020200A202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020200A20202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020202020200A2020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20200A2020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020200A202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020200A20202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020200A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  200A3C3F787061636B657420656E643D2277223F3E8FFDA12200002651494441
-                  5478DAED7C077C5465D6FE73A74F26934921950021D4842E82805441B18108AC
-                  6515412C28EEA2A8B82A16FCBEB517505177451415C405C5B2CB8A75A517E925
-                  B42424A4F732C9D43BF7FECF99B983C3CD0DE0EE7FCDF7DBE5FC3C92796F99F7
-                  7DEF79CE79CE79DF3B42C55BFF8353220810743AB84A8BE113FDB05D30147243
-                  295CDB36C3AC33C0A817618931A3D9E2C4DA03B5F8CB86F2F472D1D247341A06
-                  D9CC8DBDE21D86548B5E8E36E8048F20A2D2E3C6B1BA2A7187A7D9B8CF191593
-                  9B100FB96FBC0EB11E279AFD3ECC18DB1F032FE98B8A03C72036FA90DAA91FCC
-                  D40D5996D09A08ED93B0E0DDCFF0D4BA4DF86F91DF3C3700FD27A6A3B6C8D5D6
-                  5DF9AF13E15C00D2B46D13E28C16243980C2466FD2CB5B4A6FD85357372335CD
-                  37A06B4760783F23FA649A61D34B30926DB37D8B32E0F10B28AC04761F1771F8
-                  A45CB4F580FE0343BDE1C381B1AEA3824DC62D049001A37BA3F2C0F1F3003983
-                  9C0748DBC9190112356008E4A60AC4ECDF01C92DC6BCB7B7FC991F1A1B6675EC
-                  EA364C1D2260CC8526C06E00DC12A446197E2F8343A2DBC83050B3DE2C00317A
-                  C06160AB4761BE806F7698F1C3A7F55F398F953FF8D85DA372864C1A82A22DFB
-                  1070FACF03A415390F90B6935601E2F5791033623C52FC95D8F0C692B9AFE6CB
-                  AFA40D8DC1DD97BB91DDC9093448A86B040290A10BE8A0A36BF5060287498460
-                  0E4030D2BD081B3208243010604C30A55A81B424541764E0CBA5A5A85E9FF7EE
-                  2D370DB92D5AF2A2B2A81EED33CE03444BCE03A4ED441320CD25272159A390D9
-                  AB876DD5D255DFBCB5B778D83D4F8CC3D471F5C0897DA83DD90C51C7E7539490
-                  0918840443940E7A3B35C558A0B3C543678A027422197B33F1AD4648FE26483E
-                  8A2CFA381833B229B20CC0FEEFABB1FED5CD1523ECDECB32BB77DC6F8AEB018B
-                  4C90A368D36A87CF03E4BCFC8A2254FCE97F233E1140041DDC3595488B36745A
-                  FED9862D4BF2EAD2DE5C711DFAF5AC807BD326386B9B21EBF56013D6D1FFF504
-                  2893450F7DBC11FA76EDA08FED019D259182061FE548205248A0071BA882EC2B
-                  82E4A9844CE8329852A1CF1C8ED2E2647C7AF76A0C31F9260EBAE6DABFA28CCE
-                  735184A2EFD0EC705A2216ACFA164F7DBBADADE7EE5793F300693B11AADE7936
-                  E21385049D1E099EFA2E6BD67CBFEB9943D58EF7578E45EF4E2568D8B81B9E66
-                  01926040402F4047B6AF172432740208E52186762618927A42E7E84B072827A1
-                  E8A1DC94948C5D601A460F582A017C47117095D1BF5698B286A1BAEE22ACB87E
-                  05AE8CD74FE936EBEE35B0C6025EB7466FE95E1DDB63EE030BB068CD576D3D77
-                  BF9A9C0748DB897062FEEDA73E489460B78B8D892DC92BD8376DC58E8E8FBD9C
-                  8549A39B51B33E0F1E8F19924CE03021183DF4011946032925E2A668038C0906
-                  8A20EDA18F2380586220EBFC4A2EA18BFC3AFACF4C586922F6759012F3430834
-                  B961E97B318E1EEE872FAE598A7B163C38C2367ADC26A9F464105491A2D3D1F5
-                  1DDA63E69DF3F0DE67E701725EFEFD221C9979C5A90F7A8A1EA956DDBA3B3F39
-                  3C3E69BC190BEF9351B3BD064D4D2688448B2817874C001102C4A0C8F62D6619
-                  569B0C9395A2480CD1AC040B109B06D83200B383A89889489610AC600515E1DC
-                  C2128C543A691F02753B213535C232E072ACFAB31EAEC53BCA67CC9AD4B3B1DE
-                  D300D11B8A1AE1FE91DA12E331F9ED4FF0D9BEA36D3D77BF9A9C0748DB8970FC
-                  9671E13F9168B3CEFD26A7FC95C5E555F8F4153BEC75B5282E2260483A88820C
-                  9D19B01A05D8E86C2319BCDEC0952A198291404291C4104D269C6204D2E280F8
-                  14B2E878C8DE6804441B672B0801440E2D9404238911827727C4EABD30D37D03
-                  9963F0D2A49F302139EBA3ECDF4CBEC9DDD444612D70AAB316830182CD8A4173
-                  E663E7F1136D3D77BF9A9C0748DB897062FAA5412F4D6C2985F2ECDCE97F3F69
-                  EB7FAD88F913441CFD89720999281401C31E4D29835F467EA10FB925120AEB75
-                  A870CA6826272F92BD1B89FE10D3423B878CCC8E3AF4EA66429F0BECB00C4B25
-                  B74F51A53909A2DB42F0084444050BE5254EC80D9BE0AF2A85B55F077CBD4AC0
-                  D1672B31E7997BAF114DD15F4A3ECFA9CE9AE26371EC78017ADC3EAFADE7ED57
-                  95F300693B112AEEBE3658DAB589BED7F716D7FEEEA9234578E13E03D2653F6A
-                  9C3AC45B653434FBB1AB48C6B6633A6C3816C09E8A0039F63065626327EE2528
-                  55278A2CB1146D524C01746C2763D48526DCF09B18644EE94978C886546F86E8
-                  F3D3E9A1E49DFF2F78F6C15F790426029A2B211D6FCDCAC5944E43B6678E1F3D
-                  C4E56A52E8191095968C155F7C8B9B172FD71A0B65F6CCDD188120A882915517
-                  713C8174186912691129D789FF198B6B47DA9DB4BDF27D7C8F72D27CD2B273BC
-                  8741B947175287D2E72A520E8B05CAE753D20A4032497B2AE3F29116931E22AD
-                  3FC731F4274D53AECD21DDFF4FCC4567651CDC0741996FEE7F1EA957E3FCB067
-                  0CA6B1CAFC35B7726F41F5B755996B59751F9E4B49D1C8B9B99CF408E90FADDC
-                  9F280EFA90A62A7D3D4C7A003FE701A12FAEF8C30CE8BCDEB4584F63EEAB5B8A
-                  AD8763CBF0DAED3654154BB01B02D876D48BBFE545634755340A6A7C64C41EC4
-                  E944A25901D8698836BD8E0026C04B09B547D6A1491250E409A09EA28D3920C0
-                  ECF413EBF262D24801BF7FB02B92C68F872CDAE1AF6D080293FBA313F310A83D
-                  4251C40D5BDF042C7F85EC6C5D3C6EBEF7BACBDCCEE66F2185C66E4D4DC49FD7
-                  7C8BBB56FC553DD878D263CA83722B93F932E983A4A395BF2FD098A445A473CF
-                  C110C690DE4D3A44995083C639DCC96AD24AD26B497355C7A3486F259D4EDA83
-                  34A695EFAA252D215D47FA141BD08D8B2E44F6D814D497BA7BD3E705A4631172
-                  085AB243E9A77A312956998FDF9266E0740384326F6F93DEAF32B648E1714F21
-                  E5CA0E03AC5D2BE7352A63D845FA3842A0E1797E05212073DF3A28DFB550E3FA
-                  47489F41C891715F3A29E7DDAF7CFF27CAFD89CB07C178214240BF92F435841C
-                  0FCB13A411EB18C1F63F905EAD3C47B53058FF423A4F790E10CA1F9A067D6DFD
-                  3DF68067F17DEB4FC0DEBB112F4CB5A134CF8B8FB77BB1A2A81D5CD644F4D3BB
-                  D133D0844C02471AE51CF41FCD16E51E04103D5797740C14431028079B45EC6F
-                  14B1C715C021B7486E82F2922A0F328CB598373B1DD73E4DCFC8D201FE6A76BC
-                  2225EB55909B8E5114A9849528DAA66D6E6C5FE4C703D3A67EE18F4F9C24FA7C
-                  C139B5A6B4C3DA7F6CC7D5AF7DA01E184FD04FAAB6C9A45D495FC0998527FB37
-                  AD1CE3897C537998E72A1C09D8833545B4F1437AEC17DC232C595963538EDCB8
-                  F0423456785E9225F98173B886817585AA8DAF7BE91CBF730FB49DC96D08195F
-                  D42F1CC304D2BF91EE261DA03A368A7483C635DF928E53B55D43FA2542208B74
-                  6A7CDF81A47F249DAFBAA62F4251811DE63B083987731106E570D2AD420D01C4
-                  5051BDA1C9EB1E71DF8E3C4CBE2A80EBBAE8F0D0AA66BC73221EC33A2460AACD
-                  87FE7A1F9284003C44AD6AFD129A0201F82585FD103E8C44998C049228024BA2
-                  490FBBC9800202C886063F3EAFF3E3A08FDDBC0586F20A5C37528FC7964C87A1
-                  CB60F86ACAA193EB88661D27801C87BEB1014E82DECA179D98D8F3CA9A0E7DBA
-                  76727B3DCDFC45D6E476F86AE34FB872E17BEA01DD45FA56C4670EF55CE61A72
-                  8E13329134322C11A283C099A8712ED39F72E56FF6A066D5F177113226968E8A
-                  0174D2B88F1F212F45D95DB0EEA1969FF446DDE07B3E19897619B6E7297A3CC4
-                  915A254795BE30803395B6818AD1B07088E67AF865AAEB385AF04A2B1BFB451A
-                  DFFD10E98BCADF1C35BE26BDA41543AA51E6203A6409A745261E1F47F538E5EF
-                  48E17E67A0251563A7765CD5568C9F9DD4A70839BFB030300A4997A8AE6146C1
-                  919AA9D441A51F6AA955C6A715CD1B48BB0BF5F36EE968ADAF2DC8A9AE17161D
-                  CDC5A3D719F1F90E37FEB0D9883BBB24626E8A401449871ACAC41B3C7EF8C99B
-                  BBE96F0FD11E9E1D21B8FAAE3C0DFA83953F326E62E9F164588C6820DAF551B5
-                  171FD6CA8876C4C154558FDEF652BCB07C06E22F1A81202BF11500A5FBE0C92B
-                  81C56EC69F16D6A2BF6E04868CEA33C5E5F7AD619A15959C80B51B76E2EA3756
-                  A807F339421E464BD8732E568CE26984E8815AC2E11BCA646D4788DF470A3F48
-                  F6C41F22442158B6900E559DC75E6A25692F84A29A55E361CF21FD46B9A7086D
-                  EF379F68D533D3FF3C6440659E73B7EA18D30BA65991B5EEAE8A11716EE557DA
-                  D6938E545DFB98320F61612FFEA3EA9C8DCA750CB0BD087175F55C305DE364B0
-                  4919C30DCAB823251C9D6F52CE8D943F23E4D8D4328354ED01BF209DA4FCCD86
-                  DF2DE2D877A44C3D5394CF6CD89CD7DD4CCA86E24408BC91F20FE5BB8F299FF9
-                  DC0F35FAF2BCD0F0ECDCD151F947FEB1ADA41A4B0A0AD13553C2ABDB65DC9896
-                  84A733A3883219502D52524E8935531DAF02109F1CDAA82807C11102068BA46C
-                  4FE44A2E532F1D45150658F7280336364A78B986AE6997024F493DBADB4FE2A1
-                  472F86A433426EAC41A72427CCED3CC1DDBF6F3E5581CE757D70C535172FF108
-                  B853A63E589312F0D5E6DDB8F2F516493AF3D04C8D018E541E76A4EC4328F4AA
-                  272CEC21B7A265E4E1303D4299FCB0D811F25C71116D618FC9C2FC395D751F2D
-                  FAC3C2BCF73A55DB15573FD27BDD88DBBADE5B91EB5C249C1E3C38DA6945B748
-                  61D0DFA76A0BD394484952C6618968E3A8C37C7EADF2AF7AAE39EAD4A8DA1790
-                  3EA96A632AB448E9EFD5AA63D3D012342C4B4967B672AE9A4AB31F663FCD093F
-                  1BFB83389D09305DECAFBAD7C7A4376A7CEF7308E52791B25B687C62D65C6B49
-                  FE2B1B0B4B70CFAE721CAE1331B37B025EEF1D8F5AF2FC2E4ABC75E4BDB9F2E4
-                  F579E1F3FBE1218078E510D738556E51D603A5F0464339E47E0C061DA90176B3
-                  09831D7A14516E32AFC6087F6C3C74CDE4D45D4D305BADF0D3BF31645F57F497
-                  31F92E0796BD5F8BE883DD3075EAC8ADEE28DB3099285D1401E46FEB7760C21B
-                  A7CD2B1BFB3E8D01CF207D5FA39DA3C93DAA36F64297E2E7E43052D8D0391A38
-                  55ED7722E4052385A3C27884B8FAEF55C738CCAB3D310B57C30A95871C9693A4
-                  99777C7871A07DAFD8079C551EADFCE161D2E7A12D5A3919DF435D1FEFABCC91
-                  DA88D89839E27EAF6A670790855021422D5A8E87C1C7391947BCB48876369B4C
-                  659C91C29EBE002DE910470C2E7A70F45753299630A02385C1F2A2AA8D2B8DD9
-                  D0AEB071E45753935CA169DECD4B8C35E5B7FF505086EB379720D56EC1371725
-                  43A767701860A0082091718AFE10BDF21250DC81104038AE72B59777849CDA80
-                  4B4009481445B84108513093DE809E7151A827B0AD2A6E468EC10AD96247B4D1
-                  049391A28CC98262AF88AD3927209655E3F797D0F78A5E8C326763DCB8E1473C
-                  8ED82C59148349FA3B5F7E8F3B3EF82C72100BD0D27385298296A8392C0B0383
-                  3D0857038C1AC6B256E33E8CD29B546D5C5A64A3F26B9CCF46BB4BA39DEFAF2E
-                  CB7DC4F79EB56238D2B21D031A2B3DBBA12D75CAD85F57B56B3901A65E5C8666
-                  1A6642A88AA355C9E1DC84A3DC66848C29526640DBE97075485DB5E3D2313B16
-                  7E0EEB55C7B40C9A85E9EA16555B3809675986501530520E6BF433DCAEA6C9F7
-                  22E4BCB484A3D65255DB7EA1E9F1DBBF94F28E4E38EE7763F68693B833330113
-                  93CDA8F44A301B4C418A24890C101FFCA45EBF089742B17E06889287C821CAC5
-                  6B2422976609381269F7680B8E78747822DF896AC1884EE638A4509B9D720DC9
-                  4060227A75B14D8093BE67F1F17A94D4B871912D808F2ECF4666BF0B8B5D0E47
-                  27D9EF976CE9C978FAE3AFF0D8E7DF450E822B2457A906C600F84C6312989B16
-                  A0658994E95332429C3952B89A7299C67D38A9666F94A46AE759603AA02EB3B1
-                  B10D6FE5C168018DA3CFE2F1F76761CC5DDD5195DF7413DD79395A178E724C11
-                  D948D90B73448AC72F1736E4D108AD176D561D634A9581D3AB7361E1C8A4AE16
-                  86730CA658F7AA8EF13B164F6ADC8723E243AA362E13738EA64569591868EA8D
-                  790CF0BFABDAEA94FE37425B5E4528378C94358273FE6D5F9B8AF32FDB51538D
-                  EBFF518827FBA5E3DA2413EA7C128C7A5370AD82E90D470F1F01C4479EDCED0F
-                  0184DDA42484137521F81E8748C9070324C07FEB6474B119B0CF2560F6D166B8
-                  0924E9E4BC6E1EA9C7DC3B04EC3C1A8385AB13E06DCCC3C33617AECCEE800355
-                  8DB8FBA81347AB9CF87874178C1D35BCDC6577741444D16F4D8CC3AD6FACC4B2
-                  EDA7D6B4989EF0E25AA4D767DC72F5486BD18E133D357078F18973856568C9EB
-                  C391452D33D03291644A3318A13C63BCEA98BA1E1F168BD2FF94883649799045
-                  C9DDECB8EDBD6108904312BD127B43AE900D85B6F078D3943929C6B90BE7149C
-                  04AFC1CFA060E3BE53751E27E0AD9549396AAAAB5C9CC771B1832392BA521659
-                  698B14AE5E7555B58523B85674698DB6322017A9DAB69D61EEB49E03CB2D42D3
-                  C333BEB495154E78FD4021E6EC2EC6DDBD3B60614F074EBA44182982F0FB2121
-                  8A45E0F08522884794E1A124C32F87B2249D124182A0207AE5270A26D291348B
-                  8072BF0EB3081C35F5323ADA8C787262003367D0C903C811D499F1C8C3367CBA
-                  53C4187D2116F448406A940E3B29991FF4FD09CCA15CE8D5E9138BBD568A2092
-                  2859EC368C7DE93DFC70BC303C00ADCAC98F082DEC6989D6C3623AC21E9BCB8E
-                  C9AA63ECF5376BDC87C170A1AA8D392F2F48B2A7557B6F0EDFEF69DC87F38867
-                  556D8CFE7E66722C573DD21BDD87272140F32989A7D6FDB8EAB40C2110A965AC
-                  623415AA76CE8D985A70B9996924EF32E015775E69CED5B80FD3B18B556DCF2B
-                  FD558B96B7E69C839D8E16584B947E0454EDB348FFA46A2B53C6C97DD6AAF4A9
-                  2B7261D14AB857A36521242C5A552C9EA3CE42D30337BD1D282EBFE383925C7C
-                  DA508FB87A3BDE1A9404973F003DD1214E30242910AC6085291603C44D40F071
-                  9EA153A2078F98A2070384D5AC9761A304FDBE5C37F655F8D139468FB76FD763
-                  DCD800BC361D7C09DD61EF168F8DEF95E1FE170C88134F627EAA0E4352E3F179
-                  59035E6BF0209B729597A78C3B12DDBE7316E7440D1E2FBA3FF60A2AEB4F4549
-                  AD64385C39514B6B8B75E1FABD53E31827EEDFA9DA381A3C7586733922A94BBB
-                  6110460A836FA3C67D389F9833F5D90118737737E46FAF09E677AA2A16D30CF6
-                  780ED5B5BC82CF3449BDE67026EFAF255A8E84A3847AF18E1DCA3EB4742CECF1
-                  D9F38757BD2385CF571705386AECD798B7C87E6B4517A6BFDF6AF49F41F3E839
-                  F43F3C97EC28D474999FF102A179DEF4FB6AF2CA167E2FE6A0533F098FBEE1C6
-                  FC011D3026C1841AB74CC9BA01B2C414CB0BBFC8952C0208512C373D358FB248
-                  18CC3B10AA6089226F4794D081A2C7927211EF104092AD44A0671931EC021D6A
-                  251F6C897A983BF44054FB2C04CA4EE08EB975D8BEBB1A8FA6FA7055C714BC56
-                  5C828163637170971F13878EDF92D537FB62584C385A58829E0FFC6FB822A057
-                  8C44BDCACD46F2B9AA8DBDB496F70B6F75D05A9C523F2096D6C0C1C2892AE725
-                  BC1F4A9D34B2B7E4D2E26AE53373DD4568B9DD836568D62529DB6E7D67684C55
-                  BEB333458E7D1A67B556ED610AC1C6ADF5CE3227ED6FB6D277CE3938AF0A1BDB
-                  2A68EF2E88AC9C311DE5D5E9448DF3C211F33EB4DC4AC2DB397801AF24A2CF5C
-                  7AD6DAB6124EAA799DE380EA1853C3AED016AD849B85297064758FF39A2DCAFD
-                  23E5D46E02C1B3F0B151251B77FEB8CEB71FD3675AF0BB17EA61AB8EC5E2A169
-                  28AE778700C2918193749F9FC0E10B9679DD811040F8C94B4268FD832307AF7F
-                  441B2494529272C7610FFCEE00DE9B66C2E54374A8A6C43F364E843DD90463FB
-                  1E10DAF587D55685971E3D829797D6E28F3D02E86A36E20B4AD81FBBC68E2FD7
-                  9EC4C08B66BCDDBB47E62C212E1A4BD6ACC59DEFAD0A0F8207A0551562D07CAC
-                  FCCB06C486D957E3BC57F1F33A0157A499B7A56B9CC79BDD787F13170298EF96
-                  2254BAEC17714E01421BF758384A69E51B50AE652FC95E8B290EAFE246ABEF73
-                  C3CB037973E2CCCA5CE75241273057E7A8C05E8ECBA2ECADE7A0E576105ED00B
-                  6FE5E0759DD11ADFBF1321FAC4654EAE6471B1A2976238E152370B1BFF17AD8C
-                  814BBCB2D20F36764931B448C952FAAB0590F038D989B1618E53FAC3F7553BBB
-                  CECAB9BF43CB4A1D17424E55B4F4465D30F7958355A320C5CD45CB849E23EB52
-                  E559B343636AA506383F23CE9182BB2504FF5B0B3A946ECF295C53B645987DBF
-                  117BB6FB31E7750FFE747137F433C928F348CCA288038757D1996605E0629AA5
-                  24EA9C6F70FE2131BDA2BF33287A2C2A15F1517E33665F6CC243538C28690C10
-                  388813C4F9119D120D7D4A16E4F8BEB027D4E3EBC5DB31737E3D9EE861409DEC
-                  8363A003775F2063630E8D54CCBC36354AFC3C3E3E0693576FC36739A7F20FAD
-                  358B7315AD3504F51E9FD68469C370D5B9910B806CF47BD0D22BA91F02D7F339
-                  82451AD7EAC4CED1D7DDF5F108F8DC811CD11BC83AC7F1303D64233FA27CD65A
-                  07399B30704644F68574EA59AEE168CA15C3C844395CDE6561A7F2B773F8EE5B
-                  1032D8C8CAD6A18839D402FC9D646A4B383F8B4DB5C2C000217B6CACF4402286
-                  438E85EFF9FE59BFF974E16D41FC1C4F6D9B16C43717C05954FDE33B3BD68E9A
-                  7407C5AC3413E63D5B83FAC30E2C19D90975CDEE60C54A167925DD1B5C2C7413
-                  40380F71C94A2EC200E1E801FEAD86D01AC95D07A9A346016B6647C16C7107D7
-                  D7E3C89F3B12FC884A69075D22B1104717C4D82AB0EF93ED98FA909766C88321
-                  831C9836D88404730DCA7583AB6292C764C4DB249781729ABE0F3C87C325D5E1
-                  BE6BAD789F4DD890396C1F6BE5B8D6CA71583851BC549944EE4424BD09AE5B44
-                  7C66BAF2065AD6EC59C25CF87A84225DA44CCE1E97FAD9CD8B07F5AB296CDE7B
-                  8E63E27BCCC6E95BFB5938C27065AAD339DE47ABD2C606CB89B17A6D880B01BC
-                  E613A531970B703A0D3DD336A06265DE784ED59B1999A23155E2DC802367E49E
-                  374EA033286254904341C1AE1AACFEC31E0C9CDC1197DDD71375A52E789C22AF
-                  E5711EC48B7FADED9C0E0B5363769AABD5070471F5DBD0BB7DB3172F7FF78DC1
-                  37BB31385B443D05A7DF3E5C811BD3B331AD472C6A9A5C14414404BC2E885E0F
-                  3C9487B8458A22040417712C97144ACE2541463B0ADCEB6A453C73A419F78C8D
-                  C36C4AA30A2B9B11E73050F49010434C332A2505427C26045B221CFA93D8B7F6
-                  1026503C488CF6E095C989E863AD859C9A04977EE867EDC7CC98ACCB4CC3FE8D
-                  DBD1EFCAEBC3FD66BE5A88D37796B25726880713403640A6005CB30FBFEBC0B5
-                  F22338BBF0EE53F69CEC15AD8A0170158841C04668571E1C1B0D838681F22342
-                  5E4E2D5C3664AFCC80611AB15D79182CEA852CA65C191DFAC735CC5C3A14AE7A
-                  5F32E51F6C84CCD7F99D0B2EE13215E40A15EFC1CA55FA557086B170F6C21E91
-                  797E96720F6EAB568C8E69287379A6910DADDC838D6B9432E74C1838C90EE703
-                  0CC06B55E7733EB355D58759CA9C3285629AC360604AC7348E291A97596F8B98
-                  272E3EF082EE21F2ACE9B22CDF628D35B9CCD14629E00DC4F83D8113DE667145
-                  52573BCA721AB078CA7A72DEA11DFA17DD9081DF3C7F419072799C7EA25D922D
-                  20CA93037E79B8DF2DF6F6B9C5589A57274598DCA838538ED1A2DFA4370A1B64
-                  B263BA279F1F2C3A9DEA7CF3274B10151593FAE93BEFE7C65DD11475C9503705
-                  6C27766FF361FE4B2E3C376624FA397CA8AD6B84E47621E06E0A56B33CD421B7
-                  144AD69BA86F6E6571308586FA56890FEF1778B1FC2E07BAA578D04048E23712
-                  638819469339599392608849816C3223DE908F5DDF5561C23C198F5F69C70D14
-                  5425A31FE63E97A0E627D7A516AFF3BBE45407E6AED985455BF3C2FDD6DA7210
-                  B99FEAFFBA687173A68BF3B9BCCB14CB9E6886BBC1FF4FDCFA57138EA6DFA8DA
-                  C2D5AB7F596472B864BC888A35810C19C507EA79C11436FA3B26C982941E7694
-                  1C6CC0D25BB7C0597DFACE919E6352C091252AD688F8F428E84D7A986D4638C8
-                  38133A46C144732C7A0238B9B79EAE2587DFE883C1AC4742A7E8E0AFF4845E06
-                  0C8910389A035D5A07EC5BFCD6ABEBF3D6CC99F3642778F76C81B957577CFB65
-                  3D96BFEDC6D3578DA5ECB51AF5659508B84220E1AD275EDED51B60A050B64603
-                  7291C612037FF8980BFB6411ABA79B2018298721AA156525B50BB02548B0C459
-                  A1B744C311E38359ACC7EC678D58F78D0F1F4C8F42BF240FA2FA0D424D45CAD6
-                  E3CB370C8BE11FA4B31A70F5FAE338D1786A2296A1257DE144EE8D36369AC837
-                  DD5A132D6ECC756B8E26C1C54D5EFF183E2313D505CD6823096FC86E4D382271
-                  C54BBD4D7F345A6E2BF9C5C2066A7518A137E850437370E8FB326CF9303F58F0
-                  61B1259808200E54E63AE1ACF49CF37D2D314674EC1F8F5EE352696E9BB0F1DD
-                  D39780181C7A9380C81FF6148ABE5C0143740CE4DCA3491FACFC2877C27343EC
-                  D9FA6DF036B8611E3D02EB579EC0E77FAAC28CC1144962290739918FA68626C8
-                  1E028AC8A5DF4010280C0EB7F26EFAB4BD4E185203587693097594E41B883DF2
-                  CF0359AC3A586324D86245C413B3ACA90F60F34A0B1EF9488F2EDD64ACB89540
-                  639661193C11399FEFBCBA68FD4F6B2FCC4AC547275C98B3A934722CEADDBBEC
-                  6A3310A2596D296C38CC7999B23015617AC6152FA60C9C7032CDD0DA23C6F4E2
-                  DD5337B9A933AE59D037E831DB40B8AAC39180C1CA893BD3399E57AE7A31ED64
-                  DA3749E3BAC85706FE69E10ABE950C9959CED2995B5076F8D49A1757A6F88D4C
-                  2EEF33B58BB46E2E9C70CEC52C2272DD8AC7C26F82324D1594B1B0130D27B24C
-                  3F993EF262F05FB5FA237C77FD6042AC88848476D89B533B2730BEF3AB77CC8D
-                  83F3872F60E9D015C67E9720E7C703F8CB9BF9E822F4C094AC74D87CD5F09C2C
-                  42334713CA49025CE1A21CC54720B1EA7598B4B501963E26AC98A64771793304
-                  0A5FFC0EBA9980929C2640B288D87F288063DFDB90DD9C8485C78B3070A8117F
-                  9C9C02BFAD13C4B8CECB6B8AF3A799082C4969B1B8EC0FEBF0EDCE533B477871
-                  E86BD538B8DC7B21DA5E96413B313F93B4D897D4E7F2345CFFF2407EC5364835
-                  7E65D1DA057B3639D32AF5B98BB233A3F3C0787CF5520EFEFEFCA1C8A35C560F
-                  172ED8C0D9418617772377367084E655F1F02BBE5A127648BCED280C76DE4FD6
-                  62D7B4F0DDCD4A75927FB8C12FE16F878BD64E7C6DD095833BE5A3212707D6F4
-                  9E30F5BE00DE93C558F3EE2114E624A2BBAE3DC6748A431CFF52625D2DDC8D8D
-                  E097FE7C7E2F92CC3A4CDB528B3D49067C779F9E0E535E6B36C264E5CD88124E
-                  1449283E6442738E0957A5C6A1D46CC09307F3F0EE3D99C8EE9E0E2936A3C42B
-                  9B7B067C5253748F54FCF0FD418CBDEBB4351FAD453FDE86F0F8BFFC80FE35E1
-                  07C65E4D38C7F339E19F8196EF67A0F7F834F05A487D599B0044FD42D299843B
-                  C75163D1399EDFFA8D9461B6EFE5C0EECF8BB1E2F73BD4A770E9F860C4E74108
-                  ADEBB0F08E84F066D005CA799FE0CCC29190B7E6845F0160DA3B437D92F0E31D
-                  D7281DA444DA1685C2E36531BB2DF5FB9E782D23C35472000D754E98EC49B024
-                  65404832A370C331FCB8C98BC6E278C4344723C31A8B748A1A317A8962B0170E
-                  938C777615E3F19246AC7BCA049DA70CB9A5269414EB10A8A3E488FE4EF418D1
-                  2B4140564A34EEF9A902C97D6C78EEC131909A89C299628709D1B15B2D94B7C0
-                  66C6A5B72EC1773BF222FBCCFB7578218BAB581CF6B9D2749D6AF2DA4278EB38
-                  27DF4CA1B89266D13887A90A5300A6305CC1D17A2FA12D01C25541CEE53801E7
-                  7515ADF22857A1D820B92AB81A2DB7B5FC62096FA549CB76600F8163794B70B0
-                  A80112B9E191CBC4E1351CAEA071C52D0C72DE21C1A56AA6B9EC48C3DB6238EA
-                  F0BEB9CB95CFDA0071EF387DFF978522C3FC199F66947AF276BDF741BBF8407E
-                  1D1A1B2518AD564A62620928B1348D02AA0E57E370A1888A62135CFC2BA16E3D
-                  241F8DD2E34380A2C97307DDB8A06314AE4BF4A1A04280DE6540AA498F0E0E3D
-                  F4B21FDD1C66FCE88DC1EA9A4ABCFDC840D8AD46941D29BD26BA57AF2F8D8904
-                  488B80CAB20674BDF675385DBE53FD0DCFE9FF1F7BF8B70927AF5CBF678363CE
-                  CC40E0322AAF164B67BBB88D23485878DD2159190B97B439CF634A5301EDF75D
-                  FE792174B4CF8EC1AE35455831A7D5F54D354078CD244CB92201C2BBB979CED9
-                  56D4DB5A38EA84D117F93622CB3284729CD3BB261F8D58D36118B7B763D593DF
-                  E1B72F6D6D7FEF146C7DF97EAE5D5BD1504F466E314267B642477367B1DB8104
-                  5B10FE52AD8C862A114D35CD68A8A9468AD1851DFB0298F5A601CFF74AC2B014
-                  1F8A0938628080465FD135CE8A9AE8F678B1A014B3A73830A873471CFF74EF95
-                  5292FEAB4E93C6418872C06CD1850032F93480FC57C8FF1180FC7B450E55AB1C
-                  A9D6604976D3B23CAC9CBBF34C57A8F763F1E77092A2B5DD9E8581334AD5A6F5
-                  9E3ECB326801C4B7F767EACE0B2486D468AC7AF17B3CB1703F9A0236CB84D1DE
-                  AF1FBFB579645A961DBE06035C5E1FA52BFCB3A366E8ACD1D09BA26030464117
-                  2020FAC851BA1BE17736C248F9C6275FBBF0C13AE01A8703FDDA591163D12325
-                  C680838203CB2B1B31A9971797A5C79636D6F51A577E64CF615D9613E9E3CF03
-                  E4BF01200C8E844E361C5C578AED1F17A2FC58C3D9D67D78036864D61EF92A82
-                  D64F0AB1A8DF36E468C879628AC6B9BCF1F20E75A32640563E4F0079ED275CD0
-                  250DD562328E390FFDEE7F26FA5E9B36D62A18A2053471B4F086CAB786288A2A
-                  0643E87D74FE1D20028AECD741A4BF9328C8EC2B10B1799784CE920906D98823
-                  0D7654370B189526E19254FB9F4B0A1AEF8A197C39AA0BB623905C1502882DF6
-                  3C40FEC301C26B127E57006F5EBF014DD5DE73B984733CCE3BC3DB5EC29B1579
-                  E74364A1834BC05CF2CD503EB3E1F3561C9B72CD04A59DB7B930ED0DEF1BE332
-                  2F57B778C32AD32EDE5397730680EC42AF4EF148CFE880A53BF2E1696CB65D9A
-                  ADFBE36F074AB3C767EB4DA9B10244AF8006BF8C80815FB50DFD0469F047AA65
-                  E5555C6A498CD1A1ACDE85959B9B5170320A3D4D09B82133F68B4483FC504DB3
-                  7CCC2F7B61EF7B09AAF276414AAD25808C3D0F90FF7080B0334DCA8CC6FA25B9
-                  F8EAC543BFE4527E31EB8AB39CC35B7FB854FDC859CEE3D23A1721CEF4637C13
-                  CE02900424A7A7E1EBDC7C8A0E7E943508484E7024F4886F9ADA37C977CBD074
-                  0CEB9FA2438C952206E53BFAE06F621168C89E2B9A2594D5F9905B2EC3E0B122
-                  418A39DEDF64F8E0C234D3CAC6E476794D354E189BFCF04B7E02C898F3008990
-                  FF7480F08A356F237977E656941E6EF82597B6F68A4358226992D66F968585F7
-                  79F1A22DEFAFBBF10CF71B794E0059773C1FB2E8A5F820A07F5607EC3C56038F
-                  64A01C5D4A4E34B97B5944DF05D98996DE063990D4E0166D822879D24C424DEF
-                  C4D8E3F182F5A7DE1DBB1E4A31394F9417E4C347398B25A33DA49A7AE8DD01F8
-                  03E701A296FF748098AC7A044419EF4CDF82DAA25FBC9D86B7C5F3AA3D97A1C3
-                  5B6278CB01BFDFA37E6784DFABE7759AF08F6BF33B1EBC8E16FE799F0508FDC8
-                  4661C4357C1EAFDAF33EB379FF0FF92C228AD6142D290000000049454E44AE42
-                  6082}
-                Visible = False
-                OnClick = Image24Click
-                ExplicitLeft = 0
-                ExplicitHeight = 41
-              end
-              object Image26: TImage
-                AlignWithMargins = True
-                Left = 303
-                Top = 0
-                Width = 200
-                Height = 65
-                Cursor = crHandPoint
-                Margins.Left = 30
-                Margins.Top = 0
-                Margins.Right = 0
-                Margins.Bottom = 0
-                Align = alLeft
-                AutoSize = True
-                Picture.Data = {
-                  0954506E67496D61676589504E470D0A1A0A0000000D49484452000000C80000
-                  00300806000000549935EA000000097048597300000B1300000B1301009A9C18
-                  000039ED69545874584D4C3A636F6D2E61646F62652E786D7000000000003C3F
-                  787061636B657420626567696E3D22EFBBBF222069643D2257354D304D704365
-                  6869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D6574612078
-                  6D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D
-                  2241646F626520584D5020436F726520352E362D633133382037392E31353938
-                  32342C20323031362F30392F31342D30313A30393A3031202020202020202022
-                  3E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F
-                  7777772E77332E6F72672F313939392F30322F32322D7264662D73796E746178
-                  2D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264
-                  663A61626F75743D22220A202020202020202020202020786D6C6E733A786D70
-                  3D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F220A
-                  202020202020202020202020786D6C6E733A64633D22687474703A2F2F707572
-                  6C2E6F72672F64632F656C656D656E74732F312E312F220A2020202020202020
-                  20202020786D6C6E733A70686F746F73686F703D22687474703A2F2F6E732E61
-                  646F62652E636F6D2F70686F746F73686F702F312E302F220A20202020202020
-                  2020202020786D6C6E733A786D704D4D3D22687474703A2F2F6E732E61646F62
-                  652E636F6D2F7861702F312E302F6D6D2F220A20202020202020202020202078
-                  6D6C6E733A73744576743D22687474703A2F2F6E732E61646F62652E636F6D2F
-                  7861702F312E302F73547970652F5265736F757263654576656E7423220A2020
-                  20202020202020202020786D6C6E733A746966663D22687474703A2F2F6E732E
-                  61646F62652E636F6D2F746966662F312E302F220A2020202020202020202020
-                  20786D6C6E733A657869663D22687474703A2F2F6E732E61646F62652E636F6D
-                  2F657869662F312E302F223E0A2020202020202020203C786D703A4372656174
-                  6F72546F6F6C3E41646F62652050686F746F73686F7020434320323031372028
-                  57696E646F7773293C2F786D703A43726561746F72546F6F6C3E0A2020202020
-                  202020203C786D703A437265617465446174653E323031382D30322D30375431
-                  303A31333A35322D30323A30303C2F786D703A437265617465446174653E0A20
-                  20202020202020203C786D703A4D6F64696679446174653E323031382D30322D
-                  30375431303A31343A33362D30323A30303C2F786D703A4D6F64696679446174
-                  653E0A2020202020202020203C786D703A4D65746164617461446174653E3230
-                  31382D30322D30375431303A31343A33362D30323A30303C2F786D703A4D6574
-                  6164617461446174653E0A2020202020202020203C64633A666F726D61743E69
-                  6D6167652F706E673C2F64633A666F726D61743E0A2020202020202020203C70
-                  686F746F73686F703A436F6C6F724D6F64653E333C2F70686F746F73686F703A
-                  436F6C6F724D6F64653E0A2020202020202020203C786D704D4D3A496E737461
-                  6E636549443E786D702E6969643A66346132353538392D656635622D37343463
-                  2D616537612D3434666436313764376639363C2F786D704D4D3A496E7374616E
-                  636549443E0A2020202020202020203C786D704D4D3A446F63756D656E744944
-                  3E61646F62653A646F6369643A70686F746F73686F703A37303666363834362D
-                  306330302D313165382D626639372D6565383531343663393561633C2F786D70
-                  4D4D3A446F63756D656E7449443E0A2020202020202020203C786D704D4D3A4F
-                  726967696E616C446F63756D656E7449443E786D702E6469643A636636303664
-                  65622D616461312D333134652D623936642D6439633133313361643539643C2F
-                  786D704D4D3A4F726967696E616C446F63756D656E7449443E0A202020202020
-                  2020203C786D704D4D3A486973746F72793E0A2020202020202020202020203C
-                  7264663A5365713E0A2020202020202020202020202020203C7264663A6C6920
-                  7264663A7061727365547970653D225265736F75726365223E0A202020202020
-                  2020202020202020202020203C73744576743A616374696F6E3E637265617465
-                  643C2F73744576743A616374696F6E3E0A202020202020202020202020202020
-                  2020203C73744576743A696E7374616E636549443E786D702E6969643A636636
-                  30366465622D616461312D333134652D623936642D6439633133313361643539
-                  643C2F73744576743A696E7374616E636549443E0A2020202020202020202020
-                  202020202020203C73744576743A7768656E3E323031382D30322D3037543130
-                  3A31333A35322D30323A30303C2F73744576743A7768656E3E0A202020202020
-                  2020202020202020202020203C73744576743A736F6674776172654167656E74
-                  3E41646F62652050686F746F73686F702043432032303137202857696E646F77
-                  73293C2F73744576743A736F6674776172654167656E743E0A20202020202020
-                  20202020202020203C2F7264663A6C693E0A2020202020202020202020202020
-                  203C7264663A6C69207264663A7061727365547970653D225265736F75726365
-                  223E0A2020202020202020202020202020202020203C73744576743A61637469
-                  6F6E3E73617665643C2F73744576743A616374696F6E3E0A2020202020202020
-                  202020202020202020203C73744576743A696E7374616E636549443E786D702E
-                  6969643A66346132353538392D656635622D373434632D616537612D34346664
-                  36313764376639363C2F73744576743A696E7374616E636549443E0A20202020
-                  20202020202020202020202020203C73744576743A7768656E3E323031382D30
-                  322D30375431303A31343A33362D30323A30303C2F73744576743A7768656E3E
-                  0A2020202020202020202020202020202020203C73744576743A736F66747761
-                  72654167656E743E41646F62652050686F746F73686F70204343203230313720
-                  2857696E646F7773293C2F73744576743A736F6674776172654167656E743E0A
-                  2020202020202020202020202020202020203C73744576743A6368616E676564
-                  3E2F3C2F73744576743A6368616E6765643E0A20202020202020202020202020
-                  20203C2F7264663A6C693E0A2020202020202020202020203C2F7264663A5365
-                  713E0A2020202020202020203C2F786D704D4D3A486973746F72793E0A202020
-                  2020202020203C746966663A4F7269656E746174696F6E3E313C2F746966663A
-                  4F7269656E746174696F6E3E0A2020202020202020203C746966663A58526573
-                  6F6C7574696F6E3E3732303030302F31303030303C2F746966663A585265736F
-                  6C7574696F6E3E0A2020202020202020203C746966663A595265736F6C757469
-                  6F6E3E3732303030302F31303030303C2F746966663A595265736F6C7574696F
-                  6E3E0A2020202020202020203C746966663A5265736F6C7574696F6E556E6974
-                  3E323C2F746966663A5265736F6C7574696F6E556E69743E0A20202020202020
-                  20203C657869663A436F6C6F7253706163653E36353533353C2F657869663A43
-                  6F6C6F7253706163653E0A2020202020202020203C657869663A506978656C58
-                  44696D656E73696F6E3E3230303C2F657869663A506978656C5844696D656E73
-                  696F6E3E0A2020202020202020203C657869663A506978656C5944696D656E73
-                  696F6E3E34383C2F657869663A506978656C5944696D656E73696F6E3E0A2020
-                  202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A
-                  5244463E0A3C2F783A786D706D6574613E0A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020200A20202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020200A2020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020200A202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020200A20202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020202020200A2020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20200A2020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020200A202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020200A20202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020200A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020200A20202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020200A2020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020200A202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020200A20202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020202020200A2020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20200A2020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020200A202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020200A20202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020200A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020200A20202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020200A2020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020200A202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020200A20202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020202020200A2020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20200A2020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020200A202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020200A20202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020200A2020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020200A202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020200A20202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  0A20202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020200A2020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020200A202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020200A20202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020200A2020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020200A202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020200A20
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020200A20202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020200A2020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020200A202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020200A20202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020200A2020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020200A202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  200A202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020200A20202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020200A2020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020200A202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020200A20202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  20202020202020202020202020202020202020202020202020200A2020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020202020202020202020202020202020202020202020202020202020200A
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  2020202020202020202020202020202020202020202020202020202020202020
-                  202020200A202020202020202020202020202020202020202020202020202020
-                  200A3C3F787061636B657420656E643D2277223F3E0284D98C00002295494441
-                  5478DAED5D099C1C45D57F55DD337B64AF24E4845CA29083239290832B012410
-                  AE408810081210087E604001513C3E51828A0A828288A8800808186EFD20E112
-                  104204B984185008216473ED6EF69AB3BBEBFBBFEA9EBBBB6776B328EAF66FA7
-                  A7A7BBBAEAD5AB77D7AB5AD1306319051D92E85221E87422518D9F09EAF92114
-                  291BDF6D82A805DF9BC971DEB523D5AF92729E9656BA43294128438621288E16
-                  D216DA15BD680987527817405757BBDFFC3B14386E99DB579537C8750AF42A57
-                  BFD23539A649E9FAC194D87B3A919D2E6C1C48A4EA5AAA7DED05AA7A770D3903
-                  EA49786FBA70E4AEB38D649FF84291DF09FCF994431D4E71BD5E8D7EB50AC9A3
-                  D346B1390753EA8883315AADE59161A9F248CE07D944CB18E712A0F8B7210300
-                  C3C7468114C8286A94B6A791E76190F1EC44719D763F02E54D59DA5EF1E13801
-                  FD00661BA69732888657D04520821F56DAFF9E1C2E611253D94AC756DF701CB5
-                  DA34FB19A4A091EC135F28F23BD1CF201F268334066810B4F5309A3BAAB2DEF7
-                  EEC810063ECB71BD3016272B6DEF3883D4F433483F837CD80C02225D83AFF195
-                  F57EC70EE12266452C46876B0D227B574FBF0629ACA39F41FA8241A6FB32C850
-                  10C07A7C5755D6FBBE3900E795CAA1AF502F3548B65B1532583F8314E1AC9F41
-                  4A1A1775532F2FC62B065F4C8F44C42AF56138202107F70F4D1E84769FD9815A
-                  CAE223BF643F8378F7FB19C4B77131609F6F17E3950C537C3A129177FFF31944
-                  90EDA89FDA96739EE8A51611B00DF9530997F433483EDEA89F417C1A17F5FB96
-                  6A10C3105F330C5AF64FE68F0CAED600DE89BD7DBF278CD5CF2079F7FB19C4B7
-                  71D1B85FA90F82F1FF0D9A5A5459CFFBFA100968AE51B8D8D69BB77BC2D3FD0C
-                  9277BF9F417C1B177553BE5D72DB8CCA5761A5ECF5AFD0201A5F8A26E0EB6F3D
-                  7EAF87E5B30CE288605A2C854D4B90DC38FF8731C8E187804166433C956310D4
-                  92765CE2AA446D6718C4FC3763908622130B8DEC0213EB3DBC512616A4345615
-                  03D163D2F4C38286944152148F8F11B1D8FB1557CBC4D0504F2A1A753B5B71AB
-                  AA0A0CB22FAE6A3CAC966F4A03AB380CBE19CDBE856B8B07C631FE0318A4B995
-                  62F3E652EAB00389366D2943F8621C396A3CDA49502504A0D02C4B1549495CFF
-                  1D77B61474E75FCA206A20A4E444EFC54CE96A54D02C9A4AE7410E403BE5A348
-                  C245B591EA86AA4DF7CCF82FEE21DE55D200815711C5529B9CEAAAD1A97163D3
-                  5455559EE03D5B27F2F63F609C2548452295B72CE906B4FEB95E02CE47273E4F
-                  A1F92BEC48F48574DD204AEC057EB3AD7F4F06D9DA4E8919532971F271205F58
-                  B8B61D34AE6350090B87688F31960548BC813AEEC4EFABF0497C680C52115DAA
-                  E5A8777E69DBE2ED928942547706EAFC55D92AA54966A293CCEE565C07A1BD67
-                  8748A4283D6868AAEDF4D367394387AF22CEE23244B89DCB6D370EA0DA5BEFA2
-                  AAE79E277BD8D08AED628CC93AE2C1DE119819179C376359D724868EFE6262E6
-                  A1189B146EE631360F520D60FCF35354F5D6ABE4D4357E2419C449418377C529
-                  76E231949E39054CB235A0797526A4EE2F76046F792DAF0790B33018EBC8CF18
-                  C93048B2A70C62E57A2A0485AA1121D6A2DEDD7C1EBC0006B9BCA8ACF81EAAFB
-                  72789FDC86239D2D24EC9496FE7D802832376FA2EE59B3A8FDECB389DE6FBE1A
-                  155F5451DE495313996FBD4575B7DF454E558DABAECB3737DA63901DE76C1C46
-                  324EC9C69D6E8A8DD97D8928D620445A3BD66CF807995B9B61D8557F2419C476
-                  244930089B889D672C2267CC689749F2531B18B62AF38714C1D8387DE5A47227
-                  E4147CFDA5F49170AD881E6B906206093C86E1B3DE5F1B8A5F8ABA3C1F44FB51
-                  86580EC2991F2A84B5B8B128D2D59209EBF4098ECCCD5B68FB090B2876E49150
-                  F76C03CB1FE0C92565DF8D98BA82FA5B7E4B72E326527503C2CB6BF749CCC2B8
-                  3FB5E380E770228013158B1D0BBFE6A1122A049E0418C3860928F89A3E7A0CE2
-                  305F1B11922D2D6443D0749FBF845463BD6B6E1946AEE9A8B81FD27EDE0EBB9E
-                  8510AC467DD37D1FD98ED76E2F194497CBF4BC04E899B8F79C3F4CF212D130AD
-                  D0C402D1AC465DFB8675853586B4926476B57A30F40183404A185D5DD4B2E41C
-                  4A4D84BFD4D696E9D9273CA72EFC1834906AFEB0926AFEF82CD98307951F0E41
-                  A703EA9B039F1777CB0D565560BDA967615D1D1854ABE3B6FD916510B6DB99DE
-                  44F316B2C78DA2EE733E030104C2ECECF2006787119AD77646F78DEECD478238
-                  10753F5B708FCD2B4ED0330D178E5E33089FA41F424E8164BBDD17518E7162B1
-                  89552B85E01CACC1617D61FF839D73B3BBAD6FCC2B74CC84D44A8C9F40AD6010
-                  4AC45D07511FF29B387DBB6C1D430653D5E34F53EDEF5790BD53790681E5F65D
-                  A0EB2B01F4DE85FBBFC5582471CDEA290D7CD502CCC3F1D9B91C93E0F9587CBD
-                  97FD4D5E0A0F8F1F6B0F213EC20C22B54FE5C07C32DFDF48E903F6A5D8E24F43
-                  60B57B0113015B5DAD0D9414423C89065E44C38DF8708D1C9ADC0BDF07854A17
-                  8D04F97594BEA2E01E37C94120369BFB84418A7A2F143484F3B500A0A6E666D2
-                  DDA8ED1E86215EA73287EBA07790116FD7D77D71989B3753DBE2D3297EC82144
-                  1B3FA05CC6A15889D39CB2154083449F7A966AFFEF31720636952D2EA5E014FB
-                  92C8856BF28A3FA76D679AF0F0A270D390201A4B9111311EC2581D1D96868347
-                  B3F0793AFBDB2353C9E1E07F1306516CD65836999D1DD47DE629949EB43B514B
-                  1B23E868D4FA50086A597B3EEB4A03E112B8D02262361A7E327C54C4AD389D5E
-                  002CCBC994E5866B778441DC01F06390A751A79FC6EF42D9D1A269C615F9378F
-                  15423D40650ED61A666C3B1CD3AE1D671026BEF676B2070DA6AD5FF8821BA64D
-                  E42F5E146BA992B4FB9E33C88B40D5141F70D8F75C0E05B6406260D90F757408
-                  DF65105C0C8B18F21FC042A0A303DA9A0309BC32E39A092F8AF26FC52096A305
-                  4364DB564ACD9A49B1938E777D1152E79372AE0D1A4BB2C55894792F177D949A
-                  D1280EA2AD31AFA7A83C37D0B917E22E9C1766BB981FE2ED0B06C90D48EE6DA5
-                  78CE6F5431EE481AAF9334F7CA6A102F07EB8BF85C5D36491148E4F0AE4C27FA
-                  C4C48A6CF880B69F7A2A75CF9D4BD4DC5CECF4BF4F6E28361C289858D58F3F43
-                  037EBFB21213AB064DB029B953E918095877CE95B6A5BEA2F1C2B040F298D24B
-                  ABE07130E4E3B87B48C020939D7666388EF382009EA421BCF17619C456EEF747
-                  914138F8C6302B10B06DB9616AD34E015B55D4B9F024520D0D2894B816447EBE
-                  2F910BF101B4C618346A93F4E0545E8B5C5EC2DE973EF67EAE821BF0ECDC0240
-                  331A844DACA859183EF7F04D99949F8A34083F725CC7DF9463F05957C2746EC6
-                  EE83649AF38A19E43AC3A0F3C22358AE64D0112C1639952EBEF01B662929BA71
-                  23C5F7D8935A972E258AC5808C5471836FA2BD49652B1BD848D50F3C4A55CFBC
-                  40CEE081C16DBAE9FC138D8878C3CF26D642D0A6336C5BDD92E553290A080BF7
-                  9FC567FF80266CCB56A3318E1B793C98411C9535B146E0EA78DC9F869FBBE3BA
-                  C11B3678C0B416C56EC5BD951E5C3C73B627E9195D3DDA7C540188163C5F9B03
-                  9876027493BD3219EAA906216C820E78CD8F417C474C50AD72C43474AE0A0232
-                  A51CBD28DA14A6B48C6D2D2FC4A7EC134FCC3F1263D4FD30883460A5A97816F5
-                  E4CC155514D51074266EF8CF9F301692F6A5F87C4F5F578319228034C54E3A87
-                  78E5C16092A3511F5B13BB90BB56298D3AD91E7F0EF76FC0F756EFF62852E9B1
-                  F81DCFEB760403BF06E5DA2861B95A2D6A1E4CD5C613BECC2EE5D5385F241A67
-                  E64C2CC88E47A98CBDAF582A8231CC1D0CF12A7062047E87DD3490B65EF26572
-                  1A412BADAD3ECB09C51F719A1D5A99696A386A6FFE2D493896AABE2EB8DD4C3A
-                  7F94D3F903CA104DC5D74BD9DF0E6526FCF9FD7A10FA3A5C05A9A977F0FEAE99
-                  8ABC36AAF1EEB7F0090C5967B4083EF780384F84243F0CE6EE8A802E8C054CEB
-                  D99186505B817A0FF3AB0F42F258DB510F553244A621F412EBACEECA9306D4B2
-                  FD8CF488E1B7749E7D1A4F82BE49963521A017B7E074464E9428570364C276A4
-                  AE21A92EF0D520DA2117F3C11CF7E9DF1C107025FEA7D0E31FC164DB237CDE45
-                  C4507E0658E675F815AF90A1F62E6D47FC1CA77374BD5283F75920E997255569
-                  66753E0FD3EE7A68905C80C830E5DF456670030E1DE2856915E1197411A4B0C3
-                  FAE14D32C294B21A9B681BFC0E7B0C2C28308BFF5A5B71134E4B42EBACAE26D1
-                  DE410D772E27092DA4AAC21742C2F0BC1A48FF62C0D366984763586E657C0516
-                  A68EADB4C234A3F242D31457F999A16E59BA09E597647EA38E1350CDEFCACCE5
-                  16D771365E6C009C57F914B140F8635843314C91A87818683BCA8FD95D66A313
-                  F351CFC1C1745E0609BF1731E94BF87CDFAF0E81CA55F3D63DE233A6BD9138E6
-                  F02114EF5A8F97AAFDA19797E2F4BD2CAB67A40AFB11FC898ABFE3DD60FA8A1A
-                  E3A83BB58E12608E81D5519842CB51C5D1AEA4A90079526CA0B4730ADEF90DAE
-                  47FBF4E6A7389D9767DC5E89EB52A1C5305BCE61C0F463A261DAE5999B230DA9
-                  931443BD6E1DE285736EC6DA7AEEA033C1C1018F6CDB46F10913A8EDB4D3C9D9
-                  7924D1A64DC10BD1855C8AFE5C175A6FDD0032363453CD832B00BD193A93CE1A
-                  3012EB78C048258E2DF69F3C027AD6B2D4815C0DFB0A6C2568E6708D978F8339
-                  5E03A835BEC4E44EFA1E0EA9BD8203381121BE8A7B5750CF0FA867C1B363437C
-                  9EAD8509A78316922727052D84A6B933A09E3630F2587C77646E384A68419C61
-                  5808CBC9F07F5FF615EADC9F7872493A5A7553EC949379D2701AD9F11782C7D7
-                  5880CA976BD0DD1B6E43691637CE95542B2F09247421619EC903E90DD04263F5
-                  38DA75D08B144F958FD7171F127E90523BA19D2229A999F55C6D8A659C3349F7
-                  42DB1CEF030CD7330E17EBC4C0DC7A907DF1D2EA72ED2BC30473B49311EFD0D7
-                  951C0254C7925D7675915357475DFBED4F9DC7CF87B908876ACB167FE6F0460F
-                  CFA697850B3E4764F5CB3460F983AEA956C6A6406BAF80F4F72E81D365903BD0
-                  F422F058C49BF0B660CA0C80263814A6199C48353CD84713EB1CCB1EC7512FF8
-                  1E9F83FB71435FAF1840DB8FC23F3A4278FE8D07F73BC0D1B8D2FE084AA79D23
-                  D0A747F54A4B70AF4CC6DD28954EA0ACA14895F13C7031A32438A423B4E20EAB
-                  79EBA2F4F429945C7402A7C08301EC7B02FACE7F3351F92A721D01DB65721A83
-                  7184A4A64F07269E6A552B2FA2B8B89A3A13444DC6ABD0267BF55D2A0B659C79
-                  761F56E6E843BD0C7827FB94DD04738F3550DA4D77D7512D718130E89A72AA4C
-                  99518AB6365364CB46ED4704122363DCD19E3F393535640D1942C9DDC7536CF2
-                  64B23FB11B5127841A18269BC2E087349BDEA4A43529D48A6378771A44358F3E
-                  46D5CF3C57C92C7A23342547C6EA039E77A04B5D1C87A09CADC071E350BB4D4B
-                  E454EAE2F8F0315789687462ED86B7DF70CC68705977B9D12A5CB3C35D4BEEFC
-                  C12EE5C618E6D58F6D8B2E70FD214713BB691AD7C21739BFD8EC73CB8B9BA171
-                  3E2B78FF3EC0931E32420B36914A51756BF3B506D9E7ABA2408BA709D7A752CE
-                  04D9D1154B2C5E40D69E505AADDBBF8C06BF17001E2F0CC92C72CB4CF1310206
-                  86DB473AD77DB38E282995043DFC9CECF4D93AD21428E8D8072466C46E5C0330
-                  67A6BB3C2384508468E7FC3B40D5A11D7F29EA30C2EFA34D9F390181BAC54C7D
-                  3560EAE59E1D2A6E05AD9E161AC182A417F13899C94E4A4E1C4F4E24AAB54369
-                  9F95661E05DFC06E6AC2A00C216B044C297CEB398EF6EDE51D7C7794BE4E09FB
-                  8A50066106833D547FCFFD646ED8A0355499631F74E3A572857A7278CEFB5F2C
-                  CB99A2209541AC0F1A89F8312AA07F901B1CC9F902DEE976FD1477E116E8F402
-                  FCBEA64C734B956772B233C24C6118F220D3907FF40DCF0B6A070D8E85F6D8EE
-                  98114A360C2607A6A5A1ACB9D5ED2D7F507669245242DB2412CE9CF407AD2B69
-                  D2AE943AE714A218673758B7E0F1E2BEC49D2B2D8CB9B43DF1087C94F9D4105D
-                  4E56D01207F12EE9E509624596E9DCB524C3F4E4A5E384A448893F03D1D37478
-                  37A667E6F7A61AE39580B2B7E1749ABEAAF372B14C433C0377EC80700522C8DC
-                  B685BA8E399CE247CF85ACED0E5EAFC1C491D10EE9742E845B79E42B8972BB6A
-                  9B32EC68A827E3FD8D5477CB9D3A6CAC235A613D10623E7C8BE53BBEC82BD74D
-                  26F4B4ADA682C8FF662A7B0A04F48BEE4232DFB29F878F73BDF0B294DD9C2FA5
-                  E732940BDF67A550BF0C8EB009205E3DA2AFF36804D5AD133EA9FBDADFB4D45C
-                  98658F307A04A7E2731A4944AEA168D57855340BE389FEEB41479F37376DA6D8
-                  8279949CBDBFBB804A8AA7513620CFAC97C823E280C945B43DC9A1DD47698039
-                  473BF4A5655F215EDCA678815A0142DC3C2D78A260E037F13D2AA0AD7BF0EE89
-                  9E7FC177E68176EF0F280B4D49DFD7975EB2A284D4E394DF9DC3FA233BBB283D
-                  7694EA587C32444CD225F83062DF9135BB425C0420AF0E2DC3F50F1F4AD52B9F
-                  A2DA8757903D647005D58A8B418A3FE83D60F975E9F3C674DA3E0042EF5D983A
-                  3CE37E0708F1645F9B5E896FC19FB94C4730BDB50FAEF9ADF4241D876D75D26A
-                  44BE843AF629459F4039351EE5D6EAF98C887085BF9639E227C0C7E7FD608492
-                  BFCE72D452A5EB87F71A35EE048D2CF483114CFE1C98637F11EB8653DE449D8B
-                  4F76A382C9A484DA790F0542CDC01E1D4C844C8C5A988A0940C09B9A398A494A
-                  884E94DD1D0CD2ECA6AD14E2C45B94C33FD8E1BED757F809F15D9CBFAA1FB14C
-                  977431EAFA41E94CAA4E47D91FF5E90C5FD1345333C86891975C177418DB5A28
-                  76C84156ECA839066DD92AFA24CDDDF71077E0B3A8AC94E725B6D01875BFB88D
-                  CC66F855F565CD2B361F6E044D2DE90DEB16856AD94FB90A34F71D9E58633A15
-                  525601251C091CE6F35E73CA521F236F13701D7F101E0A31E86CA92A27BBE4E0
-                  1A28DF0B8A1725A2ADCDE9A4331A85521922522A9319210E8D56C9C7028412AF
-                  EF9F90B6B4BE382B1211370544E11CF82B93E09CFF8D971EC48F994B49DEC001
-                  B845E75832BF579ACC148C20FF32BAC3ABC00C4B28EDBC4E55662622BC1408F8
-                  B1FF3BF27FD1AFCBFD1B2AB81EAAD35CC82F0C2D4EC7E9D6BC2A6E242F1C5F74
-                  D84034E378A32ED6B4CF3798C8660BD37CB29CC4375ADB54D75173ACC441FB45
-                  2ADAF5A23787106BC8313E092E4F86FA1E2C86470CA7E8337FA29ABBEFAF2883
-                  57FB5A11F938A4F7212191A8B770E2A574454EB93294760AE93D90F59F6C47FD
-                  1A8CE1FA10526416AD4DC6F7CBA55DD2E0DE019F6151FEFC9B5E4392BD2E78E5
-                  07F879B14F1DABD32927BB66226B62E9EC0032A255C6BBD08EA34A85A280BFA2
-                  7601137E5015152D80BB04595EFD5F43B9EFC8644A9B2D5D679D4ACE1014EDEA
-                  269DD0A7D4D3147C74122FA375A7E0F29D1AEEA40DDCF0EEFEAF7BA6CE9F7500
-                  877D8DCC1A0F217E858B3302C684D78BAF291C0EAF956CAA893E9A50175B423E
-                  0118E92651660A0B9DB1F0292AAE5418EB4946C764CA8901737E4A4622B6C44C
-                  76DF189A57850EC958CCE95870AC93DE638249DBDBA9EF0FF9303A7C829690B6
-                  A040066184C21917DDDDD4F8F35F928CC75DE7BC02934E842CB3C5DB7074C56C
-                  FF6695973222B24987EEC0669211F5E5025CDEE3FFB6F8164E97E500714DAAAC
-                  9D95B9E912FBEF7175A44F35D7A0C8177375163109D137D1FE65C52F79397F2C
-                  2DC719922EF537FFE85EF85127705F242C85D4947D2871DC5144AD6D6E34326A
-                  9E4955F2170139581C933B0A40FC41137C49994CE621E5A50C78B3EC668697D8
-                  A451337D2AE788E358CAA5D178EF4B2F8A5C80BF19383D5FA2C684B0E0948FD1
-                  5AC1CE56F30ECA1585C635833C4ED2CC328EA83BE45A32D2C9AB8C74E2421592
-                  5725DCFF4B60B79F7C82B2470E37B554E9B343B03A3A17DAFBAEACD9568E4186
-                  0FA3DAFB1FA2DA279E220B9AA4B2DD4CC42EE8E27BE4B3638B1712FD0AA4EC95
-                  3071BCC85221F274262EB93B376AE2E6DF5E9E169B473A0A257CA250423FBF01
-                  209E5BD8A70CC315E4277E1C0CF876F1207BBEC46731BE37E727A5E65BB9B89E
-                  88BADEF0971322E14D02174431BC64D8E634FB361CE2E6B992589C62272F20FB
-                  631F7317AE717D55C6751491E70530C89BB83F290B54E98051098364CA66AB53
-                  DCE78FFBBC0CB8C558E2FF2D53509D7417527185BCA2540B2BA7540BB9518777
-                  286EEDAA115DA3D3927601BCBE7480673FC5E09E97FDD934E59B244CE31E328C
-                  0561129867C09DC646ABFD1408F85AB4924CD10E1E3100F32A3AFB6B5CFFCC4D
-                  27905496419811060D22B9752BD5FFDC4DA329975A92EBBB980E1CADF277E278
-                  29B69A8FEAEF7327E164D601CE8C4A298350018C78EF7C3CBA36A0F9B71DDBDD
-                  182017FECD3188968530390C53DE090DE2E3400B8E46CDB66DF5C782ACED221C
-                  1986580DB0F7ADD4C7D2C2DFA6453C41CAFD92ADDBC91EBD33752F39D5DD7CC2
-                  B233DEFBF3E8F48C805A1E42578ECD3141051AA4D461E15D523EE15F7D269B22
-                  2F6C976110864D6B2D3A14A7C74AB58746F89394B40FD1265944D3D8FEEECA45
-                  BFB27AB63F1BC4110D332E6793E1653C9B4C2187ECE8A4F4C7C65A1D271DCF23
-                  6590DFFC4721E67902EC4B688C332A6BF28692390BD240C07154F1DC0B153208
-                  878E1B1B68C09D7753F4D557DDC8558533AE20EDCF80067E1DF09023499341F8
-                  AF6A06D17E45613C31C3207A9B229DB6AE0A508CF2C7A0070F86407319EAF856
-                  6E27C74C7DD91587B70B5E02EA7F0034C5A6E106B72D5756D8E99C89E1F9585F
-                  03932CAB645F654D0FB6BA0D3C705A261224DBB653ECD3C7527ABFA9F0C45A32
-                  5C6882E8398235D2B722257E84CF853962A984414A8E27F0E0E0004879A5D65E
-                  78BE219B429F6510E24CDF69181CF68FFC25A51037C294FB9CBB3A5127417E09
-                  957CDF5F21485E44775FF6D5C619CB9AA4BB36226866591F06244B62DF4F5A5D
-                  C71D695047A7286FEFCB6CBCBE60441CF227FC4A18842902A655F4B9555477D7
-                  3D640F1D5AE99C8A87275A864FC0F24ADA8EF63852D39505272BE9DC1B590DE2
-                  3188CF3EF23B430AAFA32233A6E87810FCFC55BCFE86473803A1ACD8DFB80CD5
-                  7E3C04ADEB1C9F7412275F4EB98EEB1EF0AFCBAE0AF58E9760B24DCDD02F0B41
-                  7BD448EA3C73115132EDCE5FB90724BB7A2B04B3FF43DA0A083A2A6290EFE0C1
-                  A5216DB093CF4CF83BBC1F7397CFDA9C2E743119E2D4707A14ECB7E54C5F41B7
-                  A1FCA901A0F2F2E02CFE781E646F08E557A8CC61B4B452F7A76659F139079B7A
-                  E965D821042F5704B1A9ED85F70391431531089B52785E7FD3CD646CD9C2265F
-                  8FE65A60BADC09C1B3D00F0690FB6B8EEDF8E467653489CAAD06E41CA794A3CD
-                  AC7CFED4731851F928087E4ED9E5D7A483058C9F89C24DC908CEE373B5C59350
-                  DA258BB4FCDC46438ABFA0B64F0602C0B3EF4E9A9223C71E901C34EC4F329DD4
-                  8DC8B60E4A4D9E40D69EE087ED1DB9B1E0747AA956F803A835EA1C54BAD26F48
-                  7317651844880348FFDB8B728BF5F41A8F3528360C75ED5C3ED357C3370F753F
-                  985790E73866FAD4CD5907A3F0E9CCDE6A9CBEEC3810CE7D614D70BD467BBBD3
-                  396FAE939C3ED5D4918DF04EFC15EFECE9076BAF1984B5C7C89154FDF81354FB
-                  C043640F1BD6E3894848F71720F5A7F9C10527FA3634719ADF7B7ABE8227F39C
-                  9C89E5F89875DE8CF6DE20D057FA6AA6DE45A7CEC1BA09FEC792628559A240DD
-                  0561DFC0FDC08D2ED87C4C25ACCB934EE47F05CF257184013EA588C2B53C13F2
-                  A3A1CE4D2DC9E1E75C0CC0F581C095DD7926CF6C0815F4C4447C4C9F212E031F
-                  6F1AA1D4EBDE140ECC45E294FD11258813F21552C6270B320B06CE5C7611BE7F
-                  18DA88CE024DD9ED271EA7ACDD7635A9BD23B438807A00C01C57D03851EF1924
-                  13D6EDE8A0865FDD4232112767C0809E324835089D274387FA0C0CD3C8F9A8EE
-                  27815D925ECABB10DE1E04FE6D6B2691622984CE8F7BC8BFEFA1F8238217F494
-                  A05347B02E06535E55C0105EA838BF1D774A41EC1E8DC2C70B88C80A291F4FA5
-                  9C4F3929DE56D80DBF49F81B89E95328B508263887F00B81BF0ABF2F24DF4334
-                  F3E606945BF5E85324C32082CA98C483D0A3BF90EB6BF5E010BF25BD138F2A5C
-                  38E63AE86D144B8D42BBDDBC7458A72F91FDF780CDAAEF45F9130AEE34CD5876
-                  23600E5D90C4999F2A1AB5DB4F5940CE4E838C02E9E2FF06DB7BA50B927ACB20
-                  7C6F60130D587E1F553FBF8AAC11237AB449B577CC84E0F4DD20CC9B07980310
-                  56865590511A2297DA108C0129AE94DEA677A142D373D0F1B78B101284663FE7
-                  2DC3CB439BC1692AC781151EC87F8FD3531271A780E6D80CACA991174423F29A
-                  122DA7512A12A9A4BD3B7EADCFE483B17AE2B9A4EED34E206BE26EEECEEE859C
-                  B81C0096EE5DEB3EE37DACCAE76765962F1822BC8CA360E2A8D5F831BC6C9D6E
-                  FBBF40BD67E39D1564A70F2BA88CE7F584F1121CF3A9FA96BBFF2FCFD73C1C50
-                  172F502B9CA06D9AB9CC77778FFC4376C7C81A3644330819F058D265364237E4
-                  52545DBAC829E3A4FB12770883D4D4E8DDFE1A7F730767DE551CD62D3A06A1EA
-                  7BF1CDD22EDF371A8A969F548EFA4CB90ABC8CDBCC8FE082DEE4024EFB429BB0
-                  69129465CA7B38FC0C44CD39421D504D730C69DE0D35CFEB9933481EACC8FA1B
-                  88FD087267F2B34D301B5956A1A28579B75F5594FEA47C8411AF1F49C4EC3363
-                  5DE95FC9FC2D5DC11CBC7DAB7DEE6268EA6AFC4E16764638177A7B47ADCFAB35
-                  82478DE8E779B813B60D506E7CF51C7B993D0CDC7F45C0FF86F5325CF0EA3FFF
-                  FC219E7B512C80C4EFDD3D9CE976324CB65ADEF70A98A4ACA13AA545B0866129
-                  C86D3B8793749841785E25A3F5D8076C407DC717FB526C62AD0E1940DD21CECB
-                  494E1CDFDEF199136BA8AB2B1A1A5665024F3A73296D3F52B2AF6EC65773276B
-                  8A882C8441EAEBC958B78E1AEEBE47C3A3CCDE6D3554346D911B930A4D216FC3
-                  87DC8F401CB827BD30498F9D18C79B19A06B233C383A60D2ADC5BD55604C5E4B
-                  4D36CC1DDB4E534DF51052A97ABCCE6327F5B763B6109B43B90C0EA525B13073
-                  38F2C031A286269CDD0AC063B310369A48C6EF8231B0B038A15A2493A42084BA
-                  CF3A8B1C8E0C7677177646F04EE9A900EC89D0F4AC02EC57CE209CD9C3F329EC
-                  20CD06B013BDFC2A98329AB09F279E09CF08A298E02D0F891A875176F7447E16
-                  839C4976685E617E26071FC93BA4F8F4459BCDA5825B34CC587630F07C0E9EF3
-                  6C7661095EFFD1DD1D951D9D6F749C7AD2C8D4DE932E299B62C2984F3993A0B6
-                  DF2CB13733F93351A3670C027FC3F86023D5DF7DB75E15D7937F7150C9F1A130
-                  8812D90DE3B29BFCB8268EBEAFB591BEEB52AB9DE21CB9345547772A6010C55B
-                  D8445A613DE4CC2E9D72986FAA28F7148988EB005EC9AE34BC99B6535BB721D1
-                  347492504E47891B009C0AA8A2F8C1B3C9D9193C0C8BA1A0330CCBBF8641F21F
-                  04B7AF67DA50BEC1874152190631730C22FD182463DE14D55E37FD728A081F3B
-                  191D9160060173AA73C13C4A4D9F7203B5B67EAE7C7046B47A0BE683735132F9
-                  FEC56917FFA10CC2D97A4AE498259C4106FB30489BCB203C88BCC11B6BD1BCB1
-                  64BF236288C55511718BE303176B8F54A4E6D064D3D02784E3B75B16CA747691
-                  356B3FB2F7DE830A8330FFE50C520F0629F9AF589C1ADAB69D9C68943A4F9A4F
-                  D65E7BC271DBFA1A59E93DCB4FCC891789C237BF0E44603F83043308A77C38DE
-                  2A42CAA1466FFD1331C6D6D69A6B705D92E6EDAE2D97DF4D27935F95C9446014
-                  496EDB4AF179F3297584B7B37E7E67FA19248F419839B6B5905D5F471D672E26
-                  67D428FE1F110D181A76D01ACBE241084E903AAB028C9522503388D7C17C06A9
-                  AB2363C306F820776B04FED731880906811650B9FF1C9A0793A2A829EF87033E
-                  CF7F0114FD359E547B31B585C9360E82A40E3C90D2C71D4D85F35CFD0C926310
-                  9E4DEDEC24675023759C7D9A6B8FF23F5051623CC5936B42FE25578E302291A5
-                  F8BEAEE7F364791A446FF850CA20F5B7DFF5DFA741E0200B30481A4EBAA364E1
-                  CC3D67A157CB9B22A638CB2EEA841B8986F7E1381381B2B7CA91B06C6F276BB7
-                  DD28B670A1BB52349B6BD7CF205906E1F5CA4A46A8F3A863C91EBD8BF72FB8B4
-                  435847036B1E2553EE8E51F25F2925A81EBE47277DD071047526DFD11B0DF7F6
-                  28C643B48A447727353CB5C2DDB626D2F37F8D173A261F6106E1DD351D98588E
-                  5E6E584A20A62138FBF84880B3967261AE28EE0D40BF96C227B9B7927FD225BB
-                  BBF5FC52E749A7B809A1D950FE7F3783FC3FD85AAD804D463128000000004945
-                  4E44AE426082}
-                OnClick = Image26Click
-                ExplicitLeft = 396
-                ExplicitTop = -3
-              end
-              object bsRibbonDivider50: TbsRibbonDivider
-                Left = 230
-                Top = 0
-                Width = 43
-                Height = 65
-                HintImageIndex = 0
-                Visible = False
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'officegroupdivider'
-                DividerType = bsdtVerticalLine
-                Align = alLeft
-              end
-            end
-            object bsSkinPanel61: TbsSkinPanel
-              Left = 0
-              Top = 0
-              Width = 598
-              Height = 80
-              HintImageIndex = 0
-              TabOrder = 0
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'panel'
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clWindowText
-              DefaultFont.Height = 13
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              DefaultWidth = 0
-              DefaultHeight = 0
-              UseSkinFont = True
-              EmptyDrawing = False
-              RibbonStyle = False
-              ImagePosition = bsipDefault
-              TransparentMode = False
-              CaptionImageIndex = 0
-              RealHeight = -1
-              AutoEnabledControls = True
-              CheckedMode = False
-              Checked = False
-              DefaultAlignment = taLeftJustify
-              DefaultCaptionHeight = 20
-              BorderStyle = bvNone
-              CaptionMode = False
-              RollUpMode = False
-              RollUpState = False
-              NumGlyphs = 1
-              Spacing = 2
-              Caption = 'bsSkinPanel10'
-              Align = alTop
-              object bsSkinStdLabel83: TbsSkinStdLabel
-                AlignWithMargins = True
-                Left = 36
-                Top = 0
-                Width = 562
-                Height = 80
-                Margins.Left = 36
-                Margins.Top = 0
-                Margins.Right = 0
-                Margins.Bottom = 0
-                EllipsType = bsetNone
-                UseSkinFont = True
-                UseSkinColor = True
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = -11
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'stdlabel'
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                Align = alClient
-                Caption = 
-                  'Este programa '#233' de uso gratu'#237'to, e as doa'#231#245'es s'#227'o totalmente vol' +
-                  'unt'#225'rias. Mas caso voc'#234' queira contribuir para este projeto, que' +
-                  ' cresce a cada vez mais, fa'#231'a sua doa'#231#227'o. Ir'#225' ajudar com os cust' +
-                  'os de desenvolvimento e manuten'#231#227'o do programa.'
-                ParentFont = False
-                WordWrap = True
-                ExplicitWidth = 542
-                ExplicitHeight = 39
-              end
-            end
-            object bsSkinPanel133: TbsSkinPanel
-              Left = 0
-              Top = 145
-              Width = 598
-              Height = 20
-              HintImageIndex = 0
-              TabOrder = 2
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'panel'
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clWindowText
-              DefaultFont.Height = 13
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              DefaultWidth = 0
-              DefaultHeight = 0
-              UseSkinFont = True
-              EmptyDrawing = False
-              RibbonStyle = False
-              ImagePosition = bsipDefault
-              TransparentMode = False
-              CaptionImageIndex = 0
-              RealHeight = -1
-              AutoEnabledControls = True
-              CheckedMode = False
-              Checked = False
-              DefaultAlignment = taLeftJustify
-              DefaultCaptionHeight = 20
-              BorderStyle = bvNone
-              CaptionMode = False
-              RollUpMode = False
-              RollUpState = False
-              NumGlyphs = 1
-              Spacing = 2
-              Caption = 'bsSkinPanel10'
-              Align = alTop
-              object bsRibbonDivider52: TbsRibbonDivider
-                Left = 0
-                Top = 0
-                Width = 598
-                Height = 20
-                HintImageIndex = 0
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'officegroupdivider'
-                DividerType = bsdtHorizontalDashLine
-                Align = alClient
-                ExplicitLeft = 103
-                ExplicitTop = 3
-                ExplicitWidth = 563
-              end
-            end
-            object bsSkinPanel134: TbsSkinPanel
-              Left = 0
-              Top = 165
-              Width = 598
-              Height = 54
-              HintImageIndex = 0
-              TabOrder = 3
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'panel'
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clWindowText
-              DefaultFont.Height = 13
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              DefaultWidth = 0
-              DefaultHeight = 0
-              UseSkinFont = True
-              EmptyDrawing = False
-              RibbonStyle = False
-              ImagePosition = bsipDefault
-              TransparentMode = False
-              CaptionImageIndex = 0
-              RealHeight = -1
-              AutoEnabledControls = True
-              CheckedMode = False
-              Checked = False
-              DefaultAlignment = taLeftJustify
-              DefaultCaptionHeight = 20
-              BorderStyle = bvNone
-              CaptionMode = False
-              RollUpMode = False
-              RollUpState = False
-              NumGlyphs = 1
-              Spacing = 2
-              Caption = 'bsSkinPanel10'
-              Align = alClient
-            end
-          end
-        end
         object ampSincroniza: TbsAppMenuPage
           Left = 150
           Top = 25
@@ -32237,21 +30479,21 @@ object fmIndex: TfmIndex
             end
           end
         end
-        object ampAbout: TbsAppMenuPage
+        object ampOpcoes: TbsAppMenuPage
           Left = 150
           Top = 25
-          Width = 1190
-          Height = 375
+          Width = 586
+          Height = 351
           HotScroll = False
           ScrollOffset = 0
           ScrollTimerInterval = 50
           CanScroll = False
           DefaultWidth = 0
-          object bsSkinPanel8: TbsSkinPanel
+          object bsSkinPanel28: TbsSkinPanel
             Left = 0
             Top = 0
-            Width = 1190
-            Height = 375
+            Width = 586
+            Height = 351
             HintImageIndex = 0
             TabOrder = 0
             SkinData = DM.bsSkinData1
@@ -32283,23 +30525,12 @@ object fmIndex: TfmIndex
             Spacing = 2
             Caption = 'bsSkinPanel8'
             Align = alClient
-            object bsRibbonDivider33: TbsRibbonDivider
-              Left = 0
-              Top = 157
-              Width = 1190
-              Height = 16
-              HintImageIndex = 0
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'officegroupdivider'
-              DividerType = bsdtHorizontalDashLine
-              Align = alTop
-              ExplicitTop = 56
-              ExplicitWidth = 585
-            end
-            object bsSkinPanel9: TbsSkinPanel
+            ExplicitWidth = 100
+            ExplicitHeight = 100
+            object bsSkinPanel29: TbsSkinPanel
               Left = 0
               Top = 0
-              Width = 1190
+              Width = 586
               Height = 113
               HintImageIndex = 0
               TabOrder = 0
@@ -32332,6 +30563,8372 @@ object fmIndex: TfmIndex
               Spacing = 2
               Caption = 'bsSkinPanel9'
               Align = alTop
+              ExplicitWidth = 100
+              object bsSkinStdLabel77: TbsSkinStdLabel
+                AlignWithMargins = True
+                Left = 15
+                Top = 0
+                Width = 129
+                Height = 113
+                Margins.Left = 15
+                Margins.Top = 0
+                Margins.Right = 0
+                Margins.Bottom = 0
+                EllipsType = bsetNone
+                UseSkinFont = False
+                UseSkinColor = True
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = -11
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'stdlabel'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = 2894892
+                Font.Height = -40
+                Font.Name = 'Tahoma'
+                Font.Style = []
+                Align = alLeft
+                Caption = 'Op'#231#245'es'
+                ParentFont = False
+                Layout = tlCenter
+                ExplicitHeight = 48
+              end
+            end
+            object ScrollBox2: TScrollBox
+              Left = 0
+              Top = 113
+              Width = 586
+              Height = 238
+              VertScrollBar.Position = 133
+              Align = alClient
+              BorderStyle = bsNone
+              TabOrder = 1
+              ExplicitWidth = 100
+              ExplicitHeight = 258
+              object bsSkinPanel46: TbsSkinPanel
+                Left = 0
+                Top = 51
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 1
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMonitorJanela: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Exibir em tela cheia'
+                  OnClick = ckMonitorJanelaClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel18: TbsSkinPanel
+                Left = 0
+                Top = 771
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 28
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel59: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 69
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 10
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Cor do Fundo:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object corCapaPrograma: TbsSkinColorButton
+                  Tag = 12
+                  AlignWithMargins = True
+                  Left = 115
+                  Top = 1
+                  Width = 49
+                  Height = 22
+                  Margins.Left = 0
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'toolmenubutton'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  CheckedMode = False
+                  UseSkinSize = False
+                  UseSkinFontColor = True
+                  WidthWithCaption = 0
+                  WidthWithoutCaption = 0
+                  ImageIndex = 0
+                  RepeatMode = False
+                  RepeatInterval = 100
+                  Transparent = False
+                  Flat = False
+                  AllowAllUp = False
+                  Down = False
+                  GroupIndex = 0
+                  ShowCaption = True
+                  NumGlyphs = 1
+                  Align = alLeft
+                  Spacing = 1
+                  NewStyle = False
+                  TrackPosition = bstpRight
+                  UseImagesMenuImage = False
+                  UseImagesMenuCaption = False
+                  TrackButtonMode = False
+                  AutoColor = clBlack
+                  ColorValue = clBlack
+                  ShowAutoColor = True
+                  ShowMoreColor = True
+                  MenuUseSkinFont = True
+                  MenuDefaultFont.Charset = DEFAULT_CHARSET
+                  MenuDefaultFont.Color = clWindowText
+                  MenuDefaultFont.Height = 13
+                  MenuDefaultFont.Name = 'Tahoma'
+                  MenuDefaultFont.Style = []
+                  MenuAlphaBlend = False
+                  MenuAlphaBlendValue = 200
+                  MenuAlphaBlendAnimation = False
+                  OnChangeColor = corCapaProgramaChangeColor
+                  ExplicitLeft = 57
+                  ExplicitTop = 0
+                  ExplicitHeight = 24
+                end
+              end
+              object bsSkinPanel19: TbsSkinPanel
+                Left = 0
+                Top = 795
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 29
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel63: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 42
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 10
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Imagem:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object imgCapaPrograma: TbsSkinFileEdit
+                  AlignWithMargins = True
+                  Left = 88
+                  Top = 1
+                  Width = 430
+                  Height = 22
+                  Margins.Left = 0
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  Text = ''
+                  DefaultColor = clWindow
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  ButtonMode = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'buttonedit'
+                  Align = alLeft
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  MaxLength = 255
+                  ParentFont = False
+                  TabOrder = 1
+                  Images = DM.ico_16x16
+                  ButtonImageIndex = 0
+                  LeftImageIndex = -1
+                  LeftImageHotIndex = -1
+                  LeftImageDownIndex = -1
+                  RightImageIndex = -1
+                  RightImageHotIndex = -1
+                  RightImageDownIndex = -1
+                  OnButtonClick = inputOpenPictureDialog
+                  OnEnter = imgCapaProgramaEnter
+                  OnExit = imgCapaProgramaExit
+                  OnKeyUp = edtKeyUp
+                  Filter = 
+                    'Todos os arquivos de imagem|*.bmp;*.dib;*.jpg;*.jpeg;*.jpe;*.jfi' +
+                    'f;*.gif;*.tif;*.tiff;*.png;*.ico|'#13#10'Arquivos de Bitmap (*.bmp;*.d' +
+                    'ib)|*.bmp;*.dib|'#13#10'JPEG (*.jpg;*.jpeg;*.jpe;*.jfif)|*.jpg;*.jpeg;' +
+                    '*.jpe;*.jfif|'#13#10'GIF (*.gif)|*.gif|'#13#10'TIFF (*.tif;*.tiff)|*.tif;*.t' +
+                    'iff|'#13#10'PNG (*.png)|*.png|'#13#10'ICO (*.ico)|*.ico|'#13#10'Todos os arquivos|' +
+                    '*.*'
+                  DlgSkinData = DM.bsSkinData1
+                  DlgCtrlSkinData = DM.bsSkinData1
+                  LVHeaderSkinDataName = 'header'
+                end
+                object txtImgCapaProgramaInfo: TbsSkinEdit
+                  Left = 518
+                  Top = 0
+                  Width = 35
+                  Height = 24
+                  Text = ''
+                  DefaultColor = clWindow
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  ButtonMode = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'edit'
+                  Align = alLeft
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  ParentFont = False
+                  TabOrder = 0
+                  Visible = False
+                  ButtonImageIndex = -1
+                  LeftImageIndex = -1
+                  LeftImageHotIndex = -1
+                  LeftImageDownIndex = -1
+                  RightImageIndex = -1
+                  RightImageHotIndex = -1
+                  RightImageDownIndex = -1
+                end
+              end
+              object bsSkinPanel21: TbsSkinPanel
+                Left = 0
+                Top = 819
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 30
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel60: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 63
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 10
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Alinhamento:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object cbAlinhamentoCapaPrograma: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 109
+                  Top = 1
+                  Width = 120
+                  Height = 22
+                  Margins.Left = 0
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Text = 'Centralizar'
+                  Align = alLeft
+                  Items.Strings = (
+                    'Centralizar'
+                    'Estender')
+                  ItemIndex = 0
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = 13
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = cbAlinhamentoCapaProgramaChange
+                end
+                object btRestaurarCapaPrograma: TbsSkinButton
+                  AlignWithMargins = True
+                  Left = 479
+                  Top = 1
+                  Width = 80
+                  Height = 22
+                  Margins.Left = 0
+                  Margins.Top = 1
+                  Margins.Right = 10
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'button'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Transparent = False
+                  CheckedMode = False
+                  ImageList = DM.ico_16x16
+                  ImageIndex = 76
+                  AlwaysShowLayeredFrame = False
+                  UseSkinSize = True
+                  UseSkinFontColor = True
+                  RepeatMode = False
+                  RepeatInterval = 100
+                  AllowAllUp = False
+                  TabStop = True
+                  CanFocused = True
+                  Down = False
+                  GroupIndex = 0
+                  Caption = 'Restaurar'
+                  NumGlyphs = 1
+                  Spacing = 1
+                  Align = alRight
+                  OnClick = btRestaurarCapaProgramaClick
+                  ExplicitLeft = -7
+                end
+              end
+              object bsSkinPanel13: TbsSkinPanel
+                Left = 0
+                Top = 471
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 16
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel96: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 81
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Abrir no monitor:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object sbVideoOnAreaExtendida: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 122
+                  Top = 1
+                  Width = 79
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    '1'
+                    '2'
+                    '3'
+                    '4'
+                    '5')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbVideoOnAreaExtendidaChange
+                end
+              end
+              object bsSkinPanel48: TbsSkinPanel
+                Left = 0
+                Top = 495
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 17
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckVideoOnJanela: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Exibir em tela cheia'
+                  OnClick = ckVideoOnJanelaClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel49: TbsSkinPanel
+                Left = 0
+                Top = 519
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 18
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel98: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 218
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Ao executar link do Youtube na liturgia, abrir:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object sbVideoOnAbreLiturgia: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 259
+                  Top = 1
+                  Width = 79
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    'Site'
+                    'V'#237'deo')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbVideoOnAbreLiturgiaChange
+                end
+              end
+              object bsSkinPanel52: TbsSkinPanel
+                Left = 0
+                Top = 129
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 8
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel72: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 81
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Abrir no monitor:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object sbMusicaAreaExtendida: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 122
+                  Top = 1
+                  Width = 120
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    '1'
+                    '2'
+                    '3'
+                    '4'
+                    '5')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbMusicaAreaExtendidaChange
+                end
+              end
+              object bsSkinPanel53: TbsSkinPanel
+                Left = 0
+                Top = 177
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 9
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMusicaJanela: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Exibir em tela cheia'
+                  OnClick = ckMusicaJanelaClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel54: TbsSkinPanel
+                Left = 0
+                Top = 225
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 10
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMusicaOperador: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 225
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Abrir Tela do Operador | Abrir no monitor:'
+                  OnClick = ckMusicaOperadorClick
+                  Align = alLeft
+                end
+                object sbMusicaOperadorAreaExtendida: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 266
+                  Top = 1
+                  Width = 120
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    '1'
+                    '2'
+                    '3'
+                    '4'
+                    '5')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbMusicaOperadorAreaExtendidaChange
+                end
+              end
+              object bsSkinPanel65: TbsSkinPanel
+                Left = 0
+                Top = 273
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 11
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMusicaTituloSlide: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Exibir t'#237'tulo da m'#250'sica no primeiro slide'
+                  OnClick = ckMusicaTituloSlideClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsFormatSlPerso: TbsSkinPanel
+                Left = 0
+                Top = 297
+                Width = 569
+                Height = 72
+                HintImageIndex = 0
+                TabOrder = 12
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckSlideTxtFormatPerso: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Formata'#231#227'o de texto personalizada'
+                  OnClick = ckSlideTxtFormatPersoClick
+                  Align = alTop
+                  ExplicitWidth = 47
+                end
+                object bsFormatSlidePerso: TbsSkinPanel
+                  Left = 0
+                  Top = 24
+                  Width = 569
+                  Height = 48
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = 0
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Caption = 'bsSkinPanel10'
+                  Align = alClient
+                  ExplicitWidth = 83
+                  object bsSkinPanel59: TbsSkinPanel
+                    AlignWithMargins = True
+                    Left = 60
+                    Top = 24
+                    Width = 509
+                    Height = 24
+                    Margins.Left = 60
+                    Margins.Top = 0
+                    Margins.Right = 0
+                    Margins.Bottom = 0
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'panel'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    EmptyDrawing = False
+                    RibbonStyle = False
+                    ImagePosition = bsipDefault
+                    TransparentMode = False
+                    CaptionImageIndex = 0
+                    RealHeight = -1
+                    AutoEnabledControls = True
+                    CheckedMode = False
+                    Checked = False
+                    DefaultAlignment = taLeftJustify
+                    DefaultCaptionHeight = 20
+                    BorderStyle = bvNone
+                    CaptionMode = False
+                    RollUpMode = False
+                    RollUpState = False
+                    NumGlyphs = 1
+                    Spacing = 2
+                    Caption = 'bsSkinPanel10'
+                    Align = alClient
+                    ExplicitWidth = 23
+                    object bsSkinStdLabel56: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 154
+                      Top = 0
+                      Width = 32
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Texto:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsRibbonDivider51: TbsRibbonDivider
+                      Left = 248
+                      Top = 0
+                      Width = 15
+                      Height = 24
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'officegroupdivider'
+                      DividerType = bsdtVerticalLine
+                      Align = alLeft
+                      ExplicitLeft = 143
+                      ExplicitTop = 3
+                    end
+                    object bsSkinStdLabel106: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 263
+                      Top = 0
+                      Width = 58
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Texto Aux.:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsSkinStdLabel61: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 0
+                      Top = 0
+                      Width = 77
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Tamanho T'#237'tulo:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsRibbonDivider54: TbsRibbonDivider
+                      Left = 139
+                      Top = 0
+                      Width = 15
+                      Height = 24
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'officegroupdivider'
+                      DividerType = bsdtVerticalLine
+                      Align = alLeft
+                      ExplicitLeft = 77
+                      ExplicitTop = -3
+                    end
+                    object seTamanhoTexto: TbsSkinSpinEdit
+                      Tag = 9999
+                      AlignWithMargins = True
+                      Left = 189
+                      Top = 2
+                      Width = 59
+                      Height = 21
+                      Margins.Left = 0
+                      Margins.Top = 2
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      TabOrder = 2
+                      SkinDataName = 'spinedit'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      DefaultColor = clWindow
+                      UseSkinSize = True
+                      ValueType = vtInteger
+                      Align = alLeft
+                      Increment = 1.000000000000000000
+                      EditorEnabled = True
+                      MaxLength = 0
+                      OnChange = seTamanhoTextoChange
+                    end
+                    object seTamanhoTextoAux: TbsSkinSpinEdit
+                      Tag = 9999
+                      AlignWithMargins = True
+                      Left = 324
+                      Top = 2
+                      Width = 59
+                      Height = 21
+                      Margins.Left = 0
+                      Margins.Top = 2
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      TabOrder = 3
+                      SkinDataName = 'spinedit'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      DefaultColor = clWindow
+                      UseSkinSize = True
+                      ValueType = vtInteger
+                      Align = alLeft
+                      Increment = 1.000000000000000000
+                      EditorEnabled = True
+                      MaxLength = 0
+                      OnChange = seTamanhoTextoAuxChange
+                    end
+                    object seTamanhoTitulo: TbsSkinSpinEdit
+                      Tag = 9999
+                      AlignWithMargins = True
+                      Left = 80
+                      Top = 2
+                      Width = 59
+                      Height = 21
+                      Margins.Left = 0
+                      Margins.Top = 2
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      TabOrder = 1
+                      SkinDataName = 'spinedit'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      DefaultColor = clWindow
+                      UseSkinSize = True
+                      ValueType = vtInteger
+                      Align = alLeft
+                      Increment = 1.000000000000000000
+                      EditorEnabled = True
+                      MaxLength = 0
+                      OnChange = seTamanhoTituloChange
+                    end
+                    object bsSkinButton2: TbsSkinButton
+                      AlignWithMargins = True
+                      Left = 419
+                      Top = 1
+                      Width = 80
+                      Height = 22
+                      Margins.Left = 0
+                      Margins.Top = 1
+                      Margins.Right = 10
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      TabOrder = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'button'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      Transparent = False
+                      CheckedMode = False
+                      ImageList = DM.ico_16x16
+                      ImageIndex = 76
+                      AlwaysShowLayeredFrame = False
+                      UseSkinSize = True
+                      UseSkinFontColor = True
+                      RepeatMode = False
+                      RepeatInterval = 100
+                      AllowAllUp = False
+                      TabStop = True
+                      CanFocused = True
+                      Down = False
+                      GroupIndex = 0
+                      Caption = 'Restaurar'
+                      NumGlyphs = 1
+                      Spacing = 1
+                      Align = alRight
+                      OnClick = bsSkinButton2Click
+                      ExplicitLeft = -67
+                    end
+                  end
+                  object bsSkinPanel88: TbsSkinPanel
+                    AlignWithMargins = True
+                    Left = 60
+                    Top = 0
+                    Width = 509
+                    Height = 24
+                    Margins.Left = 60
+                    Margins.Top = 0
+                    Margins.Right = 0
+                    Margins.Bottom = 0
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'panel'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    EmptyDrawing = False
+                    RibbonStyle = False
+                    ImagePosition = bsipDefault
+                    TransparentMode = False
+                    CaptionImageIndex = 0
+                    RealHeight = -1
+                    AutoEnabledControls = True
+                    CheckedMode = False
+                    Checked = False
+                    DefaultAlignment = taLeftJustify
+                    DefaultCaptionHeight = 20
+                    BorderStyle = bvNone
+                    CaptionMode = False
+                    RollUpMode = False
+                    RollUpState = False
+                    NumGlyphs = 1
+                    Spacing = 2
+                    Caption = 'bsSkinPanel10'
+                    Align = alTop
+                    ExplicitWidth = 23
+                    object bsSkinStdLabel66: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 0
+                      Top = 0
+                      Width = 50
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Cor T'#237'tulo:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsSkinStdLabel68: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 117
+                      Top = 0
+                      Width = 32
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Texto:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsRibbonDivider67: TbsRibbonDivider
+                      Left = 102
+                      Top = 0
+                      Width = 15
+                      Height = 24
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'officegroupdivider'
+                      DividerType = bsdtVerticalLine
+                      Align = alLeft
+                      ExplicitLeft = 256
+                      ExplicitTop = -3
+                    end
+                    object bsRibbonDivider68: TbsRibbonDivider
+                      Left = 336
+                      Top = 0
+                      Width = 15
+                      Height = 24
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'officegroupdivider'
+                      DividerType = bsdtVerticalLine
+                      Align = alLeft
+                      ExplicitLeft = 253
+                      ExplicitTop = -3
+                    end
+                    object bsSkinStdLabel102: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 351
+                      Top = 0
+                      Width = 58
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Texto Aux.:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsRibbonDivider69: TbsRibbonDivider
+                      Left = 461
+                      Top = 0
+                      Width = 15
+                      Height = 24
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'officegroupdivider'
+                      DividerType = bsdtVerticalLine
+                      Align = alLeft
+                      ExplicitLeft = 386
+                      ExplicitTop = -3
+                    end
+                    object corTextoMusica: TbsSkinColorButton
+                      AlignWithMargins = True
+                      Left = 152
+                      Top = 1
+                      Width = 49
+                      Height = 22
+                      Hint = 'Cor da Fonte'
+                      Margins.Left = 0
+                      Margins.Top = 1
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'toolmenubutton'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      CheckedMode = False
+                      ImageList = DM.ico_16x16
+                      UseSkinSize = False
+                      UseSkinFontColor = True
+                      WidthWithCaption = 0
+                      WidthWithoutCaption = 0
+                      ImageIndex = 50
+                      RepeatMode = False
+                      RepeatInterval = 100
+                      Transparent = False
+                      Flat = False
+                      AllowAllUp = False
+                      ShowHint = False
+                      ParentShowHint = False
+                      Down = False
+                      GroupIndex = 0
+                      ShowCaption = True
+                      NumGlyphs = 1
+                      Align = alLeft
+                      Spacing = 1
+                      NewStyle = False
+                      TrackPosition = bstpRight
+                      UseImagesMenuImage = False
+                      UseImagesMenuCaption = False
+                      TrackButtonMode = False
+                      AutoColor = clBlack
+                      ColorValue = clBlack
+                      ShowAutoColor = True
+                      ShowMoreColor = True
+                      MenuUseSkinFont = True
+                      MenuDefaultFont.Charset = DEFAULT_CHARSET
+                      MenuDefaultFont.Color = clWindowText
+                      MenuDefaultFont.Height = 13
+                      MenuDefaultFont.Name = 'Tahoma'
+                      MenuDefaultFont.Style = []
+                      MenuAlphaBlend = False
+                      MenuAlphaBlendValue = 200
+                      MenuAlphaBlendAnimation = False
+                      OnChangeColor = corTextoMusicaChangeColor
+                      ExplicitLeft = 170
+                    end
+                    object corTextoAuxMusica: TbsSkinColorButton
+                      AlignWithMargins = True
+                      Left = 412
+                      Top = 1
+                      Width = 49
+                      Height = 22
+                      Hint = 'Cor da Fonte'
+                      Margins.Left = 0
+                      Margins.Top = 1
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'toolmenubutton'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      CheckedMode = False
+                      ImageList = DM.ico_16x16
+                      UseSkinSize = False
+                      UseSkinFontColor = True
+                      WidthWithCaption = 0
+                      WidthWithoutCaption = 0
+                      ImageIndex = 50
+                      RepeatMode = False
+                      RepeatInterval = 100
+                      Transparent = False
+                      Flat = False
+                      AllowAllUp = False
+                      ShowHint = False
+                      ParentShowHint = False
+                      Down = False
+                      GroupIndex = 0
+                      ShowCaption = True
+                      NumGlyphs = 1
+                      Align = alLeft
+                      Spacing = 1
+                      NewStyle = False
+                      TrackPosition = bstpRight
+                      UseImagesMenuImage = False
+                      UseImagesMenuCaption = False
+                      TrackButtonMode = False
+                      AutoColor = clBlack
+                      ColorValue = clBlack
+                      ShowAutoColor = True
+                      ShowMoreColor = True
+                      MenuUseSkinFont = True
+                      MenuDefaultFont.Charset = DEFAULT_CHARSET
+                      MenuDefaultFont.Color = clWindowText
+                      MenuDefaultFont.Height = 13
+                      MenuDefaultFont.Name = 'Tahoma'
+                      MenuDefaultFont.Style = []
+                      MenuAlphaBlend = False
+                      MenuAlphaBlendValue = 200
+                      MenuAlphaBlendAnimation = False
+                      OnChangeColor = corTextoAuxMusicaChangeColor
+                      ExplicitLeft = 396
+                    end
+                    object corTituloMusica: TbsSkinColorButton
+                      AlignWithMargins = True
+                      Left = 53
+                      Top = 1
+                      Width = 49
+                      Height = 22
+                      Hint = 'Cor da Fonte'
+                      Margins.Left = 0
+                      Margins.Top = 1
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'toolmenubutton'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      CheckedMode = False
+                      ImageList = DM.ico_16x16
+                      UseSkinSize = False
+                      UseSkinFontColor = True
+                      WidthWithCaption = 0
+                      WidthWithoutCaption = 0
+                      ImageIndex = 50
+                      RepeatMode = False
+                      RepeatInterval = 100
+                      Transparent = False
+                      Flat = False
+                      AllowAllUp = False
+                      ShowHint = False
+                      ParentShowHint = False
+                      Down = False
+                      GroupIndex = 0
+                      ShowCaption = True
+                      NumGlyphs = 1
+                      Align = alLeft
+                      Spacing = 1
+                      NewStyle = False
+                      TrackPosition = bstpRight
+                      UseImagesMenuImage = False
+                      UseImagesMenuCaption = False
+                      TrackButtonMode = False
+                      AutoColor = clBlack
+                      ColorValue = clBlack
+                      ShowAutoColor = True
+                      ShowMoreColor = True
+                      MenuUseSkinFont = True
+                      MenuDefaultFont.Charset = DEFAULT_CHARSET
+                      MenuDefaultFont.Color = clWindowText
+                      MenuDefaultFont.Height = 13
+                      MenuDefaultFont.Name = 'Tahoma'
+                      MenuDefaultFont.Style = []
+                      MenuAlphaBlend = False
+                      MenuAlphaBlendValue = 200
+                      MenuAlphaBlendAnimation = False
+                      OnChangeColor = corTituloMusicaChangeColor
+                      ExplicitLeft = 57
+                    end
+                    object bsSkinStdLabel122: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 216
+                      Top = 0
+                      Width = 68
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Texto Repet.:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object bsRibbonDivider71: TbsRibbonDivider
+                      Left = 201
+                      Top = 0
+                      Width = 15
+                      Height = 24
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'officegroupdivider'
+                      DividerType = bsdtVerticalLine
+                      Align = alLeft
+                      ExplicitLeft = 218
+                      ExplicitTop = 3
+                    end
+                    object corTextoRepetido: TbsSkinColorButton
+                      AlignWithMargins = True
+                      Left = 287
+                      Top = 1
+                      Width = 49
+                      Height = 22
+                      Hint = 'Cor da Fonte'
+                      Margins.Left = 0
+                      Margins.Top = 1
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'toolmenubutton'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      CheckedMode = False
+                      ImageList = DM.ico_16x16
+                      UseSkinSize = False
+                      UseSkinFontColor = True
+                      WidthWithCaption = 0
+                      WidthWithoutCaption = 0
+                      ImageIndex = 50
+                      RepeatMode = False
+                      RepeatInterval = 100
+                      Transparent = False
+                      Flat = False
+                      AllowAllUp = False
+                      ShowHint = False
+                      ParentShowHint = False
+                      Down = False
+                      GroupIndex = 0
+                      ShowCaption = True
+                      NumGlyphs = 1
+                      Align = alLeft
+                      Spacing = 1
+                      NewStyle = False
+                      TrackPosition = bstpRight
+                      UseImagesMenuImage = False
+                      UseImagesMenuCaption = False
+                      TrackButtonMode = False
+                      AutoColor = clBlack
+                      ColorValue = clBlack
+                      ShowAutoColor = True
+                      ShowMoreColor = True
+                      MenuUseSkinFont = True
+                      MenuDefaultFont.Charset = DEFAULT_CHARSET
+                      MenuDefaultFont.Color = clWindowText
+                      MenuDefaultFont.Height = 13
+                      MenuDefaultFont.Name = 'Tahoma'
+                      MenuDefaultFont.Style = []
+                      MenuAlphaBlend = False
+                      MenuAlphaBlendValue = 200
+                      MenuAlphaBlendAnimation = False
+                      OnChangeColor = corTextoRepetidoChangeColor
+                      ExplicitLeft = 313
+                    end
+                    object ckMusicaFundoTransparente: TbsSkinCheckBox
+                      Left = 476
+                      Top = 0
+                      Width = 33
+                      Height = 24
+                      HintImageIndex = 0
+                      TabOrder = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'checkbox'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      WordWrap = False
+                      AllowGrayed = False
+                      State = cbUnchecked
+                      ImageIndex = 0
+                      Flat = True
+                      UseSkinFontColor = True
+                      TabStop = True
+                      CanFocused = True
+                      Radio = False
+                      Checked = False
+                      GroupIndex = 0
+                      Caption = 'Fundo de Texto Transparente'
+                      OnClick = ckMusicaFundoTransparenteClick
+                      Align = alClient
+                    end
+                  end
+                end
+              end
+              object bsSkinPanel51: TbsSkinPanel
+                Left = 0
+                Top = -75
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 4
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckFadeForm: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Adicionar efeito de esmaecimento nas telas'
+                  OnClick = ckFadeFormClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel94: TbsSkinPanel
+                Left = 0
+                Top = -51
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 5
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel124: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 116
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Apar'#234'ncia do programa:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object cbLayout: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 157
+                  Top = 1
+                  Width = 163
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Text = 'Azul'
+                  Align = alLeft
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = cbLayoutChange
+                end
+              end
+              object bsSkinPanel95: TbsSkinPanel
+                Left = 0
+                Top = 17
+                Width = 569
+                Height = 34
+                HintImageIndex = 0
+                TabOrder = 0
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel78: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 15
+                  Top = 0
+                  Width = 554
+                  Height = 29
+                  Margins.Left = 15
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 5
+                  EllipsType = bsetNone
+                  UseSkinFont = False
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = 2894892
+                  Font.Height = -19
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Align = alClient
+                  Caption = 'Utilit'#225'rios'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitWidth = 75
+                  ExplicitHeight = 23
+                end
+              end
+              object bsSkinPanel96: TbsSkinPanel
+                Left = 0
+                Top = -133
+                Width = 569
+                Height = 34
+                HintImageIndex = 0
+                TabOrder = 3
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel125: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 15
+                  Top = 0
+                  Width = 554
+                  Height = 29
+                  Margins.Left = 15
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 5
+                  EllipsType = bsetNone
+                  UseSkinFont = False
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = 2894892
+                  Font.Height = -19
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Align = alClient
+                  Caption = 'Geral'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitWidth = 44
+                  ExplicitHeight = 23
+                end
+              end
+              object bsSkinPanel98: TbsSkinPanel
+                Left = 0
+                Top = -3
+                Width = 569
+                Height = 20
+                HintImageIndex = 0
+                TabOrder = 2
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsRibbonDivider8: TbsRibbonDivider
+                  Left = 0
+                  Top = 0
+                  Width = 569
+                  Height = 20
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'officegroupdivider'
+                  DividerType = bsdtHorizontalDashLine
+                  Align = alClient
+                  ExplicitLeft = 88
+                  ExplicitTop = -6
+                  ExplicitWidth = 489
+                end
+              end
+              object bsSkinPanel97: TbsSkinPanel
+                Left = 0
+                Top = 75
+                Width = 569
+                Height = 20
+                HintImageIndex = 0
+                TabOrder = 6
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsRibbonDivider73: TbsRibbonDivider
+                  Left = 0
+                  Top = 0
+                  Width = 569
+                  Height = 20
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'officegroupdivider'
+                  DividerType = bsdtHorizontalDashLine
+                  Align = alClient
+                  ExplicitLeft = 122
+                  ExplicitTop = -3
+                  ExplicitWidth = 563
+                end
+              end
+              object bsSkinPanel99: TbsSkinPanel
+                Left = 0
+                Top = 717
+                Width = 569
+                Height = 20
+                HintImageIndex = 0
+                TabOrder = 26
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsRibbonDivider48: TbsRibbonDivider
+                  Left = 0
+                  Top = 0
+                  Width = 569
+                  Height = 20
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'officegroupdivider'
+                  DividerType = bsdtHorizontalDashLine
+                  Align = alClient
+                  ExplicitLeft = 122
+                  ExplicitTop = -3
+                  ExplicitWidth = 563
+                end
+              end
+              object bsSkinPanel100: TbsSkinPanel
+                Left = 0
+                Top = 417
+                Width = 569
+                Height = 20
+                HintImageIndex = 0
+                TabOrder = 14
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsRibbonDivider31: TbsRibbonDivider
+                  Left = 0
+                  Top = 0
+                  Width = 569
+                  Height = 20
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'officegroupdivider'
+                  DividerType = bsdtHorizontalDashLine
+                  Align = alClient
+                  ExplicitLeft = 122
+                  ExplicitTop = -3
+                  ExplicitWidth = 563
+                end
+              end
+              object bsSkinPanel101: TbsSkinPanel
+                Left = 0
+                Top = 843
+                Width = 569
+                Height = 20
+                HintImageIndex = 0
+                TabOrder = 31
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsRibbonDivider74: TbsRibbonDivider
+                  Left = 0
+                  Top = 0
+                  Width = 569
+                  Height = 20
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'officegroupdivider'
+                  DividerType = bsdtHorizontalDashLine
+                  Align = alClient
+                  ExplicitLeft = 122
+                  ExplicitTop = -3
+                  ExplicitWidth = 563
+                end
+              end
+              object bsSkinPanel102: TbsSkinPanel
+                Left = 0
+                Top = 95
+                Width = 569
+                Height = 34
+                HintImageIndex = 0
+                TabOrder = 7
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel123: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 15
+                  Top = 0
+                  Width = 554
+                  Height = 29
+                  Margins.Left = 15
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 5
+                  EllipsType = bsetNone
+                  UseSkinFont = False
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = 2894892
+                  Font.Height = -19
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Align = alClient
+                  Caption = 'Slides de M'#250'sicas'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitWidth = 146
+                  ExplicitHeight = 23
+                end
+              end
+              object bsSkinPanel103: TbsSkinPanel
+                Left = 0
+                Top = 437
+                Width = 569
+                Height = 34
+                HintImageIndex = 0
+                TabOrder = 15
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel67: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 15
+                  Top = 0
+                  Width = 554
+                  Height = 29
+                  Margins.Left = 15
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 5
+                  EllipsType = bsetNone
+                  UseSkinFont = False
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = 2894892
+                  Font.Height = -19
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Align = alClient
+                  Caption = 'V'#237'deos On-line'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitWidth = 120
+                  ExplicitHeight = 23
+                end
+              end
+              object bsSkinPanel104: TbsSkinPanel
+                Left = 0
+                Top = 737
+                Width = 569
+                Height = 34
+                HintImageIndex = 0
+                TabOrder = 27
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel58: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 15
+                  Top = 0
+                  Width = 554
+                  Height = 29
+                  Margins.Left = 15
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 5
+                  EllipsType = bsetNone
+                  UseSkinFont = False
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = 2894892
+                  Font.Height = -19
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Align = alClient
+                  Caption = 'Imagem de Fundo'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitWidth = 156
+                  ExplicitHeight = 23
+                end
+              end
+              object bsSkinPanel131: TbsSkinPanel
+                Left = 0
+                Top = 863
+                Width = 569
+                Height = 0
+                HintImageIndex = 0
+                TabOrder = 32
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alClient
+                ExplicitWidth = 83
+              end
+              object bsFormatSlImgPerso: TbsSkinPanel
+                Left = 0
+                Top = 369
+                Width = 569
+                Height = 48
+                HintImageIndex = 0
+                TabOrder = 13
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckSlideImgFormatPerso: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Fundo personalizado'
+                  OnClick = ckSlideImgFormatPersoClick
+                  Align = alTop
+                  ExplicitWidth = 47
+                end
+                object bsFormatSlideImgPerso: TbsSkinPanel
+                  Left = 0
+                  Top = 24
+                  Width = 569
+                  Height = 24
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = 0
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Caption = 'bsSkinPanel10'
+                  Align = alClient
+                  ExplicitWidth = 83
+                  object bsSkinPanel87: TbsSkinPanel
+                    AlignWithMargins = True
+                    Left = 60
+                    Top = 0
+                    Width = 509
+                    Height = 24
+                    Margins.Left = 60
+                    Margins.Top = 0
+                    Margins.Right = 0
+                    Margins.Bottom = 0
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'panel'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    EmptyDrawing = False
+                    RibbonStyle = False
+                    ImagePosition = bsipDefault
+                    TransparentMode = False
+                    CaptionImageIndex = 0
+                    RealHeight = -1
+                    AutoEnabledControls = True
+                    CheckedMode = False
+                    Checked = False
+                    DefaultAlignment = taLeftJustify
+                    DefaultCaptionHeight = 20
+                    BorderStyle = bvNone
+                    CaptionMode = False
+                    RollUpMode = False
+                    RollUpState = False
+                    NumGlyphs = 1
+                    Spacing = 2
+                    Caption = 'bsSkinPanel10'
+                    Align = alClient
+                    ExplicitWidth = 23
+                    object bsFormatSlideImgPerso2: TbsSkinPanel
+                      Left = 131
+                      Top = 0
+                      Width = 378
+                      Height = 24
+                      HintImageIndex = 0
+                      TabOrder = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'panel'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      EmptyDrawing = False
+                      RibbonStyle = False
+                      ImagePosition = bsipDefault
+                      TransparentMode = False
+                      CaptionImageIndex = -1
+                      RealHeight = -1
+                      AutoEnabledControls = True
+                      CheckedMode = False
+                      Checked = False
+                      DefaultAlignment = taLeftJustify
+                      DefaultCaptionHeight = 20
+                      BorderStyle = bvNone
+                      CaptionMode = False
+                      RollUpMode = False
+                      RollUpState = False
+                      NumGlyphs = 1
+                      Spacing = 2
+                      Align = alClient
+                      object bsRibbonDivider10: TbsRibbonDivider
+                        Left = 121
+                        Top = 0
+                        Width = 15
+                        Height = 24
+                        HintImageIndex = 0
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'officegroupdivider'
+                        DividerType = bsdtVerticalLine
+                        Align = alLeft
+                        ExplicitLeft = 106
+                        ExplicitTop = 3
+                      end
+                      object bsRibbonDivider66: TbsRibbonDivider
+                        Left = 377
+                        Top = 0
+                        Width = 15
+                        Height = 24
+                        HintImageIndex = 0
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'officegroupdivider'
+                        DividerType = bsdtVerticalLine
+                        Align = alLeft
+                        ExplicitLeft = 408
+                        ExplicitTop = 3
+                      end
+                      object bsSkinStdLabel105: TbsSkinStdLabel
+                        AlignWithMargins = True
+                        Left = 15
+                        Top = 0
+                        Width = 54
+                        Height = 24
+                        Margins.Left = 0
+                        Margins.Top = 0
+                        Margins.Bottom = 0
+                        EllipsType = bsetNone
+                        UseSkinFont = True
+                        UseSkinColor = True
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clWindowText
+                        DefaultFont.Height = -11
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'stdlabel'
+                        Font.Charset = ANSI_CHARSET
+                        Font.Color = clWindowText
+                        Font.Height = -13
+                        Font.Name = 'Tahoma'
+                        Font.Style = [fsBold]
+                        Align = alLeft
+                        Caption = 'Cor Fundo:'
+                        ParentFont = False
+                        Layout = tlCenter
+                        ExplicitHeight = 13
+                      end
+                      object bsSkinStdLabel55: TbsSkinStdLabel
+                        AlignWithMargins = True
+                        Left = 136
+                        Top = 0
+                        Width = 42
+                        Height = 24
+                        Margins.Left = 0
+                        Margins.Top = 0
+                        Margins.Bottom = 0
+                        EllipsType = bsetNone
+                        UseSkinFont = True
+                        UseSkinColor = True
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clWindowText
+                        DefaultFont.Height = -11
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'stdlabel'
+                        Font.Charset = ANSI_CHARSET
+                        Font.Color = clWindowText
+                        Font.Height = -13
+                        Font.Name = 'Tahoma'
+                        Font.Style = [fsBold]
+                        Align = alLeft
+                        Caption = 'Imagem:'
+                        ParentFont = False
+                        Layout = tlCenter
+                        ExplicitHeight = 13
+                      end
+                      object bsSkinStdLabel62: TbsSkinStdLabel
+                        AlignWithMargins = True
+                        Left = 392
+                        Top = 0
+                        Width = 40
+                        Height = 24
+                        Margins.Left = 0
+                        Margins.Top = 0
+                        Margins.Bottom = 0
+                        EllipsType = bsetNone
+                        UseSkinFont = True
+                        UseSkinColor = True
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clWindowText
+                        DefaultFont.Height = -11
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'stdlabel'
+                        Font.Charset = ANSI_CHARSET
+                        Font.Color = clWindowText
+                        Font.Height = -13
+                        Font.Name = 'Tahoma'
+                        Font.Style = [fsBold]
+                        Align = alLeft
+                        Caption = 'Posi'#231#227'o:'
+                        ParentFont = False
+                        Layout = tlCenter
+                        ExplicitHeight = 13
+                      end
+                      object corFundoMusica: TbsSkinColorButton
+                        Tag = 12
+                        AlignWithMargins = True
+                        Left = 72
+                        Top = 1
+                        Width = 49
+                        Height = 22
+                        Margins.Left = 0
+                        Margins.Top = 1
+                        Margins.Right = 0
+                        Margins.Bottom = 1
+                        HintImageIndex = 0
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'toolmenubutton'
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clWindowText
+                        DefaultFont.Height = 13
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        DefaultWidth = 0
+                        DefaultHeight = 0
+                        UseSkinFont = True
+                        CheckedMode = False
+                        UseSkinSize = False
+                        UseSkinFontColor = True
+                        WidthWithCaption = 0
+                        WidthWithoutCaption = 0
+                        ImageIndex = 0
+                        RepeatMode = False
+                        RepeatInterval = 100
+                        Transparent = False
+                        Flat = False
+                        AllowAllUp = False
+                        Down = False
+                        GroupIndex = 0
+                        ShowCaption = True
+                        NumGlyphs = 1
+                        Align = alLeft
+                        Spacing = 1
+                        NewStyle = False
+                        TrackPosition = bstpRight
+                        UseImagesMenuImage = False
+                        UseImagesMenuCaption = False
+                        TrackButtonMode = False
+                        AutoColor = clBlack
+                        ColorValue = clBlack
+                        ShowAutoColor = True
+                        ShowMoreColor = True
+                        MenuUseSkinFont = True
+                        MenuDefaultFont.Charset = DEFAULT_CHARSET
+                        MenuDefaultFont.Color = clWindowText
+                        MenuDefaultFont.Height = 13
+                        MenuDefaultFont.Name = 'Tahoma'
+                        MenuDefaultFont.Style = []
+                        MenuAlphaBlend = False
+                        MenuAlphaBlendValue = 200
+                        MenuAlphaBlendAnimation = False
+                        OnChangeColor = corFundoMusicaChangeColor
+                        ExplicitLeft = 5
+                      end
+                      object bsRibbonDivider82: TbsRibbonDivider
+                        Left = 0
+                        Top = 0
+                        Width = 15
+                        Height = 24
+                        HintImageIndex = 0
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'officegroupdivider'
+                        DividerType = bsdtVerticalLine
+                        Align = alLeft
+                        ExplicitLeft = -8
+                        ExplicitTop = 3
+                      end
+                      object imgFundoMusica: TbsSkinFileEdit
+                        AlignWithMargins = True
+                        Left = 181
+                        Top = 1
+                        Width = 196
+                        Height = 22
+                        Margins.Left = 0
+                        Margins.Top = 1
+                        Margins.Right = 0
+                        Margins.Bottom = 1
+                        Text = ''
+                        DefaultColor = clWindow
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clBlack
+                        DefaultFont.Height = 13
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        UseSkinFont = True
+                        DefaultWidth = 0
+                        DefaultHeight = 0
+                        ButtonMode = True
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'buttonedit'
+                        Align = alLeft
+                        Font.Charset = DEFAULT_CHARSET
+                        Font.Color = clBlack
+                        Font.Height = -11
+                        Font.Name = 'MS Sans Serif'
+                        Font.Style = []
+                        MaxLength = 255
+                        ParentFont = False
+                        TabOrder = 0
+                        Images = DM.ico_16x16
+                        ButtonImageIndex = 0
+                        LeftImageIndex = -1
+                        LeftImageHotIndex = -1
+                        LeftImageDownIndex = -1
+                        RightImageIndex = -1
+                        RightImageHotIndex = -1
+                        RightImageDownIndex = -1
+                        OnButtonClick = inputOpenPictureDialog
+                        OnEnter = imgFundoMusicaEnter
+                        OnExit = imgFundoMusicaExit
+                        OnKeyUp = edtKeyUp
+                        Filter = 
+                          'Todos os arquivos de imagem|*.bmp;*.dib;*.jpg;*.jpeg;*.jpe;*.jfi' +
+                          'f;*.gif;*.tif;*.tiff;*.png;*.ico|'#13#10'Arquivos de Bitmap (*.bmp;*.d' +
+                          'ib)|*.bmp;*.dib|'#13#10'JPEG (*.jpg;*.jpeg;*.jpe;*.jfif)|*.jpg;*.jpeg;' +
+                          '*.jpe;*.jfif|'#13#10'GIF (*.gif)|*.gif|'#13#10'TIFF (*.tif;*.tiff)|*.tif;*.t' +
+                          'iff|'#13#10'PNG (*.png)|*.png|'#13#10'ICO (*.ico)|*.ico|'#13#10'Todos os arquivos|' +
+                          '*.*'
+                        DlgSkinData = DM.bsSkinData1
+                        DlgCtrlSkinData = DM.bsSkinData1
+                        LVHeaderSkinDataName = 'header'
+                      end
+                      object posicaoFundo: TbsSkinComboBoxEx
+                        Tag = 9999
+                        Left = 435
+                        Top = 1
+                        Width = 120
+                        Height = 22
+                        Margins.Left = 0
+                        Margins.Top = 1
+                        Margins.Right = 0
+                        HintImageIndex = 0
+                        TabOrder = 1
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'combobox'
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clWindowText
+                        DefaultFont.Height = 13
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        DefaultWidth = 0
+                        DefaultHeight = 0
+                        UseSkinFont = True
+                        UseSkinSize = False
+                        ToolButtonStyle = False
+                        ItemsEx = <
+                          item
+                            Caption = 'Topo Esq.'
+                            ImageIndex = 92
+                            SelectedImageIndex = 92
+                          end
+                          item
+                            Caption = 'Topo'
+                            ImageIndex = 93
+                            SelectedImageIndex = 93
+                          end
+                          item
+                            Caption = 'Topo Dir.'
+                            ImageIndex = 94
+                            SelectedImageIndex = 94
+                          end
+                          item
+                            Caption = 'Centro Esq.'
+                            ImageIndex = 95
+                            SelectedImageIndex = 95
+                          end
+                          item
+                            Caption = 'Centro'
+                            ImageIndex = 96
+                            SelectedImageIndex = 96
+                          end
+                          item
+                            Caption = 'Centro Dir.'
+                            ImageIndex = 97
+                            SelectedImageIndex = 97
+                          end
+                          item
+                            Caption = 'Rodap'#233' Esq.'
+                            ImageIndex = 98
+                            SelectedImageIndex = 98
+                          end
+                          item
+                            Caption = 'Rodap'#233
+                            ImageIndex = 99
+                            SelectedImageIndex = 99
+                          end
+                          item
+                            Caption = 'Rodap'#233' Dir.'
+                            ImageIndex = 100
+                            SelectedImageIndex = 100
+                          end>
+                        Style = bscbFixedStyle
+                        HideSelection = True
+                        AutoComplete = True
+                        ListBoxUseSkinFont = True
+                        ListBoxUseSkinItemHeight = True
+                        ListBoxWidth = 0
+                        Images = DM.ico_16x16
+                        AlphaBlend = False
+                        AlphaBlendValue = 0
+                        AlphaBlendAnimation = False
+                        ListBoxCaptionMode = False
+                        ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                        ListBoxDefaultFont.Color = clWindowText
+                        ListBoxDefaultFont.Height = 13
+                        ListBoxDefaultFont.Name = 'Tahoma'
+                        ListBoxDefaultFont.Style = []
+                        ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                        ListBoxDefaultCaptionFont.Color = clWindowText
+                        ListBoxDefaultCaptionFont.Height = 13
+                        ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                        ListBoxDefaultCaptionFont.Style = []
+                        ListBoxDefaultItemHeight = 20
+                        ListBoxCaptionAlignment = taLeftJustify
+                        DropDownCount = 8
+                        Font.Charset = DEFAULT_CHARSET
+                        Font.Color = clWindowText
+                        Font.Height = 13
+                        Font.Name = 'Tahoma'
+                        Font.Style = []
+                        OnClick = posicaoFundoClick
+                      end
+                      object txtImgFundoMusicaInfo: TbsSkinEdit
+                        Left = 219
+                        Top = 3
+                        Width = 35
+                        Height = 19
+                        Text = ''
+                        DefaultColor = clWindow
+                        DefaultFont.Charset = DEFAULT_CHARSET
+                        DefaultFont.Color = clBlack
+                        DefaultFont.Height = 13
+                        DefaultFont.Name = 'Tahoma'
+                        DefaultFont.Style = []
+                        UseSkinFont = True
+                        DefaultWidth = 0
+                        DefaultHeight = 0
+                        ButtonMode = False
+                        SkinData = DM.bsSkinData1
+                        SkinDataName = 'edit'
+                        Font.Charset = DEFAULT_CHARSET
+                        Font.Color = clBlack
+                        Font.Height = -11
+                        Font.Name = 'MS Sans Serif'
+                        Font.Style = []
+                        ParentFont = False
+                        TabOrder = 2
+                        Visible = False
+                        ButtonImageIndex = -1
+                        LeftImageIndex = -1
+                        LeftImageHotIndex = -1
+                        LeftImageDownIndex = -1
+                        RightImageIndex = -1
+                        RightImageHotIndex = -1
+                        RightImageDownIndex = -1
+                      end
+                    end
+                    object ckFundoTransparente: TbsSkinCheckBox
+                      AlignWithMargins = True
+                      Left = 0
+                      Top = 0
+                      Width = 128
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      HintImageIndex = 0
+                      TabOrder = 1
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'checkbox'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      WordWrap = False
+                      AllowGrayed = False
+                      State = cbUnchecked
+                      ImageIndex = 0
+                      Flat = True
+                      UseSkinFontColor = True
+                      TabStop = True
+                      CanFocused = True
+                      Radio = False
+                      Checked = False
+                      GroupIndex = 0
+                      Caption = 'Fundo Transparente'
+                      OnClick = ckFundoTransparenteClick
+                      Align = alLeft
+                    end
+                  end
+                end
+              end
+              object bsSkinPanel158: TbsSkinPanel
+                Left = 0
+                Top = 543
+                Width = 569
+                Height = 20
+                HintImageIndex = 0
+                TabOrder = 19
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsRibbonDivider61: TbsRibbonDivider
+                  Left = 0
+                  Top = 0
+                  Width = 569
+                  Height = 20
+                  HintImageIndex = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'officegroupdivider'
+                  DividerType = bsdtHorizontalDashLine
+                  Align = alClient
+                  ExplicitLeft = 122
+                  ExplicitTop = -3
+                  ExplicitWidth = 563
+                end
+              end
+              object bsSkinPanel159: TbsSkinPanel
+                Left = 0
+                Top = 563
+                Width = 569
+                Height = 34
+                HintImageIndex = 0
+                TabOrder = 20
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel157: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 15
+                  Top = 0
+                  Width = 554
+                  Height = 29
+                  Margins.Left = 15
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 5
+                  EllipsType = bsetNone
+                  UseSkinFont = False
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = 2894892
+                  Font.Height = -19
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  Align = alClient
+                  Caption = 'Player de '#193'udio/V'#237'deo'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitWidth = 183
+                  ExplicitHeight = 23
+                end
+              end
+              object bsSkinPanel160: TbsSkinPanel
+                Left = 0
+                Top = 597
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 21
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel158: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 81
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Abrir no monitor:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object sbPlayerAreaExtendida: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 122
+                  Top = 1
+                  Width = 79
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    '1'
+                    '2'
+                    '3'
+                    '4'
+                    '5')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbPlayerAreaExtendidaChange
+                end
+              end
+              object bsSkinPanel161: TbsSkinPanel
+                Left = 0
+                Top = 669
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 24
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckPlayerTelaCheia: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Exibir v'#237'deo em tela cheia'
+                  OnClick = ckPlayerTelaCheiaClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel162: TbsSkinPanel
+                Left = 0
+                Top = 645
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 23
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckPlayerVideo: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Executar arquivos de v'#237'deo no player do programa'
+                  OnClick = ckPlayerVideoClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel163: TbsSkinPanel
+                Left = 0
+                Top = 621
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 22
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckPlayerAudio: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Executar arquivos de '#225'udio no player do programa'
+                  OnClick = ckPlayerAudioClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel164: TbsSkinPanel
+                Left = 0
+                Top = 693
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 25
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel159: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 457
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 
+                    'Nota: Se o '#225'udio/v'#237'deo n'#227'o for suportado pelo player, o arquivo ' +
+                    'ser'#225' automaticamente aberto.'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+              end
+              object bsSkinPanel166: TbsSkinPanel
+                Left = 0
+                Top = -99
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 33
+                Visible = False
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMesmaJanela: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Abrir subtelas na mesma janela (recomeda-se deixar desmarcado)'
+                  OnClick = ckMesmaJanelaClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel167: TbsSkinPanel
+                Left = 0
+                Top = 153
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 34
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinStdLabel76: TbsSkinStdLabel
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 103
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  EllipsType = bsetNone
+                  UseSkinFont = True
+                  UseSkinColor = True
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = -11
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'stdlabel'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -13
+                  Font.Name = 'Tahoma'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  Caption = 'Alinhamento da letra:'
+                  ParentFont = False
+                  Layout = tlCenter
+                  ExplicitHeight = 13
+                end
+                object sbAlinhMusica: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 144
+                  Top = 1
+                  Width = 120
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    'Superior'
+                    'Centro'
+                    'Inferior')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbAlinhMusicaChange
+                end
+              end
+              object bsSkinPanel168: TbsSkinPanel
+                Left = 0
+                Top = 201
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 35
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMusicaTopo: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 533
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Exibir m'#250'sicas sempre em primeiro plano'
+                  OnClick = ckMusicaTopoClick
+                  Align = alClient
+                  ExplicitWidth = 47
+                end
+              end
+              object bsSkinPanel169: TbsSkinPanel
+                Left = 0
+                Top = 249
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 36
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object ckMusicaRetorno: TbsSkinCheckBox
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 0
+                  Width = 218
+                  Height = 24
+                  Margins.Left = 36
+                  Margins.Top = 0
+                  Margins.Right = 0
+                  Margins.Bottom = 0
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  WordWrap = True
+                  AllowGrayed = False
+                  State = cbUnchecked
+                  ImageIndex = 0
+                  Flat = True
+                  UseSkinFontColor = True
+                  TabStop = True
+                  CanFocused = True
+                  Radio = False
+                  Checked = False
+                  GroupIndex = 0
+                  Caption = 'Abrir Tela de Retorno | Abrir no monitor:'
+                  OnClick = ckMusicaRetornoClick
+                  Align = alLeft
+                end
+                object sbMusicaRetornoAreaExtendida: TbsSkinComboBox
+                  AlignWithMargins = True
+                  Left = 259
+                  Top = 1
+                  Width = 120
+                  Height = 22
+                  Margins.Left = 5
+                  Margins.Top = 1
+                  Margins.Right = 0
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'combobox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = True
+                  ToolButtonStyle = False
+                  AlphaBlend = False
+                  AlphaBlendValue = 0
+                  AlphaBlendAnimation = False
+                  ListBoxCaptionMode = False
+                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultFont.Color = clWindowText
+                  ListBoxDefaultFont.Height = 13
+                  ListBoxDefaultFont.Name = 'Tahoma'
+                  ListBoxDefaultFont.Style = []
+                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  ListBoxDefaultCaptionFont.Color = clWindowText
+                  ListBoxDefaultCaptionFont.Height = 13
+                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                  ListBoxDefaultCaptionFont.Style = []
+                  ListBoxDefaultItemHeight = 20
+                  ListBoxCaptionAlignment = taLeftJustify
+                  ListBoxUseSkinFont = True
+                  ListBoxUseSkinItemHeight = True
+                  ListBoxWidth = 0
+                  HideSelection = True
+                  AutoComplete = True
+                  ImageIndex = -1
+                  CharCase = ecNormal
+                  DefaultColor = clWindow
+                  Align = alLeft
+                  Items.Strings = (
+                    '1'
+                    '2'
+                    '3'
+                    '4'
+                    '5')
+                  ItemIndex = -1
+                  DropDownCount = 8
+                  HorizontalExtent = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  Sorted = False
+                  Style = bscbFixedStyle
+                  OnChange = sbMusicaRetornoAreaExtendidaChange
+                end
+              end
+              object bsSkinPanel30: TbsSkinPanel
+                Left = 0
+                Top = -27
+                Width = 569
+                Height = 24
+                HintImageIndex = 0
+                TabOrder = 37
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'panel'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                EmptyDrawing = False
+                RibbonStyle = False
+                ImagePosition = bsipDefault
+                TransparentMode = False
+                CaptionImageIndex = 0
+                RealHeight = -1
+                AutoEnabledControls = True
+                CheckedMode = False
+                Checked = False
+                DefaultAlignment = taLeftJustify
+                DefaultCaptionHeight = 20
+                BorderStyle = bvNone
+                CaptionMode = False
+                RollUpMode = False
+                RollUpState = False
+                NumGlyphs = 1
+                Spacing = 2
+                Caption = 'bsSkinPanel10'
+                Align = alTop
+                ExplicitWidth = 83
+                object bsSkinButton42: TbsSkinButton
+                  AlignWithMargins = True
+                  Left = 36
+                  Top = 1
+                  Width = 145
+                  Height = 22
+                  Margins.Left = 36
+                  Margins.Top = 1
+                  Margins.Right = 10
+                  Margins.Bottom = 1
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'button'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Transparent = False
+                  CheckedMode = False
+                  ImageIndex = 76
+                  AlwaysShowLayeredFrame = False
+                  UseSkinSize = True
+                  UseSkinFontColor = True
+                  RepeatMode = False
+                  RepeatInterval = 100
+                  AllowAllUp = False
+                  TabStop = True
+                  CanFocused = True
+                  Down = False
+                  GroupIndex = 0
+                  Caption = 'Identificar Monitores'
+                  NumGlyphs = 1
+                  Spacing = 1
+                  Align = alLeft
+                  OnClick = identifica_monitores
+                end
+              end
+            end
+          end
+        end
+        object ampAtivDesAlbum: TbsAppMenuPage
+          Left = 150
+          Top = 25
+          Width = 586
+          Height = 379
+          HotScroll = False
+          ScrollOffset = 0
+          ScrollTimerInterval = 50
+          CanScroll = False
+          DefaultWidth = 0
+          object bsSkinPanel84: TbsSkinPanel
+            Left = 0
+            Top = 0
+            Width = 586
+            Height = 113
+            HintImageIndex = 0
+            TabOrder = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'panel'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            EmptyDrawing = False
+            RibbonStyle = False
+            ImagePosition = bsipDefault
+            TransparentMode = False
+            CaptionImageIndex = -1
+            RealHeight = -1
+            AutoEnabledControls = True
+            CheckedMode = False
+            Checked = False
+            DefaultAlignment = taLeftJustify
+            DefaultCaptionHeight = 20
+            BorderStyle = bvNone
+            CaptionMode = False
+            RollUpMode = False
+            RollUpState = False
+            NumGlyphs = 1
+            Spacing = 2
+            Caption = 'bsSkinPanel9'
+            Align = alTop
+            object bsSkinStdLabel154: TbsSkinStdLabel
+              AlignWithMargins = True
+              Left = 15
+              Top = 0
+              Width = 465
+              Height = 113
+              Margins.Left = 15
+              Margins.Top = 0
+              Margins.Right = 0
+              Margins.Bottom = 0
+              EllipsType = bsetNone
+              UseSkinFont = False
+              UseSkinColor = True
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clWindowText
+              DefaultFont.Height = -11
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'stdlabel'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 2894892
+              Font.Height = -40
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              Align = alLeft
+              Caption = 'Ativar ou Desativar '#193'lbuns'
+              ParentFont = False
+              Layout = tlCenter
+              ExplicitHeight = 48
+            end
+          end
+          object bsSkinPanel63: TbsSkinPanel
+            Left = 0
+            Top = 113
+            Width = 586
+            Height = 266
+            HintImageIndex = 0
+            TabOrder = 1
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'panel'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            EmptyDrawing = False
+            RibbonStyle = False
+            ImagePosition = bsipDefault
+            TransparentMode = False
+            CaptionImageIndex = -1
+            RealHeight = -1
+            AutoEnabledControls = True
+            CheckedMode = False
+            Checked = False
+            DefaultAlignment = taLeftJustify
+            DefaultCaptionHeight = 20
+            BorderStyle = bvNone
+            CaptionMode = False
+            RollUpMode = False
+            RollUpState = False
+            NumGlyphs = 1
+            Spacing = 2
+            Caption = 'bsSkinPanel63'
+            Align = alClient
+            ExplicitHeight = 238
+            object bsSkinPanel85: TbsSkinPanel
+              Left = 0
+              Top = 0
+              Width = 586
+              Height = 80
+              HintImageIndex = 0
+              TabOrder = 0
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'panel'
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clWindowText
+              DefaultFont.Height = 13
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              DefaultWidth = 0
+              DefaultHeight = 0
+              UseSkinFont = True
+              EmptyDrawing = False
+              RibbonStyle = False
+              ImagePosition = bsipDefault
+              TransparentMode = False
+              CaptionImageIndex = 0
+              RealHeight = -1
+              AutoEnabledControls = True
+              CheckedMode = False
+              Checked = False
+              DefaultAlignment = taLeftJustify
+              DefaultCaptionHeight = 20
+              BorderStyle = bvNone
+              CaptionMode = False
+              RollUpMode = False
+              RollUpState = False
+              NumGlyphs = 1
+              Spacing = 2
+              Caption = 'bsSkinPanel10'
+              Align = alTop
+              object bsSkinStdLabel91: TbsSkinStdLabel
+                AlignWithMargins = True
+                Left = 36
+                Top = 36
+                Width = 550
+                Height = 44
+                Margins.Left = 36
+                Margins.Top = 10
+                Margins.Right = 0
+                Margins.Bottom = 0
+                EllipsType = bsetNone
+                UseSkinFont = True
+                UseSkinColor = True
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = -11
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'stdlabel'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -13
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Align = alClient
+                Caption = 
+                  'Ao reativar um '#225'lbum, lembre-se de realizar uma sincroniza'#231#227'o de' +
+                  ' arquivos em falta para verificar se os arquivos est'#227'o em ordem.'
+                ParentFont = False
+                WordWrap = True
+                ExplicitWidth = 542
+                ExplicitHeight = 26
+              end
+              object bsSkinStdLabel162: TbsSkinStdLabel
+                AlignWithMargins = True
+                Left = 36
+                Top = 0
+                Width = 550
+                Height = 26
+                Margins.Left = 36
+                Margins.Top = 0
+                Margins.Right = 0
+                Margins.Bottom = 0
+                EllipsType = bsetNone
+                UseSkinFont = True
+                UseSkinColor = True
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = -11
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'stdlabel'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -13
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                Align = alTop
+                Caption = 
+                  'Ao desativar um '#225'lbum, as m'#250'sicas que fazem parte do mesmo deixa' +
+                  'm de fazer parte do programa, das buscas, e da sincroniza'#231#227'o de ' +
+                  'arquivos.'
+                ParentFont = False
+                WordWrap = True
+                ExplicitWidth = 549
+              end
+            end
+            object GridPanel7: TGridPanel
+              AlignWithMargins = True
+              Left = 10
+              Top = 80
+              Width = 566
+              Height = 183
+              Margins.Left = 10
+              Margins.Top = 0
+              Margins.Right = 10
+              Align = alClient
+              BevelOuter = bvNone
+              Caption = 'GridPanel7'
+              ColumnCollection = <
+                item
+                  Value = 50.000000000000000000
+                end
+                item
+                  SizeStyle = ssAbsolute
+                  Value = 60.000000000000000000
+                end
+                item
+                  Value = 50.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = Panel65
+                  Row = 0
+                end
+                item
+                  Column = 2
+                  Control = Panel66
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = bsSkinSpeedButton17
+                  Row = 2
+                end
+                item
+                  Column = 1
+                  Control = bsSkinSpeedButton21
+                  Row = 3
+                end
+                item
+                  Column = 0
+                  Control = Panel67
+                  Row = 1
+                  RowSpan = 4
+                end
+                item
+                  Column = 2
+                  Control = Panel68
+                  Row = 1
+                  RowSpan = 4
+                end>
+              RowCollection = <
+                item
+                  SizeStyle = ssAbsolute
+                  Value = 30.000000000000000000
+                end
+                item
+                  Value = 10.000335654943360000
+                end
+                item
+                  Value = 39.999467015663960000
+                end
+                item
+                  Value = 40.000104002685370000
+                end
+                item
+                  Value = 10.000093326707320000
+                end>
+              ShowCaption = False
+              TabOrder = 1
+              ExplicitHeight = 155
+              object Panel65: TPanel
+                Left = 0
+                Top = 0
+                Width = 253
+                Height = 30
+                Align = alClient
+                BevelOuter = bvNone
+                Caption = 'Ativos'
+                Color = 16384
+                Ctl3D = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWhite
+                Font.Height = -13
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentBackground = False
+                ParentCtl3D = False
+                ParentFont = False
+                TabOrder = 0
+              end
+              object Panel66: TPanel
+                Left = 313
+                Top = 0
+                Width = 253
+                Height = 30
+                Align = alClient
+                BevelOuter = bvNone
+                Caption = 'Inativos'
+                Color = clRed
+                Ctl3D = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWhite
+                Font.Height = -13
+                Font.Name = 'Tahoma'
+                Font.Style = [fsBold]
+                ParentBackground = False
+                ParentCtl3D = False
+                ParentFont = False
+                TabOrder = 1
+              end
+              object bsSkinSpeedButton17: TbsSkinSpeedButton
+                AlignWithMargins = True
+                Left = 256
+                Top = 48
+                Width = 54
+                Height = 55
+                HintImageIndex = 0
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'resizetoolbutton'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                CheckedMode = False
+                ImageList = DM.ico_40x40
+                UseSkinSize = True
+                UseSkinFontColor = True
+                WidthWithCaption = 0
+                WidthWithoutCaption = 0
+                ImageIndex = 48
+                RepeatMode = False
+                RepeatInterval = 100
+                Transparent = True
+                Flat = True
+                AllowAllUp = False
+                Down = False
+                GroupIndex = 0
+                ShowCaption = True
+                NumGlyphs = 1
+                Align = alClient
+                Spacing = 1
+                Layout = blGlyphTop
+                OnClick = gridAlbAtDblClick
+                ExplicitLeft = 301
+                ExplicitTop = 55
+                ExplicitHeight = 83
+              end
+              object bsSkinSpeedButton21: TbsSkinSpeedButton
+                AlignWithMargins = True
+                Left = 256
+                Top = 109
+                Width = 54
+                Height = 55
+                HintImageIndex = 0
+                SkinData = DM.bsSkinData1
+                SkinDataName = 'resizetoolbutton'
+                DefaultFont.Charset = DEFAULT_CHARSET
+                DefaultFont.Color = clWindowText
+                DefaultFont.Height = 13
+                DefaultFont.Name = 'Tahoma'
+                DefaultFont.Style = []
+                DefaultWidth = 0
+                DefaultHeight = 0
+                UseSkinFont = True
+                CheckedMode = False
+                ImageList = DM.ico_40x40
+                UseSkinSize = True
+                UseSkinFontColor = True
+                WidthWithCaption = 0
+                WidthWithoutCaption = 0
+                ImageIndex = 49
+                RepeatMode = False
+                RepeatInterval = 100
+                Transparent = True
+                Flat = True
+                AllowAllUp = False
+                Down = False
+                GroupIndex = 0
+                ShowCaption = True
+                NumGlyphs = 1
+                Align = alClient
+                Spacing = 1
+                Layout = blGlyphTop
+                OnClick = gridAlbInatDblClick
+                ExplicitLeft = 301
+                ExplicitTop = 144
+                ExplicitHeight = 83
+              end
+              object Panel67: TPanel
+                Left = 0
+                Top = 30
+                Width = 253
+                Height = 153
+                Align = alClient
+                BevelOuter = bvNone
+                Caption = 'Panel67'
+                ShowCaption = False
+                TabOrder = 2
+                ExplicitHeight = 125
+                object gridAlbAt: TbsSkinDBGrid
+                  Left = 0
+                  Top = 0
+                  Width = 234
+                  Height = 153
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  VScrollBar = bsSkinScrollBar18
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 20
+                  MouseWheelSupport = False
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  Ctl3D = False
+                  DataSource = DM.dsALBUM_ATIV
+                  Options = [dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
+                  ParentCtl3D = False
+                  TitleFont.Charset = ANSI_CHARSET
+                  TitleFont.Color = clWindowText
+                  TitleFont.Height = -13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDblClick = gridAlbAtDblClick
+                  Columns = <
+                    item
+                      Expanded = False
+                      FieldName = 'NOME'
+                      Visible = True
+                    end>
+                end
+                object bsSkinScrollBar18: TbsSkinScrollBar
+                  Left = 234
+                  Top = 0
+                  Width = 19
+                  Height = 153
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 0
+                  Min = 0
+                  Max = 100
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitHeight = 125
+                end
+              end
+              object Panel68: TPanel
+                Left = 313
+                Top = 30
+                Width = 253
+                Height = 153
+                Align = alClient
+                BevelOuter = bvNone
+                Caption = 'Panel67'
+                ShowCaption = False
+                TabOrder = 3
+                ExplicitHeight = 125
+                object gridAlbInat: TbsSkinDBGrid
+                  Left = 0
+                  Top = 0
+                  Width = 234
+                  Height = 153
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  VScrollBar = bsSkinScrollBar19
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 20
+                  MouseWheelSupport = False
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  Ctl3D = False
+                  DataSource = DM.dsALBUM_INATIV
+                  Options = [dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
+                  ParentCtl3D = False
+                  TitleFont.Charset = ANSI_CHARSET
+                  TitleFont.Color = clWindowText
+                  TitleFont.Height = -13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDblClick = gridAlbInatDblClick
+                  Columns = <
+                    item
+                      Expanded = False
+                      FieldName = 'NOME'
+                      Visible = True
+                    end>
+                end
+                object bsSkinScrollBar19: TbsSkinScrollBar
+                  Left = 234
+                  Top = 0
+                  Width = 19
+                  Height = 153
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 0
+                  Min = 0
+                  Max = 100
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitHeight = 125
+                end
+              end
+            end
+          end
+        end
+        object ampDesenvolvedor: TbsAppMenuPage
+          Left = 150
+          Top = 25
+          Width = 586
+          Height = 379
+          HotScroll = False
+          ScrollOffset = 0
+          ScrollTimerInterval = 50
+          CanScroll = False
+          DefaultWidth = 0
+          object bsSkinPanel34: TbsSkinPanel
+            Left = 0
+            Top = 0
+            Width = 586
+            Height = 113
+            HintImageIndex = 0
+            TabOrder = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'panel'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            EmptyDrawing = False
+            RibbonStyle = False
+            ImagePosition = bsipDefault
+            TransparentMode = False
+            CaptionImageIndex = -1
+            RealHeight = -1
+            AutoEnabledControls = True
+            CheckedMode = False
+            Checked = False
+            DefaultAlignment = taLeftJustify
+            DefaultCaptionHeight = 20
+            BorderStyle = bvNone
+            CaptionMode = False
+            RollUpMode = False
+            RollUpState = False
+            NumGlyphs = 1
+            Spacing = 2
+            Caption = 'bsSkinPanel9'
+            Align = alTop
+            ExplicitWidth = 1190
+            object bsSkinStdLabel82: TbsSkinStdLabel
+              AlignWithMargins = True
+              Left = 15
+              Top = 0
+              Width = 318
+              Height = 113
+              Margins.Left = 15
+              Margins.Top = 0
+              Margins.Right = 0
+              Margins.Bottom = 0
+              EllipsType = bsetNone
+              UseSkinFont = False
+              UseSkinColor = True
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clWindowText
+              DefaultFont.Height = -11
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'stdlabel'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 2894892
+              Font.Height = -40
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              Align = alLeft
+              Caption = 'DESENVOLVEDOR'
+              ParentFont = False
+              Layout = tlCenter
+              ExplicitHeight = 48
+            end
+          end
+          object ScrollBox4: TbsSkinPanel
+            Left = 0
+            Top = 113
+            Width = 586
+            Height = 266
+            HintImageIndex = 0
+            TabOrder = 1
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'panel'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            EmptyDrawing = False
+            RibbonStyle = False
+            ImagePosition = bsipDefault
+            TransparentMode = False
+            CaptionImageIndex = -1
+            RealHeight = -1
+            AutoEnabledControls = True
+            CheckedMode = False
+            Checked = False
+            DefaultAlignment = taLeftJustify
+            DefaultCaptionHeight = 20
+            BorderStyle = bvNone
+            CaptionMode = False
+            RollUpMode = False
+            RollUpState = False
+            NumGlyphs = 1
+            Spacing = 2
+            Align = alClient
+            ExplicitWidth = 1190
+            ExplicitHeight = 262
+            object PageControl5: TbsSkinPageControl
+              Left = 0
+              Top = 0
+              Width = 586
+              Height = 266
+              ActivePage = sTabSheet13
+              Align = alClient
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBtnText
+              Font.Height = 13
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              Images = DM.ico_16x16
+              MultiLine = True
+              ParentFont = False
+              Style = tsFlatButtons
+              TabOrder = 0
+              MouseWheelSupport = True
+              TabExtededDraw = False
+              ButtonTabSkinDataName = 'resizetoolbutton'
+              TabsOffset = 0
+              TabSpacing = 1
+              TextInHorizontal = True
+              TabsInCenter = False
+              FreeOnClose = False
+              ShowCloseButtons = False
+              TabsBGTransparent = True
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clBtnText
+              DefaultFont.Height = 13
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              UseSkinFont = True
+              DefaultItemHeight = 20
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'tab'
+              ExplicitWidth = 1190
+              ExplicitHeight = 262
+              object bsSkinTabSheet4: TbsSkinTabSheet
+                Caption = 'Logs'
+                ImageIndex = 8
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object mmLog: TbsSkinMemo
+                  Left = 0
+                  Top = 0
+                  Width = 565
+                  Height = 99
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -13
+                  Font.Name = 'Courier New'
+                  Font.Style = []
+                  ParentFont = False
+                  ReadOnly = True
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  OnKeyUp = edtKeyUp
+                  Transparent = False
+                  WallpaperStretch = False
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = False
+                  UseSkinFontColor = True
+                  BitMapBG = True
+                  VScrollBar = bsSkinScrollBar22
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'memo'
+                  ExplicitWidth = 1169
+                  ExplicitHeight = 191
+                end
+                object bsSkinScrollBar22: TbsSkinScrollBar
+                  Left = 565
+                  Top = 0
+                  Width = 19
+                  Height = 99
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Enabled = False
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 0
+                  Min = 0
+                  Max = 0
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitLeft = 1169
+                  ExplicitHeight = 191
+                end
+              end
+              object sTabSheet13: TbsSkinTabSheet
+                Caption = 'Arquivo config.ja'
+                ImageIndex = -1
+                OnShow = sTabSheet13Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object mmConfigJA: TbsSkinMemo
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 56
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  ParentFont = False
+                  ReadOnly = True
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  OnKeyUp = edtKeyUp
+                  Transparent = False
+                  WallpaperStretch = False
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  UseSkinFontColor = True
+                  BitMapBG = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'memo'
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 148
+                end
+                object sPanel22: TbsSkinPanel
+                  Left = 0
+                  Top = 56
+                  Width = 584
+                  Height = 43
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Align = alBottom
+                  ExplicitTop = 148
+                  ExplicitWidth = 1188
+                  object sButton10: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 449
+                    Top = 6
+                    Width = 129
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 32
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Abrir Arquivo'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = sButton10Click
+                    ExplicitLeft = 1053
+                  end
+                  object bsSkinButton14: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 308
+                    Top = 6
+                    Width = 129
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Atualizar'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = sTabSheet13Show
+                    ExplicitLeft = 912
+                  end
+                  object bsSkinButton45: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 140
+                    Top = 6
+                    Width = 156
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 2
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Atualizar Albuns Ignorar'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton45Click
+                    ExplicitLeft = 744
+                  end
+                end
+              end
+              object sTabSheet18: TbsSkinTabSheet
+                Caption = 'Banco de Dados'
+                ImageIndex = -1
+                OnShow = sTabSheet18Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object Splitter1: TSplitter
+                  Left = 153
+                  Top = 0
+                  Height = 56
+                  ExplicitLeft = 150
+                  ExplicitHeight = 323
+                end
+                object slbTabelas: TbsSkinListBox
+                  Left = 0
+                  Top = 0
+                  Width = 153
+                  Height = 56
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'listbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  AutoComplete = True
+                  UseSkinItemHeight = True
+                  HorizontalExtent = False
+                  Columns = 0
+                  RowCount = 0
+                  ImageIndex = -1
+                  NumGlyphs = 1
+                  Spacing = 2
+                  CaptionMode = False
+                  DefaultCaptionHeight = 20
+                  DefaultCaptionFont.Charset = DEFAULT_CHARSET
+                  DefaultCaptionFont.Color = clWindowText
+                  DefaultCaptionFont.Height = 13
+                  DefaultCaptionFont.Name = 'Tahoma'
+                  DefaultCaptionFont.Style = []
+                  DefaultItemHeight = 20
+                  ItemIndex = -1
+                  MultiSelect = False
+                  ListBoxFont.Charset = DEFAULT_CHARSET
+                  ListBoxFont.Color = clBlack
+                  ListBoxFont.Height = -11
+                  ListBoxFont.Name = 'MS Sans Serif'
+                  ListBoxFont.Style = [fsBold]
+                  ListBoxTabOrder = 0
+                  ListBoxTabStop = True
+                  ListBoxDragMode = dmManual
+                  ListBoxDragKind = dkDrag
+                  ListBoxDragCursor = crDrag
+                  ExtandedSelect = True
+                  Sorted = False
+                  ShowCaptionButtons = True
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = [fsBold]
+                  Align = alLeft
+                  OnListBoxClick = slbTabelasListBoxClick
+                  ExplicitHeight = 148
+                end
+                object bsSkinPanel11: TbsSkinPanel
+                  Left = 156
+                  Top = 0
+                  Width = 428
+                  Height = 56
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Caption = 'bsSkinPanel11'
+                  Align = alClient
+                  ExplicitWidth = 1032
+                  ExplicitHeight = 148
+                  object bsSkinScrollBar20: TbsSkinScrollBar
+                    Left = 0
+                    Top = -46
+                    Width = 428
+                    Height = 19
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    Visible = False
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'hscrollbar'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 19
+                    UseSkinFont = True
+                    Both = False
+                    BothMarkerWidth = 19
+                    BothSkinDataName = 'bothhscrollbar'
+                    CanFocused = False
+                    Align = alBottom
+                    Kind = sbHorizontal
+                    PageSize = 0
+                    Min = 0
+                    Max = 0
+                    Position = 0
+                    SmallChange = 1
+                    LargeChange = 1
+                    ExplicitTop = 46
+                    ExplicitWidth = 1032
+                  end
+                  object bsSkinScrollBar21: TbsSkinScrollBar
+                    Left = 409
+                    Top = 0
+                    Width = 19
+                    Height = 46
+                    HintImageIndex = 0
+                    TabOrder = 3
+                    Visible = False
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'vscrollbar'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 19
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Both = False
+                    BothMarkerWidth = 19
+                    BothSkinDataName = 'bothhscrollbar'
+                    CanFocused = False
+                    Align = alRight
+                    Kind = sbVertical
+                    PageSize = 0
+                    Min = 0
+                    Max = 100
+                    Position = 0
+                    SmallChange = 1
+                    LargeChange = 1
+                    ExplicitLeft = 1013
+                  end
+                  object bsSkinDBGrid2: TbsSkinDBGrid
+                    Left = 0
+                    Top = 0
+                    Width = 409
+                    Height = 46
+                    HintImageIndex = 0
+                    TabOrder = 2
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'grid'
+                    Transparent = False
+                    WallpaperStretch = False
+                    UseSkinFont = True
+                    UseSkinCellHeight = True
+                    HScrollBar = bsSkinScrollBar20
+                    VScrollBar = bsSkinScrollBar21
+                    GridLineColor = clBtnFace
+                    DefaultCellHeight = 20
+                    ColSizingWithLine = False
+                    DrawGraphicFields = False
+                    UseColumnsFont = False
+                    DefaultRowHeight = 17
+                    MouseWheelSupport = True
+                    SaveMultiSelection = False
+                    PickListBoxSkinDataName = 'listbox'
+                    PickListBoxCaptionMode = False
+                    Align = alClient
+                    DataSource = DM.dsBD
+                    TitleFont.Charset = DEFAULT_CHARSET
+                    TitleFont.Color = clBtnText
+                    TitleFont.Height = 13
+                    TitleFont.Name = 'Tahoma'
+                    TitleFont.Style = []
+                    OnDrawColumnCell = DBGridDrawColumnCell
+                  end
+                  object mmBD: TMemo
+                    Left = 0
+                    Top = -27
+                    Width = 428
+                    Height = 83
+                    Align = alBottom
+                    ScrollBars = ssBoth
+                    TabOrder = 1
+                    OnKeyUp = mmBDKeyUp
+                    ExplicitTop = 65
+                    ExplicitWidth = 1032
+                  end
+                end
+                object bsSkinPanel12: TbsSkinPanel
+                  Left = 0
+                  Top = 56
+                  Width = 584
+                  Height = 43
+                  HintImageIndex = 0
+                  TabOrder = 2
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Align = alBottom
+                  ExplicitTop = 148
+                  ExplicitWidth = 1188
+                  object bsSkinButton15: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 429
+                    Top = 6
+                    Width = 149
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageIndex = 32
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Abrir Banco de Dados'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton15Click
+                    ExplicitLeft = 1033
+                  end
+                  object btExecSQL: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 268
+                    Top = 6
+                    Width = 149
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageIndex = 32
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Executar SQL'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = btExecSQLClick
+                    ExplicitLeft = 872
+                  end
+                end
+              end
+              object bsSkinTabSheet5: TbsSkinTabSheet
+                Caption = 'Tabela - Hist'#243'rico B'#237'blia'
+                ImageIndex = 28
+                OnShow = bsSkinTabSheet5Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object bsSkinDBGrid1: TbsSkinDBGrid
+                  Left = 0
+                  Top = 0
+                  Width = 565
+                  Height = 80
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  HScrollBar = bsSkinScrollBar23
+                  VScrollBar = bsSkinScrollBar4
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 17
+                  MouseWheelSupport = True
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  DataSource = DM.dsBIBLIA_HISTORICO
+                  TitleFont.Charset = DEFAULT_CHARSET
+                  TitleFont.Color = clBtnText
+                  TitleFont.Height = 13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDrawColumnCell = DBGridDrawColumnCell
+                end
+                object bsSkinScrollBar4: TbsSkinScrollBar
+                  Left = 565
+                  Top = 0
+                  Width = 19
+                  Height = 80
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 0
+                  Min = 0
+                  Max = 0
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitLeft = 1169
+                  ExplicitHeight = 172
+                end
+                object bsSkinScrollBar23: TbsSkinScrollBar
+                  Left = 0
+                  Top = 80
+                  Width = 584
+                  Height = 19
+                  HintImageIndex = 0
+                  TabOrder = 2
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'hscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 19
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alBottom
+                  Kind = sbHorizontal
+                  PageSize = 0
+                  Min = 0
+                  Max = 0
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitTop = 172
+                  ExplicitWidth = 1188
+                end
+              end
+              object sTabSheet15: TbsSkinTabSheet
+                Caption = 'Monitores'
+                ImageIndex = 33
+                OnShow = sTabSheet15Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object lvMonitores: TbsSkinListView
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  DrawSkin = False
+                  DrawSkinLines = False
+                  ItemSkinDataName = 'listbox'
+                  AlternateRow = False
+                  CheckSkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultColor = clWindow
+                  UseSkinFont = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'listview'
+                  Align = alClient
+                  Columns = <
+                    item
+                      Width = 100
+                    end
+                    item
+                      Width = 200
+                    end>
+                  ColumnClick = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = 13
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  GridLines = True
+                  ReadOnly = True
+                  RowSelect = True
+                  ParentFont = False
+                  TabOrder = 0
+                  ViewStyle = vsReport
+                  HeaderSkinDataName = 'header'
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                end
+              end
+              object sTabSheet9: TbsSkinTabSheet
+                Caption = 'Par'#226'metros Abas'
+                ImageIndex = 10
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object loadCol: TValueListEditor
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Ctl3D = False
+                  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
+                  ParentCtl3D = False
+                  Strings.Strings = (
+                    '=')
+                  TabOrder = 0
+                  TitleCaptions.Strings = (
+                    'Chave'
+                    'Valor')
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                  ColWidths = (
+                    150
+                    439)
+                end
+              end
+              object bsSkinTabSheet1: TbsSkinTabSheet
+                Caption = 'Par'#226'metros Sorteio Num'#233'rico'
+                ImageIndex = 42
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object GridPanel71: TGridPanel
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  Caption = 'GridPanel68'
+                  ColumnCollection = <
+                    item
+                      Value = 50.000000000000000000
+                    end
+                    item
+                      Value = 50.000000000000000000
+                    end>
+                  ControlCollection = <
+                    item
+                      Column = 0
+                      Control = Label5
+                      Row = 0
+                    end
+                    item
+                      Column = 1
+                      Control = Label6
+                      Row = 0
+                    end
+                    item
+                      Column = 0
+                      Control = vlSorteio
+                      Row = 1
+                    end
+                    item
+                      Column = 1
+                      Control = vlSorteados
+                      Row = 1
+                    end>
+                  RowCollection = <
+                    item
+                      SizeStyle = ssAbsolute
+                      Value = 20.000000000000000000
+                    end
+                    item
+                      Value = 100.000000000000000000
+                    end
+                    item
+                      SizeStyle = ssAuto
+                    end>
+                  ShowCaption = False
+                  TabOrder = 0
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                  object Label5: TLabel
+                    Left = 1
+                    Top = 1
+                    Width = 291
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Pendentes'
+                    Layout = tlCenter
+                    ExplicitWidth = 51
+                    ExplicitHeight = 13
+                  end
+                  object Label6: TLabel
+                    Left = 292
+                    Top = 1
+                    Width = 291
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Sorteados'
+                    Layout = tlCenter
+                    ExplicitLeft = 594
+                    ExplicitWidth = 49
+                    ExplicitHeight = 13
+                  end
+                  object vlSorteio: TValueListEditor
+                    Left = 1
+                    Top = 21
+                    Width = 291
+                    Height = 77
+                    Align = alClient
+                    BorderStyle = bsNone
+                    Enabled = False
+                    TabOrder = 0
+                    ExplicitWidth = 593
+                    ExplicitHeight = 169
+                    ColWidths = (
+                      126
+                      169)
+                  end
+                  object vlSorteados: TValueListEditor
+                    Left = 292
+                    Top = 21
+                    Width = 291
+                    Height = 77
+                    Align = alClient
+                    BorderStyle = bsNone
+                    Enabled = False
+                    TabOrder = 1
+                    ExplicitLeft = 594
+                    ExplicitWidth = 593
+                    ExplicitHeight = 169
+                    ColWidths = (
+                      126
+                      169)
+                  end
+                end
+              end
+              object bsSkinTabSheet2: TbsSkinTabSheet
+                Caption = 'Par'#226'metros Sorteio de Nomes'
+                ImageIndex = 43
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object GridPanel72: TGridPanel
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  Caption = 'GridPanel68'
+                  ColumnCollection = <
+                    item
+                      Value = 50.000000000000000000
+                    end
+                    item
+                      Value = 50.000000000000000000
+                    end>
+                  ControlCollection = <
+                    item
+                      Column = 0
+                      Control = Label7
+                      Row = 0
+                    end
+                    item
+                      Column = 1
+                      Control = Label8
+                      Row = 0
+                    end
+                    item
+                      Column = 0
+                      Control = vlSorteioNM
+                      Row = 1
+                    end
+                    item
+                      Column = 1
+                      Control = vlSorteadosNM
+                      Row = 1
+                    end>
+                  RowCollection = <
+                    item
+                      SizeStyle = ssAbsolute
+                      Value = 20.000000000000000000
+                    end
+                    item
+                      Value = 100.000000000000000000
+                    end
+                    item
+                      SizeStyle = ssAuto
+                    end>
+                  ShowCaption = False
+                  TabOrder = 0
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                  object Label7: TLabel
+                    Left = 1
+                    Top = 1
+                    Width = 291
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Pendentes'
+                    Layout = tlCenter
+                    ExplicitWidth = 51
+                    ExplicitHeight = 13
+                  end
+                  object Label8: TLabel
+                    Left = 292
+                    Top = 1
+                    Width = 291
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Sorteados'
+                    Layout = tlCenter
+                    ExplicitLeft = 594
+                    ExplicitWidth = 49
+                    ExplicitHeight = 13
+                  end
+                  object vlSorteioNM: TValueListEditor
+                    Left = 1
+                    Top = 21
+                    Width = 291
+                    Height = 77
+                    Align = alClient
+                    BorderStyle = bsNone
+                    Enabled = False
+                    TabOrder = 0
+                    ExplicitWidth = 593
+                    ExplicitHeight = 169
+                    ColWidths = (
+                      126
+                      221)
+                  end
+                  object vlSorteadosNM: TValueListEditor
+                    Left = 292
+                    Top = 21
+                    Width = 291
+                    Height = 77
+                    Align = alClient
+                    BorderStyle = bsNone
+                    Enabled = False
+                    TabOrder = 1
+                    ExplicitLeft = 594
+                    ExplicitWidth = 593
+                    ExplicitHeight = 169
+                    ColWidths = (
+                      126
+                      222)
+                  end
+                end
+              end
+              object sTabSheet17: TbsSkinTabSheet
+                Caption = 'Par'#226'metros Tempor'#225'rios'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object paramtemp: TbsSkinMemo
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  ParentFont = False
+                  ReadOnly = True
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  Transparent = False
+                  WallpaperStretch = False
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  UseSkinFontColor = True
+                  BitMapBG = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'memo'
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                end
+              end
+              object sTabSheet10: TbsSkinTabSheet
+                Caption = 'Par'#226'metros Web'
+                ImageIndex = 67
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object param: TValueListEditor
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Ctl3D = False
+                  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
+                  ParentCtl3D = False
+                  Strings.Strings = (
+                    '=')
+                  TabOrder = 0
+                  TitleCaptions.Strings = (
+                    'Chave'
+                    'Valor')
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                  ColWidths = (
+                    150
+                    439)
+                end
+              end
+              object sTabSheet11: TbsSkinTabSheet
+                Caption = 'Par'#226'metros de Atualiza'#231#227'o'
+                ImageIndex = 76
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object paramAtualiz: TValueListEditor
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Ctl3D = False
+                  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
+                  ParentCtl3D = False
+                  Strings.Strings = (
+                    '=')
+                  TabOrder = 0
+                  TitleCaptions.Strings = (
+                    'Chave'
+                    'Valor')
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                  ColWidths = (
+                    150
+                    515)
+                end
+              end
+              object sTabSheet16: TbsSkinTabSheet
+                Caption = 'Par'#226'metros de Execu'#231#227'o'
+                ImageIndex = 8
+                OnShow = sTabSheet16Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object mmParam: TbsSkinMemo
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 35
+                  Align = alTop
+                  BorderStyle = bsNone
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Height = 13
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  ParentFont = False
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  OnKeyUp = edtKeyUp
+                  Transparent = False
+                  WallpaperStretch = False
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  UseSkinFontColor = True
+                  BitMapBG = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'memo'
+                  ExplicitWidth = 1188
+                end
+                object paramexec: TValueListEditor
+                  Left = 0
+                  Top = 35
+                  Width = 584
+                  Height = 64
+                  Align = alClient
+                  Strings.Strings = (
+                    '')
+                  TabOrder = 1
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 156
+                  ColWidths = (
+                    150
+                    435)
+                end
+              end
+              object sTabSheet12: TbsSkinTabSheet
+                Caption = 'Tabela Colet'#226'neas Personalizadas'
+                ImageIndex = 37
+                OnShow = sTabSheet12Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object DBGrid3: TbsSkinDBGrid
+                  Left = 0
+                  Top = 0
+                  Width = 565
+                  Height = 80
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  HScrollBar = bsSkinScrollBar16
+                  VScrollBar = bsSkinScrollBar17
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 17
+                  MouseWheelSupport = True
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  DataSource = DM.dsCOLETANEAS_PERSO
+                  TitleFont.Charset = DEFAULT_CHARSET
+                  TitleFont.Color = clBtnText
+                  TitleFont.Height = 13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDrawColumnCell = DBGridDrawColumnCell
+                end
+                object bsSkinScrollBar16: TbsSkinScrollBar
+                  Left = 0
+                  Top = 80
+                  Width = 584
+                  Height = 19
+                  HintImageIndex = 0
+                  TabOrder = 2
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'hscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 19
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alBottom
+                  Kind = sbHorizontal
+                  PageSize = 0
+                  Min = 0
+                  Max = 0
+                  Position = 0
+                  SmallChange = 42
+                  LargeChange = 42
+                  ExplicitTop = 172
+                  ExplicitWidth = 1188
+                end
+                object bsSkinScrollBar17: TbsSkinScrollBar
+                  Left = 565
+                  Top = 0
+                  Width = 19
+                  Height = 80
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 1
+                  Min = 1
+                  Max = 0
+                  Position = 1
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitLeft = 1169
+                  ExplicitHeight = 172
+                end
+              end
+              object bsSkinTabSheet7: TbsSkinTabSheet
+                Caption = 'Tabela Favoritos'
+                ImageIndex = 9
+                OnShow = bsSkinTabSheet7Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object bsSkinDBGrid4: TbsSkinDBGrid
+                  Left = 0
+                  Top = 0
+                  Width = 565
+                  Height = 80
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  HScrollBar = bsSkinScrollBar14
+                  VScrollBar = bsSkinScrollBar15
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 17
+                  MouseWheelSupport = True
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  DataSource = DM.dsFavoritos
+                  TitleFont.Charset = DEFAULT_CHARSET
+                  TitleFont.Color = clBtnText
+                  TitleFont.Height = 13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDrawColumnCell = DBGridDrawColumnCell
+                end
+                object bsSkinScrollBar14: TbsSkinScrollBar
+                  Left = 0
+                  Top = 80
+                  Width = 584
+                  Height = 19
+                  HintImageIndex = 0
+                  TabOrder = 2
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'hscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 19
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alBottom
+                  Kind = sbHorizontal
+                  PageSize = 0
+                  Min = 0
+                  Max = 0
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitTop = 172
+                  ExplicitWidth = 1188
+                end
+                object bsSkinScrollBar15: TbsSkinScrollBar
+                  Left = 565
+                  Top = 0
+                  Width = 19
+                  Height = 80
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 0
+                  Min = 0
+                  Max = 100
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitLeft = 1169
+                  ExplicitHeight = 172
+                end
+              end
+              object sTabSheet14: TbsSkinTabSheet
+                Caption = 'Arquivo liturgia.ja'
+                ImageIndex = 39
+                OnShow = sTabSheet14Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object mmLiturgia: TbsSkinMemo
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 56
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  ParentFont = False
+                  ReadOnly = True
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  OnKeyUp = edtKeyUp
+                  Transparent = False
+                  WallpaperStretch = False
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  UseSkinFontColor = True
+                  BitMapBG = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'memo'
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 148
+                end
+                object bsSkinPanel3: TbsSkinPanel
+                  Left = 0
+                  Top = 56
+                  Width = 584
+                  Height = 43
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Align = alBottom
+                  ExplicitTop = 148
+                  ExplicitWidth = 1188
+                  object bsSkinButton34: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 449
+                    Top = 6
+                    Width = 129
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 32
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Abrir Arquivo'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton34Click
+                    ExplicitLeft = 1053
+                  end
+                  object bsSkinButton35: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 308
+                    Top = 6
+                    Width = 129
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Atualizar'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = sTabSheet14Show
+                    ExplicitLeft = 912
+                  end
+                end
+              end
+              object bsSkinTabSheet6: TbsSkinTabSheet
+                Caption = 'Tabela V'#237'deos Online Personalizados'
+                ImageIndex = 83
+                OnShow = bsSkinTabSheet6Show
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object bsSkinDBGrid3: TbsSkinDBGrid
+                  Left = 0
+                  Top = 0
+                  Width = 565
+                  Height = 99
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  HScrollBar = bsSkinScrollBar16
+                  VScrollBar = bsSkinScrollBar25
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 17
+                  MouseWheelSupport = True
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  DataSource = DM.dsVideosOnPerso
+                  TitleFont.Charset = DEFAULT_CHARSET
+                  TitleFont.Color = clBtnText
+                  TitleFont.Height = 13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDrawColumnCell = DBGridDrawColumnCell
+                end
+                object bsSkinScrollBar25: TbsSkinScrollBar
+                  Left = 565
+                  Top = 0
+                  Width = 19
+                  Height = 99
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  Visible = False
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'vscrollbar'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 19
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  Both = False
+                  BothMarkerWidth = 19
+                  BothSkinDataName = 'bothhscrollbar'
+                  CanFocused = False
+                  Align = alRight
+                  Kind = sbVertical
+                  PageSize = 1
+                  Min = 1
+                  Max = 0
+                  Position = 0
+                  SmallChange = 1
+                  LargeChange = 1
+                  ExplicitLeft = 1169
+                  ExplicitHeight = 191
+                end
+              end
+              object bsSkinTabSheet8: TbsSkinTabSheet
+                Caption = 'Sincronizar Arquivos Help'
+                ImageIndex = 66
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object bsSkinPanel72: TbsSkinPanel
+                  Left = 0
+                  Top = 56
+                  Width = 584
+                  Height = 43
+                  HintImageIndex = 0
+                  TabOrder = 2
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Align = alBottom
+                  ExplicitTop = 148
+                  ExplicitWidth = 1188
+                  object lblStatusHlp: TLabel
+                    AlignWithMargins = True
+                    Left = 3
+                    Top = 3
+                    Width = 437
+                    Height = 37
+                    Align = alClient
+                    Layout = tlCenter
+                    ExplicitWidth = 3
+                    ExplicitHeight = 13
+                  end
+                  object bsSkinButton43: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 449
+                    Top = 6
+                    Width = 129
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Sincronizar Arquivos'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton43Click
+                    ExplicitLeft = 1053
+                  end
+                end
+                object GridPanel68: TGridPanel
+                  Left = 89
+                  Top = 0
+                  Width = 495
+                  Height = 56
+                  Align = alClient
+                  Caption = 'GridPanel68'
+                  ColumnCollection = <
+                    item
+                      Value = 33.500850163872440000
+                    end
+                    item
+                      Value = 33.333031504674180000
+                    end
+                    item
+                      Value = 33.166118331453380000
+                    end>
+                  ControlCollection = <
+                    item
+                      Column = 0
+                      Control = Label3
+                      Row = 0
+                    end
+                    item
+                      Column = 1
+                      Control = Label1
+                      Row = 0
+                    end
+                    item
+                      Column = 0
+                      Control = lbHlpArquivos
+                      Row = 1
+                    end
+                    item
+                      Column = 1
+                      Control = lbHlpImagens
+                      Row = 1
+                    end
+                    item
+                      Column = 2
+                      Control = Label4
+                      Row = 0
+                    end
+                    item
+                      Column = 2
+                      Control = lbHlpFalta
+                      Row = 1
+                    end>
+                  RowCollection = <
+                    item
+                      SizeStyle = ssAbsolute
+                      Value = 20.000000000000000000
+                    end
+                    item
+                      Value = 100.000000000000000000
+                    end
+                    item
+                      SizeStyle = ssAuto
+                    end>
+                  ShowCaption = False
+                  TabOrder = 1
+                  ExplicitWidth = 1099
+                  ExplicitHeight = 148
+                  object Label3: TLabel
+                    Left = 1
+                    Top = 1
+                    Width = 165
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Arquivos Help'
+                    Layout = tlCenter
+                    ExplicitWidth = 66
+                    ExplicitHeight = 13
+                  end
+                  object Label1: TLabel
+                    Left = 166
+                    Top = 1
+                    Width = 164
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Imagens'
+                    Layout = tlCenter
+                    ExplicitLeft = 368
+                    ExplicitWidth = 41
+                    ExplicitHeight = 13
+                  end
+                  object lbHlpArquivos: TListBox
+                    Left = 1
+                    Top = 21
+                    Width = 165
+                    Height = 34
+                    Align = alClient
+                    ItemHeight = 13
+                    Sorted = True
+                    TabOrder = 0
+                    ExplicitWidth = 367
+                    ExplicitHeight = 126
+                  end
+                  object lbHlpImagens: TListBox
+                    Left = 166
+                    Top = 21
+                    Width = 164
+                    Height = 34
+                    Align = alClient
+                    ItemHeight = 13
+                    Sorted = True
+                    TabOrder = 1
+                    ExplicitLeft = 368
+                    ExplicitWidth = 365
+                    ExplicitHeight = 126
+                  end
+                  object Label4: TLabel
+                    Left = 330
+                    Top = 1
+                    Width = 164
+                    Height = 20
+                    Align = alClient
+                    Alignment = taCenter
+                    Caption = 'Em Falta'
+                    Font.Charset = DEFAULT_CHARSET
+                    Font.Color = clRed
+                    Font.Height = 13
+                    Font.Name = 'Tahoma'
+                    Font.Style = []
+                    ParentFont = False
+                    Layout = tlCenter
+                    ExplicitLeft = 733
+                    ExplicitWidth = 41
+                    ExplicitHeight = 13
+                  end
+                  object lbHlpFalta: TListBox
+                    Left = 330
+                    Top = 21
+                    Width = 164
+                    Height = 34
+                    Align = alClient
+                    ItemHeight = 13
+                    Sorted = True
+                    TabOrder = 2
+                    ExplicitLeft = 733
+                    ExplicitWidth = 365
+                    ExplicitHeight = 126
+                  end
+                end
+                object lbHlpTemp: TMemo
+                  Left = 0
+                  Top = 0
+                  Width = 89
+                  Height = 56
+                  Align = alLeft
+                  Lines.Strings = (
+                    'Memo1')
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  Visible = False
+                  ExplicitHeight = 148
+                end
+              end
+              object bsSkinTabSheet9: TbsSkinTabSheet
+                Caption = 'Atualizar Tamanhos dos Arquivos'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object bsSkinPanel86: TbsSkinPanel
+                  Left = 0
+                  Top = 56
+                  Width = 584
+                  Height = 43
+                  HintImageIndex = 0
+                  TabOrder = 2
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Align = alBottom
+                  ExplicitTop = 148
+                  ExplicitWidth = 1188
+                  object Label2: TLabel
+                    AlignWithMargins = True
+                    Left = 3
+                    Top = 3
+                    Width = 534
+                    Height = 37
+                    Align = alClient
+                    Layout = tlCenter
+                    ExplicitWidth = 3
+                    ExplicitHeight = 13
+                  end
+                  object bsSkinButton21: TbsSkinButton
+                    AlignWithMargins = True
+                    Left = 428
+                    Top = 6
+                    Width = 150
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 3
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = ' Todos Arquivos'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton21Click
+                    ExplicitLeft = 1032
+                  end
+                  object bsSkinButton22: TbsSkinButton
+                    Tag = 2
+                    AlignWithMargins = True
+                    Left = 104
+                    Top = 6
+                    Width = 150
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = ' Atualizar se Menor'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton21Click
+                    ExplicitLeft = 708
+                  end
+                  object bsSkinButton23: TbsSkinButton
+                    Tag = 1
+                    AlignWithMargins = True
+                    Left = -58
+                    Top = 6
+                    Width = 150
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = ' Novos Arquivos'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton21Click
+                    ExplicitLeft = 546
+                  end
+                  object bsSkinButton27: TbsSkinButton
+                    Tag = 3
+                    AlignWithMargins = True
+                    Left = 266
+                    Top = 6
+                    Width = 150
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 2
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageList = DM.ico_24x24
+                    ImageIndex = 55
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = ' Atualizar se Maior'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton21Click
+                    ExplicitLeft = 870
+                  end
+                end
+                object lvArquivos: TbsSkinListView
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 50
+                  DrawSkin = False
+                  DrawSkinLines = False
+                  ItemSkinDataName = 'listbox'
+                  AlternateRow = False
+                  CheckSkinDataName = 'checkbox'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultColor = clWindow
+                  UseSkinFont = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'listview'
+                  Align = alClient
+                  Checkboxes = True
+                  Columns = <
+                    item
+                      Caption = 'Arquivo'
+                      Width = 200
+                    end
+                    item
+                      Caption = 'Diret'#243'rio'
+                      Width = 300
+                    end
+                    item
+                      Caption = 'Tamanho'
+                    end
+                    item
+                      Caption = 'Status'
+                    end>
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = 13
+                  Font.Name = 'Tahoma'
+                  Font.Style = []
+                  ParentFont = False
+                  TabOrder = 0
+                  ViewStyle = vsReport
+                  HeaderSkinDataName = 'header'
+                  VScrollBar = bsSkinScrollBar8
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 142
+                end
+                object gProgresso: TbsSkinGauge
+                  Left = 0
+                  Top = 50
+                  Width = 584
+                  Height = 6
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'gauge'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  UseSkinSize = False
+                  ShowProgressText = False
+                  ShowPercent = False
+                  MinValue = 0
+                  MaxValue = 1
+                  Value = 0
+                  Vertical = False
+                  ProgressAnimationPause = 3000
+                  Align = alBottom
+                  ExplicitTop = 142
+                  ExplicitWidth = 1188
+                end
+              end
+              object bsSkinTabSheet10: TbsSkinTabSheet
+                Caption = 'Importar LJA para BD'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object lbTempos: TListBox
+                  Left = 446
+                  Top = 25
+                  Width = 138
+                  Height = 74
+                  TabStop = False
+                  Align = alRight
+                  ItemHeight = 13
+                  TabOrder = 2
+                  Visible = False
+                  ExplicitLeft = 1050
+                  ExplicitHeight = 166
+                end
+                object Panel37: TPanel
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 25
+                  Align = alTop
+                  TabOrder = 0
+                  ExplicitWidth = 1188
+                  object Label9: TbsSkinLabel
+                    Left = 1
+                    Top = 1
+                    Width = 46
+                    Height = 23
+                    HintImageIndex = 0
+                    TabOrder = 5
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'label'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    ShadowEffect = False
+                    ShadowColor = clBlack
+                    ShadowOffset = 0
+                    ShadowSize = 3
+                    ReflectionEffect = False
+                    ReflectionOffset = -5
+                    EllipsType = bsetNoneEllips
+                    UseSkinSize = True
+                    UseSkinFontColor = True
+                    BorderStyle = bvFrame
+                    Align = alLeft
+                    Caption = 'ID M'#250'sica'
+                    AutoSize = False
+                  end
+                  object Label10: TbsSkinLabel
+                    Left = 183
+                    Top = 1
+                    Width = 43
+                    Height = 23
+                    HintImageIndex = 0
+                    TabOrder = 6
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'label'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    ShadowEffect = False
+                    ShadowColor = clBlack
+                    ShadowOffset = 0
+                    ShadowSize = 3
+                    ReflectionEffect = False
+                    ReflectionOffset = -5
+                    EllipsType = bsetNoneEllips
+                    UseSkinSize = True
+                    UseSkinFontColor = True
+                    BorderStyle = bvFrame
+                    Align = alRight
+                    Caption = 'ID '#193'lbum'
+                    AutoSize = False
+                    ExplicitLeft = 787
+                  end
+                  object Label11: TbsSkinLabel
+                    Left = 354
+                    Top = 1
+                    Width = 26
+                    Height = 23
+                    HintImageIndex = 0
+                    TabOrder = 4
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'label'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    ShadowEffect = False
+                    ShadowColor = clBlack
+                    ShadowOffset = 0
+                    ShadowSize = 3
+                    ReflectionEffect = False
+                    ReflectionOffset = -5
+                    EllipsType = bsetNoneEllips
+                    UseSkinSize = True
+                    UseSkinFontColor = True
+                    BorderStyle = bvFrame
+                    Align = alRight
+                    Caption = 'Faixa'
+                    AutoSize = False
+                    ExplicitLeft = 958
+                  end
+                  object idMusica: TbsSkinEdit
+                    Left = 47
+                    Top = 1
+                    Width = 136
+                    Height = 23
+                    Text = '0'
+                    DefaultColor = clWindow
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clBlack
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    UseSkinFont = True
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    ButtonMode = False
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'edit'
+                    Align = alClient
+                    Font.Charset = DEFAULT_CHARSET
+                    Font.Color = clBlack
+                    Font.Height = 13
+                    Font.Name = 'Tahoma'
+                    Font.Style = []
+                    ParentFont = False
+                    TabOrder = 0
+                    ButtonImageIndex = -1
+                    LeftImageIndex = -1
+                    LeftImageHotIndex = -1
+                    LeftImageDownIndex = -1
+                    RightImageIndex = -1
+                    RightImageHotIndex = -1
+                    RightImageDownIndex = -1
+                    ExplicitWidth = 740
+                  end
+                  object Button1: TbsSkinButton
+                    Left = 508
+                    Top = 1
+                    Width = 75
+                    Height = 23
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageIndex = -1
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = True
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Abrir'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = Button1Click
+                    ExplicitLeft = 1112
+                  end
+                  object idAlbum: TbsSkinEdit
+                    Left = 226
+                    Top = 1
+                    Width = 128
+                    Height = 23
+                    Text = '0'
+                    DefaultColor = clWindow
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clBlack
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    UseSkinFont = True
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    ButtonMode = False
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'edit'
+                    Align = alRight
+                    Font.Charset = DEFAULT_CHARSET
+                    Font.Color = clBlack
+                    Font.Height = 13
+                    Font.Name = 'Tahoma'
+                    Font.Style = []
+                    ParentFont = False
+                    TabOrder = 2
+                    ButtonImageIndex = -1
+                    LeftImageIndex = -1
+                    LeftImageHotIndex = -1
+                    LeftImageDownIndex = -1
+                    RightImageIndex = -1
+                    RightImageHotIndex = -1
+                    RightImageDownIndex = -1
+                    ExplicitLeft = 830
+                  end
+                  object idFaixa: TbsSkinEdit
+                    Left = 380
+                    Top = 1
+                    Width = 128
+                    Height = 23
+                    Text = '0'
+                    DefaultColor = clWindow
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clBlack
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    UseSkinFont = True
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    ButtonMode = False
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'edit'
+                    Align = alRight
+                    Font.Charset = DEFAULT_CHARSET
+                    Font.Color = clBlack
+                    Font.Height = 13
+                    Font.Name = 'Tahoma'
+                    Font.Style = []
+                    ParentFont = False
+                    TabOrder = 3
+                    ButtonImageIndex = -1
+                    LeftImageIndex = -1
+                    LeftImageHotIndex = -1
+                    LeftImageDownIndex = -1
+                    RightImageIndex = -1
+                    RightImageHotIndex = -1
+                    RightImageDownIndex = -1
+                    ExplicitLeft = 984
+                  end
+                end
+                object dbGrid: TbsSkinDBGrid
+                  Left = 0
+                  Top = 25
+                  Width = 446
+                  Height = 74
+                  HintImageIndex = 0
+                  TabOrder = 1
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'grid'
+                  Transparent = False
+                  WallpaperStretch = False
+                  TabStop = False
+                  UseSkinFont = True
+                  UseSkinCellHeight = True
+                  GridLineColor = clBtnFace
+                  DefaultCellHeight = 20
+                  ColSizingWithLine = False
+                  DrawGraphicFields = False
+                  UseColumnsFont = False
+                  DefaultRowHeight = 17
+                  MouseWheelSupport = False
+                  SaveMultiSelection = False
+                  PickListBoxSkinDataName = 'listbox'
+                  PickListBoxCaptionMode = False
+                  Align = alClient
+                  DataSource = DM.dsSLIDE_MUSICA2
+                  TitleFont.Charset = DEFAULT_CHARSET
+                  TitleFont.Color = clBtnText
+                  TitleFont.Height = 13
+                  TitleFont.Name = 'Tahoma'
+                  TitleFont.Style = []
+                  OnDrawColumnCell = DBGridDrawColumnCell
+                end
+              end
+              object bsSkinTabSheet11: TbsSkinTabSheet
+                Caption = 'Clipboard'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object cboard: TListBox
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  ItemHeight = 13
+                  TabOrder = 0
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                end
+              end
+              object bsSkinTabSheet12: TbsSkinTabSheet
+                Caption = 'Par'#226'metros de Layout'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object layoutValue: TValueListEditor
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 99
+                  Align = alClient
+                  Strings.Strings = (
+                    '')
+                  TabOrder = 0
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 191
+                  ColWidths = (
+                    185
+                    997)
+                end
+              end
+              object bsSkinTabSheet13: TbsSkinTabSheet
+                Caption = 'Log de Erros'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object erro_log: TbsSkinMemo
+                  Left = 0
+                  Top = 41
+                  Width = 584
+                  Height = 58
+                  Align = alClient
+                  BorderStyle = bsNone
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -11
+                  Font.Name = 'MS Sans Serif'
+                  Font.Style = []
+                  ParentFont = False
+                  ReadOnly = True
+                  ScrollBars = ssBoth
+                  TabOrder = 0
+                  Transparent = False
+                  WallpaperStretch = False
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clBlack
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  UseSkinFont = True
+                  UseSkinFontColor = True
+                  BitMapBG = True
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'memo'
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 150
+                end
+                object Panel38: TPanel
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 41
+                  Align = alTop
+                  Caption = 'Panel38'
+                  TabOrder = 1
+                  ExplicitWidth = 1188
+                  object Button2: TButton
+                    Left = 1
+                    Top = 1
+                    Width = 112
+                    Height = 39
+                    Align = alLeft
+                    Caption = 'Baixa FTP'
+                    TabOrder = 0
+                    OnClick = Button2Click
+                  end
+                end
+              end
+              object bsSkinTabSheet14: TbsSkinTabSheet
+                Caption = 'Ajusta Banco de Dados para Exporta'#231#227'o'
+                ImageIndex = -1
+                ExplicitTop = 70
+                ExplicitWidth = 1188
+                ExplicitHeight = 191
+                object bsSkinPanel194: TbsSkinPanel
+                  Left = 0
+                  Top = 56
+                  Width = 584
+                  Height = 43
+                  HintImageIndex = 0
+                  TabOrder = 0
+                  SkinData = DM.bsSkinData1
+                  SkinDataName = 'panel'
+                  DefaultFont.Charset = DEFAULT_CHARSET
+                  DefaultFont.Color = clWindowText
+                  DefaultFont.Height = 13
+                  DefaultFont.Name = 'Tahoma'
+                  DefaultFont.Style = []
+                  DefaultWidth = 0
+                  DefaultHeight = 0
+                  UseSkinFont = True
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = -1
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Align = alBottom
+                  ExplicitTop = 148
+                  ExplicitWidth = 1188
+                  object bsSkinButton44: TbsSkinButton
+                    Tag = 4
+                    AlignWithMargins = True
+                    Left = 400
+                    Top = 6
+                    Width = 178
+                    Height = 31
+                    Margins.Left = 6
+                    Margins.Top = 6
+                    Margins.Right = 6
+                    Margins.Bottom = 6
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'button'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    Transparent = False
+                    CheckedMode = False
+                    ImageIndex = 32
+                    AlwaysShowLayeredFrame = False
+                    UseSkinSize = False
+                    UseSkinFontColor = True
+                    RepeatMode = False
+                    RepeatInterval = 100
+                    AllowAllUp = False
+                    TabStop = True
+                    CanFocused = True
+                    Down = False
+                    GroupIndex = 0
+                    Caption = 'Ajustar Tempos para Segundo'
+                    NumGlyphs = 1
+                    Spacing = 1
+                    Align = alRight
+                    OnClick = bsSkinButton44Click
+                    ExplicitLeft = 1004
+                  end
+                end
+                object Memo1: TMemo
+                  Left = 0
+                  Top = 0
+                  Width = 584
+                  Height = 56
+                  Align = alClient
+                  ScrollBars = ssVertical
+                  TabOrder = 1
+                  ExplicitWidth = 1188
+                  ExplicitHeight = 148
+                end
+              end
+            end
+          end
+        end
+        object ampAbout: TbsAppMenuPage
+          Left = 150
+          Top = 25
+          Width = 586
+          Height = 379
+          HotScroll = False
+          ScrollOffset = 0
+          ScrollTimerInterval = 50
+          CanScroll = False
+          DefaultWidth = 0
+          object bsSkinPanel8: TbsSkinPanel
+            Left = 0
+            Top = 0
+            Width = 586
+            Height = 379
+            HintImageIndex = 0
+            TabOrder = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'panel'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            EmptyDrawing = False
+            RibbonStyle = False
+            ImagePosition = bsipDefault
+            TransparentMode = False
+            CaptionImageIndex = -1
+            RealHeight = -1
+            AutoEnabledControls = True
+            CheckedMode = False
+            Checked = False
+            DefaultAlignment = taLeftJustify
+            DefaultCaptionHeight = 20
+            BorderStyle = bvNone
+            CaptionMode = False
+            RollUpMode = False
+            RollUpState = False
+            NumGlyphs = 1
+            Spacing = 2
+            Caption = 'bsSkinPanel8'
+            Align = alClient
+            ExplicitWidth = 1190
+            ExplicitHeight = 375
+            object bsRibbonDivider33: TbsRibbonDivider
+              Left = 0
+              Top = 157
+              Width = 586
+              Height = 16
+              HintImageIndex = 0
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'officegroupdivider'
+              DividerType = bsdtHorizontalDashLine
+              Align = alTop
+              ExplicitTop = 56
+              ExplicitWidth = 585
+            end
+            object bsSkinPanel9: TbsSkinPanel
+              Left = 0
+              Top = 0
+              Width = 586
+              Height = 113
+              HintImageIndex = 0
+              TabOrder = 0
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'panel'
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clWindowText
+              DefaultFont.Height = 13
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              DefaultWidth = 0
+              DefaultHeight = 0
+              UseSkinFont = True
+              EmptyDrawing = False
+              RibbonStyle = False
+              ImagePosition = bsipDefault
+              TransparentMode = False
+              CaptionImageIndex = -1
+              RealHeight = -1
+              AutoEnabledControls = True
+              CheckedMode = False
+              Checked = False
+              DefaultAlignment = taLeftJustify
+              DefaultCaptionHeight = 20
+              BorderStyle = bvNone
+              CaptionMode = False
+              RollUpMode = False
+              RollUpState = False
+              NumGlyphs = 1
+              Spacing = 2
+              Caption = 'bsSkinPanel9'
+              Align = alTop
+              ExplicitWidth = 1190
               object Image19: TbsPngImageView
                 AlignWithMargins = True
                 Left = 10
@@ -32385,7 +38982,7 @@ object fmIndex: TfmIndex
             object bsSkinPanel36: TbsSkinPanel
               Left = 0
               Top = 113
-              Width = 1190
+              Width = 586
               Height = 24
               HintImageIndex = 0
               TabOrder = 1
@@ -32418,6 +39015,7 @@ object fmIndex: TfmIndex
               Spacing = 2
               Caption = 'bsSkinPanel10'
               Align = alTop
+              ExplicitWidth = 1190
               object lblVersao: TbsSkinStdLabel
                 Left = 66
                 Top = 0
@@ -39551,7 +46149,7 @@ object fmIndex: TfmIndex
             object bsSkinPanel146: TbsSkinPanel
               Left = 0
               Top = 137
-              Width = 1190
+              Width = 586
               Height = 20
               HintImageIndex = 0
               TabOrder = 2
@@ -39584,6 +46182,7 @@ object fmIndex: TfmIndex
               Spacing = 2
               Caption = 'bsSkinPanel10'
               Align = alTop
+              ExplicitWidth = 1190
               object bsSkinStdLabel95: TbsSkinStdLabel
                 AlignWithMargins = True
                 Left = 20
@@ -39615,2699 +46214,17 @@ object fmIndex: TfmIndex
             end
           end
         end
-        object ampDesenvolvedor: TbsAppMenuPage
-          Left = 150
-          Top = 25
-          Width = 1190
-          Height = 375
-          HotScroll = False
-          ScrollOffset = 0
-          ScrollTimerInterval = 50
-          CanScroll = False
-          DefaultWidth = 0
-          object bsSkinPanel34: TbsSkinPanel
-            Left = 0
-            Top = 0
-            Width = 1190
-            Height = 113
-            HintImageIndex = 0
-            TabOrder = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'panel'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            EmptyDrawing = False
-            RibbonStyle = False
-            ImagePosition = bsipDefault
-            TransparentMode = False
-            CaptionImageIndex = -1
-            RealHeight = -1
-            AutoEnabledControls = True
-            CheckedMode = False
-            Checked = False
-            DefaultAlignment = taLeftJustify
-            DefaultCaptionHeight = 20
-            BorderStyle = bvNone
-            CaptionMode = False
-            RollUpMode = False
-            RollUpState = False
-            NumGlyphs = 1
-            Spacing = 2
-            Caption = 'bsSkinPanel9'
-            Align = alTop
-            object bsSkinStdLabel82: TbsSkinStdLabel
-              AlignWithMargins = True
-              Left = 15
-              Top = 0
-              Width = 318
-              Height = 113
-              Margins.Left = 15
-              Margins.Top = 0
-              Margins.Right = 0
-              Margins.Bottom = 0
-              EllipsType = bsetNone
-              UseSkinFont = False
-              UseSkinColor = True
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clWindowText
-              DefaultFont.Height = -11
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'stdlabel'
-              Font.Charset = ANSI_CHARSET
-              Font.Color = 2894892
-              Font.Height = -40
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              Align = alLeft
-              Caption = 'DESENVOLVEDOR'
-              ParentFont = False
-              Layout = tlCenter
-              ExplicitHeight = 48
-            end
-          end
-          object ScrollBox4: TbsSkinPanel
-            Left = 0
-            Top = 113
-            Width = 1190
-            Height = 262
-            HintImageIndex = 0
-            TabOrder = 1
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'panel'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            EmptyDrawing = False
-            RibbonStyle = False
-            ImagePosition = bsipDefault
-            TransparentMode = False
-            CaptionImageIndex = -1
-            RealHeight = -1
-            AutoEnabledControls = True
-            CheckedMode = False
-            Checked = False
-            DefaultAlignment = taLeftJustify
-            DefaultCaptionHeight = 20
-            BorderStyle = bvNone
-            CaptionMode = False
-            RollUpMode = False
-            RollUpState = False
-            NumGlyphs = 1
-            Spacing = 2
-            Align = alClient
-            object PageControl5: TbsSkinPageControl
-              Left = 0
-              Top = 0
-              Width = 1190
-              Height = 262
-              ActivePage = sTabSheet13
-              Align = alClient
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBtnText
-              Font.Height = 13
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              Images = DM.ico_16x16
-              MultiLine = True
-              ParentFont = False
-              Style = tsFlatButtons
-              TabOrder = 0
-              MouseWheelSupport = True
-              TabExtededDraw = False
-              ButtonTabSkinDataName = 'resizetoolbutton'
-              TabsOffset = 0
-              TabSpacing = 1
-              TextInHorizontal = True
-              TabsInCenter = False
-              FreeOnClose = False
-              ShowCloseButtons = False
-              TabsBGTransparent = True
-              DefaultFont.Charset = DEFAULT_CHARSET
-              DefaultFont.Color = clBtnText
-              DefaultFont.Height = 13
-              DefaultFont.Name = 'Tahoma'
-              DefaultFont.Style = []
-              UseSkinFont = True
-              DefaultItemHeight = 20
-              SkinData = DM.bsSkinData1
-              SkinDataName = 'tab'
-              object bsSkinTabSheet4: TbsSkinTabSheet
-                Caption = 'Logs'
-                ImageIndex = 8
-                object mmLog: TbsSkinMemo
-                  Left = 0
-                  Top = 0
-                  Width = 1169
-                  Height = 191
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -13
-                  Font.Name = 'Courier New'
-                  Font.Style = []
-                  ParentFont = False
-                  ReadOnly = True
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  OnKeyUp = edtKeyUp
-                  Transparent = False
-                  WallpaperStretch = False
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = False
-                  UseSkinFontColor = True
-                  BitMapBG = True
-                  VScrollBar = bsSkinScrollBar22
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'memo'
-                end
-                object bsSkinScrollBar22: TbsSkinScrollBar
-                  Left = 1169
-                  Top = 0
-                  Width = 19
-                  Height = 191
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Enabled = False
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 0
-                  Min = 0
-                  Max = 0
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-              object sTabSheet13: TbsSkinTabSheet
-                Caption = 'Arquivo config.ja'
-                ImageIndex = -1
-                OnShow = sTabSheet13Show
-                object mmConfigJA: TbsSkinMemo
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 148
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  ParentFont = False
-                  ReadOnly = True
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  OnKeyUp = edtKeyUp
-                  Transparent = False
-                  WallpaperStretch = False
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  UseSkinFontColor = True
-                  BitMapBG = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'memo'
-                end
-                object sPanel22: TbsSkinPanel
-                  Left = 0
-                  Top = 148
-                  Width = 1188
-                  Height = 43
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Align = alBottom
-                  object sButton10: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 1053
-                    Top = 6
-                    Width = 129
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 1
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 32
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Abrir Arquivo'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = sButton10Click
-                  end
-                  object bsSkinButton14: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 912
-                    Top = 6
-                    Width = 129
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Atualizar'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = sTabSheet13Show
-                  end
-                  object bsSkinButton45: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 744
-                    Top = 6
-                    Width = 156
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 2
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Atualizar Albuns Ignorar'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton45Click
-                  end
-                end
-              end
-              object sTabSheet18: TbsSkinTabSheet
-                Caption = 'Banco de Dados'
-                ImageIndex = -1
-                OnShow = sTabSheet18Show
-                object Splitter1: TSplitter
-                  Left = 153
-                  Top = 0
-                  Height = 148
-                  ExplicitLeft = 150
-                  ExplicitHeight = 323
-                end
-                object slbTabelas: TbsSkinListBox
-                  Left = 0
-                  Top = 0
-                  Width = 153
-                  Height = 148
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'listbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  AutoComplete = True
-                  UseSkinItemHeight = True
-                  HorizontalExtent = False
-                  Columns = 0
-                  RowCount = 0
-                  ImageIndex = -1
-                  NumGlyphs = 1
-                  Spacing = 2
-                  CaptionMode = False
-                  DefaultCaptionHeight = 20
-                  DefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  DefaultCaptionFont.Color = clWindowText
-                  DefaultCaptionFont.Height = 13
-                  DefaultCaptionFont.Name = 'Tahoma'
-                  DefaultCaptionFont.Style = []
-                  DefaultItemHeight = 20
-                  ItemIndex = -1
-                  MultiSelect = False
-                  ListBoxFont.Charset = DEFAULT_CHARSET
-                  ListBoxFont.Color = clBlack
-                  ListBoxFont.Height = -11
-                  ListBoxFont.Name = 'MS Sans Serif'
-                  ListBoxFont.Style = [fsBold]
-                  ListBoxTabOrder = 0
-                  ListBoxTabStop = True
-                  ListBoxDragMode = dmManual
-                  ListBoxDragKind = dkDrag
-                  ListBoxDragCursor = crDrag
-                  ExtandedSelect = True
-                  Sorted = False
-                  ShowCaptionButtons = True
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  OnListBoxClick = slbTabelasListBoxClick
-                end
-                object bsSkinPanel11: TbsSkinPanel
-                  Left = 156
-                  Top = 0
-                  Width = 1032
-                  Height = 148
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Caption = 'bsSkinPanel11'
-                  Align = alClient
-                  object bsSkinScrollBar20: TbsSkinScrollBar
-                    Left = 0
-                    Top = 46
-                    Width = 1032
-                    Height = 19
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    Visible = False
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'hscrollbar'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 19
-                    UseSkinFont = True
-                    Both = False
-                    BothMarkerWidth = 19
-                    BothSkinDataName = 'bothhscrollbar'
-                    CanFocused = False
-                    Align = alBottom
-                    Kind = sbHorizontal
-                    PageSize = 0
-                    Min = 0
-                    Max = 0
-                    Position = 0
-                    SmallChange = 1
-                    LargeChange = 1
-                  end
-                  object bsSkinScrollBar21: TbsSkinScrollBar
-                    Left = 1013
-                    Top = 0
-                    Width = 19
-                    Height = 46
-                    HintImageIndex = 0
-                    TabOrder = 3
-                    Visible = False
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'vscrollbar'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 19
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Both = False
-                    BothMarkerWidth = 19
-                    BothSkinDataName = 'bothhscrollbar'
-                    CanFocused = False
-                    Align = alRight
-                    Kind = sbVertical
-                    PageSize = 0
-                    Min = 0
-                    Max = 100
-                    Position = 0
-                    SmallChange = 1
-                    LargeChange = 1
-                  end
-                  object bsSkinDBGrid2: TbsSkinDBGrid
-                    Left = 0
-                    Top = 0
-                    Width = 1013
-                    Height = 46
-                    HintImageIndex = 0
-                    TabOrder = 2
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'grid'
-                    Transparent = False
-                    WallpaperStretch = False
-                    UseSkinFont = True
-                    UseSkinCellHeight = True
-                    HScrollBar = bsSkinScrollBar20
-                    VScrollBar = bsSkinScrollBar21
-                    GridLineColor = clBtnFace
-                    DefaultCellHeight = 20
-                    ColSizingWithLine = False
-                    DrawGraphicFields = False
-                    UseColumnsFont = False
-                    DefaultRowHeight = 17
-                    MouseWheelSupport = True
-                    SaveMultiSelection = False
-                    PickListBoxSkinDataName = 'listbox'
-                    PickListBoxCaptionMode = False
-                    Align = alClient
-                    DataSource = DM.dsBD
-                    TitleFont.Charset = DEFAULT_CHARSET
-                    TitleFont.Color = clBtnText
-                    TitleFont.Height = 13
-                    TitleFont.Name = 'Tahoma'
-                    TitleFont.Style = []
-                    OnDrawColumnCell = DBGridDrawColumnCell
-                  end
-                  object mmBD: TMemo
-                    Left = 0
-                    Top = 65
-                    Width = 1032
-                    Height = 83
-                    Align = alBottom
-                    ScrollBars = ssBoth
-                    TabOrder = 1
-                    OnKeyUp = mmBDKeyUp
-                  end
-                end
-                object bsSkinPanel12: TbsSkinPanel
-                  Left = 0
-                  Top = 148
-                  Width = 1188
-                  Height = 43
-                  HintImageIndex = 0
-                  TabOrder = 2
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Align = alBottom
-                  object bsSkinButton15: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 1033
-                    Top = 6
-                    Width = 149
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 1
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageIndex = 32
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Abrir Banco de Dados'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton15Click
-                  end
-                  object btExecSQL: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 872
-                    Top = 6
-                    Width = 149
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageIndex = 32
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Executar SQL'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = btExecSQLClick
-                  end
-                end
-              end
-              object bsSkinTabSheet5: TbsSkinTabSheet
-                Caption = 'Tabela - Hist'#243'rico B'#237'blia'
-                ImageIndex = 28
-                OnShow = bsSkinTabSheet5Show
-                object bsSkinDBGrid1: TbsSkinDBGrid
-                  Left = 0
-                  Top = 0
-                  Width = 1169
-                  Height = 172
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  HScrollBar = bsSkinScrollBar23
-                  VScrollBar = bsSkinScrollBar4
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 17
-                  MouseWheelSupport = True
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  DataSource = DM.dsBIBLIA_HISTORICO
-                  TitleFont.Charset = DEFAULT_CHARSET
-                  TitleFont.Color = clBtnText
-                  TitleFont.Height = 13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDrawColumnCell = DBGridDrawColumnCell
-                end
-                object bsSkinScrollBar4: TbsSkinScrollBar
-                  Left = 1169
-                  Top = 0
-                  Width = 19
-                  Height = 172
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 0
-                  Min = 0
-                  Max = 0
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-                object bsSkinScrollBar23: TbsSkinScrollBar
-                  Left = 0
-                  Top = 172
-                  Width = 1188
-                  Height = 19
-                  HintImageIndex = 0
-                  TabOrder = 2
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'hscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 19
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alBottom
-                  Kind = sbHorizontal
-                  PageSize = 0
-                  Min = 0
-                  Max = 0
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-              object sTabSheet15: TbsSkinTabSheet
-                Caption = 'Monitores'
-                ImageIndex = 33
-                OnShow = sTabSheet15Show
-                object lvMonitores: TbsSkinListView
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  DrawSkin = False
-                  DrawSkinLines = False
-                  ItemSkinDataName = 'listbox'
-                  AlternateRow = False
-                  CheckSkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultColor = clWindow
-                  UseSkinFont = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'listview'
-                  Align = alClient
-                  Columns = <
-                    item
-                      Width = 100
-                    end
-                    item
-                      Width = 200
-                    end>
-                  ColumnClick = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = 13
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  GridLines = True
-                  ReadOnly = True
-                  RowSelect = True
-                  ParentFont = False
-                  TabOrder = 0
-                  ViewStyle = vsReport
-                  HeaderSkinDataName = 'header'
-                end
-              end
-              object sTabSheet9: TbsSkinTabSheet
-                Caption = 'Par'#226'metros Abas'
-                ImageIndex = 10
-                object loadCol: TValueListEditor
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Ctl3D = False
-                  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
-                  ParentCtl3D = False
-                  Strings.Strings = (
-                    '=')
-                  TabOrder = 0
-                  TitleCaptions.Strings = (
-                    'Chave'
-                    'Valor')
-                  ColWidths = (
-                    150
-                    439)
-                end
-              end
-              object bsSkinTabSheet1: TbsSkinTabSheet
-                Caption = 'Par'#226'metros Sorteio Num'#233'rico'
-                ImageIndex = 42
-                object GridPanel71: TGridPanel
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  Caption = 'GridPanel68'
-                  ColumnCollection = <
-                    item
-                      Value = 50.000000000000000000
-                    end
-                    item
-                      Value = 50.000000000000000000
-                    end>
-                  ControlCollection = <
-                    item
-                      Column = 0
-                      Control = Label5
-                      Row = 0
-                    end
-                    item
-                      Column = 1
-                      Control = Label6
-                      Row = 0
-                    end
-                    item
-                      Column = 0
-                      Control = vlSorteio
-                      Row = 1
-                    end
-                    item
-                      Column = 1
-                      Control = vlSorteados
-                      Row = 1
-                    end>
-                  RowCollection = <
-                    item
-                      SizeStyle = ssAbsolute
-                      Value = 20.000000000000000000
-                    end
-                    item
-                      Value = 100.000000000000000000
-                    end
-                    item
-                      SizeStyle = ssAuto
-                    end>
-                  ShowCaption = False
-                  TabOrder = 0
-                  object Label5: TLabel
-                    Left = 1
-                    Top = 1
-                    Width = 593
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Pendentes'
-                    Layout = tlCenter
-                    ExplicitWidth = 51
-                    ExplicitHeight = 13
-                  end
-                  object Label6: TLabel
-                    Left = 594
-                    Top = 1
-                    Width = 593
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Sorteados'
-                    Layout = tlCenter
-                    ExplicitWidth = 49
-                    ExplicitHeight = 13
-                  end
-                  object vlSorteio: TValueListEditor
-                    Left = 1
-                    Top = 21
-                    Width = 593
-                    Height = 169
-                    Align = alClient
-                    BorderStyle = bsNone
-                    Enabled = False
-                    TabOrder = 0
-                    ColWidths = (
-                      126
-                      169)
-                  end
-                  object vlSorteados: TValueListEditor
-                    Left = 594
-                    Top = 21
-                    Width = 593
-                    Height = 169
-                    Align = alClient
-                    BorderStyle = bsNone
-                    Enabled = False
-                    TabOrder = 1
-                    ColWidths = (
-                      126
-                      169)
-                  end
-                end
-              end
-              object bsSkinTabSheet2: TbsSkinTabSheet
-                Caption = 'Par'#226'metros Sorteio de Nomes'
-                ImageIndex = 43
-                object GridPanel72: TGridPanel
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  Caption = 'GridPanel68'
-                  ColumnCollection = <
-                    item
-                      Value = 50.000000000000000000
-                    end
-                    item
-                      Value = 50.000000000000000000
-                    end>
-                  ControlCollection = <
-                    item
-                      Column = 0
-                      Control = Label7
-                      Row = 0
-                    end
-                    item
-                      Column = 1
-                      Control = Label8
-                      Row = 0
-                    end
-                    item
-                      Column = 0
-                      Control = vlSorteioNM
-                      Row = 1
-                    end
-                    item
-                      Column = 1
-                      Control = vlSorteadosNM
-                      Row = 1
-                    end>
-                  RowCollection = <
-                    item
-                      SizeStyle = ssAbsolute
-                      Value = 20.000000000000000000
-                    end
-                    item
-                      Value = 100.000000000000000000
-                    end
-                    item
-                      SizeStyle = ssAuto
-                    end>
-                  ShowCaption = False
-                  TabOrder = 0
-                  object Label7: TLabel
-                    Left = 1
-                    Top = 1
-                    Width = 593
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Pendentes'
-                    Layout = tlCenter
-                    ExplicitWidth = 51
-                    ExplicitHeight = 13
-                  end
-                  object Label8: TLabel
-                    Left = 594
-                    Top = 1
-                    Width = 593
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Sorteados'
-                    Layout = tlCenter
-                    ExplicitWidth = 49
-                    ExplicitHeight = 13
-                  end
-                  object vlSorteioNM: TValueListEditor
-                    Left = 1
-                    Top = 21
-                    Width = 593
-                    Height = 169
-                    Align = alClient
-                    BorderStyle = bsNone
-                    Enabled = False
-                    TabOrder = 0
-                    ColWidths = (
-                      126
-                      221)
-                  end
-                  object vlSorteadosNM: TValueListEditor
-                    Left = 594
-                    Top = 21
-                    Width = 593
-                    Height = 169
-                    Align = alClient
-                    BorderStyle = bsNone
-                    Enabled = False
-                    TabOrder = 1
-                    ColWidths = (
-                      126
-                      222)
-                  end
-                end
-              end
-              object sTabSheet17: TbsSkinTabSheet
-                Caption = 'Par'#226'metros Tempor'#225'rios'
-                ImageIndex = -1
-                object paramtemp: TbsSkinMemo
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  ParentFont = False
-                  ReadOnly = True
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  Transparent = False
-                  WallpaperStretch = False
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  UseSkinFontColor = True
-                  BitMapBG = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'memo'
-                end
-              end
-              object sTabSheet10: TbsSkinTabSheet
-                Caption = 'Par'#226'metros Web'
-                ImageIndex = 67
-                object param: TValueListEditor
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Ctl3D = False
-                  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
-                  ParentCtl3D = False
-                  Strings.Strings = (
-                    '=')
-                  TabOrder = 0
-                  TitleCaptions.Strings = (
-                    'Chave'
-                    'Valor')
-                  ColWidths = (
-                    150
-                    439)
-                end
-              end
-              object sTabSheet11: TbsSkinTabSheet
-                Caption = 'Par'#226'metros de Atualiza'#231#227'o'
-                ImageIndex = 76
-                object paramAtualiz: TValueListEditor
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Ctl3D = False
-                  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goThumbTracking]
-                  ParentCtl3D = False
-                  Strings.Strings = (
-                    '=')
-                  TabOrder = 0
-                  TitleCaptions.Strings = (
-                    'Chave'
-                    'Valor')
-                  ColWidths = (
-                    150
-                    515)
-                end
-              end
-              object sTabSheet16: TbsSkinTabSheet
-                Caption = 'Par'#226'metros de Execu'#231#227'o'
-                ImageIndex = 8
-                OnShow = sTabSheet16Show
-                object mmParam: TbsSkinMemo
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 35
-                  Align = alTop
-                  BorderStyle = bsNone
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = 13
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  ParentFont = False
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  OnKeyUp = edtKeyUp
-                  Transparent = False
-                  WallpaperStretch = False
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  UseSkinFontColor = True
-                  BitMapBG = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'memo'
-                end
-                object paramexec: TValueListEditor
-                  Left = 0
-                  Top = 35
-                  Width = 1188
-                  Height = 156
-                  Align = alClient
-                  Strings.Strings = (
-                    '')
-                  TabOrder = 1
-                  ColWidths = (
-                    150
-                    435)
-                end
-              end
-              object sTabSheet12: TbsSkinTabSheet
-                Caption = 'Tabela Colet'#226'neas Personalizadas'
-                ImageIndex = 37
-                OnShow = sTabSheet12Show
-                object DBGrid3: TbsSkinDBGrid
-                  Left = 0
-                  Top = 0
-                  Width = 1169
-                  Height = 172
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  HScrollBar = bsSkinScrollBar16
-                  VScrollBar = bsSkinScrollBar17
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 17
-                  MouseWheelSupport = True
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  DataSource = DM.dsCOLETANEAS_PERSO
-                  TitleFont.Charset = DEFAULT_CHARSET
-                  TitleFont.Color = clBtnText
-                  TitleFont.Height = 13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDrawColumnCell = DBGridDrawColumnCell
-                end
-                object bsSkinScrollBar16: TbsSkinScrollBar
-                  Left = 0
-                  Top = 172
-                  Width = 1188
-                  Height = 19
-                  HintImageIndex = 0
-                  TabOrder = 2
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'hscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 19
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alBottom
-                  Kind = sbHorizontal
-                  PageSize = 0
-                  Min = 0
-                  Max = 0
-                  Position = 0
-                  SmallChange = 42
-                  LargeChange = 42
-                end
-                object bsSkinScrollBar17: TbsSkinScrollBar
-                  Left = 1169
-                  Top = 0
-                  Width = 19
-                  Height = 172
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 1
-                  Min = 1
-                  Max = 0
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-              object bsSkinTabSheet7: TbsSkinTabSheet
-                Caption = 'Tabela Favoritos'
-                ImageIndex = 9
-                OnShow = bsSkinTabSheet7Show
-                object bsSkinDBGrid4: TbsSkinDBGrid
-                  Left = 0
-                  Top = 0
-                  Width = 1169
-                  Height = 172
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  HScrollBar = bsSkinScrollBar14
-                  VScrollBar = bsSkinScrollBar15
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 17
-                  MouseWheelSupport = True
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  DataSource = DM.dsFavoritos
-                  TitleFont.Charset = DEFAULT_CHARSET
-                  TitleFont.Color = clBtnText
-                  TitleFont.Height = 13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDrawColumnCell = DBGridDrawColumnCell
-                end
-                object bsSkinScrollBar14: TbsSkinScrollBar
-                  Left = 0
-                  Top = 172
-                  Width = 1188
-                  Height = 19
-                  HintImageIndex = 0
-                  TabOrder = 2
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'hscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 19
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alBottom
-                  Kind = sbHorizontal
-                  PageSize = 0
-                  Min = 0
-                  Max = 0
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-                object bsSkinScrollBar15: TbsSkinScrollBar
-                  Left = 1169
-                  Top = 0
-                  Width = 19
-                  Height = 172
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 0
-                  Min = 0
-                  Max = 100
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-              object sTabSheet14: TbsSkinTabSheet
-                Caption = 'Arquivo liturgia.ja'
-                ImageIndex = 39
-                OnShow = sTabSheet14Show
-                object mmLiturgia: TbsSkinMemo
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 148
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  ParentFont = False
-                  ReadOnly = True
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  OnKeyUp = edtKeyUp
-                  Transparent = False
-                  WallpaperStretch = False
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  UseSkinFontColor = True
-                  BitMapBG = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'memo'
-                end
-                object bsSkinPanel3: TbsSkinPanel
-                  Left = 0
-                  Top = 148
-                  Width = 1188
-                  Height = 43
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Align = alBottom
-                  object bsSkinButton34: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 1053
-                    Top = 6
-                    Width = 129
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 1
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 32
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Abrir Arquivo'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton34Click
-                  end
-                  object bsSkinButton35: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 912
-                    Top = 6
-                    Width = 129
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Atualizar'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = sTabSheet14Show
-                  end
-                end
-              end
-              object bsSkinTabSheet6: TbsSkinTabSheet
-                Caption = 'Tabela V'#237'deos Online Personalizados'
-                ImageIndex = 83
-                OnShow = bsSkinTabSheet6Show
-                object bsSkinDBGrid3: TbsSkinDBGrid
-                  Left = 0
-                  Top = 0
-                  Width = 1169
-                  Height = 191
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  HScrollBar = bsSkinScrollBar16
-                  VScrollBar = bsSkinScrollBar25
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 17
-                  MouseWheelSupport = True
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  DataSource = DM.dsVideosOnPerso
-                  TitleFont.Charset = DEFAULT_CHARSET
-                  TitleFont.Color = clBtnText
-                  TitleFont.Height = 13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDrawColumnCell = DBGridDrawColumnCell
-                end
-                object bsSkinScrollBar25: TbsSkinScrollBar
-                  Left = 1169
-                  Top = 0
-                  Width = 19
-                  Height = 191
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 1
-                  Min = 1
-                  Max = 0
-                  Position = 1
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-              object bsSkinTabSheet8: TbsSkinTabSheet
-                Caption = 'Sincronizar Arquivos Help'
-                ImageIndex = 66
-                object bsSkinPanel72: TbsSkinPanel
-                  Left = 0
-                  Top = 148
-                  Width = 1188
-                  Height = 43
-                  HintImageIndex = 0
-                  TabOrder = 2
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Align = alBottom
-                  object lblStatusHlp: TLabel
-                    AlignWithMargins = True
-                    Left = 3
-                    Top = 3
-                    Width = 1041
-                    Height = 37
-                    Align = alClient
-                    Layout = tlCenter
-                    ExplicitWidth = 3
-                    ExplicitHeight = 13
-                  end
-                  object bsSkinButton43: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 1053
-                    Top = 6
-                    Width = 129
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Sincronizar Arquivos'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton43Click
-                  end
-                end
-                object GridPanel68: TGridPanel
-                  Left = 89
-                  Top = 0
-                  Width = 1099
-                  Height = 148
-                  Align = alClient
-                  Caption = 'GridPanel68'
-                  ColumnCollection = <
-                    item
-                      Value = 33.500850163872440000
-                    end
-                    item
-                      Value = 33.333031504674180000
-                    end
-                    item
-                      Value = 33.166118331453380000
-                    end>
-                  ControlCollection = <
-                    item
-                      Column = 0
-                      Control = Label3
-                      Row = 0
-                    end
-                    item
-                      Column = 1
-                      Control = Label1
-                      Row = 0
-                    end
-                    item
-                      Column = 0
-                      Control = lbHlpArquivos
-                      Row = 1
-                    end
-                    item
-                      Column = 1
-                      Control = lbHlpImagens
-                      Row = 1
-                    end
-                    item
-                      Column = 2
-                      Control = Label4
-                      Row = 0
-                    end
-                    item
-                      Column = 2
-                      Control = lbHlpFalta
-                      Row = 1
-                    end>
-                  RowCollection = <
-                    item
-                      SizeStyle = ssAbsolute
-                      Value = 20.000000000000000000
-                    end
-                    item
-                      Value = 100.000000000000000000
-                    end
-                    item
-                      SizeStyle = ssAuto
-                    end>
-                  ShowCaption = False
-                  TabOrder = 1
-                  object Label3: TLabel
-                    Left = 1
-                    Top = 1
-                    Width = 367
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Arquivos Help'
-                    Layout = tlCenter
-                    ExplicitWidth = 66
-                    ExplicitHeight = 13
-                  end
-                  object Label1: TLabel
-                    Left = 368
-                    Top = 1
-                    Width = 365
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Imagens'
-                    Layout = tlCenter
-                    ExplicitWidth = 41
-                    ExplicitHeight = 13
-                  end
-                  object lbHlpArquivos: TListBox
-                    Left = 1
-                    Top = 21
-                    Width = 367
-                    Height = 126
-                    Align = alClient
-                    ItemHeight = 13
-                    Sorted = True
-                    TabOrder = 0
-                  end
-                  object lbHlpImagens: TListBox
-                    Left = 368
-                    Top = 21
-                    Width = 365
-                    Height = 126
-                    Align = alClient
-                    ItemHeight = 13
-                    Sorted = True
-                    TabOrder = 1
-                  end
-                  object Label4: TLabel
-                    Left = 733
-                    Top = 1
-                    Width = 365
-                    Height = 20
-                    Align = alClient
-                    Alignment = taCenter
-                    Caption = 'Em Falta'
-                    Font.Charset = DEFAULT_CHARSET
-                    Font.Color = clRed
-                    Font.Height = 13
-                    Font.Name = 'Tahoma'
-                    Font.Style = []
-                    ParentFont = False
-                    Layout = tlCenter
-                    ExplicitWidth = 41
-                    ExplicitHeight = 13
-                  end
-                  object lbHlpFalta: TListBox
-                    Left = 733
-                    Top = 21
-                    Width = 365
-                    Height = 126
-                    Align = alClient
-                    ItemHeight = 13
-                    Sorted = True
-                    TabOrder = 2
-                  end
-                end
-                object lbHlpTemp: TMemo
-                  Left = 0
-                  Top = 0
-                  Width = 89
-                  Height = 148
-                  Align = alLeft
-                  Lines.Strings = (
-                    'Memo1')
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  Visible = False
-                end
-              end
-              object bsSkinTabSheet9: TbsSkinTabSheet
-                Caption = 'Atualizar Tamanhos dos Arquivos'
-                ImageIndex = -1
-                object bsSkinPanel86: TbsSkinPanel
-                  Left = 0
-                  Top = 148
-                  Width = 1188
-                  Height = 43
-                  HintImageIndex = 0
-                  TabOrder = 2
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Align = alBottom
-                  object Label2: TLabel
-                    AlignWithMargins = True
-                    Left = 3
-                    Top = 3
-                    Width = 534
-                    Height = 37
-                    Align = alClient
-                    Layout = tlCenter
-                    ExplicitWidth = 3
-                    ExplicitHeight = 13
-                  end
-                  object bsSkinButton21: TbsSkinButton
-                    AlignWithMargins = True
-                    Left = 1032
-                    Top = 6
-                    Width = 150
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 3
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = ' Todos Arquivos'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton21Click
-                  end
-                  object bsSkinButton22: TbsSkinButton
-                    Tag = 2
-                    AlignWithMargins = True
-                    Left = 708
-                    Top = 6
-                    Width = 150
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 1
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = ' Atualizar se Menor'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton21Click
-                  end
-                  object bsSkinButton23: TbsSkinButton
-                    Tag = 1
-                    AlignWithMargins = True
-                    Left = 546
-                    Top = 6
-                    Width = 150
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = ' Novos Arquivos'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton21Click
-                  end
-                  object bsSkinButton27: TbsSkinButton
-                    Tag = 3
-                    AlignWithMargins = True
-                    Left = 870
-                    Top = 6
-                    Width = 150
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 2
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageList = DM.ico_24x24
-                    ImageIndex = 55
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = ' Atualizar se Maior'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton21Click
-                  end
-                end
-                object lvArquivos: TbsSkinListView
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 142
-                  DrawSkin = False
-                  DrawSkinLines = False
-                  ItemSkinDataName = 'listbox'
-                  AlternateRow = False
-                  CheckSkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultColor = clWindow
-                  UseSkinFont = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'listview'
-                  Align = alClient
-                  Checkboxes = True
-                  Columns = <
-                    item
-                      Caption = 'Arquivo'
-                      Width = 200
-                    end
-                    item
-                      Caption = 'Diret'#243'rio'
-                      Width = 300
-                    end
-                    item
-                      Caption = 'Tamanho'
-                    end
-                    item
-                      Caption = 'Status'
-                    end>
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = 13
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  ParentFont = False
-                  TabOrder = 0
-                  ViewStyle = vsReport
-                  HeaderSkinDataName = 'header'
-                  VScrollBar = bsSkinScrollBar8
-                end
-                object gProgresso: TbsSkinGauge
-                  Left = 0
-                  Top = 142
-                  Width = 1188
-                  Height = 6
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'gauge'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = False
-                  ShowProgressText = False
-                  ShowPercent = False
-                  MinValue = 0
-                  MaxValue = 1
-                  Value = 0
-                  Vertical = False
-                  ProgressAnimationPause = 3000
-                  Align = alBottom
-                end
-              end
-              object bsSkinTabSheet10: TbsSkinTabSheet
-                Caption = 'Importar LJA para BD'
-                ImageIndex = -1
-                object lbTempos: TListBox
-                  Left = 1050
-                  Top = 25
-                  Width = 138
-                  Height = 166
-                  TabStop = False
-                  Align = alRight
-                  ItemHeight = 13
-                  TabOrder = 2
-                  Visible = False
-                end
-                object Panel37: TPanel
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 25
-                  Align = alTop
-                  TabOrder = 0
-                  object Label9: TbsSkinLabel
-                    Left = 1
-                    Top = 1
-                    Width = 46
-                    Height = 23
-                    HintImageIndex = 0
-                    TabOrder = 5
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'label'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    ShadowEffect = False
-                    ShadowColor = clBlack
-                    ShadowOffset = 0
-                    ShadowSize = 3
-                    ReflectionEffect = False
-                    ReflectionOffset = -5
-                    EllipsType = bsetNoneEllips
-                    UseSkinSize = True
-                    UseSkinFontColor = True
-                    BorderStyle = bvFrame
-                    Align = alLeft
-                    Caption = 'ID M'#250'sica'
-                    AutoSize = False
-                  end
-                  object Label10: TbsSkinLabel
-                    Left = 787
-                    Top = 1
-                    Width = 43
-                    Height = 23
-                    HintImageIndex = 0
-                    TabOrder = 6
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'label'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    ShadowEffect = False
-                    ShadowColor = clBlack
-                    ShadowOffset = 0
-                    ShadowSize = 3
-                    ReflectionEffect = False
-                    ReflectionOffset = -5
-                    EllipsType = bsetNoneEllips
-                    UseSkinSize = True
-                    UseSkinFontColor = True
-                    BorderStyle = bvFrame
-                    Align = alRight
-                    Caption = 'ID '#193'lbum'
-                    AutoSize = False
-                  end
-                  object Label11: TbsSkinLabel
-                    Left = 958
-                    Top = 1
-                    Width = 26
-                    Height = 23
-                    HintImageIndex = 0
-                    TabOrder = 4
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'label'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    ShadowEffect = False
-                    ShadowColor = clBlack
-                    ShadowOffset = 0
-                    ShadowSize = 3
-                    ReflectionEffect = False
-                    ReflectionOffset = -5
-                    EllipsType = bsetNoneEllips
-                    UseSkinSize = True
-                    UseSkinFontColor = True
-                    BorderStyle = bvFrame
-                    Align = alRight
-                    Caption = 'Faixa'
-                    AutoSize = False
-                  end
-                  object idMusica: TbsSkinEdit
-                    Left = 47
-                    Top = 1
-                    Width = 740
-                    Height = 23
-                    Text = '0'
-                    DefaultColor = clWindow
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clBlack
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    UseSkinFont = True
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    ButtonMode = False
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'edit'
-                    Align = alClient
-                    Font.Charset = DEFAULT_CHARSET
-                    Font.Color = clBlack
-                    Font.Height = 13
-                    Font.Name = 'Tahoma'
-                    Font.Style = []
-                    ParentFont = False
-                    TabOrder = 0
-                    ButtonImageIndex = -1
-                    LeftImageIndex = -1
-                    LeftImageHotIndex = -1
-                    LeftImageDownIndex = -1
-                    RightImageIndex = -1
-                    RightImageHotIndex = -1
-                    RightImageDownIndex = -1
-                  end
-                  object Button1: TbsSkinButton
-                    Left = 1112
-                    Top = 1
-                    Width = 75
-                    Height = 23
-                    HintImageIndex = 0
-                    TabOrder = 1
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageIndex = -1
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = True
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Abrir'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = Button1Click
-                  end
-                  object idAlbum: TbsSkinEdit
-                    Left = 830
-                    Top = 1
-                    Width = 128
-                    Height = 23
-                    Text = '0'
-                    DefaultColor = clWindow
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clBlack
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    UseSkinFont = True
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    ButtonMode = False
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'edit'
-                    Align = alRight
-                    Font.Charset = DEFAULT_CHARSET
-                    Font.Color = clBlack
-                    Font.Height = 13
-                    Font.Name = 'Tahoma'
-                    Font.Style = []
-                    ParentFont = False
-                    TabOrder = 2
-                    ButtonImageIndex = -1
-                    LeftImageIndex = -1
-                    LeftImageHotIndex = -1
-                    LeftImageDownIndex = -1
-                    RightImageIndex = -1
-                    RightImageHotIndex = -1
-                    RightImageDownIndex = -1
-                  end
-                  object idFaixa: TbsSkinEdit
-                    Left = 984
-                    Top = 1
-                    Width = 128
-                    Height = 23
-                    Text = '0'
-                    DefaultColor = clWindow
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clBlack
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    UseSkinFont = True
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    ButtonMode = False
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'edit'
-                    Align = alRight
-                    Font.Charset = DEFAULT_CHARSET
-                    Font.Color = clBlack
-                    Font.Height = 13
-                    Font.Name = 'Tahoma'
-                    Font.Style = []
-                    ParentFont = False
-                    TabOrder = 3
-                    ButtonImageIndex = -1
-                    LeftImageIndex = -1
-                    LeftImageHotIndex = -1
-                    LeftImageDownIndex = -1
-                    RightImageIndex = -1
-                    RightImageHotIndex = -1
-                    RightImageDownIndex = -1
-                  end
-                end
-                object dbGrid: TbsSkinDBGrid
-                  Left = 0
-                  Top = 25
-                  Width = 1050
-                  Height = 166
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  TabStop = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 17
-                  MouseWheelSupport = False
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  DataSource = DM.dsSLIDE_MUSICA2
-                  TitleFont.Charset = DEFAULT_CHARSET
-                  TitleFont.Color = clBtnText
-                  TitleFont.Height = 13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDrawColumnCell = DBGridDrawColumnCell
-                end
-              end
-              object bsSkinTabSheet11: TbsSkinTabSheet
-                Caption = 'Clipboard'
-                ImageIndex = -1
-                object cboard: TListBox
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  ItemHeight = 13
-                  TabOrder = 0
-                end
-              end
-              object bsSkinTabSheet12: TbsSkinTabSheet
-                Caption = 'Par'#226'metros de Layout'
-                ImageIndex = -1
-                object layoutValue: TValueListEditor
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 191
-                  Align = alClient
-                  Strings.Strings = (
-                    '')
-                  TabOrder = 0
-                  ColWidths = (
-                    185
-                    997)
-                end
-              end
-              object bsSkinTabSheet13: TbsSkinTabSheet
-                Caption = 'Log de Erros'
-                ImageIndex = -1
-                object erro_log: TbsSkinMemo
-                  Left = 0
-                  Top = 41
-                  Width = 1188
-                  Height = 150
-                  Align = alClient
-                  BorderStyle = bsNone
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  ParentFont = False
-                  ReadOnly = True
-                  ScrollBars = ssBoth
-                  TabOrder = 0
-                  Transparent = False
-                  WallpaperStretch = False
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  UseSkinFontColor = True
-                  BitMapBG = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'memo'
-                end
-                object Panel38: TPanel
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 41
-                  Align = alTop
-                  Caption = 'Panel38'
-                  TabOrder = 1
-                  object Button2: TButton
-                    Left = 1
-                    Top = 1
-                    Width = 112
-                    Height = 39
-                    Align = alLeft
-                    Caption = 'Baixa FTP'
-                    TabOrder = 0
-                    OnClick = Button2Click
-                  end
-                end
-              end
-              object bsSkinTabSheet14: TbsSkinTabSheet
-                Caption = 'Ajusta Banco de Dados para Exporta'#231#227'o'
-                ImageIndex = -1
-                object bsSkinPanel194: TbsSkinPanel
-                  Left = 0
-                  Top = 148
-                  Width = 1188
-                  Height = 43
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = -1
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Align = alBottom
-                  object bsSkinButton44: TbsSkinButton
-                    Tag = 4
-                    AlignWithMargins = True
-                    Left = 1004
-                    Top = 6
-                    Width = 178
-                    Height = 31
-                    Margins.Left = 6
-                    Margins.Top = 6
-                    Margins.Right = 6
-                    Margins.Bottom = 6
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'button'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    Transparent = False
-                    CheckedMode = False
-                    ImageIndex = 32
-                    AlwaysShowLayeredFrame = False
-                    UseSkinSize = False
-                    UseSkinFontColor = True
-                    RepeatMode = False
-                    RepeatInterval = 100
-                    AllowAllUp = False
-                    TabStop = True
-                    CanFocused = True
-                    Down = False
-                    GroupIndex = 0
-                    Caption = 'Ajustar Tempos para Segundo'
-                    NumGlyphs = 1
-                    Spacing = 1
-                    Align = alRight
-                    OnClick = bsSkinButton44Click
-                  end
-                end
-                object Memo1: TMemo
-                  Left = 0
-                  Top = 0
-                  Width = 1188
-                  Height = 148
-                  Align = alClient
-                  ScrollBars = ssVertical
-                  TabOrder = 1
-                end
-              end
-            end
-          end
-        end
-        object ampAtivDesAlbum: TbsAppMenuPage
+        object ampDoe: TbsAppMenuPage
           Left = 150
           Top = 25
           Width = 586
-          Height = 371
+          Height = 379
           HotScroll = False
           ScrollOffset = 0
           ScrollTimerInterval = 50
           CanScroll = False
           DefaultWidth = 0
-          object bsSkinPanel84: TbsSkinPanel
+          object bsSkinPanel33: TbsSkinPanel
             Left = 0
             Top = 0
             Width = 586
@@ -42343,11 +46260,11 @@ object fmIndex: TfmIndex
             Spacing = 2
             Caption = 'bsSkinPanel9'
             Align = alTop
-            object bsSkinStdLabel154: TbsSkinStdLabel
+            object bsSkinStdLabel6: TbsSkinStdLabel
               AlignWithMargins = True
               Left = 15
               Top = 0
-              Width = 465
+              Width = 299
               Height = 113
               Margins.Left = 15
               Margins.Top = 0
@@ -42369,49 +46286,21 @@ object fmIndex: TfmIndex
               Font.Name = 'Tahoma'
               Font.Style = []
               Align = alLeft
-              Caption = 'Ativar ou Desativar '#193'lbuns'
+              Caption = 'Fa'#231'a sua Doa'#231#227'o'
               ParentFont = False
               Layout = tlCenter
               ExplicitHeight = 48
             end
           end
-          object bsSkinPanel63: TbsSkinPanel
+          object ScrollBox6: TScrollBox
             Left = 0
             Top = 113
             Width = 586
-            Height = 258
-            HintImageIndex = 0
-            TabOrder = 1
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'panel'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            EmptyDrawing = False
-            RibbonStyle = False
-            ImagePosition = bsipDefault
-            TransparentMode = False
-            CaptionImageIndex = -1
-            RealHeight = -1
-            AutoEnabledControls = True
-            CheckedMode = False
-            Checked = False
-            DefaultAlignment = taLeftJustify
-            DefaultCaptionHeight = 20
-            BorderStyle = bvNone
-            CaptionMode = False
-            RollUpMode = False
-            RollUpState = False
-            NumGlyphs = 1
-            Spacing = 2
-            Caption = 'bsSkinPanel63'
+            Height = 266
             Align = alClient
-            object bsSkinPanel85: TbsSkinPanel
+            BorderStyle = bsNone
+            TabOrder = 1
+            object bsSkinPanel61: TbsSkinPanel
               Left = 0
               Top = 0
               Width = 586
@@ -42447,46 +46336,12 @@ object fmIndex: TfmIndex
               Spacing = 2
               Caption = 'bsSkinPanel10'
               Align = alTop
-              object bsSkinStdLabel91: TbsSkinStdLabel
-                AlignWithMargins = True
-                Left = 36
-                Top = 36
-                Width = 550
-                Height = 44
-                Margins.Left = 36
-                Margins.Top = 10
-                Margins.Right = 0
-                Margins.Bottom = 0
-                EllipsType = bsetNone
-                UseSkinFont = True
-                UseSkinColor = True
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = -11
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'stdlabel'
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                Align = alClient
-                Caption = 
-                  'Ao reativar um '#225'lbum, lembre-se de realizar uma sincroniza'#231#227'o de' +
-                  ' arquivos em falta para verificar se os arquivos est'#227'o em ordem.'
-                ParentFont = False
-                WordWrap = True
-                ExplicitWidth = 542
-                ExplicitHeight = 26
-              end
-              object bsSkinStdLabel162: TbsSkinStdLabel
+              object bsSkinStdLabel83: TbsSkinStdLabel
                 AlignWithMargins = True
                 Left = 36
                 Top = 0
                 Width = 550
-                Height = 26
+                Height = 80
                 Margins.Left = 36
                 Margins.Top = 0
                 Margins.Right = 0
@@ -42506,437 +46361,25 @@ object fmIndex: TfmIndex
                 Font.Height = -13
                 Font.Name = 'Tahoma'
                 Font.Style = [fsBold]
-                Align = alTop
+                Align = alClient
                 Caption = 
-                  'Ao desativar um '#225'lbum, as m'#250'sicas que fazem parte do mesmo deixa' +
-                  'm de fazer parte do programa, das buscas, e da sincroniza'#231#227'o de ' +
-                  'arquivos.'
+                  'Este programa '#233' de uso gratu'#237'to, e as doa'#231#245'es s'#227'o totalmente vol' +
+                  'unt'#225'rias. Mas caso voc'#234' queira contribuir para este projeto, que' +
+                  ' cresce a cada vez mais, fa'#231'a sua doa'#231#227'o. Ir'#225' ajudar com os cust' +
+                  'os de desenvolvimento e manuten'#231#227'o do programa.'
                 ParentFont = False
                 WordWrap = True
-                ExplicitWidth = 549
+                ExplicitWidth = 542
+                ExplicitHeight = 39
               end
             end
-            object GridPanel7: TGridPanel
-              AlignWithMargins = True
-              Left = 10
-              Top = 80
-              Width = 566
-              Height = 175
-              Margins.Left = 10
-              Margins.Top = 0
-              Margins.Right = 10
-              Align = alClient
-              BevelOuter = bvNone
-              Caption = 'GridPanel7'
-              ColumnCollection = <
-                item
-                  Value = 50.000000000000000000
-                end
-                item
-                  SizeStyle = ssAbsolute
-                  Value = 60.000000000000000000
-                end
-                item
-                  Value = 50.000000000000000000
-                end>
-              ControlCollection = <
-                item
-                  Column = 0
-                  Control = Panel65
-                  Row = 0
-                end
-                item
-                  Column = 2
-                  Control = Panel66
-                  Row = 0
-                end
-                item
-                  Column = 1
-                  Control = bsSkinSpeedButton17
-                  Row = 2
-                end
-                item
-                  Column = 1
-                  Control = bsSkinSpeedButton21
-                  Row = 3
-                end
-                item
-                  Column = 0
-                  Control = Panel67
-                  Row = 1
-                  RowSpan = 4
-                end
-                item
-                  Column = 2
-                  Control = Panel68
-                  Row = 1
-                  RowSpan = 4
-                end>
-              RowCollection = <
-                item
-                  SizeStyle = ssAbsolute
-                  Value = 30.000000000000000000
-                end
-                item
-                  Value = 10.000335654943360000
-                end
-                item
-                  Value = 39.999467015663960000
-                end
-                item
-                  Value = 40.000104002685370000
-                end
-                item
-                  Value = 10.000093326707320000
-                end>
-              ShowCaption = False
-              TabOrder = 1
-              object Panel65: TPanel
-                Left = 0
-                Top = 0
-                Width = 253
-                Height = 30
-                Align = alClient
-                BevelOuter = bvNone
-                Caption = 'Ativos'
-                Color = 16384
-                Ctl3D = False
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWhite
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentBackground = False
-                ParentCtl3D = False
-                ParentFont = False
-                TabOrder = 0
-              end
-              object Panel66: TPanel
-                Left = 313
-                Top = 0
-                Width = 253
-                Height = 30
-                Align = alClient
-                BevelOuter = bvNone
-                Caption = 'Inativos'
-                Color = clRed
-                Ctl3D = False
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWhite
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentBackground = False
-                ParentCtl3D = False
-                ParentFont = False
-                TabOrder = 1
-              end
-              object bsSkinSpeedButton17: TbsSkinSpeedButton
-                AlignWithMargins = True
-                Left = 256
-                Top = 47
-                Width = 54
-                Height = 51
-                HintImageIndex = 0
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'resizetoolbutton'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                CheckedMode = False
-                ImageList = DM.ico_40x40
-                UseSkinSize = True
-                UseSkinFontColor = True
-                WidthWithCaption = 0
-                WidthWithoutCaption = 0
-                ImageIndex = 48
-                RepeatMode = False
-                RepeatInterval = 100
-                Transparent = True
-                Flat = True
-                AllowAllUp = False
-                Down = False
-                GroupIndex = 0
-                ShowCaption = True
-                NumGlyphs = 1
-                Align = alClient
-                Spacing = 1
-                Layout = blGlyphTop
-                OnClick = gridAlbAtDblClick
-                ExplicitLeft = 301
-                ExplicitTop = 55
-                ExplicitHeight = 83
-              end
-              object bsSkinSpeedButton21: TbsSkinSpeedButton
-                AlignWithMargins = True
-                Left = 256
-                Top = 104
-                Width = 54
-                Height = 52
-                HintImageIndex = 0
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'resizetoolbutton'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                CheckedMode = False
-                ImageList = DM.ico_40x40
-                UseSkinSize = True
-                UseSkinFontColor = True
-                WidthWithCaption = 0
-                WidthWithoutCaption = 0
-                ImageIndex = 49
-                RepeatMode = False
-                RepeatInterval = 100
-                Transparent = True
-                Flat = True
-                AllowAllUp = False
-                Down = False
-                GroupIndex = 0
-                ShowCaption = True
-                NumGlyphs = 1
-                Align = alClient
-                Spacing = 1
-                Layout = blGlyphTop
-                OnClick = gridAlbInatDblClick
-                ExplicitLeft = 301
-                ExplicitTop = 144
-                ExplicitHeight = 83
-              end
-              object Panel67: TPanel
-                Left = 0
-                Top = 30
-                Width = 253
-                Height = 145
-                Align = alClient
-                BevelOuter = bvNone
-                Caption = 'Panel67'
-                ShowCaption = False
-                TabOrder = 2
-                object gridAlbAt: TbsSkinDBGrid
-                  Left = 0
-                  Top = 0
-                  Width = 234
-                  Height = 145
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  VScrollBar = bsSkinScrollBar18
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 20
-                  MouseWheelSupport = False
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  Ctl3D = False
-                  DataSource = DM.dsALBUM_ATIV
-                  Options = [dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
-                  ParentCtl3D = False
-                  TitleFont.Charset = ANSI_CHARSET
-                  TitleFont.Color = clWindowText
-                  TitleFont.Height = -13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDblClick = gridAlbAtDblClick
-                  Columns = <
-                    item
-                      Expanded = False
-                      FieldName = 'NOME'
-                      Visible = True
-                    end>
-                end
-                object bsSkinScrollBar18: TbsSkinScrollBar
-                  Left = 234
-                  Top = 0
-                  Width = 19
-                  Height = 145
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 0
-                  Min = 0
-                  Max = 100
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-              object Panel68: TPanel
-                Left = 313
-                Top = 30
-                Width = 253
-                Height = 145
-                Align = alClient
-                BevelOuter = bvNone
-                Caption = 'Panel67'
-                ShowCaption = False
-                TabOrder = 3
-                object gridAlbInat: TbsSkinDBGrid
-                  Left = 0
-                  Top = 0
-                  Width = 234
-                  Height = 145
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'grid'
-                  Transparent = False
-                  WallpaperStretch = False
-                  UseSkinFont = True
-                  UseSkinCellHeight = True
-                  VScrollBar = bsSkinScrollBar19
-                  GridLineColor = clBtnFace
-                  DefaultCellHeight = 20
-                  ColSizingWithLine = False
-                  DrawGraphicFields = False
-                  UseColumnsFont = False
-                  DefaultRowHeight = 20
-                  MouseWheelSupport = False
-                  SaveMultiSelection = False
-                  PickListBoxSkinDataName = 'listbox'
-                  PickListBoxCaptionMode = False
-                  Align = alClient
-                  Ctl3D = False
-                  DataSource = DM.dsALBUM_INATIV
-                  Options = [dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
-                  ParentCtl3D = False
-                  TitleFont.Charset = ANSI_CHARSET
-                  TitleFont.Color = clWindowText
-                  TitleFont.Height = -13
-                  TitleFont.Name = 'Tahoma'
-                  TitleFont.Style = []
-                  OnDblClick = gridAlbInatDblClick
-                  Columns = <
-                    item
-                      Expanded = False
-                      FieldName = 'NOME'
-                      Visible = True
-                    end>
-                end
-                object bsSkinScrollBar19: TbsSkinScrollBar
-                  Left = 234
-                  Top = 0
-                  Width = 19
-                  Height = 145
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  Visible = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'vscrollbar'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 19
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Both = False
-                  BothMarkerWidth = 19
-                  BothSkinDataName = 'bothhscrollbar'
-                  CanFocused = False
-                  Align = alRight
-                  Kind = sbVertical
-                  PageSize = 0
-                  Min = 0
-                  Max = 100
-                  Position = 0
-                  SmallChange = 1
-                  LargeChange = 1
-                end
-              end
-            end
-          end
-        end
-        object ampOpcoes: TbsAppMenuPage
-          Left = 150
-          Top = 25
-          Width = 100
-          Height = 100
-          HotScroll = False
-          ScrollOffset = 0
-          ScrollTimerInterval = 50
-          CanScroll = False
-          DefaultWidth = 0
-          object bsSkinPanel28: TbsSkinPanel
-            Left = 0
-            Top = 0
-            Width = 100
-            Height = 100
-            HintImageIndex = 0
-            TabOrder = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'panel'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            EmptyDrawing = False
-            RibbonStyle = False
-            ImagePosition = bsipDefault
-            TransparentMode = False
-            CaptionImageIndex = -1
-            RealHeight = -1
-            AutoEnabledControls = True
-            CheckedMode = False
-            Checked = False
-            DefaultAlignment = taLeftJustify
-            DefaultCaptionHeight = 20
-            BorderStyle = bvNone
-            CaptionMode = False
-            RollUpMode = False
-            RollUpState = False
-            NumGlyphs = 1
-            Spacing = 2
-            Caption = 'bsSkinPanel8'
-            Align = alClient
-            object bsSkinPanel29: TbsSkinPanel
+            object bsSkinPanel133: TbsSkinPanel
               Left = 0
-              Top = 0
-              Width = 100
-              Height = 113
+              Top = 113
+              Width = 586
+              Height = 20
               HintImageIndex = 0
-              TabOrder = 0
+              TabOrder = 1
               SkinData = DM.bsSkinData1
               SkinDataName = 'panel'
               DefaultFont.Charset = DEFAULT_CHARSET
@@ -42951,7 +46394,7 @@ object fmIndex: TfmIndex
               RibbonStyle = False
               ImagePosition = bsipDefault
               TransparentMode = False
-              CaptionImageIndex = -1
+              CaptionImageIndex = 0
               RealHeight = -1
               AutoEnabledControls = True
               CheckedMode = False
@@ -42964,4716 +46407,136 @@ object fmIndex: TfmIndex
               RollUpState = False
               NumGlyphs = 1
               Spacing = 2
-              Caption = 'bsSkinPanel9'
+              Caption = 'bsSkinPanel10'
               Align = alTop
-              object bsSkinStdLabel77: TbsSkinStdLabel
-                AlignWithMargins = True
-                Left = 15
+              ExplicitTop = 145
+              object bsRibbonDivider52: TbsRibbonDivider
+                Left = 0
                 Top = 0
-                Width = 129
-                Height = 113
-                Margins.Left = 15
-                Margins.Top = 0
-                Margins.Right = 0
-                Margins.Bottom = 0
-                EllipsType = bsetNone
-                UseSkinFont = False
-                UseSkinColor = True
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = -11
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
+                Width = 586
+                Height = 20
+                HintImageIndex = 0
                 SkinData = DM.bsSkinData1
-                SkinDataName = 'stdlabel'
-                Font.Charset = ANSI_CHARSET
-                Font.Color = 2894892
-                Font.Height = -40
-                Font.Name = 'Tahoma'
-                Font.Style = []
-                Align = alLeft
-                Caption = 'Op'#231#245'es'
-                ParentFont = False
-                Layout = tlCenter
-                ExplicitHeight = 48
+                SkinDataName = 'officegroupdivider'
+                DividerType = bsdtHorizontalDashLine
+                Align = alClient
+                ExplicitLeft = 103
+                ExplicitTop = 3
+                ExplicitWidth = 563
               end
             end
-            object ScrollBox2: TScrollBox
+            object bsSkinPanel134: TbsSkinPanel
               Left = 0
-              Top = 113
-              Width = 100
-              Height = 258
-              VertScrollBar.Position = 133
+              Top = 133
+              Width = 586
+              Height = 133
+              HintImageIndex = 0
+              TabOrder = 2
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'panel'
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clWindowText
+              DefaultFont.Height = 13
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              DefaultWidth = 0
+              DefaultHeight = 0
+              UseSkinFont = True
+              EmptyDrawing = False
+              RibbonStyle = False
+              ImagePosition = bsipDefault
+              TransparentMode = False
+              CaptionImageIndex = 0
+              RealHeight = -1
+              AutoEnabledControls = True
+              CheckedMode = False
+              Checked = False
+              DefaultAlignment = taLeftJustify
+              DefaultCaptionHeight = 20
+              BorderStyle = bvNone
+              CaptionMode = False
+              RollUpMode = False
+              RollUpState = False
+              NumGlyphs = 1
+              Spacing = 2
+              Caption = 'bsSkinPanel10'
               Align = alClient
-              BorderStyle = bsNone
-              TabOrder = 1
-              object bsSkinPanel46: TbsSkinPanel
+              ExplicitTop = 165
+              ExplicitHeight = 101
+            end
+            object bsSkinPanel195: TbsSkinPanel
+              Left = 0
+              Top = 80
+              Width = 586
+              Height = 33
+              HintImageIndex = 0
+              TabOrder = 3
+              SkinData = DM.bsSkinData1
+              SkinDataName = 'panel'
+              DefaultFont.Charset = DEFAULT_CHARSET
+              DefaultFont.Color = clWindowText
+              DefaultFont.Height = 13
+              DefaultFont.Name = 'Tahoma'
+              DefaultFont.Style = []
+              DefaultWidth = 0
+              DefaultHeight = 0
+              UseSkinFont = True
+              EmptyDrawing = False
+              RibbonStyle = False
+              ImagePosition = bsipDefault
+              TransparentMode = False
+              CaptionImageIndex = 0
+              RealHeight = -1
+              AutoEnabledControls = True
+              CheckedMode = False
+              Checked = False
+              DefaultAlignment = taLeftJustify
+              DefaultCaptionHeight = 20
+              BorderStyle = bvNone
+              CaptionMode = False
+              RollUpMode = False
+              RollUpState = False
+              NumGlyphs = 1
+              Spacing = 2
+              Caption = 'bsSkinPanel10'
+              Align = alTop
+              object GridPanel54: TGridPanel
                 Left = 0
-                Top = 51
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 1
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMonitorJanela: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Exibir em tela cheia'
-                  OnClick = ckMonitorJanelaClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel18: TbsSkinPanel
-                Left = 0
-                Top = 771
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 28
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel59: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 69
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 10
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Cor do Fundo:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object corCapaPrograma: TbsSkinColorButton
-                  Tag = 12
-                  AlignWithMargins = True
-                  Left = 115
-                  Top = 1
-                  Width = 49
-                  Height = 22
-                  Margins.Left = 0
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'toolmenubutton'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  CheckedMode = False
-                  UseSkinSize = False
-                  UseSkinFontColor = True
-                  WidthWithCaption = 0
-                  WidthWithoutCaption = 0
-                  ImageIndex = 0
-                  RepeatMode = False
-                  RepeatInterval = 100
-                  Transparent = False
-                  Flat = False
-                  AllowAllUp = False
-                  Down = False
-                  GroupIndex = 0
-                  ShowCaption = True
-                  NumGlyphs = 1
-                  Align = alLeft
-                  Spacing = 1
-                  NewStyle = False
-                  TrackPosition = bstpRight
-                  UseImagesMenuImage = False
-                  UseImagesMenuCaption = False
-                  TrackButtonMode = False
-                  AutoColor = clBlack
-                  ColorValue = clBlack
-                  ShowAutoColor = True
-                  ShowMoreColor = True
-                  MenuUseSkinFont = True
-                  MenuDefaultFont.Charset = DEFAULT_CHARSET
-                  MenuDefaultFont.Color = clWindowText
-                  MenuDefaultFont.Height = 13
-                  MenuDefaultFont.Name = 'Tahoma'
-                  MenuDefaultFont.Style = []
-                  MenuAlphaBlend = False
-                  MenuAlphaBlendValue = 200
-                  MenuAlphaBlendAnimation = False
-                  OnChangeColor = corCapaProgramaChangeColor
-                  ExplicitLeft = 57
-                  ExplicitTop = 0
-                  ExplicitHeight = 24
-                end
-              end
-              object bsSkinPanel19: TbsSkinPanel
-                Left = 0
-                Top = 795
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 29
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel63: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 42
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 10
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Imagem:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object imgCapaPrograma: TbsSkinFileEdit
-                  AlignWithMargins = True
-                  Left = 88
-                  Top = 1
-                  Width = 430
-                  Height = 22
-                  Margins.Left = 0
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  Text = ''
-                  DefaultColor = clWindow
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  ButtonMode = True
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'buttonedit'
-                  Align = alLeft
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  MaxLength = 255
-                  ParentFont = False
-                  TabOrder = 1
-                  Images = DM.ico_16x16
-                  ButtonImageIndex = 0
-                  LeftImageIndex = -1
-                  LeftImageHotIndex = -1
-                  LeftImageDownIndex = -1
-                  RightImageIndex = -1
-                  RightImageHotIndex = -1
-                  RightImageDownIndex = -1
-                  OnButtonClick = inputOpenPictureDialog
-                  OnEnter = imgCapaProgramaEnter
-                  OnExit = imgCapaProgramaExit
-                  OnKeyUp = edtKeyUp
-                  Filter = 
-                    'Todos os arquivos de imagem|*.bmp;*.dib;*.jpg;*.jpeg;*.jpe;*.jfi' +
-                    'f;*.gif;*.tif;*.tiff;*.png;*.ico|'#13#10'Arquivos de Bitmap (*.bmp;*.d' +
-                    'ib)|*.bmp;*.dib|'#13#10'JPEG (*.jpg;*.jpeg;*.jpe;*.jfif)|*.jpg;*.jpeg;' +
-                    '*.jpe;*.jfif|'#13#10'GIF (*.gif)|*.gif|'#13#10'TIFF (*.tif;*.tiff)|*.tif;*.t' +
-                    'iff|'#13#10'PNG (*.png)|*.png|'#13#10'ICO (*.ico)|*.ico|'#13#10'Todos os arquivos|' +
-                    '*.*'
-                  DlgSkinData = DM.bsSkinData1
-                  DlgCtrlSkinData = DM.bsSkinData1
-                  LVHeaderSkinDataName = 'header'
-                end
-                object txtImgCapaProgramaInfo: TbsSkinEdit
-                  Left = 518
-                  Top = 0
-                  Width = 35
-                  Height = 24
-                  Text = ''
-                  DefaultColor = clWindow
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clBlack
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  UseSkinFont = True
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  ButtonMode = False
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'edit'
-                  Align = alLeft
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  ParentFont = False
-                  TabOrder = 0
-                  Visible = False
-                  ButtonImageIndex = -1
-                  LeftImageIndex = -1
-                  LeftImageHotIndex = -1
-                  LeftImageDownIndex = -1
-                  RightImageIndex = -1
-                  RightImageHotIndex = -1
-                  RightImageDownIndex = -1
-                end
-              end
-              object bsSkinPanel21: TbsSkinPanel
-                Left = 0
-                Top = 819
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 30
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel60: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 63
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 10
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Alinhamento:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object cbAlinhamentoCapaPrograma: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 109
-                  Top = 1
-                  Width = 120
-                  Height = 22
-                  Margins.Left = 0
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Text = 'Centralizar'
-                  Align = alLeft
-                  Items.Strings = (
-                    'Centralizar'
-                    'Estender')
-                  ItemIndex = 0
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = 13
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = cbAlinhamentoCapaProgramaChange
-                end
-                object btRestaurarCapaPrograma: TbsSkinButton
-                  AlignWithMargins = True
-                  Left = -7
-                  Top = 1
-                  Width = 80
-                  Height = 22
-                  Margins.Left = 0
-                  Margins.Top = 1
-                  Margins.Right = 10
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'button'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  Transparent = False
-                  CheckedMode = False
-                  ImageList = DM.ico_16x16
-                  ImageIndex = 76
-                  AlwaysShowLayeredFrame = False
-                  UseSkinSize = True
-                  UseSkinFontColor = True
-                  RepeatMode = False
-                  RepeatInterval = 100
-                  AllowAllUp = False
-                  TabStop = True
-                  CanFocused = True
-                  Down = False
-                  GroupIndex = 0
-                  Caption = 'Restaurar'
-                  NumGlyphs = 1
-                  Spacing = 1
-                  Align = alRight
-                  OnClick = btRestaurarCapaProgramaClick
-                end
-              end
-              object bsSkinPanel13: TbsSkinPanel
-                Left = 0
-                Top = 471
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 16
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel96: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 81
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Abrir no monitor:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object sbVideoOnAreaExtendida: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 122
-                  Top = 1
-                  Width = 79
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    '1'
-                    '2'
-                    '3'
-                    '4'
-                    '5')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbVideoOnAreaExtendidaChange
-                end
-              end
-              object bsSkinPanel48: TbsSkinPanel
-                Left = 0
-                Top = 495
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 17
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckVideoOnJanela: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Exibir em tela cheia'
-                  OnClick = ckVideoOnJanelaClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel49: TbsSkinPanel
-                Left = 0
-                Top = 519
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 18
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel98: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 218
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Ao executar link do Youtube na liturgia, abrir:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object sbVideoOnAbreLiturgia: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 259
-                  Top = 1
-                  Width = 79
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    'Site'
-                    'V'#237'deo')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbVideoOnAbreLiturgiaChange
-                end
-              end
-              object bsSkinPanel52: TbsSkinPanel
-                Left = 0
-                Top = 129
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 8
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel72: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 81
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Abrir no monitor:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object sbMusicaAreaExtendida: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 122
-                  Top = 1
-                  Width = 120
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    '1'
-                    '2'
-                    '3'
-                    '4'
-                    '5')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbMusicaAreaExtendidaChange
-                end
-              end
-              object bsSkinPanel53: TbsSkinPanel
-                Left = 0
-                Top = 177
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 9
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMusicaJanela: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Exibir em tela cheia'
-                  OnClick = ckMusicaJanelaClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel54: TbsSkinPanel
-                Left = 0
-                Top = 225
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 10
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMusicaOperador: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 225
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Abrir Tela do Operador | Abrir no monitor:'
-                  OnClick = ckMusicaOperadorClick
-                  Align = alLeft
-                end
-                object sbMusicaOperadorAreaExtendida: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 266
-                  Top = 1
-                  Width = 120
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    '1'
-                    '2'
-                    '3'
-                    '4'
-                    '5')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbMusicaOperadorAreaExtendidaChange
-                end
-              end
-              object bsSkinPanel65: TbsSkinPanel
-                Left = 0
-                Top = 273
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 11
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMusicaTituloSlide: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Exibir t'#237'tulo da m'#250'sica no primeiro slide'
-                  OnClick = ckMusicaTituloSlideClick
-                  Align = alClient
-                end
-              end
-              object bsFormatSlPerso: TbsSkinPanel
-                Left = 0
-                Top = 297
-                Width = 83
-                Height = 72
-                HintImageIndex = 0
-                TabOrder = 12
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckSlideTxtFormatPerso: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Formata'#231#227'o de texto personalizada'
-                  OnClick = ckSlideTxtFormatPersoClick
-                  Align = alTop
-                end
-                object bsFormatSlidePerso: TbsSkinPanel
-                  Left = 0
-                  Top = 24
-                  Width = 83
-                  Height = 48
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = 0
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Caption = 'bsSkinPanel10'
-                  Align = alClient
-                  object bsSkinPanel59: TbsSkinPanel
-                    AlignWithMargins = True
-                    Left = 60
-                    Top = 24
-                    Width = 23
-                    Height = 24
-                    Margins.Left = 60
-                    Margins.Top = 0
-                    Margins.Right = 0
-                    Margins.Bottom = 0
-                    HintImageIndex = 0
-                    TabOrder = 1
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'panel'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    EmptyDrawing = False
-                    RibbonStyle = False
-                    ImagePosition = bsipDefault
-                    TransparentMode = False
-                    CaptionImageIndex = 0
-                    RealHeight = -1
-                    AutoEnabledControls = True
-                    CheckedMode = False
-                    Checked = False
-                    DefaultAlignment = taLeftJustify
-                    DefaultCaptionHeight = 20
-                    BorderStyle = bvNone
-                    CaptionMode = False
-                    RollUpMode = False
-                    RollUpState = False
-                    NumGlyphs = 1
-                    Spacing = 2
-                    Caption = 'bsSkinPanel10'
-                    Align = alClient
-                    object bsSkinStdLabel56: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 154
-                      Top = 0
-                      Width = 32
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Texto:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsRibbonDivider51: TbsRibbonDivider
-                      Left = 248
-                      Top = 0
-                      Width = 15
-                      Height = 24
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'officegroupdivider'
-                      DividerType = bsdtVerticalLine
-                      Align = alLeft
-                      ExplicitLeft = 143
-                      ExplicitTop = 3
-                    end
-                    object bsSkinStdLabel106: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 263
-                      Top = 0
-                      Width = 58
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Texto Aux.:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsSkinStdLabel61: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 0
-                      Top = 0
-                      Width = 77
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Tamanho T'#237'tulo:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsRibbonDivider54: TbsRibbonDivider
-                      Left = 139
-                      Top = 0
-                      Width = 15
-                      Height = 24
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'officegroupdivider'
-                      DividerType = bsdtVerticalLine
-                      Align = alLeft
-                      ExplicitLeft = 77
-                      ExplicitTop = -3
-                    end
-                    object seTamanhoTexto: TbsSkinSpinEdit
-                      Tag = 9999
-                      AlignWithMargins = True
-                      Left = 189
-                      Top = 2
-                      Width = 59
-                      Height = 21
-                      Margins.Left = 0
-                      Margins.Top = 2
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      TabOrder = 2
-                      SkinDataName = 'spinedit'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      DefaultColor = clWindow
-                      UseSkinSize = True
-                      ValueType = vtInteger
-                      Align = alLeft
-                      Increment = 1.000000000000000000
-                      EditorEnabled = True
-                      MaxLength = 0
-                      OnChange = seTamanhoTextoChange
-                    end
-                    object seTamanhoTextoAux: TbsSkinSpinEdit
-                      Tag = 9999
-                      AlignWithMargins = True
-                      Left = 324
-                      Top = 2
-                      Width = 59
-                      Height = 21
-                      Margins.Left = 0
-                      Margins.Top = 2
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      TabOrder = 3
-                      SkinDataName = 'spinedit'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      DefaultColor = clWindow
-                      UseSkinSize = True
-                      ValueType = vtInteger
-                      Align = alLeft
-                      Increment = 1.000000000000000000
-                      EditorEnabled = True
-                      MaxLength = 0
-                      OnChange = seTamanhoTextoAuxChange
-                    end
-                    object seTamanhoTitulo: TbsSkinSpinEdit
-                      Tag = 9999
-                      AlignWithMargins = True
-                      Left = 80
-                      Top = 2
-                      Width = 59
-                      Height = 21
-                      Margins.Left = 0
-                      Margins.Top = 2
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      TabOrder = 1
-                      SkinDataName = 'spinedit'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      DefaultColor = clWindow
-                      UseSkinSize = True
-                      ValueType = vtInteger
-                      Align = alLeft
-                      Increment = 1.000000000000000000
-                      EditorEnabled = True
-                      MaxLength = 0
-                      OnChange = seTamanhoTituloChange
-                    end
-                    object bsSkinButton2: TbsSkinButton
-                      AlignWithMargins = True
-                      Left = -67
-                      Top = 1
-                      Width = 80
-                      Height = 22
-                      Margins.Left = 0
-                      Margins.Top = 1
-                      Margins.Right = 10
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      TabOrder = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'button'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      Transparent = False
-                      CheckedMode = False
-                      ImageList = DM.ico_16x16
-                      ImageIndex = 76
-                      AlwaysShowLayeredFrame = False
-                      UseSkinSize = True
-                      UseSkinFontColor = True
-                      RepeatMode = False
-                      RepeatInterval = 100
-                      AllowAllUp = False
-                      TabStop = True
-                      CanFocused = True
-                      Down = False
-                      GroupIndex = 0
-                      Caption = 'Restaurar'
-                      NumGlyphs = 1
-                      Spacing = 1
-                      Align = alRight
-                      OnClick = bsSkinButton2Click
-                    end
-                  end
-                  object bsSkinPanel88: TbsSkinPanel
-                    AlignWithMargins = True
-                    Left = 60
-                    Top = 0
-                    Width = 23
-                    Height = 24
-                    Margins.Left = 60
-                    Margins.Top = 0
-                    Margins.Right = 0
-                    Margins.Bottom = 0
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'panel'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    EmptyDrawing = False
-                    RibbonStyle = False
-                    ImagePosition = bsipDefault
-                    TransparentMode = False
-                    CaptionImageIndex = 0
-                    RealHeight = -1
-                    AutoEnabledControls = True
-                    CheckedMode = False
-                    Checked = False
-                    DefaultAlignment = taLeftJustify
-                    DefaultCaptionHeight = 20
-                    BorderStyle = bvNone
-                    CaptionMode = False
-                    RollUpMode = False
-                    RollUpState = False
-                    NumGlyphs = 1
-                    Spacing = 2
-                    Caption = 'bsSkinPanel10'
-                    Align = alTop
-                    object bsSkinStdLabel66: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 0
-                      Top = 0
-                      Width = 50
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Cor T'#237'tulo:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsSkinStdLabel68: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 117
-                      Top = 0
-                      Width = 32
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Texto:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsRibbonDivider67: TbsRibbonDivider
-                      Left = 102
-                      Top = 0
-                      Width = 15
-                      Height = 24
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'officegroupdivider'
-                      DividerType = bsdtVerticalLine
-                      Align = alLeft
-                      ExplicitLeft = 256
-                      ExplicitTop = -3
-                    end
-                    object bsRibbonDivider68: TbsRibbonDivider
-                      Left = 336
-                      Top = 0
-                      Width = 15
-                      Height = 24
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'officegroupdivider'
-                      DividerType = bsdtVerticalLine
-                      Align = alLeft
-                      ExplicitLeft = 253
-                      ExplicitTop = -3
-                    end
-                    object bsSkinStdLabel102: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 351
-                      Top = 0
-                      Width = 58
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Texto Aux.:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsRibbonDivider69: TbsRibbonDivider
-                      Left = 461
-                      Top = 0
-                      Width = 15
-                      Height = 24
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'officegroupdivider'
-                      DividerType = bsdtVerticalLine
-                      Align = alLeft
-                      ExplicitLeft = 386
-                      ExplicitTop = -3
-                    end
-                    object corTextoMusica: TbsSkinColorButton
-                      AlignWithMargins = True
-                      Left = 152
-                      Top = 1
-                      Width = 49
-                      Height = 22
-                      Hint = 'Cor da Fonte'
-                      Margins.Left = 0
-                      Margins.Top = 1
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'toolmenubutton'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      CheckedMode = False
-                      ImageList = DM.ico_16x16
-                      UseSkinSize = False
-                      UseSkinFontColor = True
-                      WidthWithCaption = 0
-                      WidthWithoutCaption = 0
-                      ImageIndex = 50
-                      RepeatMode = False
-                      RepeatInterval = 100
-                      Transparent = False
-                      Flat = False
-                      AllowAllUp = False
-                      ShowHint = False
-                      ParentShowHint = False
-                      Down = False
-                      GroupIndex = 0
-                      ShowCaption = True
-                      NumGlyphs = 1
-                      Align = alLeft
-                      Spacing = 1
-                      NewStyle = False
-                      TrackPosition = bstpRight
-                      UseImagesMenuImage = False
-                      UseImagesMenuCaption = False
-                      TrackButtonMode = False
-                      AutoColor = clBlack
-                      ColorValue = clBlack
-                      ShowAutoColor = True
-                      ShowMoreColor = True
-                      MenuUseSkinFont = True
-                      MenuDefaultFont.Charset = DEFAULT_CHARSET
-                      MenuDefaultFont.Color = clWindowText
-                      MenuDefaultFont.Height = 13
-                      MenuDefaultFont.Name = 'Tahoma'
-                      MenuDefaultFont.Style = []
-                      MenuAlphaBlend = False
-                      MenuAlphaBlendValue = 200
-                      MenuAlphaBlendAnimation = False
-                      OnChangeColor = corTextoMusicaChangeColor
-                      ExplicitLeft = 170
-                    end
-                    object corTextoAuxMusica: TbsSkinColorButton
-                      AlignWithMargins = True
-                      Left = 412
-                      Top = 1
-                      Width = 49
-                      Height = 22
-                      Hint = 'Cor da Fonte'
-                      Margins.Left = 0
-                      Margins.Top = 1
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'toolmenubutton'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      CheckedMode = False
-                      ImageList = DM.ico_16x16
-                      UseSkinSize = False
-                      UseSkinFontColor = True
-                      WidthWithCaption = 0
-                      WidthWithoutCaption = 0
-                      ImageIndex = 50
-                      RepeatMode = False
-                      RepeatInterval = 100
-                      Transparent = False
-                      Flat = False
-                      AllowAllUp = False
-                      ShowHint = False
-                      ParentShowHint = False
-                      Down = False
-                      GroupIndex = 0
-                      ShowCaption = True
-                      NumGlyphs = 1
-                      Align = alLeft
-                      Spacing = 1
-                      NewStyle = False
-                      TrackPosition = bstpRight
-                      UseImagesMenuImage = False
-                      UseImagesMenuCaption = False
-                      TrackButtonMode = False
-                      AutoColor = clBlack
-                      ColorValue = clBlack
-                      ShowAutoColor = True
-                      ShowMoreColor = True
-                      MenuUseSkinFont = True
-                      MenuDefaultFont.Charset = DEFAULT_CHARSET
-                      MenuDefaultFont.Color = clWindowText
-                      MenuDefaultFont.Height = 13
-                      MenuDefaultFont.Name = 'Tahoma'
-                      MenuDefaultFont.Style = []
-                      MenuAlphaBlend = False
-                      MenuAlphaBlendValue = 200
-                      MenuAlphaBlendAnimation = False
-                      OnChangeColor = corTextoAuxMusicaChangeColor
-                      ExplicitLeft = 396
-                    end
-                    object corTituloMusica: TbsSkinColorButton
-                      AlignWithMargins = True
-                      Left = 53
-                      Top = 1
-                      Width = 49
-                      Height = 22
-                      Hint = 'Cor da Fonte'
-                      Margins.Left = 0
-                      Margins.Top = 1
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'toolmenubutton'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      CheckedMode = False
-                      ImageList = DM.ico_16x16
-                      UseSkinSize = False
-                      UseSkinFontColor = True
-                      WidthWithCaption = 0
-                      WidthWithoutCaption = 0
-                      ImageIndex = 50
-                      RepeatMode = False
-                      RepeatInterval = 100
-                      Transparent = False
-                      Flat = False
-                      AllowAllUp = False
-                      ShowHint = False
-                      ParentShowHint = False
-                      Down = False
-                      GroupIndex = 0
-                      ShowCaption = True
-                      NumGlyphs = 1
-                      Align = alLeft
-                      Spacing = 1
-                      NewStyle = False
-                      TrackPosition = bstpRight
-                      UseImagesMenuImage = False
-                      UseImagesMenuCaption = False
-                      TrackButtonMode = False
-                      AutoColor = clBlack
-                      ColorValue = clBlack
-                      ShowAutoColor = True
-                      ShowMoreColor = True
-                      MenuUseSkinFont = True
-                      MenuDefaultFont.Charset = DEFAULT_CHARSET
-                      MenuDefaultFont.Color = clWindowText
-                      MenuDefaultFont.Height = 13
-                      MenuDefaultFont.Name = 'Tahoma'
-                      MenuDefaultFont.Style = []
-                      MenuAlphaBlend = False
-                      MenuAlphaBlendValue = 200
-                      MenuAlphaBlendAnimation = False
-                      OnChangeColor = corTituloMusicaChangeColor
-                      ExplicitLeft = 57
-                    end
-                    object bsSkinStdLabel122: TbsSkinStdLabel
-                      AlignWithMargins = True
-                      Left = 216
-                      Top = 0
-                      Width = 68
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      EllipsType = bsetNone
-                      UseSkinFont = True
-                      UseSkinColor = True
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = -11
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'stdlabel'
-                      Font.Charset = ANSI_CHARSET
-                      Font.Color = clWindowText
-                      Font.Height = -13
-                      Font.Name = 'Tahoma'
-                      Font.Style = [fsBold]
-                      Align = alLeft
-                      Caption = 'Texto Repet.:'
-                      ParentFont = False
-                      Layout = tlCenter
-                      ExplicitHeight = 13
-                    end
-                    object bsRibbonDivider71: TbsRibbonDivider
-                      Left = 201
-                      Top = 0
-                      Width = 15
-                      Height = 24
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'officegroupdivider'
-                      DividerType = bsdtVerticalLine
-                      Align = alLeft
-                      ExplicitLeft = 218
-                      ExplicitTop = 3
-                    end
-                    object corTextoRepetido: TbsSkinColorButton
-                      AlignWithMargins = True
-                      Left = 287
-                      Top = 1
-                      Width = 49
-                      Height = 22
-                      Hint = 'Cor da Fonte'
-                      Margins.Left = 0
-                      Margins.Top = 1
-                      Margins.Right = 0
-                      Margins.Bottom = 1
-                      HintImageIndex = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'toolmenubutton'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      CheckedMode = False
-                      ImageList = DM.ico_16x16
-                      UseSkinSize = False
-                      UseSkinFontColor = True
-                      WidthWithCaption = 0
-                      WidthWithoutCaption = 0
-                      ImageIndex = 50
-                      RepeatMode = False
-                      RepeatInterval = 100
-                      Transparent = False
-                      Flat = False
-                      AllowAllUp = False
-                      ShowHint = False
-                      ParentShowHint = False
-                      Down = False
-                      GroupIndex = 0
-                      ShowCaption = True
-                      NumGlyphs = 1
-                      Align = alLeft
-                      Spacing = 1
-                      NewStyle = False
-                      TrackPosition = bstpRight
-                      UseImagesMenuImage = False
-                      UseImagesMenuCaption = False
-                      TrackButtonMode = False
-                      AutoColor = clBlack
-                      ColorValue = clBlack
-                      ShowAutoColor = True
-                      ShowMoreColor = True
-                      MenuUseSkinFont = True
-                      MenuDefaultFont.Charset = DEFAULT_CHARSET
-                      MenuDefaultFont.Color = clWindowText
-                      MenuDefaultFont.Height = 13
-                      MenuDefaultFont.Name = 'Tahoma'
-                      MenuDefaultFont.Style = []
-                      MenuAlphaBlend = False
-                      MenuAlphaBlendValue = 200
-                      MenuAlphaBlendAnimation = False
-                      OnChangeColor = corTextoRepetidoChangeColor
-                      ExplicitLeft = 313
-                    end
-                    object ckMusicaFundoTransparente: TbsSkinCheckBox
-                      Left = 476
-                      Top = 0
-                      Width = 33
-                      Height = 24
-                      HintImageIndex = 0
-                      TabOrder = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'checkbox'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      WordWrap = False
-                      AllowGrayed = False
-                      State = cbUnchecked
-                      ImageIndex = 0
-                      Flat = True
-                      UseSkinFontColor = True
-                      TabStop = True
-                      CanFocused = True
-                      Radio = False
-                      Checked = False
-                      GroupIndex = 0
-                      Caption = 'Fundo de Texto Transparente'
-                      OnClick = ckMusicaFundoTransparenteClick
-                      Align = alClient
-                    end
-                  end
-                end
-              end
-              object bsSkinPanel51: TbsSkinPanel
-                Left = 0
-                Top = -75
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 4
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckFadeForm: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Adicionar efeito de esmaecimento nas telas'
-                  OnClick = ckFadeFormClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel94: TbsSkinPanel
-                Left = 0
-                Top = -51
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 5
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel124: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 116
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Apar'#234'ncia do programa:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object cbLayout: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 157
-                  Top = 1
-                  Width = 163
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Text = 'Azul'
-                  Align = alLeft
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = cbLayoutChange
-                end
-              end
-              object bsSkinPanel95: TbsSkinPanel
-                Left = 0
-                Top = 17
-                Width = 83
-                Height = 34
-                HintImageIndex = 0
-                TabOrder = 0
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel78: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 15
-                  Top = 0
-                  Width = 68
-                  Height = 29
-                  Margins.Left = 15
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 5
-                  EllipsType = bsetNone
-                  UseSkinFont = False
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = 2894892
-                  Font.Height = -19
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Align = alClient
-                  Caption = 'Utilit'#225'rios'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitWidth = 75
-                  ExplicitHeight = 23
-                end
-              end
-              object bsSkinPanel96: TbsSkinPanel
-                Left = 0
-                Top = -133
-                Width = 83
-                Height = 34
-                HintImageIndex = 0
-                TabOrder = 3
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel125: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 15
-                  Top = 0
-                  Width = 68
-                  Height = 29
-                  Margins.Left = 15
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 5
-                  EllipsType = bsetNone
-                  UseSkinFont = False
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = 2894892
-                  Font.Height = -19
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Align = alClient
-                  Caption = 'Geral'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitWidth = 44
-                  ExplicitHeight = 23
-                end
-              end
-              object bsSkinPanel98: TbsSkinPanel
-                Left = 0
-                Top = -3
-                Width = 83
-                Height = 20
-                HintImageIndex = 0
-                TabOrder = 2
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsRibbonDivider8: TbsRibbonDivider
-                  Left = 0
-                  Top = 0
-                  Width = 83
-                  Height = 20
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'officegroupdivider'
-                  DividerType = bsdtHorizontalDashLine
-                  Align = alClient
-                  ExplicitLeft = 88
-                  ExplicitTop = -6
-                  ExplicitWidth = 489
-                end
-              end
-              object bsSkinPanel97: TbsSkinPanel
-                Left = 0
-                Top = 75
-                Width = 83
-                Height = 20
-                HintImageIndex = 0
-                TabOrder = 6
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsRibbonDivider73: TbsRibbonDivider
-                  Left = 0
-                  Top = 0
-                  Width = 83
-                  Height = 20
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'officegroupdivider'
-                  DividerType = bsdtHorizontalDashLine
-                  Align = alClient
-                  ExplicitLeft = 122
-                  ExplicitTop = -3
-                  ExplicitWidth = 563
-                end
-              end
-              object bsSkinPanel99: TbsSkinPanel
-                Left = 0
-                Top = 717
-                Width = 83
-                Height = 20
-                HintImageIndex = 0
-                TabOrder = 26
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsRibbonDivider48: TbsRibbonDivider
-                  Left = 0
-                  Top = 0
-                  Width = 83
-                  Height = 20
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'officegroupdivider'
-                  DividerType = bsdtHorizontalDashLine
-                  Align = alClient
-                  ExplicitLeft = 122
-                  ExplicitTop = -3
-                  ExplicitWidth = 563
-                end
-              end
-              object bsSkinPanel100: TbsSkinPanel
-                Left = 0
-                Top = 417
-                Width = 83
-                Height = 20
-                HintImageIndex = 0
-                TabOrder = 14
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsRibbonDivider31: TbsRibbonDivider
-                  Left = 0
-                  Top = 0
-                  Width = 83
-                  Height = 20
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'officegroupdivider'
-                  DividerType = bsdtHorizontalDashLine
-                  Align = alClient
-                  ExplicitLeft = 122
-                  ExplicitTop = -3
-                  ExplicitWidth = 563
-                end
-              end
-              object bsSkinPanel101: TbsSkinPanel
-                Left = 0
-                Top = 843
-                Width = 83
-                Height = 20
-                HintImageIndex = 0
-                TabOrder = 31
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsRibbonDivider74: TbsRibbonDivider
-                  Left = 0
-                  Top = 0
-                  Width = 83
-                  Height = 20
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'officegroupdivider'
-                  DividerType = bsdtHorizontalDashLine
-                  Align = alClient
-                  ExplicitLeft = 122
-                  ExplicitTop = -3
-                  ExplicitWidth = 563
-                end
-              end
-              object bsSkinPanel102: TbsSkinPanel
-                Left = 0
-                Top = 95
-                Width = 83
-                Height = 34
-                HintImageIndex = 0
-                TabOrder = 7
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel123: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 15
-                  Top = 0
-                  Width = 68
-                  Height = 29
-                  Margins.Left = 15
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 5
-                  EllipsType = bsetNone
-                  UseSkinFont = False
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = 2894892
-                  Font.Height = -19
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Align = alClient
-                  Caption = 'Slides de M'#250'sicas'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitWidth = 146
-                  ExplicitHeight = 23
-                end
-              end
-              object bsSkinPanel103: TbsSkinPanel
-                Left = 0
-                Top = 437
-                Width = 83
-                Height = 34
-                HintImageIndex = 0
-                TabOrder = 15
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel67: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 15
-                  Top = 0
-                  Width = 68
-                  Height = 29
-                  Margins.Left = 15
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 5
-                  EllipsType = bsetNone
-                  UseSkinFont = False
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = 2894892
-                  Font.Height = -19
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Align = alClient
-                  Caption = 'V'#237'deos On-line'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitWidth = 120
-                  ExplicitHeight = 23
-                end
-              end
-              object bsSkinPanel104: TbsSkinPanel
-                Left = 0
-                Top = 737
-                Width = 83
-                Height = 34
-                HintImageIndex = 0
-                TabOrder = 27
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel58: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 15
-                  Top = 0
-                  Width = 68
-                  Height = 29
-                  Margins.Left = 15
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 5
-                  EllipsType = bsetNone
-                  UseSkinFont = False
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = 2894892
-                  Font.Height = -19
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Align = alClient
-                  Caption = 'Imagem de Fundo'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitWidth = 156
-                  ExplicitHeight = 23
-                end
-              end
-              object bsSkinPanel131: TbsSkinPanel
-                Left = 0
-                Top = 863
-                Width = 83
-                Height = 0
-                HintImageIndex = 0
-                TabOrder = 32
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
+                Top = 0
+                Width = 586
+                Height = 33
                 Align = alClient
-              end
-              object bsFormatSlImgPerso: TbsSkinPanel
-                Left = 0
-                Top = 369
-                Width = 83
-                Height = 48
-                HintImageIndex = 0
-                TabOrder = 13
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckSlideImgFormatPerso: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Fundo personalizado'
-                  OnClick = ckSlideImgFormatPersoClick
-                  Align = alTop
-                end
-                object bsFormatSlideImgPerso: TbsSkinPanel
-                  Left = 0
-                  Top = 24
-                  Width = 83
-                  Height = 24
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'panel'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  EmptyDrawing = False
-                  RibbonStyle = False
-                  ImagePosition = bsipDefault
-                  TransparentMode = False
-                  CaptionImageIndex = 0
-                  RealHeight = -1
-                  AutoEnabledControls = True
-                  CheckedMode = False
-                  Checked = False
-                  DefaultAlignment = taLeftJustify
-                  DefaultCaptionHeight = 20
-                  BorderStyle = bvNone
-                  CaptionMode = False
-                  RollUpMode = False
-                  RollUpState = False
-                  NumGlyphs = 1
-                  Spacing = 2
-                  Caption = 'bsSkinPanel10'
-                  Align = alClient
-                  object bsSkinPanel87: TbsSkinPanel
-                    AlignWithMargins = True
-                    Left = 60
-                    Top = 0
-                    Width = 23
-                    Height = 24
-                    Margins.Left = 60
-                    Margins.Top = 0
-                    Margins.Right = 0
-                    Margins.Bottom = 0
-                    HintImageIndex = 0
-                    TabOrder = 0
-                    SkinData = DM.bsSkinData1
-                    SkinDataName = 'panel'
-                    DefaultFont.Charset = DEFAULT_CHARSET
-                    DefaultFont.Color = clWindowText
-                    DefaultFont.Height = 13
-                    DefaultFont.Name = 'Tahoma'
-                    DefaultFont.Style = []
-                    DefaultWidth = 0
-                    DefaultHeight = 0
-                    UseSkinFont = True
-                    EmptyDrawing = False
-                    RibbonStyle = False
-                    ImagePosition = bsipDefault
-                    TransparentMode = False
-                    CaptionImageIndex = 0
-                    RealHeight = -1
-                    AutoEnabledControls = True
-                    CheckedMode = False
-                    Checked = False
-                    DefaultAlignment = taLeftJustify
-                    DefaultCaptionHeight = 20
-                    BorderStyle = bvNone
-                    CaptionMode = False
-                    RollUpMode = False
-                    RollUpState = False
-                    NumGlyphs = 1
-                    Spacing = 2
-                    Caption = 'bsSkinPanel10'
-                    Align = alClient
-                    object bsFormatSlideImgPerso2: TbsSkinPanel
-                      Left = 131
-                      Top = 0
-                      Width = 378
-                      Height = 24
-                      HintImageIndex = 0
-                      TabOrder = 0
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'panel'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      EmptyDrawing = False
-                      RibbonStyle = False
-                      ImagePosition = bsipDefault
-                      TransparentMode = False
-                      CaptionImageIndex = -1
-                      RealHeight = -1
-                      AutoEnabledControls = True
-                      CheckedMode = False
-                      Checked = False
-                      DefaultAlignment = taLeftJustify
-                      DefaultCaptionHeight = 20
-                      BorderStyle = bvNone
-                      CaptionMode = False
-                      RollUpMode = False
-                      RollUpState = False
-                      NumGlyphs = 1
-                      Spacing = 2
-                      Align = alClient
-                      object bsRibbonDivider10: TbsRibbonDivider
-                        Left = 121
-                        Top = 0
-                        Width = 15
-                        Height = 24
-                        HintImageIndex = 0
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'officegroupdivider'
-                        DividerType = bsdtVerticalLine
-                        Align = alLeft
-                        ExplicitLeft = 106
-                        ExplicitTop = 3
-                      end
-                      object bsRibbonDivider66: TbsRibbonDivider
-                        Left = 377
-                        Top = 0
-                        Width = 15
-                        Height = 24
-                        HintImageIndex = 0
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'officegroupdivider'
-                        DividerType = bsdtVerticalLine
-                        Align = alLeft
-                        ExplicitLeft = 408
-                        ExplicitTop = 3
-                      end
-                      object bsSkinStdLabel105: TbsSkinStdLabel
-                        AlignWithMargins = True
-                        Left = 15
-                        Top = 0
-                        Width = 54
-                        Height = 24
-                        Margins.Left = 0
-                        Margins.Top = 0
-                        Margins.Bottom = 0
-                        EllipsType = bsetNone
-                        UseSkinFont = True
-                        UseSkinColor = True
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clWindowText
-                        DefaultFont.Height = -11
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'stdlabel'
-                        Font.Charset = ANSI_CHARSET
-                        Font.Color = clWindowText
-                        Font.Height = -13
-                        Font.Name = 'Tahoma'
-                        Font.Style = [fsBold]
-                        Align = alLeft
-                        Caption = 'Cor Fundo:'
-                        ParentFont = False
-                        Layout = tlCenter
-                        ExplicitHeight = 13
-                      end
-                      object bsSkinStdLabel55: TbsSkinStdLabel
-                        AlignWithMargins = True
-                        Left = 136
-                        Top = 0
-                        Width = 42
-                        Height = 24
-                        Margins.Left = 0
-                        Margins.Top = 0
-                        Margins.Bottom = 0
-                        EllipsType = bsetNone
-                        UseSkinFont = True
-                        UseSkinColor = True
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clWindowText
-                        DefaultFont.Height = -11
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'stdlabel'
-                        Font.Charset = ANSI_CHARSET
-                        Font.Color = clWindowText
-                        Font.Height = -13
-                        Font.Name = 'Tahoma'
-                        Font.Style = [fsBold]
-                        Align = alLeft
-                        Caption = 'Imagem:'
-                        ParentFont = False
-                        Layout = tlCenter
-                        ExplicitHeight = 13
-                      end
-                      object bsSkinStdLabel62: TbsSkinStdLabel
-                        AlignWithMargins = True
-                        Left = 392
-                        Top = 0
-                        Width = 40
-                        Height = 24
-                        Margins.Left = 0
-                        Margins.Top = 0
-                        Margins.Bottom = 0
-                        EllipsType = bsetNone
-                        UseSkinFont = True
-                        UseSkinColor = True
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clWindowText
-                        DefaultFont.Height = -11
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'stdlabel'
-                        Font.Charset = ANSI_CHARSET
-                        Font.Color = clWindowText
-                        Font.Height = -13
-                        Font.Name = 'Tahoma'
-                        Font.Style = [fsBold]
-                        Align = alLeft
-                        Caption = 'Posi'#231#227'o:'
-                        ParentFont = False
-                        Layout = tlCenter
-                        ExplicitHeight = 13
-                      end
-                      object corFundoMusica: TbsSkinColorButton
-                        Tag = 12
-                        AlignWithMargins = True
-                        Left = 72
-                        Top = 1
-                        Width = 49
-                        Height = 22
-                        Margins.Left = 0
-                        Margins.Top = 1
-                        Margins.Right = 0
-                        Margins.Bottom = 1
-                        HintImageIndex = 0
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'toolmenubutton'
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clWindowText
-                        DefaultFont.Height = 13
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        DefaultWidth = 0
-                        DefaultHeight = 0
-                        UseSkinFont = True
-                        CheckedMode = False
-                        UseSkinSize = False
-                        UseSkinFontColor = True
-                        WidthWithCaption = 0
-                        WidthWithoutCaption = 0
-                        ImageIndex = 0
-                        RepeatMode = False
-                        RepeatInterval = 100
-                        Transparent = False
-                        Flat = False
-                        AllowAllUp = False
-                        Down = False
-                        GroupIndex = 0
-                        ShowCaption = True
-                        NumGlyphs = 1
-                        Align = alLeft
-                        Spacing = 1
-                        NewStyle = False
-                        TrackPosition = bstpRight
-                        UseImagesMenuImage = False
-                        UseImagesMenuCaption = False
-                        TrackButtonMode = False
-                        AutoColor = clBlack
-                        ColorValue = clBlack
-                        ShowAutoColor = True
-                        ShowMoreColor = True
-                        MenuUseSkinFont = True
-                        MenuDefaultFont.Charset = DEFAULT_CHARSET
-                        MenuDefaultFont.Color = clWindowText
-                        MenuDefaultFont.Height = 13
-                        MenuDefaultFont.Name = 'Tahoma'
-                        MenuDefaultFont.Style = []
-                        MenuAlphaBlend = False
-                        MenuAlphaBlendValue = 200
-                        MenuAlphaBlendAnimation = False
-                        OnChangeColor = corFundoMusicaChangeColor
-                        ExplicitLeft = 5
-                      end
-                      object bsRibbonDivider82: TbsRibbonDivider
-                        Left = 0
-                        Top = 0
-                        Width = 15
-                        Height = 24
-                        HintImageIndex = 0
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'officegroupdivider'
-                        DividerType = bsdtVerticalLine
-                        Align = alLeft
-                        ExplicitLeft = -8
-                        ExplicitTop = 3
-                      end
-                      object imgFundoMusica: TbsSkinFileEdit
-                        AlignWithMargins = True
-                        Left = 181
-                        Top = 1
-                        Width = 196
-                        Height = 22
-                        Margins.Left = 0
-                        Margins.Top = 1
-                        Margins.Right = 0
-                        Margins.Bottom = 1
-                        Text = ''
-                        DefaultColor = clWindow
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clBlack
-                        DefaultFont.Height = 13
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        UseSkinFont = True
-                        DefaultWidth = 0
-                        DefaultHeight = 0
-                        ButtonMode = True
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'buttonedit'
-                        Align = alLeft
-                        Font.Charset = DEFAULT_CHARSET
-                        Font.Color = clBlack
-                        Font.Height = -11
-                        Font.Name = 'MS Sans Serif'
-                        Font.Style = []
-                        MaxLength = 255
-                        ParentFont = False
-                        TabOrder = 0
-                        Images = DM.ico_16x16
-                        ButtonImageIndex = 0
-                        LeftImageIndex = -1
-                        LeftImageHotIndex = -1
-                        LeftImageDownIndex = -1
-                        RightImageIndex = -1
-                        RightImageHotIndex = -1
-                        RightImageDownIndex = -1
-                        OnButtonClick = inputOpenPictureDialog
-                        OnEnter = imgFundoMusicaEnter
-                        OnExit = imgFundoMusicaExit
-                        OnKeyUp = edtKeyUp
-                        Filter = 
-                          'Todos os arquivos de imagem|*.bmp;*.dib;*.jpg;*.jpeg;*.jpe;*.jfi' +
-                          'f;*.gif;*.tif;*.tiff;*.png;*.ico|'#13#10'Arquivos de Bitmap (*.bmp;*.d' +
-                          'ib)|*.bmp;*.dib|'#13#10'JPEG (*.jpg;*.jpeg;*.jpe;*.jfif)|*.jpg;*.jpeg;' +
-                          '*.jpe;*.jfif|'#13#10'GIF (*.gif)|*.gif|'#13#10'TIFF (*.tif;*.tiff)|*.tif;*.t' +
-                          'iff|'#13#10'PNG (*.png)|*.png|'#13#10'ICO (*.ico)|*.ico|'#13#10'Todos os arquivos|' +
-                          '*.*'
-                        DlgSkinData = DM.bsSkinData1
-                        DlgCtrlSkinData = DM.bsSkinData1
-                        LVHeaderSkinDataName = 'header'
-                      end
-                      object posicaoFundo: TbsSkinComboBoxEx
-                        Tag = 9999
-                        Left = 435
-                        Top = 1
-                        Width = 120
-                        Height = 22
-                        Margins.Left = 0
-                        Margins.Top = 1
-                        Margins.Right = 0
-                        HintImageIndex = 0
-                        TabOrder = 1
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'combobox'
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clWindowText
-                        DefaultFont.Height = 13
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        DefaultWidth = 0
-                        DefaultHeight = 0
-                        UseSkinFont = True
-                        UseSkinSize = False
-                        ToolButtonStyle = False
-                        ItemsEx = <
-                          item
-                            Caption = 'Topo Esq.'
-                            ImageIndex = 92
-                            SelectedImageIndex = 92
-                          end
-                          item
-                            Caption = 'Topo'
-                            ImageIndex = 93
-                            SelectedImageIndex = 93
-                          end
-                          item
-                            Caption = 'Topo Dir.'
-                            ImageIndex = 94
-                            SelectedImageIndex = 94
-                          end
-                          item
-                            Caption = 'Centro Esq.'
-                            ImageIndex = 95
-                            SelectedImageIndex = 95
-                          end
-                          item
-                            Caption = 'Centro'
-                            ImageIndex = 96
-                            SelectedImageIndex = 96
-                          end
-                          item
-                            Caption = 'Centro Dir.'
-                            ImageIndex = 97
-                            SelectedImageIndex = 97
-                          end
-                          item
-                            Caption = 'Rodap'#233' Esq.'
-                            ImageIndex = 98
-                            SelectedImageIndex = 98
-                          end
-                          item
-                            Caption = 'Rodap'#233
-                            ImageIndex = 99
-                            SelectedImageIndex = 99
-                          end
-                          item
-                            Caption = 'Rodap'#233' Dir.'
-                            ImageIndex = 100
-                            SelectedImageIndex = 100
-                          end>
-                        Style = bscbFixedStyle
-                        HideSelection = True
-                        AutoComplete = True
-                        ListBoxUseSkinFont = True
-                        ListBoxUseSkinItemHeight = True
-                        ListBoxWidth = 0
-                        Images = DM.ico_16x16
-                        AlphaBlend = False
-                        AlphaBlendValue = 0
-                        AlphaBlendAnimation = False
-                        ListBoxCaptionMode = False
-                        ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                        ListBoxDefaultFont.Color = clWindowText
-                        ListBoxDefaultFont.Height = 13
-                        ListBoxDefaultFont.Name = 'Tahoma'
-                        ListBoxDefaultFont.Style = []
-                        ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                        ListBoxDefaultCaptionFont.Color = clWindowText
-                        ListBoxDefaultCaptionFont.Height = 13
-                        ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                        ListBoxDefaultCaptionFont.Style = []
-                        ListBoxDefaultItemHeight = 20
-                        ListBoxCaptionAlignment = taLeftJustify
-                        DropDownCount = 8
-                        Font.Charset = DEFAULT_CHARSET
-                        Font.Color = clWindowText
-                        Font.Height = 13
-                        Font.Name = 'Tahoma'
-                        Font.Style = []
-                        OnClick = posicaoFundoClick
-                      end
-                      object txtImgFundoMusicaInfo: TbsSkinEdit
-                        Left = 219
-                        Top = 3
-                        Width = 35
-                        Height = 19
-                        Text = ''
-                        DefaultColor = clWindow
-                        DefaultFont.Charset = DEFAULT_CHARSET
-                        DefaultFont.Color = clBlack
-                        DefaultFont.Height = 13
-                        DefaultFont.Name = 'Tahoma'
-                        DefaultFont.Style = []
-                        UseSkinFont = True
-                        DefaultWidth = 0
-                        DefaultHeight = 0
-                        ButtonMode = False
-                        SkinData = DM.bsSkinData1
-                        SkinDataName = 'edit'
-                        Font.Charset = DEFAULT_CHARSET
-                        Font.Color = clBlack
-                        Font.Height = -11
-                        Font.Name = 'MS Sans Serif'
-                        Font.Style = []
-                        ParentFont = False
-                        TabOrder = 2
-                        Visible = False
-                        ButtonImageIndex = -1
-                        LeftImageIndex = -1
-                        LeftImageHotIndex = -1
-                        LeftImageDownIndex = -1
-                        RightImageIndex = -1
-                        RightImageHotIndex = -1
-                        RightImageDownIndex = -1
-                      end
-                    end
-                    object ckFundoTransparente: TbsSkinCheckBox
-                      AlignWithMargins = True
-                      Left = 0
-                      Top = 0
-                      Width = 128
-                      Height = 24
-                      Margins.Left = 0
-                      Margins.Top = 0
-                      Margins.Bottom = 0
-                      HintImageIndex = 0
-                      TabOrder = 1
-                      SkinData = DM.bsSkinData1
-                      SkinDataName = 'checkbox'
-                      DefaultFont.Charset = DEFAULT_CHARSET
-                      DefaultFont.Color = clWindowText
-                      DefaultFont.Height = 13
-                      DefaultFont.Name = 'Tahoma'
-                      DefaultFont.Style = []
-                      DefaultWidth = 0
-                      DefaultHeight = 0
-                      UseSkinFont = True
-                      WordWrap = False
-                      AllowGrayed = False
-                      State = cbUnchecked
-                      ImageIndex = 0
-                      Flat = True
-                      UseSkinFontColor = True
-                      TabStop = True
-                      CanFocused = True
-                      Radio = False
-                      Checked = False
-                      GroupIndex = 0
-                      Caption = 'Fundo Transparente'
-                      OnClick = ckFundoTransparenteClick
-                      Align = alLeft
-                    end
+                BevelOuter = bvNone
+                ColumnCollection = <
+                  item
+                    Value = 50.000163486847480000
                   end
-                end
-              end
-              object bsSkinPanel158: TbsSkinPanel
-                Left = 0
-                Top = 543
-                Width = 83
-                Height = 20
-                HintImageIndex = 0
-                TabOrder = 19
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsRibbonDivider61: TbsRibbonDivider
-                  Left = 0
+                  item
+                    SizeStyle = ssAbsolute
+                    Value = 150.000000000000000000
+                  end
+                  item
+                    Value = 49.999836513152520000
+                  end>
+                ControlCollection = <
+                  item
+                    Column = 1
+                    Control = bsknbtn1
+                    Row = 0
+                  end>
+                RowCollection = <
+                  item
+                    Value = 100.000000000000000000
+                  end>
+                TabOrder = 0
+                ExplicitTop = 3
+                object bsknbtn1: TbsSkinButton
+                  Left = 218
                   Top = 0
-                  Width = 83
-                  Height = 20
-                  HintImageIndex = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'officegroupdivider'
-                  DividerType = bsdtHorizontalDashLine
-                  Align = alClient
-                  ExplicitLeft = 122
-                  ExplicitTop = -3
-                  ExplicitWidth = 563
-                end
-              end
-              object bsSkinPanel159: TbsSkinPanel
-                Left = 0
-                Top = 563
-                Width = 83
-                Height = 34
-                HintImageIndex = 0
-                TabOrder = 20
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel157: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 15
-                  Top = 0
-                  Width = 68
-                  Height = 29
-                  Margins.Left = 15
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 5
-                  EllipsType = bsetNone
-                  UseSkinFont = False
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = 2894892
-                  Font.Height = -19
-                  Font.Name = 'Tahoma'
-                  Font.Style = []
-                  Align = alClient
-                  Caption = 'Player de '#193'udio/V'#237'deo'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitWidth = 183
-                  ExplicitHeight = 23
-                end
-              end
-              object bsSkinPanel160: TbsSkinPanel
-                Left = 0
-                Top = 597
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 21
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel158: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 81
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Abrir no monitor:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object sbPlayerAreaExtendida: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 122
-                  Top = 1
-                  Width = 79
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
+                  Width = 150
+                  Height = 33
                   HintImageIndex = 0
                   TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    '1'
-                    '2'
-                    '3'
-                    '4'
-                    '5')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbPlayerAreaExtendidaChange
-                end
-              end
-              object bsSkinPanel161: TbsSkinPanel
-                Left = 0
-                Top = 669
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 24
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckPlayerTelaCheia: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Exibir v'#237'deo em tela cheia'
-                  OnClick = ckPlayerTelaCheiaClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel162: TbsSkinPanel
-                Left = 0
-                Top = 645
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 23
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckPlayerVideo: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Executar arquivos de v'#237'deo no player do programa'
-                  OnClick = ckPlayerVideoClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel163: TbsSkinPanel
-                Left = 0
-                Top = 621
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 22
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckPlayerAudio: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Executar arquivos de '#225'udio no player do programa'
-                  OnClick = ckPlayerAudioClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel164: TbsSkinPanel
-                Left = 0
-                Top = 693
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 25
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel159: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 457
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 
-                    'Nota: Se o '#225'udio/v'#237'deo n'#227'o for suportado pelo player, o arquivo ' +
-                    'ser'#225' automaticamente aberto.'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-              end
-              object bsSkinPanel166: TbsSkinPanel
-                Left = 0
-                Top = -99
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 33
-                Visible = False
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMesmaJanela: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Abrir subtelas na mesma janela (recomeda-se deixar desmarcado)'
-                  OnClick = ckMesmaJanelaClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel167: TbsSkinPanel
-                Left = 0
-                Top = 153
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 34
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinStdLabel76: TbsSkinStdLabel
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 103
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  EllipsType = bsetNone
-                  UseSkinFont = True
-                  UseSkinColor = True
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = -11
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'stdlabel'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -13
-                  Font.Name = 'Tahoma'
-                  Font.Style = [fsBold]
-                  Align = alLeft
-                  Caption = 'Alinhamento da letra:'
-                  ParentFont = False
-                  Layout = tlCenter
-                  ExplicitHeight = 13
-                end
-                object sbAlinhMusica: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 144
-                  Top = 1
-                  Width = 120
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    'Superior'
-                    'Centro'
-                    'Inferior')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbAlinhMusicaChange
-                end
-              end
-              object bsSkinPanel168: TbsSkinPanel
-                Left = 0
-                Top = 201
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 35
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMusicaTopo: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 47
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Exibir m'#250'sicas sempre em primeiro plano'
-                  OnClick = ckMusicaTopoClick
-                  Align = alClient
-                end
-              end
-              object bsSkinPanel169: TbsSkinPanel
-                Left = 0
-                Top = 249
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 36
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object ckMusicaRetorno: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 0
-                  Width = 218
-                  Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
-                  Checked = False
-                  GroupIndex = 0
-                  Caption = 'Abrir Tela de Retorno | Abrir no monitor:'
-                  OnClick = ckMusicaRetornoClick
-                  Align = alLeft
-                end
-                object sbMusicaRetornoAreaExtendida: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 259
-                  Top = 1
-                  Width = 120
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 1
-                  SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
-                  DefaultFont.Charset = DEFAULT_CHARSET
-                  DefaultFont.Color = clWindowText
-                  DefaultFont.Height = 13
-                  DefaultFont.Name = 'Tahoma'
-                  DefaultFont.Style = []
-                  DefaultWidth = 0
-                  DefaultHeight = 0
-                  UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    '1'
-                    '2'
-                    '3'
-                    '4'
-                    '5')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbMusicaRetornoAreaExtendidaChange
-                end
-              end
-              object bsSkinPanel30: TbsSkinPanel
-                Left = 0
-                Top = -27
-                Width = 83
-                Height = 24
-                HintImageIndex = 0
-                TabOrder = 37
-                SkinData = DM.bsSkinData1
-                SkinDataName = 'panel'
-                DefaultFont.Charset = DEFAULT_CHARSET
-                DefaultFont.Color = clWindowText
-                DefaultFont.Height = 13
-                DefaultFont.Name = 'Tahoma'
-                DefaultFont.Style = []
-                DefaultWidth = 0
-                DefaultHeight = 0
-                UseSkinFont = True
-                EmptyDrawing = False
-                RibbonStyle = False
-                ImagePosition = bsipDefault
-                TransparentMode = False
-                CaptionImageIndex = 0
-                RealHeight = -1
-                AutoEnabledControls = True
-                CheckedMode = False
-                Checked = False
-                DefaultAlignment = taLeftJustify
-                DefaultCaptionHeight = 20
-                BorderStyle = bvNone
-                CaptionMode = False
-                RollUpMode = False
-                RollUpState = False
-                NumGlyphs = 1
-                Spacing = 2
-                Caption = 'bsSkinPanel10'
-                Align = alTop
-                object bsSkinButton42: TbsSkinButton
-                  AlignWithMargins = True
-                  Left = 36
-                  Top = 1
-                  Width = 145
-                  Height = 22
-                  Margins.Left = 36
-                  Margins.Top = 1
-                  Margins.Right = 10
-                  Margins.Bottom = 1
-                  HintImageIndex = 0
-                  TabOrder = 0
-                  SkinData = DM.bsSkinData1
                   SkinDataName = 'button'
                   DefaultFont.Charset = DEFAULT_CHARSET
                   DefaultFont.Color = clWindowText
@@ -47685,7 +46548,7 @@ object fmIndex: TfmIndex
                   UseSkinFont = True
                   Transparent = False
                   CheckedMode = False
-                  ImageIndex = 76
+                  ImageIndex = -1
                   AlwaysShowLayeredFrame = False
                   UseSkinSize = True
                   UseSkinFontColor = True
@@ -47696,11 +46559,15 @@ object fmIndex: TfmIndex
                   CanFocused = True
                   Down = False
                   GroupIndex = 0
-                  Caption = 'Identificar Monitores'
+                  Caption = 'Doar'
                   NumGlyphs = 1
                   Spacing = 1
-                  Align = alLeft
-                  OnClick = identifica_monitores
+                  Align = alClient
+                  OnClick = bsknbtn1Click
+                  ExplicitLeft = 1
+                  ExplicitTop = 8
+                  ExplicitWidth = 16
+                  ExplicitHeight = 25
                 end
               end
             end
@@ -47712,12 +46579,13 @@ object fmIndex: TfmIndex
       Caption = 'Rel'#243'gio'
       ImageIndex = 75
       OnShow = tsRelogioShow
+      ExplicitHeight = 426
       object pnlFormatRelogio: TbsSkinExPanel
         Tag = 9
         Left = 0
         Top = 0
         Width = 233
-        Height = 426
+        Height = 434
         HintImageIndex = 0
         TabOrder = 0
         Visible = False
@@ -47747,11 +46615,12 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Formatar...'
         OnClose = pnlFormatClose
+        ExplicitHeight = 426
         object bsSkinScrollPanel8: TbsSkinScrollPanel
           Left = 1
           Top = 21
           Width = 231
-          Height = 404
+          Height = 412
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -48633,12 +47502,13 @@ object fmIndex: TfmIndex
         Left = 233
         Top = 0
         Width = 1135
-        Height = 426
+        Height = 434
         Align = alClient
         BevelOuter = bvNone
         Color = clWhite
         ParentBackground = False
         TabOrder = 1
+        ExplicitHeight = 426
         object imgRelogio: TImage
           Left = 2
           Top = 2
@@ -48652,7 +47522,7 @@ object fmIndex: TfmIndex
           Left = 0
           Top = 0
           Width = 1135
-          Height = 426
+          Height = 434
           Align = alClient
           Alignment = taCenter
           AutoSize = False
@@ -48679,11 +47549,12 @@ object fmIndex: TfmIndex
       Caption = 'V'#237'deos On-line'
       ImageIndex = 82
       OnShow = tsColetaneasOnlineShow
+      ExplicitHeight = 426
       object imgYoutubeCapa: TImage
         Left = 488
         Top = 0
         Width = 880
-        Height = 426
+        Height = 434
         Align = alClient
         Center = True
         Picture.Data = {
@@ -49597,7 +48468,7 @@ object fmIndex: TfmIndex
         Left = 3
         Top = 0
         Width = 238
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -49627,6 +48498,7 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alLeft
         Caption = 'Canais'
+        ExplicitHeight = 426
         object bsSkinButton25: TbsSkinButton
           AlignWithMargins = True
           Left = 4
@@ -49669,7 +48541,7 @@ object fmIndex: TfmIndex
           Left = 1
           Top = 56
           Width = 236
-          Height = 249
+          Height = 257
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -49684,10 +48556,11 @@ object fmIndex: TfmIndex
           Images = DM.ico_on_canais
           Items = <>
           OnButtonClicked = bgOnlCanaisButtonClicked
+          ExplicitHeight = 249
         end
         object lbbgOnlCanais: TbsSkinListBox
           Left = 1
-          Top = 305
+          Top = 313
           Width = 236
           Height = 120
           HintImageIndex = 0
@@ -49740,6 +48613,7 @@ object fmIndex: TfmIndex
           Font.Name = 'Tahoma'
           Font.Style = []
           Align = alBottom
+          ExplicitTop = 305
         end
       end
       object pnlOnlPlaylists: TbsSkinExPanel
@@ -49747,7 +48621,7 @@ object fmIndex: TfmIndex
         Left = 247
         Top = 0
         Width = 238
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -49779,6 +48653,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Listas de Reprodu'#231#227'o'
         OnClose = pnlOnlPlaylistsClose
+        ExplicitHeight = 426
         object bsSkinButton24: TbsSkinButton
           AlignWithMargins = True
           Left = 4
@@ -49821,7 +48696,7 @@ object fmIndex: TfmIndex
           Left = 1
           Top = 56
           Width = 236
-          Height = 249
+          Height = 257
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -49836,10 +48711,11 @@ object fmIndex: TfmIndex
           Images = DM.ico_on_playlists
           Items = <>
           OnButtonClicked = bgOnlPlaylistsButtonClicked
+          ExplicitHeight = 249
         end
         object lbbgOnlPlaylists: TbsSkinListBox
           Left = 1
-          Top = 305
+          Top = 313
           Width = 236
           Height = 120
           HintImageIndex = 0
@@ -49892,6 +48768,7 @@ object fmIndex: TfmIndex
           Font.Name = 'Tahoma'
           Font.Style = []
           Align = alBottom
+          ExplicitTop = 305
         end
       end
       object pnlOnlVideos: TbsSkinExPanel
@@ -49899,7 +48776,7 @@ object fmIndex: TfmIndex
         Left = 491
         Top = 0
         Width = 874
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -49931,6 +48808,7 @@ object fmIndex: TfmIndex
         Align = alClient
         Caption = 'V'#237'deos'
         OnClose = pnlOnlVideosClose
+        ExplicitHeight = 426
         object GridPanel81: TGridPanel
           Left = 1
           Top = 21
@@ -50034,7 +48912,7 @@ object fmIndex: TfmIndex
         end
         object lbbgOnlVideos: TbsSkinListBox
           Left = 1
-          Top = 305
+          Top = 313
           Width = 872
           Height = 120
           HintImageIndex = 0
@@ -50087,12 +48965,13 @@ object fmIndex: TfmIndex
           Font.Name = 'Tahoma'
           Font.Style = []
           Align = alBottom
+          ExplicitTop = 305
         end
         object bgOnlVideos: TbsSkinButtonGroup
           Left = 1
           Top = 56
           Width = 872
-          Height = 249
+          Height = 257
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -50107,6 +48986,7 @@ object fmIndex: TfmIndex
           Images = DM.ico_on_videos
           Items = <>
           OnButtonClicked = bgOnlVideosButtonClicked
+          ExplicitHeight = 249
         end
       end
     end
@@ -50114,11 +48994,12 @@ object fmIndex: TfmIndex
       Caption = 'V'#237'deos On-line Personalizadados'
       ImageIndex = 83
       OnShow = tsColetaneasOnlinePersoShow
+      ExplicitHeight = 426
       object DBGrid4: TbsSkinDBGrid
         Left = 0
         Top = 0
         Width = 1349
-        Height = 407
+        Height = 415
         HintImageIndex = 0
         TabOrder = 0
         SkinData = DM.bsSkinData1
@@ -50185,7 +49066,7 @@ object fmIndex: TfmIndex
         Left = 1349
         Top = 0
         Width = 19
-        Height = 407
+        Height = 415
         HintImageIndex = 0
         TabOrder = 1
         Visible = False
@@ -50208,13 +49089,14 @@ object fmIndex: TfmIndex
         PageSize = 1
         Min = 1
         Max = 0
-        Position = 0
+        Position = 1
         SmallChange = 1
         LargeChange = 1
+        ExplicitHeight = 407
       end
       object stVideosOnPerso: TbsSkinStatusBar
         Left = 0
-        Top = 407
+        Top = 415
         Width = 1368
         Height = 19
         HintImageIndex = 0
@@ -50248,6 +49130,7 @@ object fmIndex: TfmIndex
         Spacing = 2
         Align = alBottom
         SizeGrip = False
+        ExplicitTop = 407
         object stVideosOnPerso_1: TbsSkinStatusPanel
           Left = 889
           Top = 0
@@ -50287,12 +49170,13 @@ object fmIndex: TfmIndex
       Caption = 'Doxologia'
       ImageIndex = 88
       OnShow = tsDoxologiaShow
+      ExplicitHeight = 426
       object bsSkinExPanel1: TbsSkinExPanel
         AlignWithMargins = True
         Left = 3
         Top = 0
         Width = 238
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -50322,11 +49206,12 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alLeft
         Caption = 'Categorias'
+        ExplicitHeight = 426
         object bgDoxologiaCate: TbsSkinButtonGroup
           Left = 1
           Top = 21
           Width = 236
-          Height = 334
+          Height = 342
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -50341,10 +49226,11 @@ object fmIndex: TfmIndex
           Images = DM.ico_doxologia
           Items = <>
           OnButtonClicked = bgDoxologiaCateButtonClicked
+          ExplicitHeight = 334
         end
         object lbbgDoxologiaCate: TbsSkinListBox
           Left = 1
-          Top = 355
+          Top = 363
           Width = 236
           Height = 70
           HintImageIndex = 0
@@ -50397,6 +49283,7 @@ object fmIndex: TfmIndex
           Font.Name = 'Tahoma'
           Font.Style = []
           Align = alBottom
+          ExplicitTop = 355
         end
       end
       object pnlDoxologiaMusicas: TbsSkinExPanel
@@ -50404,7 +49291,7 @@ object fmIndex: TfmIndex
         Left = 247
         Top = 0
         Width = 1118
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -50436,12 +49323,13 @@ object fmIndex: TfmIndex
         Align = alClient
         Caption = 'M'#250'sicas'
         OnClose = pnlDoxologiaMusicasClose
+        ExplicitHeight = 426
         object dbctrlDoxologiaMusicas: TbsSkinDBCtrlGrid
           AlignWithMargins = True
           Left = 1
           Top = 119
           Width = 1116
-          Height = 306
+          Height = 314
           Cursor = crHandPoint
           Margins.Left = 0
           Margins.Top = 10
@@ -50452,17 +49340,18 @@ object fmIndex: TfmIndex
           AllowInsert = False
           DataSource = DM.dsMUSICAS
           SkinData = DM.bsSkinData1
-          PanelHeight = 102
+          PanelHeight = 104
           PanelWidth = 1097
           TabOrder = 1
           ShowFocus = False
           OnClick = dbctrlMusicasClick
+          ExplicitHeight = 306
           object Panel6: TPanel
             AlignWithMargins = True
             Left = 4
             Top = 4
             Width = 1089
-            Height = 94
+            Height = 96
             Cursor = crHandPoint
             Align = alClient
             BevelOuter = bvNone
@@ -50472,12 +49361,13 @@ object fmIndex: TfmIndex
             ShowCaption = False
             TabOrder = 0
             OnClick = dbctrlMusicasClick
+            ExplicitHeight = 94
             object bsSkinDBText4: TbsSkinDBText
               AlignWithMargins = True
               Left = 10
               Top = 0
               Width = 899
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Margins.Left = 10
               Margins.Top = 0
@@ -50519,7 +49409,7 @@ object fmIndex: TfmIndex
               Left = 909
               Top = 0
               Width = 30
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Hint = 'Slide Cantado'
               DoubleBuffered = False
@@ -50539,7 +49429,7 @@ object fmIndex: TfmIndex
               Left = 939
               Top = 0
               Width = 30
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Hint = 'Slide Playback'
               DoubleBuffered = False
@@ -50559,7 +49449,7 @@ object fmIndex: TfmIndex
               Left = 969
               Top = 0
               Width = 30
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Hint = 'Slide Sem '#193'udio'
               DoubleBuffered = False
@@ -50579,7 +49469,7 @@ object fmIndex: TfmIndex
               Left = 999
               Top = 0
               Width = 30
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Hint = 'Arquivo Cantado'
               DoubleBuffered = False
@@ -50599,7 +49489,7 @@ object fmIndex: TfmIndex
               Left = 1029
               Top = 0
               Width = 30
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Hint = 'Arquivo Playback'
               DoubleBuffered = False
@@ -50619,7 +49509,7 @@ object fmIndex: TfmIndex
               Left = 1059
               Top = 0
               Width = 30
-              Height = 94
+              Height = 96
               Cursor = crHandPoint
               Hint = 'Letra da M'#250'sica'
               DoubleBuffered = False
@@ -50762,11 +49652,12 @@ object fmIndex: TfmIndex
       Caption = 'Liturgia'
       ImageIndex = 39
       OnShow = tsLiturgiaShow
+      ExplicitHeight = 426
       object sbLiturgia: TbsSkinScrollBox
         Left = 0
         Top = 49
         Width = 1057
-        Height = 282
+        Height = 290
         HintImageIndex = 0
         TabOrder = 1
         SkinData = DM.bsSkinData1
@@ -51203,7 +50094,7 @@ object fmIndex: TfmIndex
         Left = 1349
         Top = 49
         Width = 19
-        Height = 282
+        Height = 290
         HintImageIndex = 0
         TabOrder = 3
         Visible = False
@@ -51229,6 +50120,7 @@ object fmIndex: TfmIndex
         Position = 0
         SmallChange = 1
         LargeChange = 1
+        ExplicitHeight = 282
       end
       object GridPanel23: TGridPanel
         Left = 0
@@ -51763,7 +50655,7 @@ object fmIndex: TfmIndex
         Left = 1057
         Top = 49
         Width = 292
-        Height = 282
+        Height = 290
         HintImageIndex = 0
         TabOrder = 2
         Visible = False
@@ -51793,12 +50685,13 @@ object fmIndex: TfmIndex
         Align = alRight
         Caption = 'Anota'#231#245'es'
         OnClose = pnlAnotacoesLiturgiaClose
+        ExplicitHeight = 282
         object RichEdit1: TbsSkinRichEdit
           Tag = 1
           Left = 1
           Top = 21
           Width = 271
-          Height = 176
+          Height = 184
           Margins.Left = 10
           Margins.Top = 10
           Margins.Right = 10
@@ -51833,12 +50726,13 @@ object fmIndex: TfmIndex
           OnKeyDown = RichEditKeyDown
           OnKeyUp = edtKeyUp
           OnMouseDown = RichEditMouseDown
+          ExplicitHeight = 176
         end
         object bsSkinScrollBar5: TbsSkinScrollBar
           Left = 272
           Top = 21
           Width = 19
-          Height = 176
+          Height = 184
           HintImageIndex = 0
           TabOrder = 1
           SkinData = DM.bsSkinData1
@@ -51864,10 +50758,11 @@ object fmIndex: TfmIndex
           Position = 0
           SmallChange = 1
           LargeChange = 1
+          ExplicitHeight = 176
         end
         object Panel15: TPanel
           Left = 1
-          Top = 216
+          Top = 224
           Width = 290
           Height = 65
           Align = alBottom
@@ -51875,6 +50770,7 @@ object fmIndex: TfmIndex
           Caption = 'Panel15'
           ShowCaption = False
           TabOrder = 3
+          ExplicitTop = 216
           object GridPanel60: TGridPanel
             Left = 0
             Top = 0
@@ -52748,7 +51644,7 @@ object fmIndex: TfmIndex
         object bsSkinScrollBar6: TbsSkinScrollBar
           AlignWithMargins = True
           Left = 1
-          Top = 197
+          Top = 205
           Width = 275
           Height = 19
           Margins.Left = 0
@@ -52780,11 +51676,12 @@ object fmIndex: TfmIndex
           Position = 0
           SmallChange = 1
           LargeChange = 1
+          ExplicitTop = 197
         end
       end
       object gpLiturgiaDes: TGridPanel
         Left = 0
-        Top = 331
+        Top = 339
         Width = 1368
         Height = 95
         Align = alBottom
@@ -52813,6 +51710,7 @@ object fmIndex: TfmIndex
           end>
         ShowCaption = False
         TabOrder = 4
+        ExplicitTop = 331
         object lbLiturgia: TListBox
           Left = 1
           Top = 1
@@ -52835,13 +51733,14 @@ object fmIndex: TfmIndex
       Caption = 'M'#250'sicas Infantis'
       ImageIndex = 91
       OnShow = tsMusicasInfantisShow
+      ExplicitHeight = 426
       object dbctrlMusicasInfantis: TbsSkinDBCtrlGrid
         Tag = 10
         AlignWithMargins = True
         Left = 0
         Top = 10
         Width = 1368
-        Height = 416
+        Height = 424
         Cursor = crHandPoint
         Margins.Left = 0
         Margins.Top = 10
@@ -52852,19 +51751,20 @@ object fmIndex: TfmIndex
         AllowInsert = False
         DataSource = DM.dsMUSICAS_INFANTIS
         SkinData = DM.bsSkinData1
-        PanelHeight = 59
+        PanelHeight = 60
         PanelWidth = 1349
         TabOrder = 0
         RowCount = 7
         ShowFocus = False
         OnClick = dbctrlMusicasClick
+        ExplicitHeight = 416
         object Panel1: TPanel
           Tag = 10
           AlignWithMargins = True
           Left = 4
           Top = 4
           Width = 1341
-          Height = 51
+          Height = 52
           Cursor = crHandPoint
           Align = alClient
           BevelOuter = bvNone
@@ -52874,13 +51774,14 @@ object fmIndex: TfmIndex
           ShowCaption = False
           TabOrder = 0
           OnClick = dbctrlMusicasClick
+          ExplicitHeight = 51
           object bsSkinDBText3: TbsSkinDBText
             Tag = 10
             AlignWithMargins = True
             Left = 10
             Top = 0
             Width = 1151
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Margins.Left = 10
             Margins.Top = 0
@@ -52922,7 +51823,7 @@ object fmIndex: TfmIndex
             Left = 1161
             Top = 0
             Width = 30
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Hint = 'Slide Cantado'
             DoubleBuffered = False
@@ -52942,7 +51843,7 @@ object fmIndex: TfmIndex
             Left = 1221
             Top = 0
             Width = 30
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Hint = 'Slide Sem '#193'udio'
             DoubleBuffered = False
@@ -52962,7 +51863,7 @@ object fmIndex: TfmIndex
             Left = 1251
             Top = 0
             Width = 30
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Hint = 'Arquivo Cantado'
             DoubleBuffered = False
@@ -52982,7 +51883,7 @@ object fmIndex: TfmIndex
             Left = 1311
             Top = 0
             Width = 30
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Hint = 'Letra da M'#250'sica'
             DoubleBuffered = False
@@ -53002,7 +51903,7 @@ object fmIndex: TfmIndex
             Left = 1191
             Top = 0
             Width = 30
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Hint = 'Slide Playback'
             DoubleBuffered = False
@@ -53022,7 +51923,7 @@ object fmIndex: TfmIndex
             Left = 1281
             Top = 0
             Width = 30
-            Height = 51
+            Height = 52
             Cursor = crHandPoint
             Hint = 'Arquivo Playback'
             DoubleBuffered = False
@@ -53044,12 +51945,13 @@ object fmIndex: TfmIndex
       Caption = 'Itens Agendados'
       ImageIndex = 101
       OnShow = tsItensAgendadosShow
+      ExplicitHeight = 426
       object bsSkinExPanel4: TbsSkinExPanel
         AlignWithMargins = True
         Left = 3
         Top = 0
         Width = 294
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -53079,11 +51981,12 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alLeft
         Caption = 'Categorias'
+        ExplicitHeight = 426
         object dbctrlCategoriasItensAgendados: TDBCtrlGrid
           Left = 1
           Top = 21
           Width = 292
-          Height = 404
+          Height = 412
           Cursor = crHandPoint
           Align = alClient
           AllowDelete = False
@@ -53091,17 +51994,18 @@ object fmIndex: TfmIndex
           Color = 2302755
           DataSource = DM.dsCategoriasItensAgendados
           PanelBorder = gbNone
-          PanelHeight = 80
+          PanelHeight = 82
           PanelWidth = 275
           ParentColor = False
           TabOrder = 0
           RowCount = 5
           ShowFocus = False
+          ExplicitHeight = 404
           object Panel30: TPanel
             Left = 0
             Top = 0
             Width = 275
-            Height = 79
+            Height = 81
             Cursor = crHandPoint
             Align = alClient
             BevelOuter = bvNone
@@ -53111,11 +52015,12 @@ object fmIndex: TfmIndex
             ShowCaption = False
             TabOrder = 0
             OnClick = categoriasItensAgendadosClick
+            ExplicitHeight = 79
             object GridPanel9: TGridPanel
               Left = 0
               Top = 0
               Width = 275
-              Height = 79
+              Height = 81
               Cursor = crHandPoint
               Align = alClient
               BevelOuter = bvNone
@@ -53153,12 +52058,13 @@ object fmIndex: TfmIndex
               ShowCaption = False
               TabOrder = 0
               OnClick = categoriasItensAgendadosClick
+              ExplicitHeight = 79
               object bsSkinDBText5: TbsSkinDBText
                 AlignWithMargins = True
                 Left = 10
                 Top = 0
                 Width = 215
-                Height = 79
+                Height = 81
                 Cursor = crHandPoint
                 Margins.Left = 10
                 Margins.Top = 0
@@ -53198,7 +52104,7 @@ object fmIndex: TfmIndex
                 Left = 225
                 Top = 0
                 Width = 50
-                Height = 79
+                Height = 81
                 Cursor = crHandPoint
                 DoubleBuffered = False
                 ReflectionEffect = False
@@ -53214,7 +52120,7 @@ object fmIndex: TfmIndex
           end
           object Panel31: TPanel
             Left = 0
-            Top = 79
+            Top = 81
             Width = 275
             Height = 1
             Cursor = crHandPoint
@@ -53233,6 +52139,7 @@ object fmIndex: TfmIndex
             ParentFont = False
             ShowCaption = False
             TabOrder = 1
+            ExplicitTop = 79
           end
         end
       end
@@ -53241,7 +52148,7 @@ object fmIndex: TfmIndex
         Left = 303
         Top = 0
         Width = 1062
-        Height = 426
+        Height = 434
         Margins.Top = 0
         Margins.Bottom = 0
         HintImageIndex = 0
@@ -53272,21 +52179,23 @@ object fmIndex: TfmIndex
         Sizeable = False
         Align = alClient
         Caption = 'Itens'
+        ExplicitHeight = 426
         object Panel34: TPanel
           Left = 226
           Top = 21
           Width = 835
-          Height = 404
+          Height = 412
           Align = alClient
           BevelOuter = bvNone
           Caption = 'Panel34'
           ShowCaption = False
           TabOrder = 1
+          ExplicitHeight = 404
           object dbctrlItensAgendados: TDBCtrlGrid
             Left = 0
             Top = 41
             Width = 835
-            Height = 363
+            Height = 371
             Cursor = crHandPoint
             Align = alClient
             AllowDelete = False
@@ -53294,16 +52203,18 @@ object fmIndex: TfmIndex
             Color = 2302755
             DataSource = DM.dsItensAgendados
             PanelBorder = gbNone
+            PanelHeight = 74
             PanelWidth = 818
             ParentColor = False
             TabOrder = 1
             RowCount = 5
             ShowFocus = False
+            ExplicitHeight = 363
             object Panel32: TPanel
               Left = 0
               Top = 0
               Width = 818
-              Height = 71
+              Height = 73
               Cursor = crHandPoint
               Align = alClient
               BevelOuter = bvNone
@@ -53313,11 +52224,12 @@ object fmIndex: TfmIndex
               ShowCaption = False
               TabOrder = 0
               OnClick = itensAgendadosClick
+              ExplicitHeight = 71
               object GridPanel11: TGridPanel
                 Left = 0
                 Top = 0
                 Width = 818
-                Height = 71
+                Height = 73
                 Cursor = crHandPoint
                 Align = alClient
                 BevelOuter = bvNone
@@ -53364,12 +52276,13 @@ object fmIndex: TfmIndex
                 ShowCaption = False
                 TabOrder = 0
                 OnClick = itensAgendadosClick
+                ExplicitHeight = 71
                 object bsSkinDBText6: TbsSkinDBText
                   AlignWithMargins = True
                   Left = 110
                   Top = 0
                   Width = 658
-                  Height = 71
+                  Height = 73
                   Cursor = crHandPoint
                   Margins.Left = 10
                   Margins.Top = 0
@@ -53410,7 +52323,7 @@ object fmIndex: TfmIndex
                   Left = 768
                   Top = 0
                   Width = 50
-                  Height = 71
+                  Height = 73
                   Cursor = crHandPoint
                   DoubleBuffered = False
                   ReflectionEffect = False
@@ -53427,7 +52340,7 @@ object fmIndex: TfmIndex
                   Left = 10
                   Top = 0
                   Width = 90
-                  Height = 71
+                  Height = 73
                   Cursor = crHandPoint
                   Margins.Left = 10
                   Margins.Top = 0
@@ -53467,7 +52380,7 @@ object fmIndex: TfmIndex
             end
             object Panel33: TPanel
               Left = 0
-              Top = 71
+              Top = 73
               Width = 818
               Height = 1
               Cursor = crHandPoint
@@ -53486,6 +52399,7 @@ object fmIndex: TfmIndex
               ParentFont = False
               ShowCaption = False
               TabOrder = 1
+              ExplicitTop = 71
             end
           end
           object Panel35: TPanel
@@ -53569,7 +52483,7 @@ object fmIndex: TfmIndex
           Left = 1
           Top = 21
           Width = 225
-          Height = 404
+          Height = 412
           Align = alLeft
           BevelOuter = bvNone
           Caption = 'Panel36'
@@ -53577,6 +52491,7 @@ object fmIndex: TfmIndex
           ParentBackground = False
           ShowCaption = False
           TabOrder = 0
+          ExplicitHeight = 404
           object bsSkinStdLabel52: TbsSkinStdLabel
             AlignWithMargins = True
             Left = 6
@@ -53616,14 +52531,15 @@ object fmIndex: TfmIndex
             Left = 0
             Top = 38
             Width = 225
-            Height = 366
+            Height = 374
             Align = alClient
-            Date = 43344.582936145830000000
+            Date = 43344.692597152770000000
             DoubleBuffered = False
             ParentDoubleBuffered = False
             TabOrder = 0
             OnDblClick = MonthCalendar1DblClick
             OnGetMonthInfo = MonthCalendar1GetMonthInfo
+            ExplicitHeight = 366
           end
         end
       end
@@ -53632,11 +52548,12 @@ object fmIndex: TfmIndex
       Caption = 'Localizar M'#250'sicas'
       ImageIndex = 27
       OnShow = tsBuscaMusicaShow
+      ExplicitHeight = 426
       object tabLetras: TbsSkinTabControl
         Left = 0
         Top = 57
         Width = 1368
-        Height = 348
+        Height = 356
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBtnText
@@ -53690,11 +52607,12 @@ object fmIndex: TfmIndex
         DefaultItemHeight = 20
         SkinData = DM.bsSkinData1
         SkinDataName = 'tab'
+        ExplicitHeight = 348
         object DBGrid2: TbsSkinDBGrid
           Left = 1
           Top = 19
           Width = 1347
-          Height = 269
+          Height = 277
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
@@ -53777,7 +52695,7 @@ object fmIndex: TfmIndex
           Left = 1348
           Top = 19
           Width = 19
-          Height = 269
+          Height = 277
           HintImageIndex = 0
           TabOrder = 1
           Visible = False
@@ -53803,10 +52721,11 @@ object fmIndex: TfmIndex
           Position = 0
           SmallChange = 1
           LargeChange = 1
+          ExplicitHeight = 269
         end
         object pnlreBusca: TbsSkinPanel
           Left = 1
-          Top = 288
+          Top = 296
           Width = 1366
           Height = 59
           HintImageIndex = 0
@@ -53841,6 +52760,7 @@ object fmIndex: TfmIndex
           Spacing = 2
           Caption = 'pnlreBusca'
           Align = alBottom
+          ExplicitTop = 288
           object bsSkinScrollBar10: TbsSkinScrollBar
             Left = 1347
             Top = 0
@@ -54041,7 +52961,7 @@ object fmIndex: TfmIndex
       end
       object pnlStatusBuscaMusicas: TbsSkinStatusBar
         Left = 0
-        Top = 405
+        Top = 413
         Width = 1368
         Height = 21
         HintImageIndex = 0
@@ -54076,6 +52996,7 @@ object fmIndex: TfmIndex
         Caption = 'stHinos'
         Align = alBottom
         SizeGrip = False
+        ExplicitTop = 405
         object pnlStatusBuscaMusicas0: TbsSkinStatusPanel
           Left = 0
           Top = 0
@@ -54500,7 +53421,7 @@ object fmIndex: TfmIndex
   end
   object bsSkinStatusBar1: TbsSkinStatusBar
     Left = 0
-    Top = 728
+    Top = 736
     Width = 1370
     Height = 21
     HintImageIndex = 0
@@ -54535,6 +53456,7 @@ object fmIndex: TfmIndex
     Caption = 'bsSkinStatusBar1'
     Align = alBottom
     SizeGrip = False
+    ExplicitTop = 728
     object spVersao: TbsSkinStatusPanel
       Left = 1250
       Top = 0
@@ -54709,7 +53631,7 @@ object fmIndex: TfmIndex
   end
   object pnlPlayer: TbsSkinPanel
     Left = 0
-    Top = 640
+    Top = 648
     Width = 1370
     Height = 88
     HintImageIndex = 0
@@ -54744,6 +53666,7 @@ object fmIndex: TfmIndex
     Spacing = 2
     Caption = 'pnlPlayer'
     Align = alBottom
+    ExplicitTop = 640
     object btplPlay: TbsSkinSpeedButton
       Left = 1
       Top = 28

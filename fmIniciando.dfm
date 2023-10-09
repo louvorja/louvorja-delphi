@@ -2475,8 +2475,6 @@ object fIniciando: TfIniciando
       NumGlyphs = 1
       Spacing = 2
       Align = alClient
-      ExplicitLeft = 181
-      ExplicitWidth = 326
       object lblTitulo: TbsSkinStdLabel
         AlignWithMargins = True
         Left = 10
