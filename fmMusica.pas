@@ -70,6 +70,7 @@ type
     procedure Button4Click(Sender: TObject);
     procedure slideInfo(p: string);
     procedure cursor();
+    function IsNumeric(const str: string): Boolean;
   private
     { Private declarations }
     bass_musica: HSAMPLE;
@@ -166,8 +167,8 @@ begin
 
     tempo := BASS_ChannelGetPosition(bass_channel, BASS_POS_BYTE);
     acaoSlide('prox',false);
-    DM.qrSLIDE_MUSICA_GRAVA.Parameters.ParamByName('MUSICA_ID').Value := letraID;
-    DM.qrSLIDE_MUSICA_GRAVA.Parameters.ParamByName('TEMPO').Value := tempo;
+    DM.qrSLIDE_MUSICA_GRAVA.ParamByName('MUSICA_ID').Value := letraID;
+    DM.qrSLIDE_MUSICA_GRAVA.ParamByName('TEMPO').Value := tempo;
     DM.qrSLIDE_MUSICA_GRAVA.ExecSQL;
 
     rec := DM.cdsSLIDE_MUSICA.RecNo;
@@ -359,8 +360,8 @@ begin
 
 //  tempo := DM.cdsSLIDE_MUSICA.fieldbyname('TEMPO').AsInteger-100000;
   tempo := StrToInt(lbTempos.Items[rec-1])-100000;
-  DM.qrSLIDE_MUSICA_GRAVA.Parameters.ParamByName('MUSICA_ID').Value := letraID;
-  DM.qrSLIDE_MUSICA_GRAVA.Parameters.ParamByName('TEMPO').Value := tempo;
+  DM.qrSLIDE_MUSICA_GRAVA.ParamByName('MUSICA_ID').Value := letraID;
+  DM.qrSLIDE_MUSICA_GRAVA.ParamByName('TEMPO').Value := tempo;
   DM.qrSLIDE_MUSICA_GRAVA.ExecSQL;
 
   lbTempos.Items[rec-1] := IntToStr(tempo);
@@ -383,8 +384,8 @@ begin
   if not (fmIndex.pnlModDes.Visible) then Exit;
 
   tempo := BASS_ChannelGetPosition(bass_channel, BASS_POS_BYTE);
-  DM.qrSLIDE_MUSICA_GRAVA.Parameters.ParamByName('MUSICA_ID').Value := letraID;
-  DM.qrSLIDE_MUSICA_GRAVA.Parameters.ParamByName('TEMPO').Value := tempo;
+  DM.qrSLIDE_MUSICA_GRAVA.ParamByName('MUSICA_ID').Value := letraID;
+  DM.qrSLIDE_MUSICA_GRAVA.ParamByName('TEMPO').Value := tempo;
   DM.qrSLIDE_MUSICA_GRAVA.ExecSQL;
   rec := DM.cdsSLIDE_MUSICA.RecNo;
   lbTempos.Items[rec-1] := IntToStr(tempo);
@@ -401,7 +402,7 @@ end;
 procedure TfMusica.carregaAlbum;
 begin
   DM.qrSLIDE_MUSICA_ALBUM.Close;
-  DM.qrSLIDE_MUSICA_ALBUM.Parameters.ParamByName('ID_ALBUM').Value := albumID;
+  DM.qrSLIDE_MUSICA_ALBUM.ParamByName('ID_ALBUM').Value := albumID;
   DM.qrSLIDE_MUSICA_ALBUM.Open;
   if musicaID <= 0
     then DM.qrSLIDE_MUSICA_ALBUM.First
@@ -484,7 +485,7 @@ begin
   if (fmIndex.pnlModDes.Visible) then
   begin
     DM.qrLETRA_MUSICA.Close;
-    DM.qrLETRA_MUSICA.Parameters.ParamByName('MUSICA_ID').Value := musicaID;
+    DM.qrLETRA_MUSICA.ParamByName('MUSICA_ID').Value := musicaID;
     DM.qrLETRA_MUSICA.Open;
   end;
 
@@ -568,9 +569,9 @@ begin
         audio := false;
       end;
 
-      if (audio) and (musicaID <= 0) then
+      converteTempos();
+      if (audio) then
       begin
-        converteTempos();
         next_time := strtoint(lbTempos.Items[DM.cdsSLIDE_MUSICA.RecNo]);
       end;
 
@@ -618,7 +619,7 @@ begin
   if (tipo = 'BD') then
   begin
     DM.qrSLIDE_MUSICA.Close;
-    DM.qrSLIDE_MUSICA.Parameters.ParamByName('MUSICA_ID').Value := musicaID;
+    DM.qrSLIDE_MUSICA.ParamByName('MUSICA_ID').Value := musicaID;
     DM.qrSLIDE_MUSICA.Open;
 
     while not DM.qrSLIDE_MUSICA.eof do
@@ -644,13 +645,13 @@ begin
       if (param = 'PB') and (DM.qrSLIDE_MUSICA.FieldByName('URL_MUSICA_PB').AsString <> '')
         then DM.cdsSLIDE_MUSICA.FieldByName('URL_MUSICA').Value := DM.qrSLIDE_MUSICA.FieldByName('URL_MUSICA_PB').AsString
         else DM.cdsSLIDE_MUSICA.FieldByName('URL_MUSICA').Value := DM.qrSLIDE_MUSICA.FieldByName('URL_MUSICA').AsString;
-      DM.cdsSLIDE_MUSICA.FieldByName('LETRA_UCASE').Value := DM.qrSLIDE_MUSICA.FieldByName('LETRA_UCASE').AsString;
-      lbLetras.Items.Add(DM.qrSLIDE_MUSICA.FieldByName('LETRA_UCASE').AsString);
+      DM.cdsSLIDE_MUSICA.FieldByName('LETRA_UCASE').Value := Ansiuppercase(DM.qrSLIDE_MUSICA.FieldByName('LETRA_UCASE').AsString);
+      lbLetras.Items.Add(Ansiuppercase(DM.qrSLIDE_MUSICA.FieldByName('LETRA_UCASE').AsString));
       DM.cdsSLIDE_MUSICA.FieldByName('LETRA_AUX').Value := DM.qrSLIDE_MUSICA.FieldByName('LETRA_AUX').AsString;
       DM.cdsSLIDE_MUSICA.FieldByName('ORDEM').Value := DM.qrSLIDE_MUSICA.FieldByName('ORDEM').AsInteger;
       if (param = 'PB')
-        then DM.cdsSLIDE_MUSICA.FieldByName('TEMPO').Value := DM.qrSLIDE_MUSICA.FieldByName('TEMPO_PB').AsInteger
-        else DM.cdsSLIDE_MUSICA.FieldByName('TEMPO').Value := DM.qrSLIDE_MUSICA.FieldByName('TEMPO').AsInteger;
+        then DM.cdsSLIDE_MUSICA.FieldByName('TEMPO').Value := DM.qrSLIDE_MUSICA.FieldByName('TEMPO_PB').AsString
+        else DM.cdsSLIDE_MUSICA.FieldByName('TEMPO').Value := DM.qrSLIDE_MUSICA.FieldByName('TEMPO').AsString;
 
       if fmIndex.ckSlideTxtFormatPerso.Checked then
       begin
@@ -688,7 +689,7 @@ begin
       end
       else
       begin
-        DM.cdsSLIDE_MUSICA.FieldByName('FUNDO_LETRA').Value := DM.qrSLIDE_MUSICA.FieldByName('FUNDO_LETRA').AsBoolean;
+        DM.cdsSLIDE_MUSICA.FieldByName('FUNDO_LETRA').Value := (DM.qrSLIDE_MUSICA.FieldByName('FUNDO_LETRA').AsInteger = 1);
         DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').Value := DM.qrSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').AsInteger;
         DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA').Value := DM.qrSLIDE_MUSICA.FieldByName('COR_LETRA').AsString;
         DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA_AUX').Value := DM.qrSLIDE_MUSICA.FieldByName('TAMANHO_LETRA_AUX').AsInteger;
@@ -787,7 +788,7 @@ begin
   lista_img := TStringList.Create;
   lbTempos.Items.Clear;
   DM.qrSLIDE_MUSICA_TEMPOS.Close;
-  DM.qrSLIDE_MUSICA_TEMPOS.Parameters.ParamByName('MUSICA_ID').Value := musicaID;
+  DM.qrSLIDE_MUSICA_TEMPOS.ParamByName('MUSICA_ID').Value := musicaID;
   DM.qrSLIDE_MUSICA_TEMPOS.Open;
   while not DM.qrSLIDE_MUSICA_TEMPOS.eof do
   begin
@@ -832,7 +833,11 @@ begin
     if Pos(':',tempo) > 0 then
     begin
       ExtractStrings([':'], [], PChar(tempo), txt);
-      tempo := inttostr((StrToInt('0'+txt[0])*60)+StrToInt('0'+txt[1]));
+      if (txt.Count) = 3 then
+        tempo := inttostr((StrToInt('0'+txt[0])*60*60)+(StrToInt('0'+txt[1])*60)+StrToInt('0'+txt[2]))
+      else
+        tempo := inttostr((StrToInt('0'+txt[0])*60)+StrToInt('0'+txt[1]));
+
       tempo := IntToStr(BASS_ChannelSeconds2Bytes(bass_channel,StrToFloat(tempo)));
       lbTempos.Items[i] := tempo;
     end;
@@ -877,7 +882,7 @@ procedure TfMusica.Error(msg: string);
 var
 	s: string;
 begin
-	s := msg + #13#10 + '(Código do Erro: ' + IntToStr(BASS_ErrorGetCode) + ')';
+	s := msg + #13#10 + 'Verifique se o dispositivo de áudio está conectado em seu computador.' + #13#10 + '(Código do Erro: ' + IntToStr(BASS_ErrorGetCode) + ')';
   application.MessageBox(PChar(s), fmIndex.titulo, mb_ok + mb_iconerror);
 end;
 
@@ -1048,6 +1053,13 @@ begin
   slide();
 end;
 
+function TfMusica.IsNumeric(const str: string): Boolean;
+var
+  tempValue: Double;
+begin
+  Result := TryStrToFloat(str, tempValue);
+end;
+
 procedure TfMusica.pauseplay;
 begin
   if (pause) then
@@ -1083,7 +1095,7 @@ begin
 
   lbTempos.Items.Clear;
   DM.qrSLIDE_MUSICA_TEMPOS.Close;
-  DM.qrSLIDE_MUSICA_TEMPOS.Parameters.ParamByName('MUSICA_ID').Value := musicaID;
+  DM.qrSLIDE_MUSICA_TEMPOS.ParamByName('MUSICA_ID').Value := musicaID;
   DM.qrSLIDE_MUSICA_TEMPOS.Open;
   while not DM.qrSLIDE_MUSICA_TEMPOS.eof do
   begin

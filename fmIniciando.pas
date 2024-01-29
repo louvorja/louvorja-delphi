@@ -111,6 +111,7 @@ begin
 
 
   //**CARREGA BANCO DE DADOS****************************************************
+  (*
   if not FileExists(dir_config + 'BD.mdb') then
   begin
     if (application.messagebox(PChar(Translate('Banco de Dados não localizado! Deseja tentar baixar da internet?')), TITULO, MB_yesno + mb_iconerror) <> 6) then
@@ -142,11 +143,11 @@ begin
       end;
     end;
   end;
+  *)
 
   DM.ADO.Connected := false;
-  DM.ADO.ConnectionString := 'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=' + dir_config + 'BD.mdb;Persist Security Info=False;Jet OLEDB:Database Password='+senha_bd;
-//  ADO.ConnectionString := 'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=' + ExtractFilePath(Application.ExeName) + 'config\BD.mdb;Persist Security Info=False;Jet OLEDB:Database Password=colbdlja2000;';
-//  DM.ADO.ConnectionString := 'DRIVER=SQLite3 ODBC Driver;Database=' + dir_config + 'BD.db;LongNames=0;Timeout=1000;NoTXN=0;SyncPragma=NORMAL;StepAPI=0;';
+  DM.ADO.DriverName := 'SQLite';
+  DM.ADO.Params.Database := dir_config + 'database.db';
   try
     DM.ADO.Connected := true;
   except

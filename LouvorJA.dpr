@@ -8,7 +8,6 @@ uses
   fmLetra in 'fmLetra.pas' {fLetra},
   fmNovaVersao in 'fmNovaVersao.pas' {fNovaVersao},
   fmAtualiza in 'fmAtualiza.pas' {fAtualiza},
-  fmEnviaMensagem in 'fmEnviaMensagem.pas' {fEnviaMensagem},
   fmHelp in 'fmHelp.pas' {fHelp},
   fmVideoOn in 'fmVideoOn.pas' {fVideoOn},
   Vcl.Themes,

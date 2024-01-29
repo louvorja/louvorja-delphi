@@ -132,7 +132,7 @@ begin
     if DBCtrlGrid.DataSource = DM.dsMUSICAS then
     begin
       DM.qrMUSICAS.Close;
-      DM.qrMUSICAS.Parameters.ParamByName('ID_ALBUM').Value := id_album;
+      DM.qrMUSICAS.ParamByName('ID_ALBUM').Value := id_album;
       DM.qrMUSICAS.Open;
 
       if (fMonitorMenuMusicas <> nil) then

@@ -14,7 +14,9 @@ uses
   bsDialogs, Vcl.DBCGrids, ClipBrd, urlmon, RichEdit, bsButtonGroup,
   bsPngImageList, IdAntiFreezeBase, System.Zip, System.UITypes,
   MidasLib, IdStack, System.Types, Bass, Generics.Collections,
-  Generics.Defaults;
+  Generics.Defaults, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
   (*"MidasLib" NECESSÁRIA PARA EVITAR ERRO DE ACCESS VIOLATION NO DM.cds*)
 
 type
@@ -1678,8 +1680,8 @@ type
     procedure FormActivate(Sender: TObject);
     procedure tsHinarioShow(Sender: TObject);
     procedure txtHinoChange(Sender: TObject);
-    procedure corCampoBusca(Query: TADOQuery; Campo: TbsSkinEdit; DBGrid: TbsSkinDBGrid);
-    function qtItens(Query: TADOQuery;texto_sing,texto_plu,texto_nenh:string): string;
+    procedure corCampoBusca(Query: TFDQuery; Campo: TbsSkinEdit; DBGrid: TbsSkinDBGrid);
+    function qtItens(Query: TFDQuery;texto_sing,texto_plu,texto_nenh:string): string;
     procedure DBGrid1DblClick(Sender: TObject);
     procedure txtHinoKeyPress(Sender: TObject; var Key: Char);
     procedure abreLetra(ID: integer; BUSCA: string = '');
@@ -2238,7 +2240,7 @@ implementation
 
 uses
   fmLetra, fmAtualiza, StrUtils, Math, fmNovaVersao,
-  fmEnviaMensagem, fmHelp, fmVideoOn, fmFavoritos, fmMusica, fmListaMusica,
+  fmHelp, fmVideoOn, fmFavoritos, fmMusica, fmListaMusica,
   fmMusicaOperador, fmLiturgia, fmArquivosFalta, fmBuscaMusica, fmArquivosExcesso,
   fmItensAgendados, dmComponentes, fmEditorSlides, fmPlayer, fmIniciando,
   fmTransmitir, fmMusicaRetorno, fmMonitorRelogio, fmMonitorTextoInterativo,
@@ -2542,7 +2544,7 @@ var
   idimg: Integer;
 begin
   DM.qrALBUNS.Close;
-  DM.qrALBUNS.Parameters.ParamByName('TIPO').Value := Tipo;
+  DM.qrALBUNS.ParamByName('TIPO').Value := Tipo;
   DM.qrALBUNS.Open;
 
   formWidth := ScrollBox.Width;
@@ -2686,7 +2688,7 @@ begin
   marcaAbaAberta(tsHinarioN);
 
   DM.qrALBUM_IGNORAR.Close;
-  DM.qrALBUM_IGNORAR.Parameters.ParamByName('ID').Value := 629;
+  DM.qrALBUM_IGNORAR.ParamByName('ID').Value := 629;
   DM.qrALBUM_IGNORAR.Open;
   if (DM.qrALBUM_IGNORAR.RecordCount > 0) then
   begin
@@ -2779,9 +2781,7 @@ var
   nr: integer;
   c: integer;
   letra: string;
-  filtro: string;
 begin
-  filtro := '';
   pnlreHino.Visible := False;
   bsSkinScrollBar7.Visible := true;
   dbGrid1.Columns[1].Width := dbGrid1.Width - dbGrid1.Columns[0].Width;
@@ -2792,28 +2792,23 @@ begin
     val(txtHino.Text, nr, c);
     if c = 0 then
     begin
-      filtro := ' AND FAIXA = ' + valor;
       stHinos0.Caption := fIniciando.Translate('Buscando nº: ') + valor;
     end
     else
     begin
-      filtro := ' AND NOME LIKE ''%' + termo_busca(valor) + '%''';
       stHinos0.Caption := fIniciando.Translate('Buscando nome: ')+'''' + valor + '''';
     end;
   end;
 
   DM.qrHINOS.Close;
-  DM.qrHINOS.SQL.Clear;
-  DM.qrHINOS.SQL.Add('SELECT * FROM HINARIO_ADVENTISTA');
-  DM.qrHINOS.SQL.Add(' WHERE 1=1 ');
-  DM.qrHINOS.SQL.Add(filtro);
+  DM.qrHINOS.ParamByName('VALOR').AsString := fmIndex.termo_busca(valor);
   DM.qrHINOS.Open;
 
   if (DM.qrHINOS.RecordCount = 1) then
   begin
     reHino.Lines.Clear;
     DM.qrLETRA.Close;
-    DM.qrLETRA.Parameters.ParamByName('MUSICA').Value := DM.qrHINOS.fieldbyname('ID').AsInteger;
+    DM.qrLETRA.ParamByName('MUSICA').Value := DM.qrHINOS.fieldbyname('ID').AsInteger;
     DM.qrLETRA.Open;
     while not DM.qrLETRA.Eof do
     begin
@@ -2844,7 +2839,7 @@ begin
   dbGrid1.Columns[1].Width := dbGrid1.Width - dbGrid1.Columns[0].Width;
 end;
 
-procedure TfmIndex.corCampoBusca(Query: TADOQuery; Campo: TbsSkinEdit; DBGrid: TbsSkinDBGrid);
+procedure TfmIndex.corCampoBusca(Query: TFDQuery; Campo: TbsSkinEdit; DBGrid: TbsSkinDBGrid);
 begin
   if DBGrid <> nil then
     DBGrid.VScrollBar.Visible := False;
@@ -2893,7 +2888,7 @@ begin
   gravaParam('Musicas', 'Cor Titulo', ColorToString(TbsSkinColorButton(Sender).ColorValue));
 end;
 
-function TfmIndex.qtItens(Query: TADOQuery; texto_sing,
+function TfmIndex.qtItens(Query: TFDQuery; texto_sing,
   texto_plu,texto_nenh: string): string;
 begin
   if Query.Active = false then
@@ -2937,9 +2932,7 @@ var
   nr: integer;
   c: integer;
   letra: string;
-  filtro: string;
 begin
-  filtro := '';
   pnlreHinoN.Visible := False;
   bsSkinScrollBar7N.Visible := true;
   dbGrid1N.Columns[1].Width := dbGrid1N.Width - dbGrid1N.Columns[0].Width;
@@ -2950,28 +2943,23 @@ begin
     val(txtHinoN.Text, nr, c);
     if c = 0 then
     begin
-      filtro := ' AND FAIXA = ' + valor;
       stHinos0N.Caption := fIniciando.Translate('Buscando nº: ') + valor;
     end
     else
     begin
-      filtro := ' AND NOME LIKE ''%' + termo_busca(valor) + '%''';
       stHinos0N.Caption := fIniciando.Translate('Buscando nome: ')+'''' + valor + '''';
     end;
   end;
 
   DM.qrHINOSN.Close;
-  DM.qrHINOSN.SQL.Clear;
-  DM.qrHINOSN.SQL.Add('SELECT * FROM HINARIO_ADVENTISTA_1996');
-  DM.qrHINOSN.SQL.Add(' WHERE 1=1 ');
-  DM.qrHINOSN.SQL.Add(filtro);
+  DM.qrHINOSN.ParamByName('VALOR').AsString := fmIndex.termo_busca(valor);
   DM.qrHINOSN.Open;
 
   if (DM.qrHINOSN.RecordCount = 1) then
   begin
     reHinoN.Lines.Clear;
     DM.qrLETRA.Close;
-    DM.qrLETRA.Parameters.ParamByName('MUSICA').Value := DM.qrHINOSN.fieldbyname('ID').AsInteger;
+    DM.qrLETRA.ParamByName('MUSICA').Value := DM.qrHINOSN.fieldbyname('ID').AsInteger;
     DM.qrLETRA.Open;
     while not DM.qrLETRA.Eof do
     begin
@@ -3028,7 +3016,7 @@ begin
   if (url = '') then
   begin
     DM.qrMUSICA.Close;
-    DM.qrMUSICA.Parameters.ParamByName('ID').Value := musicaID;
+    DM.qrMUSICA.ParamByName('ID').Value := musicaID;
     DM.qrMUSICA.Open;
     album := DM.qrMUSICA.FieldByName('ALBUM').AsString;
     url := DM.qrMUSICA.FieldByName('URL').AsString;
@@ -3554,7 +3542,7 @@ begin
     btVidOnlPExec.Enabled := ((DM.cdsVideosOnPerso.Active = true) and (DM.cdsVideosOnPerso.RecordCount > 0));
 
 
-    stVideosOnPerso_1.caption := qtItens(TADOQuery(DM.cdsVideosOnPerso),'vídeo encontrado','vídeos encontrados','Nenhum vídeo encontrado');
+    stVideosOnPerso_1.caption := qtItens(TFDQuery(DM.cdsVideosOnPerso),'vídeo encontrado','vídeos encontrados','Nenhum vídeo encontrado');
   end;
   carrega_opc := False;
 end;
@@ -3752,7 +3740,7 @@ var
   sql: string;
   i: integer;
   dir: string;
-  QUERY: TADOQuery;
+  QUERY: TFDQuery;
 begin
   if not InternetGetConnectedState(@Flags, 0) then
   begin
@@ -3857,7 +3845,7 @@ begin
     else
     begin
       DM.qrONL_PLAYLISTS.Close;
-      DM.qrONL_PLAYLISTS.Parameters.ParamByName('CANAL_ID').Value := id;
+      DM.qrONL_PLAYLISTS.ParamByName('CANAL_ID').Value := id;
       DM.qrONL_PLAYLISTS.Open;
       QUERY := DM.qrONL_PLAYLISTS;
     end;
@@ -3887,7 +3875,7 @@ begin
     else
     begin
       DM.qrONL_VIDEOS.Close;
-      DM.qrONL_VIDEOS.Parameters.ParamByName('PLAYLIST_ID').Value := id;
+      DM.qrONL_VIDEOS.ParamByName('PLAYLIST_ID').Value := id;
       DM.qrONL_VIDEOS.Open;
       QUERY := DM.qrONL_VIDEOS;
     end;
@@ -3923,7 +3911,7 @@ procedure TfmIndex.bgDoxologiaCateButtonClicked(Sender: TObject;
   Index: Integer);
 begin
   DM.qrMUSICAS.Close;
-  DM.qrMUSICAS.Parameters.ParamByName('ID_ALBUM').Value := lbbgDoxologiaCate.Items[Index];
+  DM.qrMUSICAS.ParamByName('ID_ALBUM').Value := lbbgDoxologiaCate.Items[Index];
   DM.qrMUSICAS.Open;
   lblDoxologiaCate.Caption := bgDoxologiaCate.Items[Index].Caption;
   pnlDoxologiaMusicas.Visible := True;
@@ -3942,7 +3930,7 @@ begin
   pnlOnlPlaylists.Visible := True;
 
   DM.qrONL_PLAYLISTS.Close;
-  DM.qrONL_PLAYLISTS.Parameters.ParamByName('CANAL_ID').Value := lbbgOnlCanais.Items[Index];
+  DM.qrONL_PLAYLISTS.ParamByName('CANAL_ID').Value := lbbgOnlCanais.Items[Index];
   DM.qrONL_PLAYLISTS.Open;
   if DM.qrONL_PLAYLISTS.RecordCount <= 0 then
     atualiza_coletaneas_web('playlists', lbbgOnlCanais.Items[Index])
@@ -3957,7 +3945,7 @@ begin
   imgYoutubeCapa.Visible := not pnlOnlVideos.Visible;
 
   DM.qrONL_VIDEOS.Close;
-  DM.qrONL_VIDEOS.Parameters.ParamByName('PLAYLIST_ID').Value := lbbgOnlPlaylists.Items[Index];
+  DM.qrONL_VIDEOS.ParamByName('PLAYLIST_ID').Value := lbbgOnlPlaylists.Items[Index];
   DM.qrONL_VIDEOS.Open;
   if DM.qrONL_VIDEOS.RecordCount <= 0 then
     atualiza_coletaneas_web('videos', lbbgOnlPlaylists.Items[Index])
@@ -4039,8 +4027,7 @@ procedure TfmIndex.txtBuscaChange(Sender: TObject);
 begin
   if carrega_opc then exit;
 
-  TCustomRadioGroup(ckgFiltros.Components[1]).Enabled := (ckgColetaneas.ItemIndex = 0);
-  if ckgFiltros.ItemChecked[1] and TCustomRadioGroup(ckgFiltros.Components[1]).Enabled then
+  if ckgFiltros.ItemChecked[1] then
   begin
     DM.tmrBusca.Enabled := False;
     DM.tmrBusca.Enabled := True;
@@ -4366,14 +4353,14 @@ var
   busca_ori: string;
 begin
   busca_ori := busca;
-  busca := RemoveAcento(busca);
+//  busca := RemoveAcento(busca);
   busca := StringReplace(busca,'*','%',[rfIgnoreCase, rfReplaceAll]);
-  busca := StringReplace(busca,'a','[aáàâãä]',[rfIgnoreCase, rfReplaceAll]);
-  busca := StringReplace(busca,'e','[eéèêë]',[rfIgnoreCase, rfReplaceAll]);
-  busca := StringReplace(busca,'i','[iíìîï]',[rfIgnoreCase, rfReplaceAll]);
-  busca := StringReplace(busca,'o','[oóòôõö]',[rfIgnoreCase, rfReplaceAll]);
-  busca := StringReplace(busca,'u','[uúùûü]',[rfIgnoreCase, rfReplaceAll]);
-  busca := StringReplace(busca,'c','[cç]',[rfIgnoreCase, rfReplaceAll]);
+//  busca := StringReplace(busca,'a','[aáàâãä]',[rfIgnoreCase, rfReplaceAll]);
+//  busca := StringReplace(busca,'e','[eéèêë]',[rfIgnoreCase, rfReplaceAll]);
+//  busca := StringReplace(busca,'i','[iíìîï]',[rfIgnoreCase, rfReplaceAll]);
+//  busca := StringReplace(busca,'o','[oóòôõö]',[rfIgnoreCase, rfReplaceAll]);
+//  busca := StringReplace(busca,'u','[uúùûü]',[rfIgnoreCase, rfReplaceAll]);
+//  busca := StringReplace(busca,'c','[cç]',[rfIgnoreCase, rfReplaceAll]);
 //  loadCol.Strings.Values['BUSCA:'+busca_ori] := busca;
   Result := busca;
 end;
@@ -4944,8 +4931,8 @@ begin
   else if (tipo = 'CAP') then
   begin
     DM.qrBIBLIA_CAPITULOS.Close;
-    DM.qrBIBLIA_CAPITULOS.Parameters.ParamByName('LIVRO').Value := StrToInt('0'+loadCol.Strings.Values['BIBLIA_LIVRO']);
-    DM.qrBIBLIA_CAPITULOS.Parameters.ParamByName('VERSAO').Value := loadCol.Strings.Values['BIBLIA_VERSAO'];
+    DM.qrBIBLIA_CAPITULOS.ParamByName('LIVRO').Value := StrToInt('0'+loadCol.Strings.Values['BIBLIA_LIVRO']);
+    DM.qrBIBLIA_CAPITULOS.ParamByName('VERSAO').Value := loadCol.Strings.Values['BIBLIA_VERSAO'];
     DM.qrBIBLIA_CAPITULOS.Open;
     busBibliaCapitulo.Items.Clear;
     for i := 1 to DM.qrBIBLIA_LIVROS.FieldByName('CAPITULOS').AsInteger do
@@ -4964,7 +4951,7 @@ begin
     begin
       busp := geraIntervaloNum(GetStrNumber2(trim(busBibliaVersiculo.Text)));
       bus := termo_busca(trim(busBibliaVersiculo.Text));
-      DM.qrBIBLIA_VERSICULOS.SQL.Add('SELECT ID,LIVRO,CAPITULO,VERSICULO,VERSICULO & " " AS VERSICULO_TXT,PASSAGEM & "" AS PASSAGEM,PASSAGEM AS PASSAGEM_ORI FROM BIBLIA');
+      DM.qrBIBLIA_VERSICULOS.SQL.Add('SELECT ID, LIVRO, CAPITULO, VERSICULO, VERSICULO || " " AS VERSICULO_TXT, PASSAGEM || "" AS PASSAGEM, PASSAGEM AS PASSAGEM_ORI FROM BIBLIA');
       DM.qrBIBLIA_VERSICULOS.SQL.Add('WHERE LIVRO = 0'+loadCol.Strings.Values['BIBLIA_LIVRO']);
       DM.qrBIBLIA_VERSICULOS.SQL.Add('AND VERSAO = '''+loadCol.Strings.Values['BIBLIA_VERSAO']+'''');
       DM.qrBIBLIA_VERSICULOS.SQL.Add('AND CAPITULO = 0'+loadCol.Strings.Values['BIBLIA_CAPITULO']);
@@ -4974,14 +4961,14 @@ begin
     end
     else
     begin
-      DM.qrBIBLIA_VERSICULOS.SQL.Add('SELECT ID,LIVRO,CAPITULO,VERSICULO,VERSICULO & " " AS VERSICULO_TXT,PASSAGEM & "" AS PASSAGEM,PASSAGEM AS PASSAGEM_ORI FROM BIBLIA');
+      DM.qrBIBLIA_VERSICULOS.SQL.Add('SELECT ID, LIVRO, CAPITULO, VERSICULO, VERSICULO || " " AS VERSICULO_TXT, PASSAGEM || "" AS PASSAGEM, PASSAGEM AS PASSAGEM_ORI FROM BIBLIA');
       DM.qrBIBLIA_VERSICULOS.SQL.Add('WHERE LIVRO = 0'+loadCol.Strings.Values['BIBLIA_LIVRO']);
       DM.qrBIBLIA_VERSICULOS.SQL.Add('AND VERSAO = '''+loadCol.Strings.Values['BIBLIA_VERSAO']+'''');
       DM.qrBIBLIA_VERSICULOS.SQL.Add('AND CAPITULO = 0'+loadCol.Strings.Values['BIBLIA_CAPITULO']);
       DM.qrBIBLIA_VERSICULOS.SQL.Add('ORDER BY VERSICULO');
     end;
     DM.qrBIBLIA_VERSICULOS.Open;
-    corCampoBusca(TADOQuery(DM.qrBIBLIA_VERSICULOS),busBibliaVersiculo,nil);
+    corCampoBusca(TFDQuery(DM.qrBIBLIA_VERSICULOS),busBibliaVersiculo,nil);
 
     if not (DM.qrBIBLIA_LIVROS.Eof) then
       DM.qrBIBLIA_VERSICULOS.Locate('VERSICULO',loadCol.Strings.Values['BIBLIA_VERSICULO'],[]);
@@ -4995,9 +4982,9 @@ begin
       bus := termo_busca(trim(txtBibLocaliza.Text));
       DM.qrBIBLIA_BUSCA.SQL.Add('SELECT "" AS BRANCO,');
       DM.qrBIBLIA_BUSCA.SQL.Add('BIBLIA.VERSAO,BIBLIA.LIVRO,');
-      DM.qrBIBLIA_BUSCA.SQL.Add('BIBLIA.CAPITULO,BIBLIA.VERSICULO,BIBLIA.PASSAGEM & "" AS PASSAGEM,');
-      DM.qrBIBLIA_BUSCA.SQL.Add('" " & LIVRO.LIVRO & " " & BIBLIA.CAPITULO & ":" & BIBLIA.VERSICULO & " (" & BIBLIA.VERSAO & ")" AS DESC_PASSAGEM,');
-      DM.qrBIBLIA_BUSCA.SQL.Add('LIVRO.LIVRO & " " & BIBLIA.CAPITULO & ":" & BIBLIA.VERSICULO & " (" & BIBLIA.VERSAO & ")" AS DESC_PASSAGEM2');
+      DM.qrBIBLIA_BUSCA.SQL.Add('BIBLIA.CAPITULO,BIBLIA.VERSICULO,BIBLIA.PASSAGEM || "" AS PASSAGEM,');
+      DM.qrBIBLIA_BUSCA.SQL.Add('" " || LIVRO.LIVRO || " " || BIBLIA.CAPITULO || ":" || BIBLIA.VERSICULO || " (" || BIBLIA.VERSAO || ")" AS DESC_PASSAGEM,');
+      DM.qrBIBLIA_BUSCA.SQL.Add('LIVRO.LIVRO || " " || BIBLIA.CAPITULO || ":" || BIBLIA.VERSICULO || " (" || BIBLIA.VERSAO || ")" AS DESC_PASSAGEM2');
       DM.qrBIBLIA_BUSCA.SQL.Add('FROM BIBLIA,LIVRO');
       DM.qrBIBLIA_BUSCA.SQL.Add('WHERE BIBLIA.LIVRO = LIVRO.ID');
       DM.qrBIBLIA_BUSCA.SQL.Add('AND BIBLIA.VERSAO = '''+loadCol.Strings.Values['BIBLIA_BUSCA_VERSAO']+'''');
@@ -5684,7 +5671,7 @@ begin
     else
     begin
       DM.qrMUSICA.Close;
-      DM.qrMUSICA.Parameters.ParamByName('ID').Value := StrToInt('0'+lerParam(item, 'musica', '0', arq_liturgia));
+      DM.qrMUSICA.ParamByName('ID').Value := StrToInt('0'+lerParam(item, 'musica', '0', arq_liturgia));
       DM.qrMUSICA.Open;
       if DM.qrMUSICA.RecordCount <= 0
         then pb := true
@@ -6776,7 +6763,7 @@ begin
     else if (tag = 5) then
     begin
       DM.qrMUSICA.Close;
-      DM.qrMUSICA.Parameters.ParamByName('ID').Value := id;
+      DM.qrMUSICA.ParamByName('ID').Value := id;
       DM.qrMUSICA.Open;
 
       if (DM.qrMUSICA.FieldByName('URL_INSTRUMENTAL').AsString = '')
@@ -6981,8 +6968,8 @@ begin
     begin
       DM.cdsSLIDE_MUSICA2.First;
       DM.qrINSERE_MUSICA.Close;
-      DM.qrINSERE_MUSICA.Parameters.ParamByName('NOME').Value := DM.cdsSLIDE_MUSICA2.FieldByName('LETRA').AsString;
-      DM.qrINSERE_MUSICA.Parameters.ParamByName('IMAGEM').Value := ExtractFileName(DM.cdsSLIDE_MUSICA2.FieldByName('IMAGEM').AsString);
+      DM.qrINSERE_MUSICA.ParamByName('NOME').Value := DM.cdsSLIDE_MUSICA2.FieldByName('LETRA').AsString;
+      DM.qrINSERE_MUSICA.ParamByName('IMAGEM').Value := ExtractFileName(DM.cdsSLIDE_MUSICA2.FieldByName('IMAGEM').AsString);
       DM.qrINSERE_MUSICA.ExecSQL;
 
       DM.qrSELECT_MAX_MUSICA.Close;
@@ -6999,7 +6986,7 @@ begin
     DM.cdsSLIDE_MUSICA2.First;
 
     DM.qrSELECT_LETRA_MUSICA.Close;
-    DM.qrSELECT_LETRA_MUSICA.Parameters.ParamByName('MUSICA').Value := idMusica.Text;
+    DM.qrSELECT_LETRA_MUSICA.ParamByName('MUSICA').Value := idMusica.Text;
     DM.qrSELECT_LETRA_MUSICA.Open;
     DM.qrSELECT_LETRA_MUSICA.First;
 
@@ -7035,20 +7022,20 @@ begin
         begin
           ordem := ordem+1;
           DM.qrINSERE_LETRA_MUSICA.Close;
-          DM.qrINSERE_LETRA_MUSICA.Parameters.ParamByName('MUSICA').Value := idMusica.Text;
-          DM.qrINSERE_LETRA_MUSICA.Parameters.ParamByName('LETRA').Value := letra_ok;
-          DM.qrINSERE_LETRA_MUSICA.Parameters.ParamByName('TEMPO').Value := DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsString;
-          DM.qrINSERE_LETRA_MUSICA.Parameters.ParamByName('ORDEM').Value := ordem;
-          DM.qrINSERE_LETRA_MUSICA.Parameters.ParamByName('IMAGEM').Value := ExtractFileName(DM.cdsSLIDE_MUSICA2.FieldByName('IMAGEM').AsString);
+          DM.qrINSERE_LETRA_MUSICA.ParamByName('MUSICA').Value := idMusica.Text;
+          DM.qrINSERE_LETRA_MUSICA.ParamByName('LETRA').Value := letra_ok;
+          DM.qrINSERE_LETRA_MUSICA.ParamByName('TEMPO').Value := DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsString;
+          DM.qrINSERE_LETRA_MUSICA.ParamByName('ORDEM').Value := ordem;
+          DM.qrINSERE_LETRA_MUSICA.ParamByName('IMAGEM').Value := ExtractFileName(DM.cdsSLIDE_MUSICA2.FieldByName('IMAGEM').AsString);
           DM.qrINSERE_LETRA_MUSICA.ExecSQL;
         end
         else
         begin
           DM.qrALTERA_LETRA_MUSICA.Close;
-          DM.qrALTERA_LETRA_MUSICA.Parameters.ParamByName('MUSICA').Value := idMusica.Text;
-          DM.qrALTERA_LETRA_MUSICA.Parameters.ParamByName('LETRA').Value := letra_ok;
-          DM.qrALTERA_LETRA_MUSICA.Parameters.ParamByName('TEMPO').Value := DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsString;
-          DM.qrALTERA_LETRA_MUSICA.Parameters.ParamByName('ID').Value := DM.qrSELECT_LETRA_MUSICA.FieldByName('ID').AsInteger;
+          DM.qrALTERA_LETRA_MUSICA.ParamByName('MUSICA').Value := idMusica.Text;
+          DM.qrALTERA_LETRA_MUSICA.ParamByName('LETRA').Value := letra_ok;
+          DM.qrALTERA_LETRA_MUSICA.ParamByName('TEMPO').Value := DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsString;
+          DM.qrALTERA_LETRA_MUSICA.ParamByName('ID').Value := DM.qrSELECT_LETRA_MUSICA.FieldByName('ID').AsInteger;
           DM.qrALTERA_LETRA_MUSICA.ExecSQL;
           DM.qrSELECT_LETRA_MUSICA.Next;
           ordem := DM.qrSELECT_LETRA_MUSICA.FieldByName('ORDEM').AsInteger;
@@ -7075,9 +7062,9 @@ begin
       end;
 
       DM.qrINSERE_MUSICA_ALBUM.Close;
-      DM.qrINSERE_MUSICA_ALBUM.Parameters.ParamByName('ID_ALBUM').Value := idAlbum.Text;
-      DM.qrINSERE_MUSICA_ALBUM.Parameters.ParamByName('ID_MUSICA').Value := idMusica.Text;
-      DM.qrINSERE_MUSICA_ALBUM.Parameters.ParamByName('FAIXA').Value := idFaixa.Text;
+      DM.qrINSERE_MUSICA_ALBUM.ParamByName('ID_ALBUM').Value := idAlbum.Text;
+      DM.qrINSERE_MUSICA_ALBUM.ParamByName('ID_MUSICA').Value := idMusica.Text;
+      DM.qrINSERE_MUSICA_ALBUM.ParamByName('FAIXA').Value := idFaixa.Text;
       DM.qrINSERE_MUSICA_ALBUM.ExecSQL;
     end;
 
@@ -7238,7 +7225,7 @@ begin
   else if (p = 'playlists') then
   begin
     DM.qrONL_PLAYLISTS.Close;
-    DM.qrONL_PLAYLISTS.Parameters.ParamByName('CANAL_ID').Value := id;
+    DM.qrONL_PLAYLISTS.ParamByName('CANAL_ID').Value := id;
     DM.qrONL_PLAYLISTS.Open;
     bgOnlPlaylists.Items.Clear;
     bgOnlPlaylists.ItemIndex := -1;
@@ -7269,7 +7256,7 @@ begin
   else if (p = 'videos') then
   begin
     DM.qrONL_VIDEOS.Close;
-    DM.qrONL_VIDEOS.Parameters.ParamByName('PLAYLIST_ID').Value := id;
+    DM.qrONL_VIDEOS.ParamByName('PLAYLIST_ID').Value := id;
     DM.qrONL_VIDEOS.Open;
     bgOnlVideos.ScrollBy(0, 0);
     bgOnlVideos.Items.Clear;
@@ -7366,9 +7353,9 @@ begin
       stColetPerso_0.Caption := '';
     end;
 
-    stColetPerso_1.Caption := qtItens(TADOQuery(DM.cdsCOLETANEAS_PERSO),'álbum encontrado','álbuns encontrados','Nenhum álbum encontrado');
+    stColetPerso_1.Caption := qtItens(TFDQuery(DM.cdsCOLETANEAS_PERSO),'álbum encontrado','álbuns encontrados','Nenhum álbum encontrado');
 
-    corCampoBusca(TADOQuery(DM.cdsCOLETANEAS_PERSO),txtBuscaColetPeso,nil);
+    corCampoBusca(TFDQuery(DM.cdsCOLETANEAS_PERSO),txtBuscaColetPeso,nil);
     fExibeColetaneasPerso(sbColPERSO);
   end;
 end;
@@ -8031,11 +8018,10 @@ end;
 procedure TfmIndex.buscaMusicas;
 var
   valor: string;
-  filtro: string;
   i: Integer;
-  fil: Boolean;
   tabela: string;
   letra: string;
+  opc_colet: string;
 begin
   if carrega_opc then exit;
   if loadCol.Strings.Values['BUSCA:CARREGADO'] <> 'S' then Exit;
@@ -8047,105 +8033,52 @@ begin
   bsSkinScrollBar8.Visible := true;
   valor := trim(txtBusca.Text);
 
-  TCustomRadioGroup(ckgFiltros.Components[1]).Enabled := (ckgColetaneas.ItemChecked[0] = True);
-//  if TCustomRadioGroup(ckgFiltros.Components[1]).Enabled = False
-//    then ckgFiltros.ItemChecked[1] := False;
-
   if (ckgFiltros.ItemChecked[0] = False) and (ckgFiltros.ItemChecked[1] = False) and (ckgFiltros.ItemChecked[2] = False)
     then ckgFiltros.ItemChecked[0] := True;
 
   if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = False)
     then ckgColetaneas.ItemChecked[0] := True;
 
-  if (ckgColetaneas.ItemChecked[0] = True) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = False)
-    then tabela := 'LISTA_MUSICAS M'
-  else if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = True) and (ckgColetaneas.ItemChecked[2] = False)
-    then tabela := 'LISTA_MUSICAS_ONL M'
-  else if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = True)
-    then tabela := 'LISTA_MUSICAS_PERSO M'
-
-  else if (ckgColetaneas.ItemChecked[0] = True) and (ckgColetaneas.ItemChecked[1] = True) and (ckgColetaneas.ItemChecked[2] = False)
-    then tabela := 'LISTA_MUSICAS_M_ONL M'
-  else if (ckgColetaneas.ItemChecked[0] = True) and (ckgColetaneas.ItemChecked[1] = False) and (ckgColetaneas.ItemChecked[2] = True)
-    then tabela := 'LISTA_MUSICAS_M_PERSO M'
-  else if (ckgColetaneas.ItemChecked[0] = False) and (ckgColetaneas.ItemChecked[1] = True) and (ckgColetaneas.ItemChecked[2] = True)
-    then tabela := 'LISTA_MUSICAS_ONL_PERSO M'
-
-  else
-    tabela := 'LISTA_MUSICAS_TODAS M';
-
+  opc_colet := ',';
+  if (ckgColetaneas.ItemChecked[0] = True) then opc_colet := opc_colet + 'B,';
+  if (ckgColetaneas.ItemChecked[1] = True) then opc_colet := opc_colet + 'W,';
+  if (ckgColetaneas.ItemChecked[2] = True) then opc_colet := opc_colet + 'P,';
 
   if (trim(valor) = '')
     then pnlStatusBuscaMusicas0.caption := ''
     else pnlStatusBuscaMusicas0.caption := 'Buscando nome: ''' + valor + '''';
-  filtro := ' 1 = 1 ';
-
-  if tabLetras.Tabs[tabLetras.TabIndex] <> 'Todas'  then
-  begin
-    if tabLetras.Tabs[tabLetras.TabIndex] <> '#'
-      then filtro := filtro + ' AND NOME LIKE '''+termo_busca(tabLetras.Tabs[tabLetras.TabIndex])+'%'' '
-      else filtro := filtro + ' AND NOME LIKE ''[!a-zA-ZáàâãäéèêëíìîïóòôõöúùûüçÁÀÂÃÄÉÈÊËÍÌÎÏÓÒÔÕÖÚÙÛÜÇ]%'' ';
-  end;
-
-  fil := False;
-  for i := 0 to ckgFiltros.Items.Count - 1 do
-  begin
-    if ckgFiltros.ItemChecked[i] and TCustomRadioGroup(ckgFiltros.Components[i]).Enabled then
-    begin
-      if fil = false then
-      begin
-        filtro := filtro + ' AND (';
-        fil := True;
-      end
-      else
-        filtro := filtro + ' OR ';
-
-      case i of
-        0:
-          filtro := filtro + ' NOME LIKE ''%' + termo_busca(valor) + '%'' ';
-        1:
-          filtro := filtro + ' ML.LETRA LIKE ''%' + termo_busca(valor) + '%'' ';
-        2:
-          filtro := filtro + ' NOME_ALBUM_COM LIKE ''%' + termo_busca(valor) + '%'' ';
-      end;
-    end;
-  end;
-
-  if fil = true then
-    filtro := filtro + ')'
-  else
-  begin
-    ckgFiltros.ItemChecked[0] := True;
-    pnlStatusBuscaMusicas1.Caption := qtItens(DM.qrBUSCA,'música encontrada','músicas encontradas','Nenhuma música encontrada');
-    loadCol.Strings.Values['BUSCA:STATUS'] := '';
-    Exit;
-  end;
-
-  if (ckgColetaneas.ItemIndex = 1) and (ckgFiltros.ItemChecked[0] = False) and (ckgFiltros.ItemChecked[2] = False) then
-  begin
-    ckgFiltros.ItemChecked[0] := True;
-    pnlStatusBuscaMusicas1.Caption := qtItens(DM.qrBUSCA,'música encontrada','músicas encontradas','Nenhuma música encontrada');;
-    loadCol.Strings.Values['BUSCA:STATUS'] := '';
-    Exit;
-  end;
 
 
   DM.qrBUSCA.Close;
-  DM.qrBUSCA.SQL.Clear;
-  DM.qrBUSCA.SQL.Add('SELECT DISTINCT '''' AS ICONE1,'''' AS ICONE2,'''' AS ICONE3,M.* FROM ' + tabela);
-  if (ckgFiltros.ItemChecked[1] and TCustomRadioGroup(ckgFiltros.Components[1]).Enabled) then
-  begin
-  if (tabela = 'LISTA_MUSICAS M') then
-    DM.qrBUSCA.SQL.Add('LEFT JOIN MUSICAS_LETRA ML ON (ML.MUSICA = M.ID) ')
+  DM.qrBUSCA.ParamByName('TIPO').AsString := opc_colet;
+  DM.qrBUSCA.ParamByName('VALOR').AsString := termo_busca(valor);
+
+  if (ckgFiltros.ItemChecked[0]) then
+    DM.qrBUSCA.ParamByName('OPC_NOME').AsString := 'S'
   else
-    DM.qrBUSCA.SQL.Add('LEFT JOIN MUSICAS_LETRA ML ON (CStr(ML.MUSICA) = M.ID) ');
-  end;
-  DM.qrBUSCA.SQL.Add('WHERE');
-  DM.qrBUSCA.SQL.Add(filtro);
-  DM.qrBUSCA.SQL.Add('ORDER BY M.NOME');
+    DM.qrBUSCA.ParamByName('OPC_NOME').AsString := 'N';
+
+  if (ckgFiltros.ItemChecked[1]) then
+    DM.qrBUSCA.ParamByName('OPC_LETRA').AsString := 'S'
+  else
+    DM.qrBUSCA.ParamByName('OPC_LETRA').AsString := 'N';
+
+  if (ckgFiltros.ItemChecked[2]) then
+    DM.qrBUSCA.ParamByName('OPC_ALBUM').AsString := 'S'
+  else
+    DM.qrBUSCA.ParamByName('OPC_ALBUM').AsString := 'N';
+
+  if tabLetras.Tabs[tabLetras.TabIndex] <> 'Todas'  then
+    DM.qrBUSCA.ParamByName('INICIAL').AsString := tabLetras.Tabs[tabLetras.TabIndex]
+  else
+    DM.qrBUSCA.ParamByName('INICIAL').AsString := '';
+
   DM.qrBUSCA.Open;
-//  showmessage(DM.qrBUSCA.SQL.Text);
-//  filtro := filtro + ' COLLATE SQL_Latin1_General_CP1_CI_AI';
+
+  pnlStatusBuscaMusicas1.Caption := qtItens(DM.qrBUSCA,'música encontrada','músicas encontradas','Nenhuma música encontrada');
+  loadCol.Strings.Values['BUSCA:STATUS'] := '';
+
+
 
   if (DM.qrBUSCA.RecordCount = 1) then
   begin
@@ -8153,7 +8086,7 @@ begin
     begin
       reBusca.Lines.Clear;
       DM.qrLETRA.Close;
-      DM.qrLETRA.Parameters.ParamByName('MUSICA').Value := DM.qrBUSCA.fieldbyname('ID').AsInteger;
+      DM.qrLETRA.ParamByName('MUSICA').Value := DM.qrBUSCA.fieldbyname('ID').AsInteger;
       DM.qrLETRA.Open;
       while not DM.qrLETRA.Eof do
       begin
@@ -8390,12 +8323,14 @@ begin
 end;
 
 procedure TfmIndex.bsRibbon1Buttons3Click(Sender: TObject);
+var
+  url: string;
 begin
-  fIniciando.AppCreateForm(TfEnviaMensagem, fEnviaMensagem);
-  fEnviaMensagem.edAssunto.Text := '';
-  fEnviaMensagem.param := 'MAIL';
-  fEnviaMensagem.mmMensagem.Text := '';
-  fEnviaMensagem.ShowModal;
+  url := fmIndex.param.Strings.Values['form'+fIniciando.LANG];
+  if (url = '') then
+    Application.MessageBox(PChar('Não foi possível acessar o formulário de contato! Acesse o formulário em https://louovorja.com.br!'), fmIndex.TITULO, mb_ok + mb_iconinformation)
+  else
+    ShellExecute(handle, nil, PChar(url), nil, nil, SW_MAXIMIZE);
 end;
 
 procedure TfmIndex.bsRibbon1Buttons4Click(Sender: TObject);
@@ -8899,9 +8834,9 @@ begin
     Application.ProcessMessages;
 
     DM.qrARQUIVOS_HELP.Close;
-    DM.qrARQUIVOS_HELP.Parameters.ParamByName('ID').Value := id;
-    DM.qrARQUIVOS_HELP.Parameters.ParamByName('ARQUIVO').Value := ExtractFileName(lbHlpArquivos.Items[i]);
-    DM.qrARQUIVOS_HELP.Parameters.ParamByName('URL').Value := 'config\help\'+lbHlpArquivos.Items[i];
+    DM.qrARQUIVOS_HELP.ParamByName('ID').Value := id;
+    DM.qrARQUIVOS_HELP.ParamByName('ARQUIVO').Value := ExtractFileName(lbHlpArquivos.Items[i]);
+    DM.qrARQUIVOS_HELP.ParamByName('URL').Value := 'config\help\'+lbHlpArquivos.Items[i];
     DM.qrARQUIVOS_HELP.ExecSQL;
   end;
   for i := 0 to lbHlpImagens.Items.Count-1 do
@@ -8911,9 +8846,9 @@ begin
     Application.ProcessMessages;
 
     DM.qrARQUIVOS_HELP.Close;
-    DM.qrARQUIVOS_HELP.Parameters.ParamByName('ID').Value := id;
-    DM.qrARQUIVOS_HELP.Parameters.ParamByName('ARQUIVO').Value := ExtractFileName(lbHlpImagens.Items[i]);
-    DM.qrARQUIVOS_HELP.Parameters.ParamByName('URL').Value := 'config\help\imgs\'+lbHlpImagens.Items[i];
+    DM.qrARQUIVOS_HELP.ParamByName('ID').Value := id;
+    DM.qrARQUIVOS_HELP.ParamByName('ARQUIVO').Value := ExtractFileName(lbHlpImagens.Items[i]);
+    DM.qrARQUIVOS_HELP.ParamByName('URL').Value := 'config\help\imgs\'+lbHlpImagens.Items[i];
     DM.qrARQUIVOS_HELP.ExecSQL;
   end;
 
@@ -8948,7 +8883,7 @@ begin
     Memo1.Lines.Add(DM.qrMUSICA_ATUALIZAR.FieldByName('ID').AsString+' - '+DM.qrMUSICA_ATUALIZAR.FieldByName('NOME').AsString);
 
     DM.qrSLIDE_MUSICA.Close;
-    DM.qrSLIDE_MUSICA.Parameters.ParamByName('MUSICA_ID').Value := DM.qrMUSICA_ATUALIZAR.FieldByName('ID').AsInteger;
+    DM.qrSLIDE_MUSICA.ParamByName('MUSICA_ID').Value := DM.qrMUSICA_ATUALIZAR.FieldByName('ID').AsInteger;
     DM.qrSLIDE_MUSICA.Open;
     DM.qrSLIDE_MUSICA.First;
 
@@ -9266,7 +9201,7 @@ var
   ids: string;
   DataSet : TDataSet;
   DBGrid: TbsSkinDBGrid;
-  Query: TADOQuery;
+  Query: TFDQuery;
   i: integer;
 begin
   DBGrid := gridAlbAt;
@@ -9307,7 +9242,7 @@ var
   ids: string;
   DataSet : TDataSet;
   DBGrid: TbsSkinDBGrid;
-  Query: TADOQuery;
+  Query: TFDQuery;
   i: integer;
 begin
   DBGrid := gridAlbInat;
@@ -11338,7 +11273,7 @@ begin
 
   txtNomeVideoOn3.Text := '';
   txtUrlVideoOn3.Text := '';
-  stVideosOnPerso_1.Caption := qtItens(TADOQuery(DM.cdsVideosOnPerso),'vídeo encontrado','vídeos encontrados','Nenhum vídeo encontrado');
+  stVideosOnPerso_1.Caption := qtItens(TFDQuery(DM.cdsVideosOnPerso),'vídeo encontrado','vídeos encontrados','Nenhum vídeo encontrado');
 
   btVidOnlPExcluir.Enabled := ((DM.cdsVideosOnPerso.Active = true) and (DM.cdsVideosOnPerso.RecordCount > 0));
   btVidOnlPCopiarLink.Enabled := ((DM.cdsVideosOnPerso.Active = true) and (DM.cdsVideosOnPerso.RecordCount > 0));
@@ -12189,7 +12124,7 @@ begin
 
   DM.cdsVideosOnPerso.Locate('ID', id, []);
   DM.cdsVideosOnPerso.Delete;
-  stVideosOnPerso_1.Caption := qtItens(TADOQuery(DM.cdsVideosOnPerso),'vídeo encontrado','vídeos encontrados','Nenhum vídeo encontrado');
+  stVideosOnPerso_1.Caption := qtItens(TFDQuery(DM.cdsVideosOnPerso),'vídeo encontrado','vídeos encontrados','Nenhum vídeo encontrado');
 
   btVidOnlPExcluir.Enabled := ((DM.cdsVideosOnPerso.Active = true) and (DM.cdsVideosOnPerso.RecordCount > 0));
   btVidOnlPCopiarLink.Enabled := ((DM.cdsVideosOnPerso.Active = true) and (DM.cdsVideosOnPerso.RecordCount > 0));
@@ -12391,7 +12326,7 @@ end;
 
 procedure TfmIndex.sTabSheet18Show(Sender: TObject);
 begin
-  DM.ADO.GetTableNames(slbTabelas.Items, False);
+  DM.ADO.GetTableNames('','','',slbTabelas.Items);
 end;
 
 function TfmIndex.verificaURL(url: string; input: TbsSkinEdit; reverso: Boolean = False): string;
@@ -13120,7 +13055,7 @@ begin
         try
 
           DM.qrSLIDE_MUSICA.Close;
-          DM.qrSLIDE_MUSICA.Parameters.ParamByName('MUSICA_ID').Value := id;
+          DM.qrSLIDE_MUSICA.ParamByName('MUSICA_ID').Value := id;
           DM.qrSLIDE_MUSICA.Open;
 
           arquivo.writeString('Geral', 'slides', IntToStr(DM.qrSLIDE_MUSICA.RecordCount));
@@ -14795,7 +14730,7 @@ end;
 procedure TfmIndex.dbctrlMusicasClick(Sender: TObject);
 var
   tag: integer;
-  QUERY: TADOQuery;
+  QUERY: TFDQuery;
   txt: string;
 begin
   tag := TComponent(Sender).tag;
@@ -15391,9 +15326,9 @@ begin
       then url := ExtractFilePath(Application.ExeName) + url;
 
     DM.qrADD_COLETANEAS_PERSO.Close;
-    DM.qrADD_COLETANEAS_PERSO.Parameters.ParamByName('ID').Value := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('ID').AsString;
-    DM.qrADD_COLETANEAS_PERSO.Parameters.ParamByName('NOME').Value := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('NOME').AsString;
-    DM.qrADD_COLETANEAS_PERSO.Parameters.ParamByName('URL').Value := url;
+    DM.qrADD_COLETANEAS_PERSO.ParamByName('ID').Value := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('ID').AsString;
+    DM.qrADD_COLETANEAS_PERSO.ParamByName('NOME').Value := DM.cdsCOLETANEAS_PERSO_IMP.FieldByName('NOME').AsString;
+    DM.qrADD_COLETANEAS_PERSO.ParamByName('URL').Value := url;
     DM.qrADD_COLETANEAS_PERSO.ExecSQL;
 
 

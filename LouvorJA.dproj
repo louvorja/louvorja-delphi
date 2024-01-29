@@ -142,9 +142,6 @@
         <DCCReference Include="fmAtualiza.pas">
             <Form>fAtualiza</Form>
         </DCCReference>
-        <DCCReference Include="fmEnviaMensagem.pas">
-            <Form>fEnviaMensagem</Form>
-        </DCCReference>
         <DCCReference Include="fmHelp.pas">
             <Form>fHelp</Form>
         </DCCReference>
@@ -281,7 +278,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="..\Software\LouvorJA.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="D:\OneDrive\Documentos\Delphi\Sistemas\LouvorJA\Software\LouvorJA.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>LouvorJA.exe</RemoteName>
                         <Overwrite>true</Overwrite>

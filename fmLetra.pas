@@ -5,14 +5,17 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, Buttons, ComCtrls, DBCtrls, DB, ADODB,
-  bsSkinCtrls, bsdbctrls, Vcl.Mask, bsSkinBoxCtrls, BusinessSkinForm;
+  bsSkinCtrls, bsdbctrls, Vcl.Mask, bsSkinBoxCtrls, BusinessSkinForm,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, ShellApi,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
   TfLetra = class(TForm)
     sPanel2: TbsSkinPanel;
     reLetra: TbsSkinRichEdit;
     sSplitter1: TbsSkinSplitter;
-    qrBUSCA: TADOQuery;
+    qrBUSCA: TFDQuery;
     dsBUSCA: TDataSource;
     dbLista: TbsSkinDBLookupListBox;
     GridPanel1: TGridPanel;
@@ -25,11 +28,11 @@ type
     btErro: TbsSkinButton;
     bsBusinessSkinForm1: TbsBusinessSkinForm;
     Carregando: TbsSkinDBText;
-    qrLETRA: TADOQuery;
+    qrLETRA: TFDQuery;
     bsSkinPanel1: TbsSkinPanel;
     bsSkinStdLabel2: TbsSkinStdLabel;
     bsSkinDBLookupListBox1: TbsSkinDBLookupListBox;
-    qrALBUNS: TADOQuery;
+    qrALBUNS: TFDQuery;
     dsALBUNS: TDataSource;
     procedure FormActivate(Sender: TObject);
     procedure tbSlideMClick(Sender: TObject);
@@ -54,7 +57,7 @@ var
 implementation
 
 uses
-  fmMenu, fmEnviaMensagem, fmIniciando;
+  fmMenu, fmIniciando;
 
 {$R *.dfm}
 
@@ -101,7 +104,7 @@ begin
   u_id := qrBusca.fieldbyname('ID').AsInteger;
 
   qrALBUNS.Close;
-  qrALBUNS.Parameters.ParamByName('MUSICA').Value := qrBusca.fieldbyname('ID').AsInteger;
+  qrALBUNS.ParamByName('MUSICA').Value := qrBusca.fieldbyname('ID').AsInteger;
   qrALBUNS.Open;
 
   reLetra.Lines.Clear;
@@ -109,7 +112,7 @@ begin
   letra_t.Clear;
 
   qrLETRA.Close;
-  qrLETRA.Parameters.ParamByName('MUSICA').Value := qrBusca.fieldbyname('ID').AsInteger;
+  qrLETRA.ParamByName('MUSICA').Value := qrBusca.fieldbyname('ID').AsInteger;
   qrLETRA.Open;
   while not qrLETRA.Eof do
   begin
@@ -131,20 +134,14 @@ begin
 end;
 
 procedure TfLetra.btErroClick(Sender: TObject);
+var
+  url: string;
 begin
-  fIniciando.AppCreateForm(TfEnviaMensagem, fEnviaMensagem);
-  fEnviaMensagem.edAssunto.Text := 'Erro na Música "' + qrBUSCA.FieldByName('NOME').AsString + '"';
-  fEnviaMensagem.param := 'MUSICA.ID=' + qrBUSCA.FieldByName('ID').AsString;
-  fEnviaMensagem.mmMensagem.Lines.Clear;
-  fEnviaMensagem.mmMensagem.Lines.Add('Especifique o erro:');
-  fEnviaMensagem.mmMensagem.Lines.Add('(    ) Erro nos tempos dos slides');
-  fEnviaMensagem.mmMensagem.Lines.Add('(    ) Erro de ortografia');
-  fEnviaMensagem.mmMensagem.Lines.Add('(    ) Imagem inapropriada');
-  fEnviaMensagem.mmMensagem.Lines.Add('(    ) Outro: [especifique]');
-  fEnviaMensagem.mmMensagem.Lines.Add('');
-  fEnviaMensagem.mmMensagem.Lines.Add('[Informe aqui mais detalhes]');
-  // Altere a letra abaixo para a correta:' + #13#10 + '-----------------------------------------------' + #13#10#13#10 + qrBUSCA.FieldByName('LETRA').AsString;
-  fEnviaMensagem.ShowModal;
+  url := fmIndex.param.Strings.Values['form'+fIniciando.LANG];
+  if (url = '') then
+    Application.MessageBox(PChar('Não foi possível acessar o formulário de contato! Acesse o formulário em https://louovorja.com.br!'), fmIndex.TITULO, mb_ok + mb_iconinformation)
+  else
+    ShellExecute(handle, nil, PChar(url), nil, nil, SW_MAXIMIZE);
 end;
 
 procedure TfLetra.dbListaClick(Sender: TObject);

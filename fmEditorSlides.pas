@@ -1293,7 +1293,7 @@ procedure TfEditorSlides.Error(msg: string);
 var
 	s: string;
 begin
-	s := msg + #13#10 + '(Código do Erro: ' + IntToStr(BASS_ErrorGetCode) + ')';
+	s := msg + #13#10 + 'Verifique se o dispositivo de áudio está conectado em seu computador.' + #13#10 + '(Código do Erro: ' + IntToStr(BASS_ErrorGetCode) + ')';
   application.MessageBox(PChar(s), fmIndex.titulo, mb_ok + mb_iconerror);
 end;
 

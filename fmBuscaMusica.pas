@@ -5,8 +5,11 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, BusinessSkinForm, Data.DB,
-  Data.Win.ADODB, bsSkinCtrls, bsDBGrids, Vcl.Mask,
-  bsSkinBoxCtrls, Vcl.ExtCtrls, Vcl.ComCtrls, bsSkinGrids, Vcl.StdCtrls;
+  Data.Win.ADODB, bsSkinCtrls, bsDBGrids, Vcl.Mask, pngimage, DBGrids,
+  bsSkinBoxCtrls, Vcl.ExtCtrls, Vcl.ComCtrls, bsSkinGrids, Vcl.StdCtrls,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
   TfBuscaMusica = class(TForm)
@@ -15,7 +18,7 @@ type
     txtBusca: TbsSkinEdit;
     bsSkinStdLabel5: TbsSkinStdLabel;
     DBGrid1: TbsSkinDBGrid;
-    qrBUSCA: TADOQuery;
+    qrBUSCA: TFDQuery;
     dsBUSCA: TDataSource;
     stBusca: TbsSkinStatusBar;
     bsSkinScrollBar7: TbsSkinScrollBar;
@@ -28,6 +31,8 @@ type
     procedure DBGrid1DblClick(Sender: TObject);
     procedure txtBuscaKeyPress(Sender: TObject; var Key: Char);
     procedure FormResize(Sender: TObject);
+    procedure DBGrid1DrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TbsColumn; State: TGridDrawState);
   private
     { Private declarations }
   public
@@ -42,12 +47,70 @@ implementation
 
 {$R *.dfm}
 
-uses fmMenu;
+uses fmMenu, dmComponentes;
 
 procedure TfBuscaMusica.DBGrid1DblClick(Sender: TObject);
 begin
   id := qrBUSCA.FieldByName('ID').AsInteger;
   close;
+end;
+
+procedure TfBuscaMusica.DBGrid1DrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TbsColumn;
+  State: TGridDrawState);
+var
+  icon: TPngImage;
+  fixRect: TRect;
+begin
+  Canvas.Brush.Style := bsClear;
+  if (qrBUSCA.fieldbyname('TIPO_WEB').AsString = 'S') and (Column.FieldName = 'ICONE1') then
+  begin
+    icon := TPngImage.Create;
+    try
+      icon := DM.ico_16x16.PngImages[82].PngImage;
+      fixRect := Rect;
+      fixRect.Top := Rect.Top + 1;
+      fixRect.Bottom := Rect.Top + 17;
+      fixRect.Left := Rect.Left + 1;
+      fixRect.Right := Rect.Left + 17;
+      //TDBGrid(Sender).Canvas.CopyMode := cmMergeCopy;
+      TDBGrid(Sender).Canvas.StretchDraw(fixRect, icon);
+    except
+      FreeAndNil(icon);
+    end;
+  end;
+  if (qrBUSCA.fieldbyname('TIPO_PERSO').AsString = 'S') and (Column.FieldName = 'ICONE1') then
+  begin
+    icon := TPngImage.Create;
+    try
+      icon := DM.ico_16x16.PngImages[37].PngImage;
+      fixRect := Rect;
+      fixRect.Top := Rect.Top + 1;
+      fixRect.Bottom := Rect.Top + 17;
+      fixRect.Left := Rect.Left + 1;
+      fixRect.Right := Rect.Left + 17;
+      //TDBGrid(Sender).Canvas.CopyMode := cmMergeCopy;
+      TDBGrid(Sender).Canvas.StretchDraw(fixRect, icon);
+    except
+      FreeAndNil(icon);
+    end;
+  end;
+  if (qrBUSCA.fieldbyname('URL_INSTRUMENTAL').AsString <> '') and (Column.FieldName = 'ICONE2') then
+  begin
+    icon := TPngImage.Create;
+    try
+      icon := DM.ico_16x16.PngImages[103].PngImage;
+      fixRect := Rect;
+      fixRect.Top := Rect.Top + 1;
+      fixRect.Bottom := Rect.Top + 17;
+      fixRect.Left := Rect.Left + 1;
+      fixRect.Right := Rect.Left + 17;
+      //TDBGrid(Sender).Canvas.CopyMode := cmMergeCopy;
+      TDBGrid(Sender).Canvas.StretchDraw(fixRect, icon);
+    except
+      FreeAndNil(icon);
+    end;
+  end;
 end;
 
 procedure TfBuscaMusica.FormActivate(Sender: TObject);
@@ -65,7 +128,7 @@ end;
 
 procedure TfBuscaMusica.FormResize(Sender: TObject);
 begin
-  dbGrid1.Columns[1].Width := dbGrid1.Width - dbGrid1.Columns[0].Width;
+  dbGrid1.Columns[2].Width := dbGrid1.Width - dbGrid1.Columns[0].Width - dbGrid1.Columns[1].Width;
 end;
 
 procedure TfBuscaMusica.txtBuscaChange(Sender: TObject);
@@ -73,11 +136,8 @@ var
   valor: string;
   nr: integer;
   c: integer;
-  filtro: string;
 begin
-  filtro := '';
-
-  dbGrid1.Columns[1].Width := dbGrid1.Width - dbGrid1.Columns[0].Width;
+  dbGrid1.Columns[2].Width := dbGrid1.Width - dbGrid1.Columns[0].Width - dbGrid1.Columns[1].Width;
   valor := trim(txtBusca.Text);
   stBusca_0.caption := '';
   if trim(valor) <> '' then
@@ -85,27 +145,21 @@ begin
     val(txtBusca.Text, nr, c);
     if c = 0 then
     begin
-      filtro := ' AND TIPO_HASD = ''S'' AND FAIXA = ' + valor;
       stBusca_0.caption := 'Buscando hino nº: ' + valor;
     end
     else
     begin
-      filtro := ' AND NOME LIKE ''%' + fmIndex.termo_busca(valor) + '%''';
       stBusca_0.caption := 'Buscando música nome: ''' + valor + '''';
     end;
   end;
 
   qrBUSCA.Close;
-  qrBUSCA.SQL.Clear;
-  qrBUSCA.SQL.Add('SELECT DISTINCT ID,FAIXA,NOME_ALBUM_COM,NOME,TIPO_HASD FROM LISTA_MUSICAS');
-  qrBUSCA.SQL.Add(' WHERE 1=1 ');
-  qrBUSCA.SQL.Add(filtro);
-  qrBUSCA.SQL.Add(' ORDER BY NOME');
+  qrBUSCA.ParamByName('VALOR').AsString := fmIndex.termo_busca(valor);
   qrBUSCA.Open;
 
   stBusca_1.caption := fmIndex.qtItens(qrBUSCA,'música encontrada','músicas encontrados','Nenhuma música encontrado');
   fmIndex.corCampoBusca(qrBUSCA, txtBusca,DBGrid1);
-  dbGrid1.Columns[1].Width := dbGrid1.Width - dbGrid1.Columns[0].Width;
+  dbGrid1.Columns[2].Width := dbGrid1.Width - dbGrid1.Columns[0].Width - dbGrid1.Columns[1].Width;
 end;
 
 procedure TfBuscaMusica.txtBuscaKeyPress(Sender: TObject; var Key: Char);

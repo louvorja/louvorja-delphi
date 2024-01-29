@@ -585,12 +585,11 @@ object fLetra: TfLetra
     UseSkinItemHeight = True
     OnClick = dbListaClick
   end
-  object qrBUSCA: TADOQuery
-    Connection = DM.ADO
+  object qrBUSCA: TFDQuery
     Filtered = True
-    Parameters = <>
+    Connection = DM.ADO
     SQL.Strings = (
-      'SELECT MUSICAS.ID, MUSICAS.NOME'
+      'SELECT MUSICAS.ID AS ID, MUSICAS.NOME AS NOME'
       'FROM MUSICAS'
       'ORDER BY MUSICAS.NOME')
     Left = 256
@@ -676,31 +675,24 @@ object fLetra: TfLetra
     Left = 111
     Top = 87
   end
-  object qrLETRA: TADOQuery
-    Connection = DM.ADO
+  object qrLETRA: TFDQuery
     Filtered = True
-    Parameters = <
-      item
-        Name = 'MUSICA'
-        Size = -1
-        Value = Null
-      end>
+    Connection = DM.ADO
     SQL.Strings = (
       'SELECT ID,MUSICA,LETRA,LETRA_AUX FROM MUSICAS_LETRA'
       'WHERE MUSICA = :MUSICA'
       'ORDER BY ORDEM')
     Left = 256
     Top = 244
-  end
-  object qrALBUNS: TADOQuery
-    Connection = DM.ADO
-    Filtered = True
-    Parameters = <
+    ParamData = <
       item
         Name = 'MUSICA'
-        Size = -1
-        Value = Null
+        ParamType = ptInput
       end>
+  end
+  object qrALBUNS: TFDQuery
+    Filtered = True
+    Connection = DM.ADO
     SQL.Strings = (
       'SELECT A.ID,A.NOME FROM ALBUM_MUSICAS AM'
       'LEFT JOIN ALBUM A ON (A.ID = AM.ID_ALBUM)'
@@ -708,6 +700,11 @@ object fLetra: TfLetra
       'ORDER BY A.NOME')
     Left = 256
     Top = 292
+    ParamData = <
+      item
+        Name = 'MUSICA'
+        ParamType = ptInput
+      end>
   end
   object dsALBUNS: TDataSource
     DataSet = qrALBUNS

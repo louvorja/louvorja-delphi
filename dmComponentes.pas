@@ -10,7 +10,12 @@ uses
   bsPngImageList, System.ImageList, Vcl.ImgList, Vcl.Controls, bsSkinData,
   Vcl.Menus, Vcl.ExtDlgs, Vcl.Dialogs, Graphics, IdIOHandler, IdIOHandlerSocket,
   IdIOHandlerStack, IdSSL, IdSSLOpenSSL, Data.DBXMySQL, Data.FMTBcd,
-  Datasnap.Provider, Data.SqlExpr;
+  Datasnap.Provider, Data.SqlExpr, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.UI.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys, FireDAC.VCLUI.Wait,
+  FireDAC.Comp.Client, FireDAC.Comp.DataSet, FireDAC.Phys.SQLite,
+  FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs;
 
 type
   TDM = class(TDataModule)
@@ -22,34 +27,34 @@ type
     tmrSorteio: TTimer;
     tmrCrono: TTimer;
     tmrMediaPlayer: TTimer;
-    qrALBUNS: TADOQuery;
-    qrMUSICA: TADOQuery;
-    qrSEL_MUSICAS_IDMUS: TADOQuery;
-    qrONL_CANAIS: TADOQuery;
-    ADOQuery: TADOQuery;
-    qrLETRA_MUSICA: TADOQuery;
-    qrONL_PLAYLISTS_TUDO: TADOQuery;
-    qrONL_VIDEOS_TUDO: TADOQuery;
-    qrHINOS_LITURGIA: TADOQuery;
-    qrSEL_COLETANEAS_ID: TADOQuery;
-    qrVERSAO: TADOQuery;
-    qrMUSICAS_INFANTIS: TADOQuery;
-    qrSLIDE_MUSICA_ALBUM: TADOQuery;
-    qrONL_PLAYLISTS: TADOQuery;
-    qrBIBLIA_LIVROS: TADOQuery;
-    qrHINOS: TADOQuery;
-    qrBIBLIA_VERSAO: TADOQuery;
-    qrDOXOLOGIA_CATE: TADOQuery;
-    qrLETRA: TADOQuery;
-    qrBUSCA_MAX_CAPITULOS: TADOQuery;
-    qrSLIDE_MUSICA_GRAVA: TADOQuery;
-    qrONL_VIDEOS: TADOQuery;
-    qrBUSCA_MAX_VERSOS: TADOQuery;
-    qrBUSCA: TADOQuery;
-    qrMUSICAS: TADOQuery;
-    qrSLIDE_MUSICA_TEMPOS: TADOQuery;
-    qrSLIDE_MUSICA: TADOQuery;
-    ADO: TADOConnection;
+    qrALBUNS: TFDQuery;
+    qrMUSICA: TFDQuery;
+    qrSEL_MUSICAS_IDMUS: TFDQuery;
+    qrONL_CANAIS: TFDQuery;
+    ADOQuery: TFDQuery;
+    qrLETRA_MUSICA: TFDQuery;
+    qrONL_PLAYLISTS_TUDO: TFDQuery;
+    qrONL_VIDEOS_TUDO: TFDQuery;
+    qrHINOS_LITURGIA: TFDQuery;
+    qrSEL_COLETANEAS_ID: TFDQuery;
+    qrVERSAO: TFDQuery;
+    qrMUSICAS_INFANTIS: TFDQuery;
+    qrSLIDE_MUSICA_ALBUM: TFDQuery;
+    qrONL_PLAYLISTS: TFDQuery;
+    qrBIBLIA_LIVROS: TFDQuery;
+    qrHINOS: TFDQuery;
+    qrBIBLIA_VERSAO: TFDQuery;
+    qrDOXOLOGIA_CATE: TFDQuery;
+    qrLETRA: TFDQuery;
+    qrBUSCA_MAX_CAPITULOS: TFDQuery;
+    qrSLIDE_MUSICA_GRAVA: TFDQuery;
+    qrONL_VIDEOS: TFDQuery;
+    qrBUSCA_MAX_VERSOS: TFDQuery;
+    qrBUSCA: TFDQuery;
+    qrMUSICAS: TFDQuery;
+    qrSLIDE_MUSICA_TEMPOS: TFDQuery;
+    qrSLIDE_MUSICA: TFDQuery;
+    ADO: TFDConnection;
     cdsVideosOnPerso: TClientDataSet;
     StringField3: TStringField;
     StringField5: TStringField;
@@ -119,14 +124,14 @@ type
     SaveDialog: TSaveDialog;
     SaveTextFileDialog: TSaveTextFileDialog;
     SavePictureDialog: TSavePictureDialog;
-    qrARQUIVOS_HELP_DELETE: TADOQuery;
-    qrARQUIVOS_HELP: TADOQuery;
-    qrBD: TADOQuery;
+    qrARQUIVOS_HELP_DELETE: TFDQuery;
+    qrARQUIVOS_HELP: TFDQuery;
+    qrBD: TFDQuery;
     tmrBusca: TTimer;
     PasswordDialog: TbsSkinPasswordDialog;
-    qrBIBLIA_CAPITULOS: TADOQuery;
+    qrBIBLIA_CAPITULOS: TFDQuery;
     dsBIBLIA_CAPITULOS: TDataSource;
-    qrBIBLIA_VERSICULOS: TADOQuery;
+    qrBIBLIA_VERSICULOS: TFDQuery;
     dsBIBLIA_VERSICULOS: TDataSource;
     cdsBIBLIA_HISTORICO: TClientDataSet;
     dsBIBLIA_HISTORICO: TDataSource;
@@ -137,37 +142,37 @@ type
     cdsBIBLIA_HISTORICODATAHORA: TDateTimeField;
     cdsBIBLIA_HISTORICOID: TStringField;
     cdsBIBLIA_HISTORICOBRANCO: TStringField;
-    qrBIBLIA_BUS_LIVROS: TADOQuery;
+    qrBIBLIA_BUS_LIVROS: TFDQuery;
     dsBIBLIA_BUSCA: TDataSource;
-    qrBIBLIA_BUSCA: TADOQuery;
-    qrBIBLIA_VERSAO_2: TADOQuery;
+    qrBIBLIA_BUSCA: TFDQuery;
+    qrBIBLIA_VERSAO_2: TFDQuery;
     dsBIBLIA_VERSAO_2: TDataSource;
     pwd: TbsSkinPasswordDialog;
     cdsBIBLIA_HISTORICOVERSICULO: TStringField;
     cdsBIBLIA_HISTORICODESC_PASSAGEM: TStringField;
-    qrALBUM_ATIV: TADOQuery;
+    qrALBUM_ATIV: TFDQuery;
     dsALBUM_ATIV: TDataSource;
-    qrDEL_ALBUM_IGNORAR: TADOQuery;
-    qrADD_ALBUM_IGNORAR: TADOQuery;
-    qrALBUM_INATIV: TADOQuery;
+    qrDEL_ALBUM_IGNORAR: TFDQuery;
+    qrADD_ALBUM_IGNORAR: TFDQuery;
+    qrALBUM_INATIV: TFDQuery;
     dsALBUM_INATIV: TDataSource;
-    qrARQUIVOS_SISTEMA: TADOQuery;
-    qrGRAVA_TAMANHO_ARQUIVO: TADOQuery;
-    qrINSERE_LETRA_MUSICA: TADOQuery;
+    qrARQUIVOS_SISTEMA: TFDQuery;
+    qrGRAVA_TAMANHO_ARQUIVO: TFDQuery;
+    qrINSERE_LETRA_MUSICA: TFDQuery;
     cdsArquivos: TClientDataSet;
     dsArquivos: TDataSource;
     tmrPlayer: TTimer;
-    qrALTERA_LETRA_MUSICA: TADOQuery;
-    qrSELECT_LETRA_MUSICA: TADOQuery;
-    qrINSERE_MUSICA: TADOQuery;
-    qrSELECT_MAX_MUSICA: TADOQuery;
-    qrINSERE_MUSICA_ALBUM: TADOQuery;
+    qrALTERA_LETRA_MUSICA: TFDQuery;
+    qrSELECT_LETRA_MUSICA: TFDQuery;
+    qrINSERE_MUSICA: TFDQuery;
+    qrSELECT_MAX_MUSICA: TFDQuery;
+    qrINSERE_MUSICA_ALBUM: TFDQuery;
     ico_flags: TbsPngImageList;
     IdSSLIOHandlerSocketOpenSSL1: TIdSSLIOHandlerSocketOpenSSL;
-    qrHINOSN: TADOQuery;
+    qrHINOSN: TFDQuery;
     dsHINOSN: TDataSource;
-    qrMUSICA_ATUALIZAR: TADOQuery;
-    qrALBUM_IGNORAR: TADOQuery;
+    qrMUSICA_ATUALIZAR: TFDQuery;
+    qrALBUM_IGNORAR: TFDQuery;
     cdsCOLETANEAS_PERSO_IMP: TClientDataSet;
     StringField1: TStringField;
     StringField2: TStringField;
@@ -175,8 +180,8 @@ type
     StringField8: TStringField;
     StringField9: TStringField;
     StringField10: TStringField;
-    qrDEL_COLETANEAS_PERSO: TADOQuery;
-    qrADD_COLETANEAS_PERSO: TADOQuery;
+    qrDEL_COLETANEAS_PERSO: TFDQuery;
+    qrADD_COLETANEAS_PERSO: TFDQuery;
     procedure tmrSortearTimer(Sender: TObject);
     procedure tmrSortearNMTimer(Sender: TObject);
     procedure tmrSorteioTimer(Sender: TObject);

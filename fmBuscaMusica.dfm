@@ -13,6 +13,7 @@ object fBuscaMusica: TfBuscaMusica
   Font.Style = []
   KeyPreview = True
   OldCreateOrder = False
+  Scaled = False
   OnActivate = FormActivate
   OnKeyUp = FormKeyUp
   OnResize = FormResize
@@ -142,7 +143,7 @@ object fBuscaMusica: TfBuscaMusica
     Font.Height = -16
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
-    ColSizingwithLine = False
+    ColSizingWithLine = False
     DrawGraphicFields = False
     UseColumnsFont = False
     MouseWheelSupport = True
@@ -160,6 +161,7 @@ object fBuscaMusica: TfBuscaMusica
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = [fsBold]
+    OnDrawColumnCell = DBGrid1DrawColumnCell
     OnDblClick = DBGrid1DblClick
     Columns = <
       item
@@ -172,6 +174,13 @@ object fBuscaMusica: TfBuscaMusica
         Font.Style = [fsBold]
         Title.Caption = #193'lbum'
         Width = 305
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ICONE1'
+        Title.Caption = '  '
+        Width = 20
         Visible = True
       end
       item
@@ -255,7 +264,6 @@ object fBuscaMusica: TfBuscaMusica
       AutoSize = False
       ImageIndex = -1
       NumGlyphs = 1
-      ExplicitWidth = 305
     end
     object stBusca_1: TbsSkinStatusPanel
       Left = 320
@@ -328,10 +336,13 @@ object fBuscaMusica: TfBuscaMusica
     WindowState = wsNormal
     QuickButtons = <
       item
+        AllowAllUp = False
+        Down = False
         ImageIndex = 15
         Enabled = True
         Visible = False
         Caption = 'Atualizar Colet'#226'nea'
+        Position = bsqbpLeft
       end>
     QuickButtonsShowHint = False
     QuickButtonsShowDivider = True
@@ -345,6 +356,7 @@ object fBuscaMusica: TfBuscaMusica
     ClientWidth = 0
     ClientHeight = 0
     HideCaptionButtons = False
+    HideCloseButton = False
     AlwaysShowInTray = False
     LogoBitMapTransparent = False
     AlwaysMinimizeToTray = False
@@ -378,6 +390,7 @@ object fBuscaMusica: TfBuscaMusica
     DefMenuItemFont.Style = []
     UseDefaultSysMenu = True
     SkinData = DM.bsSkinData1
+    MinimizeApplication = False
     MinHeight = 0
     MinWidth = 0
     MaxHeight = 0
@@ -392,14 +405,28 @@ object fBuscaMusica: TfBuscaMusica
     Left = 167
     Top = 135
   end
-  object qrBUSCA: TADOQuery
-    Connection = DM.ADO
+  object qrBUSCA: TFDQuery
     Filtered = True
-    Parameters = <>
+    Connection = DM.ADO
     SQL.Strings = (
-      '/*QUERY VIA PROGRAMA'#199#195'O*/')
+      'SELECT '#39#39' AS ICONE1,'#39#39' AS ICONE2,'#39#39' AS ICONE3, M.*'
+      'FROM LISTA_MUSICAS M'
+      'WHERE '
+      
+        '    (CAST(:VALOR AS INTEGER) > 0 AND TIPO_HASD = '#39'S'#39' AND FAIXA =' +
+        ' :VALOR) '
+      '    OR '
+      
+        '    (CAST(:VALOR AS INTEGER) <= 0 AND NOME LIKE '#39'%'#39' || :VALOR ||' +
+        ' '#39'%'#39')')
     Left = 354
     Top = 148
+    ParamData = <
+      item
+        Name = 'VALOR'
+        ParamType = ptInput
+        Value = Null
+      end>
   end
   object dsBUSCA: TDataSource
     DataSet = qrBUSCA
