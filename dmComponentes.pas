@@ -182,6 +182,14 @@ type
     StringField10: TStringField;
     qrDEL_COLETANEAS_PERSO: TFDQuery;
     qrADD_COLETANEAS_PERSO: TFDQuery;
+    cdsMonitores: TClientDataSet;
+    StringField11: TStringField;
+    cdsMonitoresTOP: TIntegerField;
+    cdsMonitoresWIDTH: TIntegerField;
+    cdsMonitoresHEIGHT: TIntegerField;
+    cdsMonitoresNUM: TIntegerField;
+    cdsMonitoresLEFT: TIntegerField;
+    dsMonitores: TDataSource;
     procedure tmrSortearTimer(Sender: TObject);
     procedure tmrSortearNMTimer(Sender: TObject);
     procedure tmrSorteioTimer(Sender: TObject);

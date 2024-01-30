@@ -4,7 +4,7 @@ object fIdentificaMonitores: TfIdentificaMonitores
   BorderStyle = bsNone
   Caption = 'fIdentificaMonitores'
   ClientHeight = 300
-  ClientWidth = 400
+  ClientWidth = 543
   Color = clBlack
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object fIdentificaMonitores: TfIdentificaMonitores
   object rotulo: TLabel
     Left = 0
     Top = 0
-    Width = 400
-    Height = 300
+    Width = 543
+    Height = 224
     Align = alClient
     Alignment = taCenter
     AutoSize = False
@@ -38,6 +38,28 @@ object fIdentificaMonitores: TfIdentificaMonitores
     ExplicitTop = -160
     ExplicitWidth = 600
     ExplicitHeight = 400
+  end
+  object detalhes: TLabel
+    Left = 0
+    Top = 224
+    Width = 543
+    Height = 76
+    Align = alBottom
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '0'
+    Color = clWhite
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -67
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    Layout = tlCenter
+    ExplicitWidth = 400
   end
   object Timer1: TTimer
     Interval = 5000

@@ -10,6 +10,7 @@ type
   TfIdentificaMonitores = class(TForm)
     rotulo: TLabel;
     Timer1: TTimer;
+    detalhes: TLabel;
     procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }

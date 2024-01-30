@@ -1671,6 +1671,18 @@ type
     bsSkinPanel195: TbsSkinPanel;
     GridPanel54: TGridPanel;
     bsknbtn1: TbsSkinButton;
+    bsSkinPanel55: TbsSkinPanel;
+    bsRibbonDivider50: TbsRibbonDivider;
+    bsSkinPanel196: TbsSkinPanel;
+    bsSkinStdLabel178: TbsSkinStdLabel;
+    bsSkinPanel197: TbsSkinPanel;
+    ctrlMonitores: TDBCtrlGrid;
+    Panel39: TPanel;
+    GridPanel55: TGridPanel;
+    bsSkinDBText9: TbsSkinDBText;
+    bsSkinDBText10: TbsSkinDBText;
+    bsSkinDBText11: TbsSkinDBText;
+    Label12: TLabel;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2894,7 +2906,8 @@ begin
   if Query.Active = false then
     result := texto_nenh
   else if Query.RecordCount > 1 then
-    result := inttostr(Query.RecordCount) +' '+ texto_plu
+//    result := inttostr(Query.RecordCount) +' '+ texto_plu
+    result := ''
   else if Query.RecordCount = 1 then
     result := inttostr(Query.RecordCount) +' '+ texto_sing
   else
@@ -13850,6 +13863,16 @@ begin
   qtd_monitores := Screen.MonitorCount;
   SetLength(MonitorsArray, qtd_monitores);
 
+  if not DM.cdsMonitores.Active then
+  begin
+    DM.cdsMonitores.CreateDataSet;
+    DM.cdsMonitores.LogChanges := False;
+  end;
+  DM.cdsMonitores.Open;
+  DM.cdsMonitores.EmptyDataSet;
+  ctrlMonitores.ColCount := ceil(fmIndex.Width / 300);
+
+
   for i := 0 to qtd_monitores-1 do
   begin
     MonitorsArray[i].Left := Screen.Monitors[i].Left;
@@ -13868,6 +13891,18 @@ begin
       end
     )
   );
+
+  for i := 0 to length(MonitorsArray)-1 do
+  begin
+    DM.cdsMonitores.Append;
+    DM.cdsMonitores.FieldByName('ID').Value := i;
+    DM.cdsMonitores.FieldByName('NUM').Value := i+1;
+    DM.cdsMonitores.FieldByName('WIDTH').Value := MonitorsArray[i].Width;
+    DM.cdsMonitores.FieldByName('HEIGHT').Value := MonitorsArray[i].Height;
+    DM.cdsMonitores.FieldByName('TOP').Value := MonitorsArray[i].Top;
+    DM.cdsMonitores.FieldByName('LEFT').Value := MonitorsArray[i].Left;
+    DM.cdsMonitores.Post;
+  end;
 
   result := MonitorsArray[index];
 end;
@@ -15230,6 +15265,7 @@ begin
     form.Top := monitorInfo(i).Top;
     form.Left := monitorInfo(i).Left;
     form.rotulo.Caption := IntToStr(i+1);
+    form.detalhes.Caption := IntToStr(monitorInfo(i).Width) + ' x ' + IntToStr(monitorInfo(i).Height);
     form.FormStyle := fsStayOnTop;
   end;
 end;

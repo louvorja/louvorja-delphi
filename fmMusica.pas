@@ -96,6 +96,7 @@ type
     nslide: integer;
     nslideOrdem: integer;
     monitor:integer;
+    ult_format:string;
   end;
 
 var
@@ -888,6 +889,9 @@ end;
 
 procedure TfMusica.FormActivate(Sender: TObject);
 begin
+
+  ult_format := '';
+
   if fmIndex.ckMusicaTopo.Checked then
     FormStyle := fsStayOnTop;
   fmIndex.desenvolvedor(fmIndex.pnlModDes.Visible);
@@ -1115,7 +1119,10 @@ var
   letra,letra_aux: string;
   pos: integer;
   cor_letra,cor_letra_aux: TColor;
+  format: string;
 begin
+  format := '';
+
   nslide := DM.cdsSLIDE_MUSICA.RecNo;
   fMusicaOperador.DBGrid1.Refresh;
   if (DM.cdsSLIDE_MUSICA.RecNo = uslide) then exit;
@@ -1144,6 +1151,7 @@ begin
     letra_aux := '';
   end;
 
+
   if (DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').AsInteger  > 0)
     then pcTexto := DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').AsInteger
   else if (DM.cdsSLIDE_MUSICA.FieldByName('TIPO').AsString = 'CAPA')
@@ -1171,6 +1179,23 @@ begin
 
   if (DM.qrLETRA_MUSICA.Active) then
     DM.qrLETRA_MUSICA.Locate('ID',letraID,[]);
+
+  format := DM.cdsSLIDE_MUSICA.FieldByName('TIPO').AsString
+            + '|' + IntToStr(pcTexto)
+            + '|' + letra
+            + '|' + ColorToString(cor_letra)
+            + '|' + DM.cdsSLIDE_MUSICA.FieldByName('IMAGEM').AsString;
+
+  if (format = ult_format) then
+  begin
+    cor_letra := $000b4ef;
+    format := DM.cdsSLIDE_MUSICA.FieldByName('TIPO').AsString
+              + '|' + IntToStr(pcTexto)
+              + '|' + letra
+              + '|' + ColorToString(cor_letra)
+              + '|' + DM.cdsSLIDE_MUSICA.FieldByName('IMAGEM').AsString;
+  end;
+  ult_format := format;
 
 
   lblLetra.Visible := False;
@@ -1442,25 +1467,25 @@ begin
 
     if monitor <= Screen.MonitorCount-1 then
     begin
-      if (fMusica.Left <> Screen.Monitors[monitor].Left)
-        then fMusica.Left := Screen.Monitors[monitor].Left;
-      if (fMusica.Top <> Screen.Monitors[monitor].Top)
-        then fMusica.Top := Screen.Monitors[monitor].Top;
-      if (fMusica.Width <> Screen.Monitors[monitor].Width)
-        then fMusica.Width := Screen.Monitors[monitor].Width;
-      if (fMusica.Height <> Screen.Monitors[monitor].Height)
-        then fMusica.Height := Screen.Monitors[monitor].Height;
+      if (fMusica.Left <> fmIndex.monitorInfo(monitor).Left)
+        then fMusica.Left := fmIndex.monitorInfo(monitor).Left;
+      if (fMusica.Top <> fmIndex.monitorInfo(monitor).Top)
+        then fMusica.Top := fmIndex.monitorInfo(monitor).Top;
+      if (fMusica.Width <> fmIndex.monitorInfo(monitor).Width)
+        then fMusica.Width := fmIndex.monitorInfo(monitor).Width;
+      if (fMusica.Height <> fmIndex.monitorInfo(monitor).Height)
+        then fMusica.Height := fmIndex.monitorInfo(monitor).Height;
     end
     else
     begin
-      if (fMusica.Left <> Screen.Monitors[0].Left)
-        then fMusica.Left := Screen.Monitors[0].Left;
-      if (fMusica.Top <> Screen.Monitors[0].Top)
-        then fMusica.Top := Screen.Monitors[0].Top;
-      if (fMusica.Width <> Screen.Monitors[0].Width)
-        then fMusica.Width := Screen.Monitors[0].Width;
-      if (fMusica.Height <> Screen.Monitors[0].Height)
-        then fMusica.Height := Screen.Monitors[0].Height;
+      if (fMusica.Left <> fmIndex.monitorInfo(0).Left)
+        then fMusica.Left := fmIndex.monitorInfo(0).Left;
+      if (fMusica.Top <> fmIndex.monitorInfo(0).Top)
+        then fMusica.Top := fmIndex.monitorInfo(0).Top;
+      if (fMusica.Width <> fmIndex.monitorInfo(0).Width)
+        then fMusica.Width := fmIndex.monitorInfo(0).Width;
+      if (fMusica.Height <> fmIndex.monitorInfo(0).Height)
+        then fMusica.Height := fmIndex.monitorInfo(0).Height;
     end;
   end;
 
