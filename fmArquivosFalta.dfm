@@ -58,8 +58,8 @@ object fArquivosFalta: TfArquivosFalta
       AlignWithMargins = True
       Left = 10
       Top = 3
-      Width = 3
-      Height = 13
+      Width = 204
+      Height = 36
       Margins.Left = 10
       EllipsType = bsetNone
       UseSkinFont = True
@@ -73,6 +73,8 @@ object fArquivosFalta: TfArquivosFalta
       SkinDataName = 'stdlabel'
       Align = alClient
       Layout = tlCenter
+      ExplicitWidth = 3
+      ExplicitHeight = 13
     end
     object bsSkinButton2: TbsSkinButton
       AlignWithMargins = True
@@ -243,8 +245,8 @@ object fArquivosFalta: TfArquivosFalta
       AlignWithMargins = True
       Left = 10
       Top = 3
-      Width = 180
-      Height = 13
+      Width = 283
+      Height = 26
       Margins.Left = 10
       EllipsType = bsetNone
       UseSkinFont = True
@@ -259,6 +261,8 @@ object fArquivosFalta: TfArquivosFalta
       Align = alClient
       Caption = 'Verifica'#231#227'o de arquivos da colet'#226'nea:'
       Layout = tlCenter
+      ExplicitWidth = 180
+      ExplicitHeight = 13
     end
     object gpBotoes: TGridPanel
       Left = 296
@@ -532,14 +536,6 @@ object fArquivosFalta: TfArquivosFalta
     Position = 0
     SmallChange = 1
     LargeChange = 1
-  end
-  object qrVERIFICA__: TADOQuery
-    Connection = DM.ADO
-    Parameters = <>
-    SQL.Strings = (
-      'SELECT * FROM ARQUIVOS_SISTEMA ORDER BY ARQUIVO')
-    Left = 38
-    Top = 129
   end
   object tmrFecha: TTimer
     Enabled = False

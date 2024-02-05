@@ -90,8 +90,8 @@ object fListaMusica: TfListaMusica
       object lblTitulo: TbsSkinStdLabel
         Left = 0
         Top = 0
-        Width = 116
-        Height = 40
+        Width = 547
+        Height = 52
         EllipsType = bsetNone
         UseSkinFont = False
         UseSkinColor = False
@@ -112,12 +112,14 @@ object fListaMusica: TfListaMusica
         ParentFont = False
         Layout = tlBottom
         WordWrap = True
+        ExplicitWidth = 116
+        ExplicitHeight = 40
       end
       object lblSubtitulo: TbsSkinStdLabel
         Left = 0
         Top = 52
-        Width = 124
-        Height = 30
+        Width = 547
+        Height = 52
         EllipsType = bsetNone
         UseSkinFont = False
         UseSkinColor = False
@@ -138,6 +140,8 @@ object fListaMusica: TfListaMusica
         ParentFont = False
         Layout = tlCenter
         WordWrap = True
+        ExplicitWidth = 124
+        ExplicitHeight = 30
       end
       object pnlBotoes: TPanel
         Left = 0
@@ -426,8 +430,8 @@ object fListaMusica: TfListaMusica
         object ico: TbsPngImageView
           Left = 0
           Top = 0
-          Width = 24
-          Height = 24
+          Width = 50
+          Height = 65
           Cursor = crHandPoint
           DoubleBuffered = False
           ReflectionEffect = False
@@ -436,6 +440,8 @@ object fListaMusica: TfListaMusica
           Align = alClient
           Center = True
           OnClick = DBCtrlGridClick
+          ExplicitWidth = 24
+          ExplicitHeight = 24
         end
         object bsSkinDBText2: TbsSkinDBText
           AlignWithMargins = True

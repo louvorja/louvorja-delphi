@@ -5,7 +5,10 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, bsSkinCtrls, Vcl.ExtCtrls,
-  Vcl.StdCtrls, BusinessSkinForm, Data.DB, Data.Win.ADODB;
+  Vcl.StdCtrls, BusinessSkinForm, Data.DB, Data.Win.ADODB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
   TfArquivosExcesso = class(TForm)
@@ -23,7 +26,7 @@ type
     gProgresso: TProgressBar;
     lvArquivos: TbsSkinListView;
     lbArquivos: TListBox;
-    qrVERIFICA: TADOQuery;
+    qrVERIFICA: TFDQuery;
     tmrFecha: TTimer;
     bsSkinScrollBar8: TbsSkinScrollBar;
     btVerifica: TbsSkinButton;

@@ -1244,7 +1244,10 @@ begin
     DBGrid1.Canvas.Font.Color := $00353535;
   end;
 
-  if (Column.Index = 2) and (DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsInteger > 0) then
+  if (Column.Index = 2)
+    and (DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsString <> '')
+    and (DM.cdsSLIDE_MUSICA2.FieldByName('TEMPO').AsString <> '0')
+  then
   begin
     DBGrid1.Canvas.Brush.Color := $000C6FD;
   end;
@@ -1665,7 +1668,7 @@ begin
       begin
         txt := TStringList.Create;
         ExtractStrings([':'], [], PChar(stempo), txt);
-        stempo := inttostr((StrToInt('0'+txt[0])*60)+StrToInt('0'+txt[1]));
+        stempo := inttostr((StrToInt('0'+txt[1])*60)+StrToInt('0'+txt[2]));
         stempo := IntToStr(BASS_ChannelSeconds2Bytes(bass_channel,StrToFloat(stempo)));
         lbTempos.Items[nslide] := stempo;
       end;

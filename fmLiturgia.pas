@@ -7,7 +7,9 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, BusinessSkinForm, bsSkinCtrls,
   Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask, bsSkinBoxCtrls,
   bsdbctrls, bsribbon, Data.DB, Data.Win.ADODB, bsColorCtrls, StrUtils, ShellApi,
-  Vcl.DBCtrls;
+  Vcl.DBCtrls, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
   TfLiturgia = class(TForm)
@@ -21,7 +23,7 @@ type
     cbItens: TbsSkinComboBox;
     ScrollBox1: TScrollBox;
     dsHinos: TDataSource;
-    qrHinos: TADOQuery;
+    qrHinos: TFDQuery;
     pnlHinos: TbsSkinPanel;
     bsRibbonDivider10: TbsRibbonDivider;
     bsSkinPanel2: TbsSkinPanel;

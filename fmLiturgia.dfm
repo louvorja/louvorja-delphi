@@ -1644,10 +1644,9 @@ object fLiturgia: TfLiturgia
     Left = 406
     Top = 124
   end
-  object qrHinos: TADOQuery
-    Connection = DM.ADO
+  object qrHinos: TFDQuery
     Filtered = True
-    Parameters = <>
+    Connection = DM.ADO
     SQL.Strings = (
       
         'SELECT DISTINCT ID,FAIXA,NOME_ALBUM_COM,NOME_COM AS NOME,TIPO_HA' +

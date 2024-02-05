@@ -1683,6 +1683,28 @@ type
     bsSkinDBText10: TbsSkinDBText;
     bsSkinDBText11: TbsSkinDBText;
     Label12: TLabel;
+    bsSkinPanel198: TbsSkinPanel;
+    bsRibbonDivider85: TbsRibbonDivider;
+    bsSkinPanel199: TbsSkinPanel;
+    bsSkinStdLabel179: TbsSkinStdLabel;
+    bsPngImageView64: TbsPngImageView;
+    bsSkinPanel200: TbsSkinPanel;
+    bsSkinLinkLabel45: TbsSkinLinkLabel;
+    bsPngImageView65: TbsPngImageView;
+    bsSkinPanel201: TbsSkinPanel;
+    bsSkinLinkLabel46: TbsSkinLinkLabel;
+    bsPngImageView66: TbsPngImageView;
+    bsSkinPanel202: TbsSkinPanel;
+    bsPngImageView67: TbsPngImageView;
+    bsSkinLinkLabel47: TbsSkinLinkLabel;
+    bsSkinPanel203: TbsSkinPanel;
+    bsPngImageView68: TbsPngImageView;
+    bsSkinLinkLabel48: TbsSkinLinkLabel;
+    bsSkinPanel204: TbsSkinPanel;
+    bsPngImageView69: TbsPngImageView;
+    bsSkinLinkLabel49: TbsSkinLinkLabel;
+    bsSkinPanel205: TbsSkinPanel;
+    bsSkinStdLabel180: TbsSkinStdLabel;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2064,6 +2086,8 @@ type
     procedure RichEdit1Exit(Sender: TObject);
     procedure mmPopMonitorClick(Sender: TObject);
     procedure identifica_monitores(Sender: TObject);
+    function lista_monitores(): TArray<TMonitorInfo>;
+    procedure carrega_monitores();
     procedure ppVideosOnPersoPopup(Sender: TObject);
     procedure bsPopupMenuFavoritosPopup(Sender: TObject);
     procedure carregaComboFormatoTempo(combo:TbsSkinComboBox;formato:string);
@@ -4366,7 +4390,7 @@ var
   busca_ori: string;
 begin
   busca_ori := busca;
-//  busca := RemoveAcento(busca);
+  busca := RemoveAcento(busca);
   busca := StringReplace(busca,'*','%',[rfIgnoreCase, rfReplaceAll]);
 //  busca := StringReplace(busca,'a','[aáàâãä]',[rfIgnoreCase, rfReplaceAll]);
 //  busca := StringReplace(busca,'e','[eéèêë]',[rfIgnoreCase, rfReplaceAll]);
@@ -4375,6 +4399,7 @@ begin
 //  busca := StringReplace(busca,'u','[uúùûü]',[rfIgnoreCase, rfReplaceAll]);
 //  busca := StringReplace(busca,'c','[cç]',[rfIgnoreCase, rfReplaceAll]);
 //  loadCol.Strings.Values['BUSCA:'+busca_ori] := busca;
+  busca := LowerCase(busca);
   Result := busca;
 end;
 
@@ -4985,6 +5010,7 @@ begin
 
     if not (DM.qrBIBLIA_LIVROS.Eof) then
       DM.qrBIBLIA_VERSICULOS.Locate('VERSICULO',loadCol.Strings.Values['BIBLIA_VERSICULO'],[]);
+
   end
   else if (tipo = 'BUS') then
   begin
@@ -7311,6 +7337,37 @@ begin
   imgYoutubeCapa.Visible := not pnlOnlVideos.Visible;
 end;
 
+function TfmIndex.lista_monitores: TArray<TMonitorInfo>;
+var
+  qtd_monitores: integer;
+  i: Integer;
+  MonitorsArray: TArray<TMonitorInfo>;
+begin
+  qtd_monitores := Screen.MonitorCount;
+  SetLength(MonitorsArray, qtd_monitores);
+
+  for i := 0 to qtd_monitores-1 do
+  begin
+    MonitorsArray[i].Left := Screen.Monitors[i].Left;
+    MonitorsArray[i].Top := Screen.Monitors[i].Top;
+    MonitorsArray[i].Width := Screen.Monitors[i].Width;
+    MonitorsArray[i].Height := Screen.Monitors[i].Height;
+  end;
+
+  TArray.Sort<TMonitorInfo>(MonitorsArray,
+    TComparer<TMonitorInfo>.Construct(
+      function(const A, B: TMonitorInfo): Integer
+      begin
+        Result := A.Top - B.Top;
+        if Result = 0 then
+          Result := A.Left - B.Left;
+      end
+    )
+  );
+
+  result := MonitorsArray;
+end;
+
 procedure TfmIndex.tsPainelDShow(Sender: TObject);
 begin
   PaginaMenuAtiva(bsPainelD,tsPainelD);
@@ -8223,6 +8280,7 @@ begin
   fmIndex.gpSobre.Align := alClient;
   fmIndex.ScrollBox1.Align := alClient;
   fmIndex.ScrollBox5.Align := alClient;
+  carrega_monitores();
 end;
 
 procedure TfmIndex.bsAppMenu1Items3Click(Sender: TObject);
@@ -9962,6 +10020,7 @@ procedure TfmIndex.btBibVersAntClick(Sender: TObject);
 begin
   if (trim(busBibliaVersiculo.Text) <> '') then
   begin
+    loadCol.Strings.Values['BIBLIA_VERSICULO'] := '0';
     busBibliaVersiculo.Text := '';
     busBibliaVersiculoChange(Sender);
   end;
@@ -10009,6 +10068,7 @@ procedure TfmIndex.btBibVersSegClick(Sender: TObject);
 begin
   if (trim(busBibliaVersiculo.Text) <> '') then
   begin
+    loadCol.Strings.Values['BIBLIA_VERSICULO'] := '0';
     busBibliaVersiculo.Text := '';
     busBibliaVersiculoChange(Sender);
   end;
@@ -12099,6 +12159,35 @@ begin
   end;
 end;
 
+procedure TfmIndex.carrega_monitores;
+var
+  i: Integer;
+  MonitorsArray: TArray<TMonitorInfo>;
+begin
+  MonitorsArray := lista_monitores();
+  ctrlMonitores.ColCount := ceil(fmIndex.Width / 300);
+
+  if not DM.cdsMonitores.Active then
+  begin
+    DM.cdsMonitores.CreateDataSet;
+    DM.cdsMonitores.LogChanges := False;
+  end;
+  DM.cdsMonitores.Open;
+  DM.cdsMonitores.EmptyDataSet;
+
+  for i := 0 to length(MonitorsArray)-1 do
+  begin
+    DM.cdsMonitores.Append;
+    DM.cdsMonitores.FieldByName('ID').Value := i;
+    DM.cdsMonitores.FieldByName('NUM').Value := i+1;
+    DM.cdsMonitores.FieldByName('WIDTH').Value := MonitorsArray[i].Width;
+    DM.cdsMonitores.FieldByName('HEIGHT').Value := MonitorsArray[i].Height;
+    DM.cdsMonitores.FieldByName('TOP').Value := MonitorsArray[i].Top;
+    DM.cdsMonitores.FieldByName('LEFT').Value := MonitorsArray[i].Left;
+    DM.cdsMonitores.Post;
+  end;
+end;
+
 procedure TfmIndex.Excluir1Click(Sender: TObject);
 var
   id, mComponente: string;
@@ -13110,7 +13199,7 @@ begin
             if Trim(DM.qrSLIDE_MUSICA.FieldByName('LETRA').AsString) <> ''
               then arquivo.writeString(slide, 'letra', StringReplace(DM.qrSLIDE_MUSICA.FieldByName('LETRA').AsString,#13#10,'|',[rfIgnoreCase, rfReplaceAll]));
 
-            if DM.qrSLIDE_MUSICA.FieldByName('FUNDO_LETRA').AsBoolean = True
+            if DM.qrSLIDE_MUSICA.FieldByName('FUNDO_LETRA').AsInteger = 1
               then arquivo.writeString(slide, 'fundo_letra', '1')
               else arquivo.writeString(slide, 'fundo_letra', '0');
 
@@ -13282,11 +13371,7 @@ begin
     letra_aux := fmIndex.lerParam(slide, 'letra_aux', '',ExtractFileName(url), ExtractFilePath(url));
     letra_aux := StringReplace(letra_aux,'|', #13#10, [rfIgnoreCase, rfReplaceAll]);
     tempo := fmIndex.lerParam(slide, 'tempo', '0',ExtractFileName(url), ExtractFilePath(url));
-    try
-      StrToInt(tempo);
-    except
-      tempo := '0';
-    end;
+
     if ListBox <> nil then
       ListBox.Items.Add(tempo);
     cds.Append;
@@ -13856,54 +13941,9 @@ end;
 
 function TfmIndex.monitorInfo(index: integer): TMonitorInfo;
 var
-  qtd_monitores: integer;
-  i: Integer;
-  MonitorsArray: array of TMonitorInfo;
+  MonitorsArray: TArray<TMonitorInfo>;
 begin
-  qtd_monitores := Screen.MonitorCount;
-  SetLength(MonitorsArray, qtd_monitores);
-
-  if not DM.cdsMonitores.Active then
-  begin
-    DM.cdsMonitores.CreateDataSet;
-    DM.cdsMonitores.LogChanges := False;
-  end;
-  DM.cdsMonitores.Open;
-  DM.cdsMonitores.EmptyDataSet;
-  ctrlMonitores.ColCount := ceil(fmIndex.Width / 300);
-
-
-  for i := 0 to qtd_monitores-1 do
-  begin
-    MonitorsArray[i].Left := Screen.Monitors[i].Left;
-    MonitorsArray[i].Top := Screen.Monitors[i].Top;
-    MonitorsArray[i].Width := Screen.Monitors[i].Width;
-    MonitorsArray[i].Height := Screen.Monitors[i].Height;
-  end;
-
-  TArray.Sort<TMonitorInfo>(MonitorsArray,
-    TComparer<TMonitorInfo>.Construct(
-      function(const A, B: TMonitorInfo): Integer
-      begin
-        Result := A.Top - B.Top;
-        if Result = 0 then
-          Result := A.Left - B.Left;
-      end
-    )
-  );
-
-  for i := 0 to length(MonitorsArray)-1 do
-  begin
-    DM.cdsMonitores.Append;
-    DM.cdsMonitores.FieldByName('ID').Value := i;
-    DM.cdsMonitores.FieldByName('NUM').Value := i+1;
-    DM.cdsMonitores.FieldByName('WIDTH').Value := MonitorsArray[i].Width;
-    DM.cdsMonitores.FieldByName('HEIGHT').Value := MonitorsArray[i].Height;
-    DM.cdsMonitores.FieldByName('TOP').Value := MonitorsArray[i].Top;
-    DM.cdsMonitores.FieldByName('LEFT').Value := MonitorsArray[i].Left;
-    DM.cdsMonitores.Post;
-  end;
-
+  MonitorsArray := lista_monitores();
   result := MonitorsArray[index];
 end;
 
@@ -15252,6 +15292,7 @@ var
   qtd_monitores: integer;
   i: Integer;
 begin
+  carrega_monitores();
   monitores();
   qtd_monitores := Screen.MonitorCount;
 

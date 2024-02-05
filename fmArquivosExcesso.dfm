@@ -598,23 +598,18 @@ object fArquivosExcesso: TfArquivosExcesso
     Left = 103
     Top = 60
   end
-  object qrVERIFICA: TADOQuery
+  object qrVERIFICA: TFDQuery
     Connection = DM.ADO
-    Parameters = <>
     SQL.Strings = (
-      '(SELECT TIPO,ARQUIVO,URL FROM ARQUIVOS_SISTEMA)'
+      'SELECT TIPO,ARQUIVO,URL FROM ARQUIVOS_SISTEMA'
       'UNION'
       
-        '(SELECT '#39'IGNORAR'#39','#39'BD.ldb'#39','#39'config\BD.ldb'#39' AS URL FROM ARQUIVOS_' +
-        'SISTEMA)'
+        'SELECT '#39'IGNORAR'#39','#39'unins000.dat'#39','#39'unins000.dat'#39' AS URL FROM ARQUI' +
+        'VOS_SISTEMA'
       'UNION'
       
-        '(SELECT '#39'IGNORAR'#39','#39'unins000.dat'#39','#39'unins000.dat'#39' AS URL FROM ARQU' +
-        'IVOS_SISTEMA)'
-      'UNION'
-      
-        '(SELECT '#39'IGNORAR'#39','#39'unins000.exe'#39','#39'unins000.exe'#39' AS URL FROM ARQU' +
-        'IVOS_SISTEMA)'
+        'SELECT '#39'IGNORAR'#39','#39'unins000.exe'#39','#39'unins000.exe'#39' AS URL FROM ARQUI' +
+        'VOS_SISTEMA'
       ''
       'ORDER BY URL')
     Left = 102

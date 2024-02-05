@@ -417,8 +417,8 @@ object fBuscaMusica: TfBuscaMusica
         ' :VALOR) '
       '    OR '
       
-        '    (CAST(:VALOR AS INTEGER) <= 0 AND NOME LIKE '#39'%'#39' || :VALOR ||' +
-        ' '#39'%'#39')')
+        '    (CAST(:VALOR AS INTEGER) <= 0 AND NOME_SEMAC LIKE '#39'%'#39' || :VA' +
+        'LOR || '#39'%'#39')')
     Left = 354
     Top = 148
     ParamData = <

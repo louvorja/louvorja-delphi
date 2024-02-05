@@ -17,7 +17,6 @@ type
     lvArquivos: TbsSkinListView;
     lbl1: TbsSkinStdLabel;
     gProgresso: TbsSkinGauge;
-    qrVERIFICA__: TADOQuery;
     bsSkinScrollBar8: TbsSkinScrollBar;
     lblStatus: TbsSkinStdLabel;
     tmrFecha: TTimer;

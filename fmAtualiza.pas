@@ -162,7 +162,15 @@ begin
   except
     on E: Exception do
     begin
-      if (Application.MessageBox(PChar('Não foi possível conectar ao servidor!'+#13#10+'Causa do erro: '+E.Message+#13#10+'Tentar novamente?'),fmIndex.TITULO,mb_yesno+MB_ICONERROR) = 6)
+      if (Application.MessageBox(PChar('Não foi possível conectar ao servidor!'
+          +#13#10
+          +'O servidor estás sobrecarregado. Muitos usuários estão atualizando os arquivos neste momento. Tente novamente em alguns minutos!'
+          +#13#10
+          +#13#10
+          +'Causa do erro: '+E.Message
+          +#13#10
+          +'Tentar novamente?'
+      ),fmIndex.TITULO,mb_yesno+MB_ICONERROR) = 6)
         then ftp_conecta()
         else tmrFecha.Enabled := true;
     end;
