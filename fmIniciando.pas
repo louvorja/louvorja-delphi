@@ -46,8 +46,6 @@ uses fmMenu, fmAtualiza, dmComponentes, fmTransmitir;
 procedure TfIniciando.AppCreateForm(InstanceClass: TComponentClass;
   var Reference);
 begin
-  DM.ADO.Connected := false;
-
   Application.CreateForm(InstanceClass, Reference);
   if trim(LANG) <> '' then
     TranslateForm(TForm(Reference));
@@ -57,6 +55,7 @@ procedure TfIniciando.FormCreate(Sender: TObject);
 var
   arq: string;
 begin
+  DM.ADO.Connected := false;
   vLang.Strings.Clear;
   LANG := '';
 
