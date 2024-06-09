@@ -409,16 +409,30 @@ object fBuscaMusica: TfBuscaMusica
     Filtered = True
     Connection = DM.ADO
     SQL.Strings = (
-      'SELECT '#39#39' AS ICONE1,'#39#39' AS ICONE2,'#39#39' AS ICONE3, M.*'
+      
+        'SELECT DISTINCT '#39#39' AS ICONE1,'#39#39' AS ICONE2,'#39#39' AS ICONE3, M.ID ID,' +
+        ' M.ID_ALBUM ID_ALBUM, M.NOME_ALBUM NOME_ALBUM, M.NOME_ALBUM_COM ' +
+        'NOME_ALBUM_COM, M.FAIXA FAIXA, M.NOME NOME,'
+      
+        '    M.NOME_COM NOME_COM, M.TIPO_HASD TIPO_HASD, M.TIPO_JA TIPO_J' +
+        'A, M.TIPO_BAIXADA TIPO_BAIXADA, M.TIPO_WEB TIPO_WEB, M.TIPO_PERS' +
+        'O TIPO_PERSO, M.TIPO TIPO, M.URL_ALBUM URL_ALBUM,'
+      
+        '    M.ALBUM ALBUM, M.URL URL, M.URL_INSTRUMENTAL URL_INSTRUMENTA' +
+        'L,'
+      
+        '    M.IDIOMA IDIOMA, M.LETRA LETRA, M.NOME_SEMAC NOME_SEMAC, M.N' +
+        'OME_ALBUM_COM_SEMAC NOME_ALBUM_COM_SEMAC'
       'FROM LISTA_MUSICAS M'
-      'WHERE '
+      'WHERE'
       
         '    (CAST(:VALOR AS INTEGER) > 0 AND TIPO_HASD = '#39'S'#39' AND FAIXA =' +
-        ' :VALOR) '
-      '    OR '
+        ' :VALOR)'
+      '    OR'
       
         '    (CAST(:VALOR AS INTEGER) <= 0 AND NOME_SEMAC LIKE '#39'%'#39' || :VA' +
-        'LOR || '#39'%'#39')')
+        'LOR || '#39'%'#39')'
+      '')
     Left = 354
     Top = 148
     ParamData = <

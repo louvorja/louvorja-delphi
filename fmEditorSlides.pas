@@ -1560,7 +1560,7 @@ begin
   end;
 
   lbTempos.items.Clear;
-  fmIndex.copiaArquivoParaSlides(arquivo,DM.cdsSLIDE_MUSICA2,false,lbTempos);
+  fmIndex.copiaArquivoParaSlides(arquivo,DM.cdsSLIDE_MUSICA2,false,lbTempos,true);
 
   if dbGrid.Visible then fmIndex.AjustaLarguraCamposDBGrid(dbGrid);
 end;

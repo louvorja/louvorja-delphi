@@ -2085,7 +2085,7 @@ type
     procedure cbRemoveItensAgendadosClick(Sender: TObject);
     procedure refreshCalendar();
     procedure copiaTextoParaSlides(texto: string; cds: TClientDataSet);
-    procedure copiaArquivoParaSlides(url: string; cds: TClientDataSet; fechaerro: boolean = true; ListBox: TListBox = nil);
+    procedure copiaArquivoParaSlides(url: string; cds: TClientDataSet; fechaerro: boolean = true; ListBox: TListBox = nil; editor: boolean = false);
     procedure copiaSlidesParaArquivo(url: string; cds: TClientDataSet);
     function cds2texto(cds: TClientDataSet;campo: string): TStringList;
     function HtmlToColor(Color: string): String;
@@ -13391,7 +13391,7 @@ begin
   end;
 end;
 
-procedure TfmIndex.copiaArquivoParaSlides(url: string; cds: TClientDataSet; fechaerro: boolean; ListBox: TListBox);
+procedure TfmIndex.copiaArquivoParaSlides(url: string; cds: TClientDataSet; fechaerro: boolean; ListBox: TListBox; editor: Boolean);
 var
   i,slides: integer;
   slide,letra,letra_aux,tempo: string;
@@ -13468,9 +13468,10 @@ begin
     cds.FieldByName('COR_LETRA_AUX').Value := HtmlToColor(fmIndex.lerParam(slide, 'cor_letra_aux', '#efb400',ExtractFileName(url), ExtractFilePath(url)));
     cds.FieldByName('COR_FUNDO').Value := HtmlToColor(fmIndex.lerParam(slide, 'cor_fundo', '#000000',ExtractFileName(url), ExtractFilePath(url)));
 
-    if (fmIndex.ckSlideTxtFormatPerso.Checked and fmIndex.ckSlideFormatPersoExt.Checked) then
+    if (fmIndex.ckSlideTxtFormatPerso.Checked and fmIndex.ckSlideFormatPersoExt.Checked and not editor) then
     begin
       DM.cdsSLIDE_MUSICA.FieldByName('FUNDO_LETRA').Value := not fmIndex.ckMusicaFundoTransparente.Checked;
+
       if i = 1 then
       begin
         DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').Value := fmIndex.seTamanhoTitulo.Text;
@@ -13503,7 +13504,7 @@ begin
       DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA_AUX').Value := ColorToString(fmIndex.corTextoRepetido.ColorValue);
     end;
 
-    if (fmIndex.ckSlideImgFormatPerso.Checked and fmIndex.ckSlideFormatPersoExt.Checked) then
+    if (fmIndex.ckSlideImgFormatPerso.Checked and fmIndex.ckSlideFormatPersoExt.Checked and not editor) then
     begin
       if (fmIndex.ckFundoTransparente.Checked) then
       begin
