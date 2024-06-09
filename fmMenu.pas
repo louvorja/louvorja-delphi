@@ -1534,9 +1534,6 @@ type
     bsSkinPanel168: TbsSkinPanel;
     ckMusicaTopo: TbsSkinCheckBox;
     spServer: TbsSkinStatusPanel;
-    bsSkinPanel169: TbsSkinPanel;
-    ckMusicaRetorno: TbsSkinCheckBox;
-    sbMusicaRetornoAreaExtendida: TbsSkinComboBox;
     bsSkinPanel170: TbsSkinPanel;
     bsRibbonDivider76: TbsRibbonDivider;
     bsSkinPanel171: TbsSkinPanel;
@@ -1708,6 +1705,14 @@ type
     bsSkinSpeedButton7: TbsSkinSpeedButton;
     bsSkinPanel206: TbsSkinPanel;
     ckSlideFormatPersoExt: TbsSkinCheckBox;
+    ckMusicaRetorno: TbsSkinCheckBox;
+    sbMusicaRetornoAreaExtendida: TbsSkinComboBox;
+    bsFormatSlRetorno: TbsSkinPanel;
+    bsFormatSlideRetorno: TbsSkinPanel;
+    bsSkinPanel207: TbsSkinPanel;
+    bsSkinStdLabel183: TbsSkinStdLabel;
+    seTamanhoTextoRetorno: TbsSkinSpinEdit;
+    bsSkinButton47: TbsSkinButton;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2226,6 +2231,8 @@ type
     procedure bsknbtn1Click(Sender: TObject);
     procedure bsSkinSpeedButton7Click(Sender: TObject);
     procedure ckSlideFormatPersoExtClick(Sender: TObject);
+    procedure bsSkinButton47Click(Sender: TObject);
+    procedure seTamanhoTextoRetornoChange(Sender: TObject);
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -9142,6 +9149,16 @@ begin
   tsHinarioNShow(Sender);
 end;
 
+procedure TfmIndex.bsSkinButton47Click(Sender: TObject);
+begin
+  if (application.MessageBox(PChar('Deseja restaurar a formatação do texto na tela de retorno?'), titulo, mb_yesno + mb_iconquestion) <> 6) then
+    Exit;
+
+  apagaParam('Musicas', 'Tamanho Texto Retorno');
+
+  seTamanhoTextoRetorno.Text := fmIndex.lerParam('Musicas', 'Tamanho Texto Retorno', '17');
+end;
+
 procedure TfmIndex.bsSkinButton4Click(Sender: TObject);
 var
   i: integer;
@@ -9877,6 +9894,11 @@ end;
 
 procedure TfmIndex.ckMusicaRetornoClick(Sender: TObject);
 begin
+  bsFormatSlideRetorno.Visible := False;
+  if ckMusicaRetorno.Checked
+    then bsFormatSlRetorno.Height := 48
+    else bsFormatSlRetorno.Height := 24;
+  bsFormatSlideRetorno.Visible := ckMusicaRetorno.Checked;
   if ckMusicaRetorno.Checked then
     gravaParam('Musicas', 'ModoRetorno', '1')
   else
@@ -11513,6 +11535,11 @@ end;
 procedure TfmIndex.seTamanhoTextoChange(Sender: TObject);
 begin
   gravaParam('Musicas', 'Tamanho Texto', TbsSkinComboBox(Sender).Text);
+end;
+
+procedure TfmIndex.seTamanhoTextoRetornoChange(Sender: TObject);
+begin
+  gravaParam('Musicas', 'Tamanho Texto Retorno', TbsSkinComboBox(Sender).Text);
 end;
 
 procedure TfmIndex.seTamanhoTituloChange(Sender: TObject);

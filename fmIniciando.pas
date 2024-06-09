@@ -240,6 +240,7 @@ begin
   fmIndex.seTamanhoTitulo.Text := fmIndex.lerParam('Musicas', 'Tamanho Titulo', '18');
   fmIndex.seTamanhoTexto.Text := fmIndex.lerParam('Musicas', 'Tamanho Texto', '14');
   fmIndex.seTamanhoTextoAux.Text := fmIndex.lerParam('Musicas', 'Tamanho Texto Aux', '10');
+  fmIndex.seTamanhoTextoRetorno.Text := fmIndex.lerParam('Musicas', 'Tamanho Texto Retorno', '17');
   fmIndex.imgFundoMusica.Text := fmIndex.lerParam('Musicas', 'Imagem Fundo', '');
   fmIndex.txtImgFundoMusicaInfo.Text := fmIndex.lerParam('Musicas', 'Imagem Fundo Info', '');
   fmIndex.posicaoFundo.ItemIndex := StrToInt(fmIndex.lerParam('Musicas', 'Imagem Fundo Posicao', '5'))-1;
@@ -249,6 +250,9 @@ begin
   if fmIndex.ckSlideImgFormatPerso.Checked
     then fmIndex.bsFormatSlImgPerso.Height := 48
     else fmIndex.bsFormatSlImgPerso.Height := 24;
+  if fmIndex.ckMusicaRetorno.Checked
+    then fmIndex.bsFormatSlRetorno.Height := 48
+    else fmIndex.bsFormatSlRetorno.Height := 24;
 
   //**SERVIDOR****************************************
   AppCreateForm(TfTransmitir, fTransmitir);

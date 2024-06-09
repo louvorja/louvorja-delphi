@@ -272,7 +272,8 @@ begin
 
   if (fmIndex.lerParam('Musicas', 'ModoRetorno', '1') = '1') then
   begin
-    fMusicaRetorno.lblLetra.Font.Height := Trunc((fMusicaRetorno.Height/100)*pcTexto)+5;
+//    fMusicaRetorno.lblLetra.Font.Height := Trunc((fMusicaRetorno.Height/100)*pcTexto)+5;
+    fMusicaRetorno.lblLetra.Font.Height := Trunc((fMusicaRetorno.Height/100)*StrToInt(fmIndex.seTamanhoTextoRetorno.Text));
     fMusicaRetorno.lblLetra.Top := fMusicaRetorno.Height;
     fMusicaRetorno.lblLetra.Left := fMusicaRetorno.Width;
     fMusicaRetorno.lblLetra.AutoSize := False;

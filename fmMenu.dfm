@@ -27760,8 +27760,8 @@ object fmIndex: TfmIndex
       object bsAppMenu1: TbsAppMenu
         Left = 0
         Top = 3
-        Width = 953
-        Height = 374
+        Width = 1017
+        Height = 431
         HintImageIndex = 0
         Anchors = []
         TabOrder = 0
@@ -42093,8 +42093,8 @@ object fmIndex: TfmIndex
         object ampOpcoes: TbsAppMenuPage
           Left = 150
           Top = 25
-          Width = 778
-          Height = 324
+          Width = 842
+          Height = 381
           HotScroll = False
           ScrollOffset = 0
           ScrollTimerInterval = 50
@@ -42103,8 +42103,8 @@ object fmIndex: TfmIndex
           object bsSkinPanel28: TbsSkinPanel
             Left = 0
             Top = 0
-            Width = 778
-            Height = 324
+            Width = 842
+            Height = 381
             HintImageIndex = 0
             TabOrder = 0
             SkinData = DM.bsSkinData1
@@ -42141,7 +42141,7 @@ object fmIndex: TfmIndex
             object bsSkinPanel29: TbsSkinPanel
               Left = 0
               Top = 0
-              Width = 778
+              Width = 842
               Height = 113
               HintImageIndex = 0
               TabOrder = 0
@@ -42210,9 +42210,9 @@ object fmIndex: TfmIndex
             object ScrollBox2: TScrollBox
               Left = 0
               Top = 113
-              Width = 778
-              Height = 211
-              VertScrollBar.Position = 603
+              Width = 842
+              Height = 268
+              VertScrollBar.Position = 504
               Align = alClient
               BorderStyle = bsNone
               TabOrder = 1
@@ -42220,8 +42220,8 @@ object fmIndex: TfmIndex
               ExplicitHeight = 134
               object bsSkinPanel46: TbsSkinPanel
                 Left = 0
-                Top = -245
-                Width = 761
+                Top = -146
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 1
@@ -42258,7 +42258,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -42295,8 +42295,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel18: TbsSkinPanel
                 Left = 0
-                Top = 499
-                Width = 761
+                Top = 622
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 28
@@ -42329,6 +42329,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 646
                 object bsSkinStdLabel59: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -42425,8 +42426,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel19: TbsSkinPanel
                 Left = 0
-                Top = 523
-                Width = 761
+                Top = 646
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 29
@@ -42459,6 +42460,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 670
                 object bsSkinStdLabel63: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -42583,8 +42585,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel21: TbsSkinPanel
                 Left = 0
-                Top = 547
-                Width = 761
+                Top = 670
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 30
@@ -42617,6 +42619,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 694
                 object bsSkinStdLabel60: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -42715,7 +42718,7 @@ object fmIndex: TfmIndex
                 end
                 object btRestaurarCapaPrograma: TbsSkinButton
                   AlignWithMargins = True
-                  Left = 671
+                  Left = 735
                   Top = 1
                   Width = 80
                   Height = 22
@@ -42759,8 +42762,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel13: TbsSkinPanel
                 Left = 0
-                Top = 199
-                Width = 761
+                Top = 322
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 16
@@ -42793,6 +42796,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 346
                 object bsSkinStdLabel96: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -42894,8 +42898,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel48: TbsSkinPanel
                 Left = 0
-                Top = 223
-                Width = 761
+                Top = 346
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 17
@@ -42928,11 +42932,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 370
                 object ckVideoOnJanela: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -42969,8 +42974,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel49: TbsSkinPanel
                 Left = 0
-                Top = 247
-                Width = 761
+                Top = 370
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 18
@@ -43003,6 +43008,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 394
                 object bsSkinStdLabel98: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -43101,8 +43107,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel52: TbsSkinPanel
                 Left = 0
-                Top = -167
-                Width = 761
+                Top = -68
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 8
@@ -43236,8 +43242,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel53: TbsSkinPanel
                 Left = 0
-                Top = -119
-                Width = 761
+                Top = -20
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 9
@@ -43274,7 +43280,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -43311,8 +43317,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel54: TbsSkinPanel
                 Left = 0
-                Top = -71
-                Width = 761
+                Top = 28
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 10
@@ -43452,8 +43458,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel65: TbsSkinPanel
                 Left = 0
-                Top = -23
-                Width = 761
+                Top = 100
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 11
@@ -43486,11 +43492,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 124
                 object ckMusicaTituloSlide: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -43527,8 +43534,8 @@ object fmIndex: TfmIndex
               end
               object bsFormatSlPerso: TbsSkinPanel
                 Left = 0
-                Top = 1
-                Width = 761
+                Top = 124
+                Width = 825
                 Height = 72
                 HintImageIndex = 0
                 TabOrder = 12
@@ -43561,11 +43568,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 148
                 object ckSlideTxtFormatPerso: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -43602,7 +43610,7 @@ object fmIndex: TfmIndex
                 object bsFormatSlidePerso: TbsSkinPanel
                   Left = 0
                   Top = 24
-                  Width = 761
+                  Width = 825
                   Height = 48
                   HintImageIndex = 0
                   TabOrder = 1
@@ -43640,7 +43648,7 @@ object fmIndex: TfmIndex
                     AlignWithMargins = True
                     Left = 60
                     Top = 24
-                    Width = 701
+                    Width = 765
                     Height = 24
                     Margins.Left = 60
                     Margins.Top = 0
@@ -43889,7 +43897,7 @@ object fmIndex: TfmIndex
                     end
                     object bsSkinButton2: TbsSkinButton
                       AlignWithMargins = True
-                      Left = 611
+                      Left = 675
                       Top = 1
                       Width = 80
                       Height = 22
@@ -43935,7 +43943,7 @@ object fmIndex: TfmIndex
                     AlignWithMargins = True
                     Left = 60
                     Top = 0
-                    Width = 701
+                    Width = 765
                     Height = 24
                     Margins.Left = 60
                     Margins.Top = 0
@@ -44400,7 +44408,7 @@ object fmIndex: TfmIndex
                     object ckMusicaFundoTransparente: TbsSkinCheckBox
                       Left = 476
                       Top = 0
-                      Width = 225
+                      Width = 289
                       Height = 24
                       HintImageIndex = 0
                       TabOrder = 0
@@ -44435,8 +44443,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel51: TbsSkinPanel
                 Left = 0
-                Top = -545
-                Width = 761
+                Top = -446
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 4
@@ -44473,7 +44481,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -44510,8 +44518,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel94: TbsSkinPanel
                 Left = 0
-                Top = -521
-                Width = 761
+                Top = -422
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 5
@@ -44640,8 +44648,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel95: TbsSkinPanel
                 Left = 0
-                Top = -279
-                Width = 761
+                Top = -180
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 0
@@ -44678,7 +44686,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -44709,8 +44717,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel96: TbsSkinPanel
                 Left = 0
-                Top = -603
-                Width = 761
+                Top = -504
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 3
@@ -44747,7 +44755,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -44778,8 +44786,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel98: TbsSkinPanel
                 Left = 0
-                Top = -299
-                Width = 761
+                Top = -200
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 2
@@ -44815,7 +44823,7 @@ object fmIndex: TfmIndex
                 object bsRibbonDivider8: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -44829,8 +44837,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel97: TbsSkinPanel
                 Left = 0
-                Top = -221
-                Width = 761
+                Top = -122
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 6
@@ -44866,7 +44874,7 @@ object fmIndex: TfmIndex
                 object bsRibbonDivider73: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -44880,8 +44888,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel99: TbsSkinPanel
                 Left = 0
-                Top = 445
-                Width = 761
+                Top = 568
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 26
@@ -44914,10 +44922,11 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 592
                 object bsRibbonDivider48: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -44931,8 +44940,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel100: TbsSkinPanel
                 Left = 0
-                Top = 145
-                Width = 761
+                Top = 268
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 14
@@ -44965,10 +44974,11 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 292
                 object bsRibbonDivider31: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -44982,8 +44992,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel101: TbsSkinPanel
                 Left = 0
-                Top = 571
-                Width = 761
+                Top = 694
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 31
@@ -45016,10 +45026,11 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 718
                 object bsRibbonDivider74: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -45033,8 +45044,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel102: TbsSkinPanel
                 Left = 0
-                Top = -201
-                Width = 761
+                Top = -102
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 7
@@ -45071,7 +45082,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -45102,8 +45113,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel103: TbsSkinPanel
                 Left = 0
-                Top = 165
-                Width = 761
+                Top = 288
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 15
@@ -45136,11 +45147,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 312
                 object bsSkinStdLabel67: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -45171,8 +45183,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel104: TbsSkinPanel
                 Left = 0
-                Top = 465
-                Width = 761
+                Top = 588
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 27
@@ -45205,11 +45217,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 612
                 object bsSkinStdLabel58: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -45240,8 +45253,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel131: TbsSkinPanel
                 Left = 0
-                Top = 591
-                Width = 761
+                Top = 714
+                Width = 825
                 Height = 0
                 HintImageIndex = 0
                 TabOrder = 32
@@ -45274,11 +45287,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alClient
+                ExplicitTop = 738
               end
               object bsFormatSlImgPerso: TbsSkinPanel
                 Left = 0
-                Top = 73
-                Width = 761
+                Top = 196
+                Width = 825
                 Height = 48
                 HintImageIndex = 0
                 TabOrder = 13
@@ -45311,11 +45325,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 220
                 object ckSlideImgFormatPerso: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -45352,7 +45367,7 @@ object fmIndex: TfmIndex
                 object bsFormatSlideImgPerso: TbsSkinPanel
                   Left = 0
                   Top = 24
-                  Width = 761
+                  Width = 825
                   Height = 24
                   HintImageIndex = 0
                   TabOrder = 1
@@ -45385,12 +45400,12 @@ object fmIndex: TfmIndex
                   Spacing = 2
                   Caption = 'bsSkinPanel10'
                   Align = alClient
-                  ExplicitWidth = 83
+                  ExplicitTop = 21
                   object bsSkinPanel87: TbsSkinPanel
                     AlignWithMargins = True
                     Left = 60
                     Top = 0
-                    Width = 701
+                    Width = 765
                     Height = 24
                     Margins.Left = 60
                     Margins.Top = 0
@@ -45431,7 +45446,7 @@ object fmIndex: TfmIndex
                     object bsFormatSlideImgPerso2: TbsSkinPanel
                       Left = 131
                       Top = 0
-                      Width = 570
+                      Width = 634
                       Height = 24
                       HintImageIndex = 0
                       TabOrder = 0
@@ -45884,8 +45899,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel158: TbsSkinPanel
                 Left = 0
-                Top = 271
-                Width = 761
+                Top = 394
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 19
@@ -45918,10 +45933,11 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 418
                 object bsRibbonDivider61: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -45935,8 +45951,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel159: TbsSkinPanel
                 Left = 0
-                Top = 291
-                Width = 761
+                Top = 414
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 20
@@ -45969,11 +45985,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 438
                 object bsSkinStdLabel157: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -46004,8 +46021,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel160: TbsSkinPanel
                 Left = 0
-                Top = 325
-                Width = 761
+                Top = 448
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 21
@@ -46038,6 +46055,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 472
                 object bsSkinStdLabel158: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -46139,8 +46157,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel161: TbsSkinPanel
                 Left = 0
-                Top = 397
-                Width = 761
+                Top = 520
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 24
@@ -46173,11 +46191,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 544
                 object ckPlayerTelaCheia: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -46214,8 +46233,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel162: TbsSkinPanel
                 Left = 0
-                Top = 373
-                Width = 761
+                Top = 496
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 23
@@ -46248,11 +46267,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 520
                 object ckPlayerVideo: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -46289,8 +46309,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel163: TbsSkinPanel
                 Left = 0
-                Top = 349
-                Width = 761
+                Top = 472
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 22
@@ -46323,11 +46343,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 496
                 object ckPlayerAudio: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -46364,8 +46385,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel164: TbsSkinPanel
                 Left = 0
-                Top = 421
-                Width = 761
+                Top = 544
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 25
@@ -46398,6 +46419,7 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 568
                 object bsSkinStdLabel159: TbsSkinStdLabel
                   AlignWithMargins = True
                   Left = 36
@@ -46434,8 +46456,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel166: TbsSkinPanel
                 Left = 0
-                Top = -569
-                Width = 761
+                Top = -470
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 33
@@ -46473,7 +46495,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -46510,8 +46532,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel167: TbsSkinPanel
                 Left = 0
-                Top = -143
-                Width = 761
+                Top = -44
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 34
@@ -46643,8 +46665,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel168: TbsSkinPanel
                 Left = 0
-                Top = -95
-                Width = 761
+                Top = 4
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 35
@@ -46681,7 +46703,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
@@ -46716,11 +46738,11 @@ object fmIndex: TfmIndex
                   ExplicitWidth = 47
                 end
               end
-              object bsSkinPanel169: TbsSkinPanel
+              object bsFormatSlRetorno: TbsSkinPanel
                 Left = 0
-                Top = -47
-                Width = 761
-                Height = 24
+                Top = 52
+                Width = 825
+                Height = 48
                 HintImageIndex = 0
                 TabOrder = 36
                 SkinData = DM.bsSkinData1
@@ -46752,20 +46774,15 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
-                object ckMusicaRetorno: TbsSkinCheckBox
-                  AlignWithMargins = True
-                  Left = 36
+                object TbsSkinPanel
+                  Left = 0
                   Top = 0
-                  Width = 218
+                  Width = 825
                   Height = 24
-                  Margins.Left = 36
-                  Margins.Top = 0
-                  Margins.Right = 0
-                  Margins.Bottom = 0
                   HintImageIndex = 0
                   TabOrder = 0
                   SkinData = DM.bsSkinData1
-                  SkinDataName = 'checkbox'
+                  SkinDataName = 'panel'
                   DefaultFont.Charset = DEFAULT_CHARSET
                   DefaultFont.Color = clWindowText
                   DefaultFont.Height = 13
@@ -46774,35 +46791,142 @@ object fmIndex: TfmIndex
                   DefaultWidth = 0
                   DefaultHeight = 0
                   UseSkinFont = True
-                  WordWrap = True
-                  AllowGrayed = False
-                  State = cbUnchecked
-                  ImageIndex = 0
-                  Flat = True
-                  UseSkinFontColor = True
-                  TabStop = True
-                  CanFocused = True
-                  Radio = False
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = 0
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
                   Checked = False
-                  GroupIndex = 0
-                  Caption = 'Abrir Tela de Retorno | Abrir no monitor:'
-                  OnClick = ckMusicaRetornoClick
-                  Align = alLeft
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Caption = 'bsSkinPanel10'
+                  Align = alTop
+                  object ckMusicaRetorno: TbsSkinCheckBox
+                    AlignWithMargins = True
+                    Left = 36
+                    Top = 0
+                    Width = 218
+                    Height = 24
+                    Margins.Left = 36
+                    Margins.Top = 0
+                    Margins.Right = 0
+                    Margins.Bottom = 0
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'checkbox'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    WordWrap = True
+                    AllowGrayed = False
+                    State = cbUnchecked
+                    ImageIndex = 0
+                    Flat = True
+                    UseSkinFontColor = True
+                    TabStop = True
+                    CanFocused = True
+                    Radio = False
+                    Checked = False
+                    GroupIndex = 0
+                    Caption = 'Abrir Tela de Retorno | Abrir no monitor:'
+                    OnClick = ckMusicaRetornoClick
+                    Align = alLeft
+                    ExplicitLeft = 44
+                  end
+                  object sbMusicaRetornoAreaExtendida: TbsSkinComboBox
+                    AlignWithMargins = True
+                    Left = 259
+                    Top = 1
+                    Width = 120
+                    Height = 22
+                    Margins.Left = 5
+                    Margins.Top = 1
+                    Margins.Right = 0
+                    Margins.Bottom = 1
+                    HintImageIndex = 0
+                    TabOrder = 1
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'combobox'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    UseSkinSize = True
+                    ToolButtonStyle = False
+                    AlphaBlend = False
+                    AlphaBlendValue = 0
+                    AlphaBlendAnimation = False
+                    ListBoxCaptionMode = False
+                    ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+                    ListBoxDefaultFont.Color = clWindowText
+                    ListBoxDefaultFont.Height = 13
+                    ListBoxDefaultFont.Name = 'Tahoma'
+                    ListBoxDefaultFont.Style = []
+                    ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+                    ListBoxDefaultCaptionFont.Color = clWindowText
+                    ListBoxDefaultCaptionFont.Height = 13
+                    ListBoxDefaultCaptionFont.Name = 'Tahoma'
+                    ListBoxDefaultCaptionFont.Style = []
+                    ListBoxDefaultItemHeight = 20
+                    ListBoxCaptionAlignment = taLeftJustify
+                    ListBoxUseSkinFont = True
+                    ListBoxUseSkinItemHeight = True
+                    ListBoxWidth = 0
+                    HideSelection = True
+                    AutoComplete = True
+                    ImageIndex = -1
+                    CharCase = ecNormal
+                    DefaultColor = clWindow
+                    Align = alLeft
+                    Items.Strings = (
+                      '1'
+                      '2'
+                      '3'
+                      '4'
+                      '5')
+                    ItemIndex = -1
+                    DropDownCount = 8
+                    HorizontalExtent = False
+                    Font.Charset = DEFAULT_CHARSET
+                    Font.Color = clBlack
+                    Font.Height = -11
+                    Font.Name = 'MS Sans Serif'
+                    Font.Style = []
+                    Sorted = False
+                    Style = bscbFixedStyle
+                    OnChange = sbMusicaRetornoAreaExtendidaChange
+                    ExplicitLeft = 416
+                    ExplicitTop = 4
+                  end
                 end
-                object sbMusicaRetornoAreaExtendida: TbsSkinComboBox
-                  AlignWithMargins = True
-                  Left = 259
-                  Top = 1
-                  Width = 120
-                  Height = 22
-                  Margins.Left = 5
-                  Margins.Top = 1
-                  Margins.Right = 0
-                  Margins.Bottom = 1
+                object bsFormatSlideRetorno: TbsSkinPanel
+                  Left = 0
+                  Top = 24
+                  Width = 825
+                  Height = 24
                   HintImageIndex = 0
                   TabOrder = 1
                   SkinData = DM.bsSkinData1
-                  SkinDataName = 'combobox'
+                  SkinDataName = 'panel'
                   DefaultFont.Charset = DEFAULT_CHARSET
                   DefaultFont.Color = clWindowText
                   DefaultFont.Height = 13
@@ -46811,56 +46935,183 @@ object fmIndex: TfmIndex
                   DefaultWidth = 0
                   DefaultHeight = 0
                   UseSkinFont = True
-                  UseSkinSize = True
-                  ToolButtonStyle = False
-                  AlphaBlend = False
-                  AlphaBlendValue = 0
-                  AlphaBlendAnimation = False
-                  ListBoxCaptionMode = False
-                  ListBoxDefaultFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultFont.Color = clWindowText
-                  ListBoxDefaultFont.Height = 13
-                  ListBoxDefaultFont.Name = 'Tahoma'
-                  ListBoxDefaultFont.Style = []
-                  ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
-                  ListBoxDefaultCaptionFont.Color = clWindowText
-                  ListBoxDefaultCaptionFont.Height = 13
-                  ListBoxDefaultCaptionFont.Name = 'Tahoma'
-                  ListBoxDefaultCaptionFont.Style = []
-                  ListBoxDefaultItemHeight = 20
-                  ListBoxCaptionAlignment = taLeftJustify
-                  ListBoxUseSkinFont = True
-                  ListBoxUseSkinItemHeight = True
-                  ListBoxWidth = 0
-                  HideSelection = True
-                  AutoComplete = True
-                  ImageIndex = -1
-                  CharCase = ecNormal
-                  DefaultColor = clWindow
-                  Align = alLeft
-                  Items.Strings = (
-                    '1'
-                    '2'
-                    '3'
-                    '4'
-                    '5')
-                  ItemIndex = -1
-                  DropDownCount = 8
-                  HorizontalExtent = False
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Height = -11
-                  Font.Name = 'MS Sans Serif'
-                  Font.Style = []
-                  Sorted = False
-                  Style = bscbFixedStyle
-                  OnChange = sbMusicaRetornoAreaExtendidaChange
+                  EmptyDrawing = False
+                  RibbonStyle = False
+                  ImagePosition = bsipDefault
+                  TransparentMode = False
+                  CaptionImageIndex = 0
+                  RealHeight = -1
+                  AutoEnabledControls = True
+                  CheckedMode = False
+                  Checked = False
+                  DefaultAlignment = taLeftJustify
+                  DefaultCaptionHeight = 20
+                  BorderStyle = bvNone
+                  CaptionMode = False
+                  RollUpMode = False
+                  RollUpState = False
+                  NumGlyphs = 1
+                  Spacing = 2
+                  Caption = 'bsSkinPanel10'
+                  Align = alClient
+                  ExplicitWidth = 83
+                  ExplicitHeight = 48
+                  object bsSkinPanel207: TbsSkinPanel
+                    AlignWithMargins = True
+                    Left = 60
+                    Top = 0
+                    Width = 765
+                    Height = 24
+                    Margins.Left = 60
+                    Margins.Top = 0
+                    Margins.Right = 0
+                    Margins.Bottom = 0
+                    HintImageIndex = 0
+                    TabOrder = 0
+                    SkinData = DM.bsSkinData1
+                    SkinDataName = 'panel'
+                    DefaultFont.Charset = DEFAULT_CHARSET
+                    DefaultFont.Color = clWindowText
+                    DefaultFont.Height = 13
+                    DefaultFont.Name = 'Tahoma'
+                    DefaultFont.Style = []
+                    DefaultWidth = 0
+                    DefaultHeight = 0
+                    UseSkinFont = True
+                    EmptyDrawing = False
+                    RibbonStyle = False
+                    ImagePosition = bsipDefault
+                    TransparentMode = False
+                    CaptionImageIndex = 0
+                    RealHeight = -1
+                    AutoEnabledControls = True
+                    CheckedMode = False
+                    Checked = False
+                    DefaultAlignment = taLeftJustify
+                    DefaultCaptionHeight = 20
+                    BorderStyle = bvNone
+                    CaptionMode = False
+                    RollUpMode = False
+                    RollUpState = False
+                    NumGlyphs = 1
+                    Spacing = 2
+                    Caption = 'bsSkinPanel10'
+                    Align = alClient
+                    ExplicitTop = 24
+                    ExplicitHeight = 0
+                    object bsSkinStdLabel183: TbsSkinStdLabel
+                      AlignWithMargins = True
+                      Left = 0
+                      Top = 0
+                      Width = 79
+                      Height = 24
+                      Margins.Left = 0
+                      Margins.Top = 0
+                      Margins.Bottom = 0
+                      EllipsType = bsetNone
+                      UseSkinFont = True
+                      UseSkinColor = True
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = -11
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'stdlabel'
+                      Font.Charset = ANSI_CHARSET
+                      Font.Color = clWindowText
+                      Font.Height = -13
+                      Font.Name = 'Tahoma'
+                      Font.Style = [fsBold]
+                      Align = alLeft
+                      Caption = 'Tamanho Texto:'
+                      ParentFont = False
+                      Layout = tlCenter
+                      ExplicitHeight = 13
+                    end
+                    object seTamanhoTextoRetorno: TbsSkinSpinEdit
+                      Tag = 9999
+                      AlignWithMargins = True
+                      Left = 82
+                      Top = 2
+                      Width = 59
+                      Height = 21
+                      Margins.Left = 0
+                      Margins.Top = 2
+                      Margins.Right = 0
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      TabOrder = 1
+                      SkinDataName = 'spinedit'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      DefaultColor = clWindow
+                      UseSkinSize = True
+                      ValueType = vtInteger
+                      Align = alLeft
+                      Increment = 1.000000000000000000
+                      EditorEnabled = True
+                      MaxLength = 0
+                      OnChange = seTamanhoTextoRetornoChange
+                      ExplicitLeft = 80
+                      ExplicitHeight = 0
+                    end
+                    object bsSkinButton47: TbsSkinButton
+                      AlignWithMargins = True
+                      Left = 675
+                      Top = 1
+                      Width = 80
+                      Height = 22
+                      Margins.Left = 0
+                      Margins.Top = 1
+                      Margins.Right = 10
+                      Margins.Bottom = 1
+                      HintImageIndex = 0
+                      TabOrder = 0
+                      SkinData = DM.bsSkinData1
+                      SkinDataName = 'button'
+                      DefaultFont.Charset = DEFAULT_CHARSET
+                      DefaultFont.Color = clWindowText
+                      DefaultFont.Height = 13
+                      DefaultFont.Name = 'Tahoma'
+                      DefaultFont.Style = []
+                      DefaultWidth = 0
+                      DefaultHeight = 0
+                      UseSkinFont = True
+                      Transparent = False
+                      CheckedMode = False
+                      ImageList = DM.ico_16x16
+                      ImageIndex = 76
+                      AlwaysShowLayeredFrame = False
+                      UseSkinSize = True
+                      UseSkinFontColor = True
+                      RepeatMode = False
+                      RepeatInterval = 100
+                      AllowAllUp = False
+                      TabStop = True
+                      CanFocused = True
+                      Down = False
+                      GroupIndex = 0
+                      Caption = 'Restaurar'
+                      NumGlyphs = 1
+                      Spacing = 1
+                      Align = alRight
+                      OnClick = bsSkinButton47Click
+                      ExplicitHeight = 0
+                    end
+                  end
                 end
               end
               object bsSkinPanel30: TbsSkinPanel
                 Left = 0
-                Top = -323
-                Width = 761
+                Top = -224
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 37
@@ -46937,8 +47188,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel55: TbsSkinPanel
                 Left = 0
-                Top = -497
-                Width = 761
+                Top = -398
+                Width = 825
                 Height = 20
                 HintImageIndex = 0
                 TabOrder = 38
@@ -46974,7 +47225,7 @@ object fmIndex: TfmIndex
                 object bsRibbonDivider50: TbsRibbonDivider
                   Left = 0
                   Top = 0
-                  Width = 761
+                  Width = 825
                   Height = 20
                   HintImageIndex = 0
                   SkinData = DM.bsSkinData1
@@ -46988,8 +47239,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel196: TbsSkinPanel
                 Left = 0
-                Top = -477
-                Width = 761
+                Top = -378
+                Width = 825
                 Height = 34
                 HintImageIndex = 0
                 TabOrder = 39
@@ -47026,7 +47277,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 15
                   Top = 0
-                  Width = 746
+                  Width = 810
                   Height = 29
                   Margins.Left = 15
                   Margins.Top = 0
@@ -47057,8 +47308,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel197: TbsSkinPanel
                 Left = 0
-                Top = -443
-                Width = 761
+                Top = -344
+                Width = 825
                 Height = 120
                 HintImageIndex = 0
                 TabOrder = 40
@@ -47095,7 +47346,7 @@ object fmIndex: TfmIndex
                   AlignWithMargins = True
                   Left = 10
                   Top = 0
-                  Width = 741
+                  Width = 805
                   Height = 117
                   Margins.Left = 10
                   Margins.Top = 0
@@ -47104,17 +47355,19 @@ object fmIndex: TfmIndex
                   ColCount = 2
                   DataSource = DM.dsMonitores
                   SkinData = DM.bsSkinData1
-                  PanelHeight = 117
-                  PanelWidth = 361
+                  Orientation = bsgoHorizontal
+                  PanelHeight = 98
+                  PanelWidth = 402
                   TabOrder = 0
                   RowCount = 1
-                  ExplicitWidth = 63
+                  ExplicitWidth = 722
+                  ExplicitHeight = 136
                   object Panel39: TPanel
                     AlignWithMargins = True
                     Left = 6
                     Top = 1
-                    Width = 349
-                    Height = 115
+                    Width = 390
+                    Height = 96
                     Margins.Left = 5
                     Margins.Top = 0
                     Margins.Right = 5
@@ -47125,12 +47378,13 @@ object fmIndex: TfmIndex
                     Color = clBlack
                     ParentBackground = False
                     TabOrder = 0
-                    ExplicitWidth = 10
+                    ExplicitWidth = 349
+                    ExplicitHeight = 115
                     object bsSkinDBText9: TbsSkinDBText
                       Left = 0
                       Top = 0
-                      Width = 349
-                      Height = 86
+                      Width = 390
+                      Height = 67
                       EllipsType = bsetNone
                       UseSkinFont = False
                       UseSkinColor = False
@@ -47161,8 +47415,8 @@ object fmIndex: TfmIndex
                     end
                     object GridPanel55: TGridPanel
                       Left = 0
-                      Top = 86
-                      Width = 349
+                      Top = 67
+                      Width = 390
                       Height = 29
                       Align = alBottom
                       BevelOuter = bvNone
@@ -47202,11 +47456,12 @@ object fmIndex: TfmIndex
                           SizeStyle = ssAuto
                         end>
                       TabOrder = 0
-                      ExplicitWidth = 10
+                      ExplicitTop = 86
+                      ExplicitWidth = 349
                       object bsSkinDBText10: TbsSkinDBText
                         Left = 0
                         Top = 0
-                        Width = 164
+                        Width = 185
                         Height = 29
                         EllipsType = bsetNone
                         UseSkinFont = False
@@ -47236,9 +47491,9 @@ object fmIndex: TfmIndex
                         ExplicitWidth = 146
                       end
                       object bsSkinDBText11: TbsSkinDBText
-                        Left = 184
+                        Left = 205
                         Top = 0
-                        Width = 165
+                        Width = 185
                         Height = 29
                         EllipsType = bsetNone
                         UseSkinFont = False
@@ -47268,7 +47523,7 @@ object fmIndex: TfmIndex
                         ExplicitHeight = 12
                       end
                       object bsSkinDBText12: TbsSkinDBText
-                        Left = 164
+                        Left = 185
                         Top = 0
                         Width = 20
                         Height = 29
@@ -47306,8 +47561,8 @@ object fmIndex: TfmIndex
               end
               object bsSkinPanel206: TbsSkinPanel
                 Left = 0
-                Top = 121
-                Width = 761
+                Top = 244
+                Width = 825
                 Height = 24
                 HintImageIndex = 0
                 TabOrder = 41
@@ -47340,11 +47595,12 @@ object fmIndex: TfmIndex
                 Spacing = 2
                 Caption = 'bsSkinPanel10'
                 Align = alTop
+                ExplicitTop = 268
                 object ckSlideFormatPersoExt: TbsSkinCheckBox
                   AlignWithMargins = True
                   Left = 36
                   Top = 0
-                  Width = 725
+                  Width = 789
                   Height = 24
                   Margins.Left = 36
                   Margins.Top = 0
