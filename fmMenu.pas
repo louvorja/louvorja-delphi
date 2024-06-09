@@ -1676,13 +1676,12 @@ type
     bsSkinPanel196: TbsSkinPanel;
     bsSkinStdLabel178: TbsSkinStdLabel;
     bsSkinPanel197: TbsSkinPanel;
-    ctrlMonitores: TDBCtrlGrid;
+    ctrlMonitores: TbsSkinDBCtrlGrid;
     Panel39: TPanel;
     GridPanel55: TGridPanel;
     bsSkinDBText9: TbsSkinDBText;
     bsSkinDBText10: TbsSkinDBText;
     bsSkinDBText11: TbsSkinDBText;
-    Label12: TLabel;
     bsSkinPanel198: TbsSkinPanel;
     bsRibbonDivider85: TbsRibbonDivider;
     bsSkinPanel199: TbsSkinPanel;
@@ -1705,6 +1704,10 @@ type
     bsSkinLinkLabel49: TbsSkinLinkLabel;
     bsSkinPanel205: TbsSkinPanel;
     bsSkinStdLabel180: TbsSkinStdLabel;
+    bsSkinDBText12: TbsSkinDBText;
+    bsSkinSpeedButton7: TbsSkinSpeedButton;
+    bsSkinPanel206: TbsSkinPanel;
+    ckSlideFormatPersoExt: TbsSkinCheckBox;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -2221,6 +2224,8 @@ type
     procedure ckgColetaneasClick(Sender: TObject);
     function arquivoCodificado(arq: string): TStringList;
     procedure bsknbtn1Click(Sender: TObject);
+    procedure bsSkinSpeedButton7Click(Sender: TObject);
+    procedure ckSlideFormatPersoExtClick(Sender: TObject);
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -9812,6 +9817,14 @@ begin
     gravaParam('Config', 'MonitorTelaCheia', '0');
 end;
 
+procedure TfmIndex.ckSlideFormatPersoExtClick(Sender: TObject);
+begin
+  if ckSlideFormatPersoExt.Checked then
+    gravaParam('Musicas', 'ExternoPersonalizado', '1')
+  else
+    gravaParam('Musicas', 'ExternoPersonalizado', '0');
+end;
+
 procedure TfmIndex.ckSlideImgFormatPersoClick(Sender: TObject);
 begin
   bsFormatSlideImgPerso.Visible := False;
@@ -11369,6 +11382,20 @@ begin
   abreLetraMusicaAlbum(629,DM.qrHINOSN.FieldByName('ID').AsInteger);
 end;
 
+procedure TfmIndex.bsSkinSpeedButton7Click(Sender: TObject);
+var
+  arq: string;
+begin
+    arq := openDialog('pasta');
+    if arq <> '' then
+    begin
+      arq := ExcludeTrailingPathDelimiter(arq);
+      txtAbrirColet.Text := arq;
+      txtAbrirColetExit(txtAbrirColet);
+      btAddColetPersoClick(btAddColetPerso);
+    end;
+end;
+
 procedure TfmIndex.btPersoClipBoardClick(Sender: TObject);
 var
   i: Integer;
@@ -12184,6 +12211,7 @@ begin
     DM.cdsMonitores.FieldByName('HEIGHT').Value := MonitorsArray[i].Height;
     DM.cdsMonitores.FieldByName('TOP').Value := MonitorsArray[i].Top;
     DM.cdsMonitores.FieldByName('LEFT').Value := MonitorsArray[i].Left;
+    DM.cdsMonitores.FieldByName('X').Value := 'x';
     DM.cdsMonitores.Post;
   end;
 end;
@@ -13340,7 +13368,12 @@ procedure TfmIndex.copiaArquivoParaSlides(url: string; cds: TClientDataSet; fech
 var
   i,slides: integer;
   slide,letra,letra_aux,tempo: string;
+  uCor,uLetra: string;
 begin
+
+  uCor := '';
+  uLetra := '';
+
   try
     slides := StrToInt('0'+fmIndex.lerParam('Geral', 'slides', '0',ExtractFileName(url), ExtractFilePath(url)));
     if (slides <= 0) then
@@ -13407,6 +13440,58 @@ begin
     cds.FieldByName('TAMANHO_LETRA_AUX').Value := '0'+fmIndex.lerParam(slide, 'tamanho_letra_aux', '10',ExtractFileName(url), ExtractFilePath(url));
     cds.FieldByName('COR_LETRA_AUX').Value := HtmlToColor(fmIndex.lerParam(slide, 'cor_letra_aux', '#efb400',ExtractFileName(url), ExtractFilePath(url)));
     cds.FieldByName('COR_FUNDO').Value := HtmlToColor(fmIndex.lerParam(slide, 'cor_fundo', '#000000',ExtractFileName(url), ExtractFilePath(url)));
+
+    if (fmIndex.ckSlideTxtFormatPerso.Checked and fmIndex.ckSlideFormatPersoExt.Checked) then
+    begin
+      DM.cdsSLIDE_MUSICA.FieldByName('FUNDO_LETRA').Value := not fmIndex.ckMusicaFundoTransparente.Checked;
+      if i = 1 then
+      begin
+        DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').Value := fmIndex.seTamanhoTitulo.Text;
+        DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA').Value := ColorToString(fmIndex.corTituloMusica.ColorValue);
+      end
+      else
+      begin
+        DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA').Value := fmIndex.seTamanhoTexto.Text;
+        if (uLetra <> '') and (Trim(uLetra) = Trim(AnsiUpperCase(letra))) then
+        begin
+          if uCor = '' then
+          begin
+            DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA').Value := ColorToString(fmIndex.corTextoRepetido.ColorValue);
+            uCor := 'S';
+          end
+          else
+          begin
+            DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA').Value := ColorToString(fmIndex.corTextoMusica.ColorValue);
+            uCor := '';
+          end;
+        end
+        else
+        begin
+          DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA').Value := ColorToString(fmIndex.corTextoMusica.ColorValue);
+          uCor := '';
+        end;
+        uLetra := AnsiUpperCase(letra);
+      end;
+      DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA_AUX').Value := fmIndex.seTamanhoTextoAux.Text;
+      DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA_AUX').Value := ColorToString(fmIndex.corTextoRepetido.ColorValue);
+    end;
+
+    if (fmIndex.ckSlideImgFormatPerso.Checked and fmIndex.ckSlideFormatPersoExt.Checked) then
+    begin
+      if (fmIndex.ckFundoTransparente.Checked) then
+      begin
+        DM.cdsSLIDE_MUSICA.FieldByName('COR_FUNDO').Value := fMusica.Color;
+        DM.cdsSLIDE_MUSICA.FieldByName('IMAGEM').Value := '';
+        DM.cdsSLIDE_MUSICA.FieldByName('IMAGEM_POSICAO').Value := fmIndex.posicaoFundo.ItemIndex+1;
+      end
+      else
+      begin
+        DM.cdsSLIDE_MUSICA.FieldByName('COR_FUNDO').Value := ColorToString(fmIndex.corFundoMusica.ColorValue);
+        DM.cdsSLIDE_MUSICA.FieldByName('IMAGEM').Value := fmIndex.imgFundoMusica.Text;
+        DM.cdsSLIDE_MUSICA.FieldByName('IMAGEM_POSICAO').Value := fmIndex.posicaoFundo.ItemIndex+1;
+      end;
+    end;
+
     cds.Post;
   end;
 end;

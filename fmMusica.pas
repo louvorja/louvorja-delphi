@@ -686,7 +686,7 @@ begin
           uLetra := DM.qrSLIDE_MUSICA.FieldByName('LETRA').AsString;
         end;
         DM.cdsSLIDE_MUSICA.FieldByName('TAMANHO_LETRA_AUX').Value := fmIndex.seTamanhoTextoAux.Text;
-        DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA_AUX').Value := DM.qrSLIDE_MUSICA.FieldByName('COR_LETRA_AUX').AsString;
+        DM.cdsSLIDE_MUSICA.FieldByName('COR_LETRA_AUX').Value := ColorToString(fmIndex.corTextoRepetido.ColorValue);
       end
       else
       begin

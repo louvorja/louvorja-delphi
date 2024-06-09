@@ -9,6 +9,7 @@ uses
   Vcl.ValEdit, typinfo, Vcl.Menus, bsSkinMenus, bsDBGrids,
   bsSkinTabs;
 
+
 type
   TfIniciando = class(TForm)
     Timer1: TTimer;
@@ -227,6 +228,7 @@ begin
   fmIndex.ckPlayerAudio.Checked := (fmIndex.lerParam('Player', 'Audio', '0') = '1');
   fmIndex.ckSlideTxtFormatPerso.Checked := (fmIndex.lerParam('Musicas', 'TextoPersonalizado', '0') = '1');
   fmIndex.ckSlideImgFormatPerso.Checked := (fmIndex.lerParam('Musicas', 'FundoPersonalizado', '0') = '1');
+  fmIndex.ckSlideFormatPersoExt.Checked := (fmIndex.lerParam('Musicas', 'ExternoPersonalizado', '1') = '1');
   fmIndex.corFundoMusica.ColorValue := StringToColor(fmIndex.lerParam('Musicas', 'Cor Fundo', '$0000000'));
   fmIndex.corTituloMusica.ColorValue := StringToColor(fmIndex.lerParam('Musicas', 'Cor Titulo', '$000b4ef'));
   fmIndex.corTextoMusica.ColorValue := StringToColor(fmIndex.lerParam('Musicas', 'Cor Texto', '$0FFFFFF'));

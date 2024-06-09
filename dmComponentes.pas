@@ -190,6 +190,7 @@ type
     cdsMonitoresNUM: TIntegerField;
     cdsMonitoresLEFT: TIntegerField;
     dsMonitores: TDataSource;
+    cdsMonitoresX: TStringField;
     procedure tmrSortearTimer(Sender: TObject);
     procedure tmrSortearNMTimer(Sender: TObject);
     procedure tmrSorteioTimer(Sender: TObject);
