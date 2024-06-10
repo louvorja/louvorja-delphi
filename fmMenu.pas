@@ -13844,6 +13844,9 @@ var
   arq: string;
   arq_e: string;
   imgList: TStringList;
+
+  bass_musica: HSAMPLE;
+  bass_channel: HCHANNEL;
 begin
 //url := url+'.zip';
   ZipFile := TZipFile.Create;
@@ -13876,6 +13879,22 @@ begin
           ZipFile.Add(StringReplace(cds.FieldByName('URL_MUSICA').AsString,'*', ExtractFilePath(application.ExeName), [rfIgnoreCase, rfReplaceAll]),arq_e);
           arquivo.writeString('Geral', 'url_musica', arq_e);
           arquivo.writeString('Geral', 'audio', '1');
+
+          try
+            BASS_Init(-1, 44100, 0, Handle, nil);
+          except
+            //
+          end;
+          try
+            bass_musica := BASS_SampleLoad(FALSE, PChar(cds.FieldByName('URL_MUSICA').AsString), 0, 0, 3, BASS_SAMPLE_OVER_POS or BASS_UNICODE);
+            bass_channel := BASS_SampleGetChannel(bass_musica, False);
+            if not BASS_ChannelPlay(bass_channel, False) then
+            begin
+              arquivo.writeString('Geral', 'bass', 'error');
+            end;
+          except
+            //
+          end;
         end
         else
           arquivo.writeString('Geral', 'audio', '0');
@@ -13930,8 +13949,16 @@ begin
             then arquivo.writeString(slide, 'imagem_posicao', cds.FieldByName('IMAGEM_POSICAO').AsString);
 
           tempo := cds.FieldByName('TEMPO').AsString;
-    //        tempo := SegundosToTime(Trunc(BASS_ChannelBytes2Seconds(bass_channel,pos)))
           arquivo.writeString(slide, 'tempo', tempo);
+
+          if Trim(cds.FieldByName('URL_MUSICA').AsString) <> '' then
+          begin
+            try
+              arquivo.writeString(slide, 'tempo_hms', SegundosToTime(Trunc(BASS_ChannelBytes2Seconds(bass_channel,strtoint(tempo)))));
+            except
+              //
+            end;
+          end;
 
           if cds.RecordCount = cds.RecNo then Break;
 
@@ -13940,6 +13967,13 @@ begin
         arquivo.UpdateFile;
       finally
         arquivo.Free;
+      end;
+
+      try
+        BASS_MusicFree(bass_musica);
+        BASS_Free();
+      except
+        //
       end;
 
       ZipFile.Add(arq,'slides.lja');
