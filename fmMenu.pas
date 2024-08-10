@@ -6094,6 +6094,7 @@ begin
   Arquivo := 'file.ja';
 
   Valor := StringReplace(Valor, #13#10, '|', [rfIgnoreCase, rfReplaceAll]);
+  Valor := StringReplace(Valor, #10, '|', [rfIgnoreCase, rfReplaceAll]);
   try
     ArqIni := TIniFile.Create(dir_config + 'server/file/' + Arquivo);
     try
