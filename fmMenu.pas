@@ -16,7 +16,8 @@ uses
   MidasLib, IdStack, System.Types, Bass, Generics.Collections,
   Generics.Defaults, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
-  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  System.RegularExpressions;
   (*"MidasLib" NECESSÁRIA PARA EVITAR ERRO DE ACCESS VIOLATION NO DM.cds*)
 
 type
@@ -2233,6 +2234,7 @@ type
     procedure ckSlideFormatPersoExtClick(Sender: TObject);
     procedure bsSkinButton47Click(Sender: TObject);
     procedure seTamanhoTextoRetornoChange(Sender: TObject);
+    function removeTagsHTML(texto: string): string;
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -4250,6 +4252,11 @@ begin
   end;
 end;
 
+function TfmIndex.removeTagsHTML(texto: string): string;
+begin
+  result := TRegEx.Replace(texto, '<[^>]+>', '');
+end;
+
 procedure TfmIndex.RichEditChange(Sender: TObject);
 begin
   copiaDadosTelaExtendida;
@@ -5020,7 +5027,7 @@ begin
     DM.qrBIBLIA_VERSICULOS.Open;
     corCampoBusca(TFDQuery(DM.qrBIBLIA_VERSICULOS),busBibliaVersiculo,nil);
 
-    if not (DM.qrBIBLIA_LIVROS.Eof) then
+    if (not (DM.qrBIBLIA_LIVROS.Eof)) and (trim(loadCol.Strings.Values['BIBLIA_VERSICULO']) <> '') then
       DM.qrBIBLIA_VERSICULOS.Locate('VERSICULO',loadCol.Strings.Values['BIBLIA_VERSICULO'],[]);
 
   end
@@ -9415,7 +9422,7 @@ begin
       lmdBibliaTxt.Caption := lmdBibliaTxt.Caption+DBCtrlGridBibliaVersiculo.DataSource.DataSet.FieldByName('PASSAGEM').AsString;
       DBCtrlGridBibliaVersiculo.DataSource.DataSet.Next;
     end;
-    lmdBibliaTxt.Caption := '"'+lmdBibliaTxt.Caption+'"';
+    lmdBibliaTxt.Caption := '"'+removeTagsHTML(lmdBibliaTxt.Caption)+'"';
 
     lmdBibliaInfo.Caption := loadCol.Strings.Values['BIBLIA_P_LIVRO_NOME']+' '+loadCol.Strings.Values['BIBLIA_P_CAPITULO']+':'+formataIntervaloNum(loadCol.Strings.Values['BIBLIA_P_VERSICULO'])+' ('+loadCol.Strings.Values['BIBLIA_P_VERSAO']+')';
     ajustaTexto('BIBLIA');
@@ -14693,7 +14700,8 @@ begin
   end;
 
   loadCol.Strings.Values['BIBLIA_CAPITULO'] := DBCtrlGridBibliaCapitulo.DataSource.DataSet.FieldByName('CAPITULO').AsString;
-  busBibliaCapitulo.ItemIndex := StrToInt(loadCol.Strings.Values['BIBLIA_CAPITULO'])-1;
+  if (loadCol.Strings.Values['BIBLIA_CAPITULO'] <> '') then
+    busBibliaCapitulo.ItemIndex := StrToInt(loadCol.Strings.Values['BIBLIA_CAPITULO'])-1;
   DBCtrlGridBibliaCapitulo.Refresh;
   DBCtrlGridBibliaCapituloPaintPanel(DBCtrlGridBibliaCapitulo,StrToInt('0'+loadCol.Strings.Values['BIBLIA_CAPITULO']),nil,Rect(1, 1, DBCtrlGridBibliaCapitulo.PanelWidth-2, DBCtrlGridBibliaCapitulo.PanelHeight-2));
 
@@ -14874,7 +14882,7 @@ begin
   loadCol.Strings.Values['BIBLIA_P_CAPITULO'] := loadCol.Strings.Values['BIBLIA_CAPITULO'];
   loadCol.Strings.Values['BIBLIA_P_VERSICULO'] := loadCol.Strings.Values['BIBLIA_VERSICULO'];
 
-  lmdBibliaTxt.Caption := '"'+DBCtrlGridBibliaVersiculo.DataSource.DataSet.FieldByName('PASSAGEM_ORI').AsString+'"';
+  lmdBibliaTxt.Caption := '"'+removeTagsHTML(DBCtrlGridBibliaVersiculo.DataSource.DataSet.FieldByName('PASSAGEM_ORI').AsString)+'"';
   lmdBibliaInfo.Caption := loadCol.Strings.Values['BIBLIA_P_LIVRO_NOME']+' '+loadCol.Strings.Values['BIBLIA_P_CAPITULO']+':'+loadCol.Strings.Values['BIBLIA_P_VERSICULO']+' ('+loadCol.Strings.Values['BIBLIA_P_VERSAO']+')';
   if (fTransmitir.btServidor.ImageIndex <> 8) then
   begin
