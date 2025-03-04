@@ -146,6 +146,8 @@ begin
 end;
 
 procedure TfAtualiza.ftp_conecta;
+var
+  msg: String;
 begin
   IdFTP1.Disconnect();
   Sleep(2000);
@@ -162,10 +164,17 @@ begin
   except
     on E: Exception do
     begin
+      msg := '';
+
+      if (Pos('too many connections', LowerCase(E.Message)) > 0) or
+         (Pos('servidor sobrecarregado', LowerCase(E.Message)) > 0) then
+      begin
+        msg := 'O servidor estás sobrecarregado. Muitos usuários estão atualizando os arquivos neste momento. Tente novamente em alguns minutos!'+#13#10;
+      end;
+
       if (Application.MessageBox(PChar('Não foi possível conectar ao servidor!'
           +#13#10
-          +'O servidor estás sobrecarregado. Muitos usuários estão atualizando os arquivos neste momento. Tente novamente em alguns minutos!'
-          +#13#10
+          +msg
           +#13#10
           +'Causa do erro: '+E.Message
           +#13#10
@@ -275,13 +284,15 @@ begin
 
 //  if (fmIndex.param.Strings.Values['ftp'] = '') then
 //  begin
+    DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := '02@v2nFB2Dc';
     try
       LinkPag := DM.IdHTTP1.Get(fmIndex.url_params);
     except
       Sleep(2000);
       LinkPag := DM.IdHTTP1.Get(fmIndex.url_params);
     end;
-    txt := fmIndex.ExtraiTexto(LinkPag, '<params>', '</params>');
+    //txt := fmIndex.ExtraiTexto(LinkPag, '<params>', '</params>');
+    txt := LinkPag;
     txt := IfThen(trim(txt) = '', '=', txt);
     fmIndex.Param.Strings.Text := txt;
     fmIndex.Param.Strings.SaveToFile(fmIndex.dir_dados + 'configweb.ja');

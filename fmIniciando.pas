@@ -164,7 +164,7 @@ begin
   //**CARREGA VARIAVEIS*********************************************************
   dir_dados := GetEnvironmentVariable('APPDATA')+'\LouvorJA\';
   dir_temp := GetEnvironmentVariable('TEMP')+'\LouvorJA\';
-  url_params := 'https://louvorja.com.br/params/params.php';
+  url_params := 'https://api.louvorja.com.br/params?type=env';
 
 
   if not(DirectoryExists(dir_dados)) then

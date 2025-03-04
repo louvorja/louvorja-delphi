@@ -12122,10 +12122,12 @@ begin
         gravaParam('Config', 'UltimaConexao', formatdatetime('yyyy-mm-dd', Now()));
 
         DM.progressDialog.MaxValue := StrToInt(lerParam('Config', 'Param Buffer', '100000'));
+        DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := '02@v2nFB2Dc';
 
         try
           LinkPag := DM.IdHTTP1.Get(url_params);
-          txt := ExtraiTexto(LinkPag, '<params>', '</params>');
+          //txt := ExtraiTexto(LinkPag, '<params>', '</params>');
+          txt := LinkPag;
           txt := IfThen(trim(txt) = '', '=', txt);
           Param.Strings.Text := txt;
           Param.Strings.SaveToFile(dir_dados + 'configweb.ja');
@@ -12136,7 +12138,8 @@ begin
           Sleep(2000);
           try
             LinkPag := DM.IdHTTP1.Get(url_params);
-            txt := ExtraiTexto(LinkPag, '<params>', '</params>');
+            //txt := ExtraiTexto(LinkPag, '<params>', '</params>');
+            txt := LinkPag;
             txt := IfThen(trim(txt) = '', '=', txt);
             Param.Strings.Text := txt;
             Param.Strings.SaveToFile(dir_dados + 'configweb.ja');
